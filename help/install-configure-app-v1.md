@@ -1,17 +1,15 @@
 ---
 title: 安装和配置AEM桌面应用程序版本1.x
-seo-title: 安装和配置AEM桌面应用程序版本1.x
 description: 安装和配置AEM桌面应用程序版本1.x以与AEM Assets服务器一起使用，并将资产映射为要在桌面上作为驱动器装载的资产。
-seo-description: 安装和配置AEM桌面应用程序版本1.x以与AEM Assets服务器一起使用，并将资产映射为要在桌面上作为驱动器装载的资产。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: asgupa
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f6365302-1690-4719-9b8c-03571942740
+discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ce29042aff6d4caea0e7b8a56673d4bfed03a45
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
