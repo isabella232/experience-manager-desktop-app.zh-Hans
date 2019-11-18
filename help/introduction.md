@@ -1,16 +1,12 @@
 ---
 title: AEM桌面应用程序简介
-seo-title: Adobe Experience manager桌面应用程序技术文档和自助
-description: 技术文档和自助，了解AEM桌面应用程序如何在直接从其桌面使用企业资产时优化创意用户的工作流程。
-seo-description: 了解AEM桌面应用程序在直接从其桌面使用企业资产时如何优化创意用户的工作流程。
-contentOwner: asgupa
+description: 了解如何使用AEM桌面应用程序在直接从创意用户的桌面使用AEM资产时为其优化资产管理工作流。
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b74a3ff5c9a25ee1433dd661a1bce677271a5ebe
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
