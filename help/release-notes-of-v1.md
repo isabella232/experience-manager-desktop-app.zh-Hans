@@ -1,17 +1,15 @@
 ---
 title: AEM桌面应用程序1.x版发行说明
-seo-title: AEM桌面应用程序1.x版发行说明
 description: AEM桌面应用程序版本1.x的发行详细信息、增强功能、新增功能、兼容性和下载链接。
-seo-description: AEM桌面应用程序版本1.x的发行详细信息、增强功能、新增功能、兼容性和下载链接。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: asgupa
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
