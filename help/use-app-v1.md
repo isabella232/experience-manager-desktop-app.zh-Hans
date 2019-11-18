@@ -1,17 +1,15 @@
 ---
 title: 使用AEM桌面应用程序版本1.x
-seo-title: 使用Adobe Experience manager桌面应用程序版本1.x
 description: 了解如何使用Adobe Experience manager桌面应用程序版本1.x并优化您在桌面上使用资产的作品。
-seo-description: 了解如何使用Adobe Experience manager桌面应用程序版本1.x，以及如何通过桌面和创意工作流程优化您的资产。
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
-contentOwner: asgupa
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c305f57b8ad874bcffc250689d917e31820225e4
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
