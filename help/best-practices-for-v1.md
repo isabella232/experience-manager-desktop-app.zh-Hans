@@ -1,17 +1,15 @@
 ---
 title: AEM桌面应用程序版本1.x最佳实践
-seo-title: AEM桌面应用程序版本1.x最佳实践
 description: Adobe Experience manager桌面应用程序版本1.x的主要功能和建议使用。
-seo-description: Adobe Experience manager桌面应用程序版本1.x的主要功能和建议使用。
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
-contentOwner: asgupa
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 946b853d740444853525e540ff7af1cbc46f9998
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
