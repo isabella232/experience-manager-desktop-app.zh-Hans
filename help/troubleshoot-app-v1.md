@@ -1,17 +1,15 @@
 ---
 title: AEM桌面应用程序版本1.x疑难解答
-seo-title: AEM桌面应用程序疑难解答
 description: 对AEM桌面应用程序版本1.x进行疑难解答，以解决与安装、升级、配置等相关的临时问题。
-seo-description: 对AEM桌面应用程序版本1.x进行疑难解答，以解决与安装、升级、配置等相关的临时问题。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: asgupa
+contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb22a-6cdf-4ae3-9cf2-755c873f397c
+discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ce29042aff6d4caea0e7b8a56673d4bfed03a45
+source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ---
 
