@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -84,7 +84,7 @@ AEM桌面应用程序与以下操作系统兼容：
 
 下图说明了资产和文件从云到本地文件系统的流程，反之亦然，这是由用户操作启动的。
 
-![通过桌面应用程序将资产从AEM服务器流向本机桌面应用程序](assets/do-not-localize/da20_flow_diagram.png)
+![通过桌面应用程序将资产从AEM服务器流向本机桌面应用程序](assets/da20_flow_diagram.png)
 
 ## Known issues {#known-issues-v2}
 
@@ -105,7 +105,7 @@ AEM桌面应用程序与以下操作系统兼容：
 
 >[!MORELIKETHIS]
 >
->* [AEM 6.5文档](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [AEM 6.5 文档](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* [AEM Assets 6.5文档](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
 >* [使用AEM桌面应用程序](using.md)
 >* [安装和升级桌面应用程序](install-upgrade.md)
