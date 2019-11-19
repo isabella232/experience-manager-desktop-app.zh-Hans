@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -47,6 +47,6 @@ Adobe在其解决方案中提供互联的工作流程，为业务线用户和创
 
 新应用程序的主要使用案例和增强功能与客户旅程进行了映射，如下图所示。
 
-![AEM桌面应用程序的新增功能](assets/do-not-localize/whats-new-desktop-app-v2.png)
+![AEM桌面应用程序的新增功能](assets/aem_desktop_app_usecases_v2.png)
 
 桌面应用程序允许用户直接从应用程序内完成上述所有用例。 如有必要，您还可以选择在Web界面中执行资产搜索，然后将控件传递给应用程序以打开和编辑资产。
