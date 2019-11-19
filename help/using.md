@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 使用AEM桌面应用程序执行的主要任务有：
 
-![可使用AEM桌面应用程序完成的工作流和任](assets/do-not-localize/whats-new-desktop-app-v2.png "务可使用AEM桌面应用程序完成的工作流和")任 [务下载此可打印](assets/do-not-localize/aem_desktop_app_usecases_print.pdf) 的PDF文件。
+![可使用AEM桌面应用程序完成的工作流和任](assets/aem_desktop_app_usecases_v2.png "务可使用AEM桌面应用程序完成的工作流和")任 [务下载此可打印](assets/aem_desktop_app_usecases_print.pdf) 的PDF文件。
 
 ## 桌面应用程序的工作原理 {#how-app-works2}
 
