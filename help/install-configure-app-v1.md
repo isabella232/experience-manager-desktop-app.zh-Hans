@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -65,7 +65,7 @@ AEM桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet�
 * X-Depth
 * X覆盖
 
-AEM desktop使用包含默认端口的URL连接到AEM。 因此，调度 *程序配置中* ,virtualhosts设置应包括默认端口号。 有关虚拟主机配置的详细信息，请参 [阅标识虚拟主机](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+AEM desktop使用包含默认端口的URL连接到AEM。 因此，调 `virtualhosts` 度程序配置中的设置应包括默认端口号。 有关配置的详细 `virtualhosts` 信息，请参 [阅标识虚拟主机](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
 有关配置调度程序以传递这些附加标头的其他信息，请参 [阅指定HTTP标头](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
 
@@ -116,8 +116,8 @@ AEM桌面应用程序缓存的默认位置为：
 
 ## 其他资源 {#additional-resources}
 
-* [AEM桌面应用程序简介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
-* [使用AEM桌面应用程序](use-app-v1.md)
+* [AEM 桌面应用程序简介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+* [使用 AEM 桌面应用程序](use-app-v1.md)
 
 * [了解AEM桌面应用程序的登记／注销](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 * [将桌面应用程序与AEM Assets结合使用](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
