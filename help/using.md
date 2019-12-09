@@ -1,5 +1,5 @@
 ---
-title: 使用AEM桌面应用程序
+title: 使用 AEM 桌面应用程序
 description: 了解如何安装和使用Adobe Experience manager桌面应用程序，直接从Win或Mac桌面处理AEM资产。 了解最佳实践和疑难解答信息。
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
 
-# 使用AEM桌面应用程序 {#use-aem-desktop-app-v2}
+# 使用 AEM 桌面应用程序 {#use-aem-desktop-app-v2}
 
 使用Adobe Experience Manager(AEM)桌面应用程序轻松访问本地桌面上的AEM资产，并在任何桌面应用程序中使用这些资产。 您可以在桌面应用程序中打开资产并在本地编辑资产——使用版本控制将更改上传回AEM，以与其他用户共享更新。 您还可以将新文件和文件夹层次结构上传到AEM，创建文件夹，以及从AEM中删除资产或文件夹。
 
@@ -40,9 +40,9 @@ source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 * 文件状态 **[!UICONTROL Modified remotely]**&#x200B;为：应用程序将指示您下载的资产是否在AEM服务器上发生更改。 应用程序还提供下载最新版本和更新本地副本的选项。 了解 [如何避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **结帐**:如果您正在编辑文件或打算编辑文件，则可以切换状态以注销。 它会在应用程序和AEM web界面中的资产上添加一个锁图标。 锁定图标会向其他用户指示避免同时编辑同一资产，因为这会导致编辑冲突。
+* **[!UICONTROL Check-out]**:如果您正在编辑文件或打算编辑文件，则可以切换状态以注销。 它会在应用程序和AEM web界面中的资产上添加一个锁图标。 锁定图标会向其他用户指示避免同时编辑同一资产，因为这会导致编辑冲突。
 
-* **登记**:将资产标记为安全，以便其他用户进行编辑而不会引起编辑冲突。 上传更改时，锁图标会自动删除。 切换登记状态也会删除锁定图标，但建议不要在不上传更改的情况下手动登记。 如果放弃更改，请手动切换登记。
+* **[!UICONTROL Check-in]**:将资产标记为安全，以便其他用户进行编辑而不会引起编辑冲突。 上传更改时，锁图标会自动删除。 切换登记状态也会删除锁定图标，但建议不要在不上传更改的情况下手动登记。 如果放弃更改，请手动切换登记。
 
 * **[!UICONTROL Open]** 操作：只需打开资产，即可在本机应用程序中预览它。 不建议使用此操作来编辑资产，因为它不会签出资产，并且其他用户可能会进行编辑而导致编辑冲突。
 
@@ -198,7 +198,7 @@ source-git-commit: f9c2347f8f17d32479207980fafba058825d986f
 
 ### 浏览大型文件夹 {#browse-large-folders}
 
-使用包含许多资产的文件夹时，滚动可查看更多资产。 要使用键盘滚动，请按Tab键几次以选择顶部的资产。 请注意高亮显示的资产，以了解其何时被选择。 现在，使用向下箭头键在资产列表中移动。
+使用包含许多资产的文件夹时，滚动可查看更多资产。 要使用键盘滚动，请按Tab键几次以选择顶部的资产。 请注意高亮显示的资产，以了解其何时被选中。 现在，使用向下箭头键在资产列表中移动。
 
 ### 对选定资产执行快速操作 {#quick-actions-for-selected-assets}
 
