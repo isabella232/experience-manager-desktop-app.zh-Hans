@@ -9,22 +9,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: 75e7cbaaa23b441b5e3a6e55381cd5f548231537
 
 ---
 
 
 # AEM桌面应用程序v1.x发行说明{#aem-desktop-app-release-notes}
 
-## 发行信息 {#release-information}
+对于桌面应用程序v1.x版本，以下是下载链接和AEM兼容性信息。
 
-| 产品 | Adobe Experience Manager(AEM)桌面应用程序 |
+| 产品 | Adobe Experience Manager (AEM) 桌面应用程序 |
 |---------------|--------------------------------------------------------------------|
 | 版本 | 1.10（Mac和Windows上为1.10.0.3） |
 | 类型 | 次要版本 |
 | 日期 | 2018年8月31日 |
-| 下载URL | [Mac OS X 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows 32位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
-| 兼容性 | AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
+| 下载 URL | [Mac OS X 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.3.dmg); [Windows 32位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| 兼容性 | AEM 6.5.x;AEM 6.4.x;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
 >
@@ -34,16 +34,16 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 AEM Desktop与以下操作系统兼容：
 
-* Mac OS X 10.10或更高版本，以及最新的错误修复。
-* Windows 7和Windows 10，带有最新的Service pack和错误修复。
+* Mac OS X 10.10 或更高版本（带有最新的错误修复）。
+* Windows 7 和 Windows 10（带有最新的 Service Pack 和错误修复）。
 
-Adobe强烈建议使用最新版AEM Desktop来使用最新功能、最新错误修复和尽可能最佳的性能。
+Adobe强烈建议使用最新版AEM桌面应用程序来使用最新功能、最新错误修复和尽可能最佳的性能。
 
 您计划在本地计算机上安装的AEM桌面应用程序版本需要特定的AEM服务器版本／其他服务器端组件（服务包、热修复或功能包）。 在首次连接到AEM服务器之前，请确保正确配置AEM服务器。 如果需要帮助，请与AEM管理员联系。
 
 请参阅 [本文档结尾的详细兼容性列表](#compatibilitymatrix) ，以评估设置的先决条件。
 
-## AEM桌面应用程序1.10的新增功能 {#what-s-new-in-aem-desktop-app}
+## What's New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
 
 AEM桌面应用程序1.10侧重于在使用链接文件（如InDesign）打开资产时改进大型上传的用户体验、有关后台操作的信息以及优化的体验。
 
@@ -112,8 +112,8 @@ AEM桌面应用程序1.9侧重于改进大型上传时的用户体验、有关�
 
 **用于指示后台操作状态的图**&#x200B;标应用程序图标将指示后台操作的状态，以向用户提供更好的可视提示。 例如，当应用程序未连接到AEM时，该图标将灰显，当有活动上传时，它将显示“同步”叠加，等等。
 
-**预取链接的资产**-处理包含AEM中存储的链接资产的InDesign文档时，为了改善用户体验，桌面应用程序将尝试在下载和打开InDesign文档之前，将这些链接的文件预取到本地缓存。 这样，用户就可以在本地使用链接的文件，并且在InDesign（在“链接”面板中）中访问这些文件时不必等待更久。
-请注意，预取仅在AEM识别服务器端的链接时才起作用。 具有已识别链接的资产将在InDesign资产的“属性”视图中列出“引用”列表。
+**链接资产的预取**-在处理包含存储在AEM中的链接资产的InDesign文档时，为改善用户体验，桌面应用程序将尝试将这些链接的文件预取到本地缓存，然后再下载并打开InDesign文档。 这样，用户就可以在本地使用链接的文件，并且在InDesign（在“链接”面板中）中访问这些文件时不必等待更久。
+请注意，只有在AEM识别服务器端的链接时，预取才起作用。 具有已识别链接的资产将在InDesign资产的“属性”视图中列出“引用”列表。
 
 ### 自AEM桌面应用程序1.8.x起提供的增强功能{#enhancements-available-since-aem-desktop-app-18x}
 
@@ -130,7 +130,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
    * (Mac)添加使用。pac代理配置连接到AEM的支持(CQ-4233430)
    * (Win)修复了“高级——登录URL”对话框的问题(CQ-4236061)
 * 错误修复：
-   * “更多资产信息”对话框*有时操作栏不可见(CQ-4208540)
+   * “更多资产信息”对话框：有时操作栏不可见(CQ-4208540)
    * (Win)现在，从AEM资产UI恢复到先前版本后，可以同步文件(CQ-4216411)
 
 ### 自AEM桌面应用程序1.7起提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-17}
@@ -177,7 +177,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
    * 高CPU使用率(CQ-4218070)。
    * 在上传到AEM时，拖放文件会产生错误(CQ-4217006)。
 
-### 自AEM桌面应用程序1.5起提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### 自AEM桌面应用程序1.5以来提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **** 适用于Mac OS x的1.5.1.5版：1.5.1.5版提供以下优势：
 
@@ -292,7 +292,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
 
 **使用CA签名的SSL证书。** 请注意，通过HTTPS安全连接连接到AEM时，AEM桌面应用程序不支持自签名SSL证书。 对于此类连接，服务器上需要CA签名的证书。 (CQ-87941)
 
-## Known issues {#known-issues}
+## 已知问题 {#known-issues}
 
 * 常规:
    * 服务器URL必须指向没有路径的服务器(例如， `http://server`、 `https://server`、 `http://server:port`或 `https://server:port`)。 不支持/content/dam以外的上下文路径和子文件夹(CQ-89343、CQ-87272)
@@ -300,9 +300,9 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
    * 未正确处理带有保留字符的文件和文件夹名称。 确保使用符合AEM要求的文件和文件夹名称(CQ-93361、CQ-93308、CQ-89276、CQ-4217183)
    * 某些应用程序（如Adobe Illustrator）可能会创建名称在AEM中不受支持的文件。 例如，在转换 `Converted` 文件后添加，这会阻止其上传(CQ-4216985)
    * 具有国际名称的资源可能每隔几秒钟出现并消失
-* 签入／签出：
+* 登记和注销：
    * 一个用户签出的资产无法通过触屏UI中的打开操作或直接在桌面上为其他用户打开。 某些应用程序可能报告其已锁定，但在尝试打开时也会损坏甚至挂起。 (CQ-4199234)
-   * 同时由多个用户更改文件可能会导致某些修改丢失。 解决方法是使用签入／签出功能来阻止多个用户更改同一文件(CQ-97035)
+   * 同时由多个用户更改文件可能会导致某些修改丢失。 解决方法是使用登记和注销功能来防止多个用户更改同一文件(CQ-97035)
    * 某些应用程序不正确支持只读标志，该标志允许用户保存其他用户签出的文件。 在其他用户签入文件之前，不会传输修改过的文件。 在AEM中，这两种修改都可作为资产的不同版本(CQ-89551、CQ-87572、CQ-89615)使用
    * 在Finder中独立报告检出和只读状态。 当用户注销资产时，这会生成2个锁图标(CQ-89507)
 * Finder集成：
@@ -329,7 +329,7 @@ AEM桌面应用程序可与各种版本的AEM一起使用。 请参阅支持版�
 
 | 版本 | 修订版 | 发布日期 | 兼容性 |
 |---------|------------------------|--------------|-------------------------------------------------------------|
-| 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
+| 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.5;AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1（Mac和Win） | 2018年6月21日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0（Mac和Win） | 2018年3月28日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.7 | 1.7.0.3（Mac和Win） | 2018年1月10日 | AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
