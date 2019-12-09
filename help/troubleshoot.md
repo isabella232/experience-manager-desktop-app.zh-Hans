@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
 
-# AEM桌面应用程序疑难解答 {#troubleshoot-v2}
+# Troubleshoot AEM desktop app {#troubleshoot-v2}
 
 Adobe Experience Manager(AEM)桌面应用程序连接到远程AEM部署的数字资产管理(DAM)存储库。 应用程序将在您的计算机上获取存储库信息和搜索结果，下载并上传文件和文件夹，并包含管理与AEM资产用户界面冲突的功能。
 
@@ -66,7 +66,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程AEM部署的数字
 
 ### 清除缓存 {#clear-cache-v2}
 
-清除AEM桌面应用程序的缓存是一项初步的疑难解答任务，可解决多个问题。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置是：
+清除AEM桌面应用程序缓存是一项可解决多个问题的初步疑难解答任务。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置是：
 
 * 在 Windows 中：`%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
