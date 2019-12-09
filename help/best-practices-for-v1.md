@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -28,7 +28,7 @@ AEM桌面应用程序使您不必在AEM中更新错误的本地副本或更新�
 >
 >在阅读本文档之前，您可以查看整体 [AEM和Creative cloud集成最佳实践](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html) ，以获得主题的更高级别概述。
 
-## AEM桌面应用程序架构 {#aem-desktop-app-architecture}
+## AEM desktop app architecture {#aem-desktop-app-architecture}
 
 AEM桌面应用程序使用WebDAV(Windows)或SMB(Mac)网络共享来装载网络共享。 安装的网络共享仅是本地共享。 AEM桌面应用程序会截取调用（打开、读取、写入）并提供其他本地缓存。 它将远程调用转换到AEM Assets服务器以优化AEM HTTP请求。 下图描述了AEM桌面应用程序架构。
 
@@ -107,9 +107,11 @@ AEM桌面应用程序提供对整个DAM存储库的虚拟访问，而桌面上�
 
 * **** 使用正确配置的Dispatcher:使用AEM Dispatcher实现更多安全性，并确保已将其配置为 [AEM桌面应用程序连接到调度程序后面的AEM](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#ConnectingtoAEMBehindaDispatcher)
 
-* **** 节省带宽：在Mac上的Finder中，当使用Finder浏览已装载的存储库时，请考虑关闭图标预览。 Finder请求每个文件生成预览，并导致桌面应用程序在本地下载和缓存资产。 请注意，在节省带宽的同时，它也会降低桌面用户的用户体验，因此，在使用资产较大和／或带宽有限的存储库时，应该这样做。
+* **** 节省带宽：在Mac上的Finder中，当使用Finder浏览已装载的存储库时，请考虑关闭图标预览。 Finder请求每个文件生成预览，并导致桌面应用程序在本地下载和缓存资产。 请注意，在节省带宽的同时，它也会降低桌面用户的用户体验，因此在使用具有大资产和／或有限带宽的存储库时应该这样做。
 
-**** 注意：要关闭图标预览，请在Finder中转至“视图”，选择“视图选项”，然后取消选中“显示图标预览”选项。 这仅适用于当前文件夹——要使其成为默认文件夹，请在同一窗口中单击“用作默认文件夹”按钮。
+>[!NOTE]
+>
+>要关闭图标预览，请在Finder中转至“视图”，选择“视图选项”，然后取消选中“显示图标预览”选项。 这仅适用于当前文件夹——要使其成为默认文件夹，请在同一窗口中单击“用作默认文件夹”按钮。
 
 ### 优化服务器性能 {#optimizing-server-performance}
 
