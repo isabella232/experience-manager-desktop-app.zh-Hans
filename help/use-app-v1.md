@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -34,9 +34,9 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 >[!NOTE]
 >AEM桌面应用程序在AEM 6.1版本中引入，称为AEM Assets Companion应用程序。
 
-## 创意工作流程中的AEM Desktop应用程序触点 {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## 创意工作流程中的AEM desktop应用程序触点 {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
-AEM Desktop应用程序与AEM Assets集成在您的创意工作流程中，并提供以下接触点。
+AEM Desktop应用程序与AEM Assets集成在您的创意工作流程中，并提供以下触点。
 
 ![AEM desktop应用程序触点创意工作流程](assets/aem_desktopapp_workflow.png)
 
@@ -196,7 +196,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
    ![在Mac上的AEM Assets上下文菜单中打开](assets/chlimage_1-5.png)
 
 1. 右键单击资产，然后从上下文菜单中选择更多资产信息。
-1. 在资产信息对话框中，单击／点按结帐图标以注销资产。 单击／点按后，“检出”(Checkout)图标将切换到“签入”(Checkin)图标。
+1. 在资产信息对话框中，单击／点按结帐图标以注销资产。 单击／点按后，“结帐”图标将切换至“结帐”图标。
 
    ![浏览到资产以结帐](assets/chlimage_1-6.png)
 
@@ -212,7 +212,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
    ![签出图标切换](assets/chlimage_1-7.png)
 
 1. 右键单击资产，然后从上下文菜单中选择在Web上打开。
-1. 在资产信息对话框中，单击／点按结帐图标。 “检出”(Checkout)图标切换为“检入”(Checkin)图标。
+1. 在资产信息对话框中，单击／点按结帐图标。 “结帐”图标切换为“登记”图标。
 
    ![签出图标切换](assets/chlimage_1-8.png)
 
@@ -221,17 +221,17 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
    >[!NOTE]
    >在延迟几分钟后，可能会显示锁图标。 AEM desktop应用程序缓存资产以便快速访问，因此可能需要片刻时间才能更新锁定状态。
 
-1. 要签入资产以便其他用户可以使用它，请单击／点按资产信息对话框中的签 **入图标** 。
+1. 要签入资产以便其他用户可以使用它，请单击／点按资产信息对话框中的 **签入图标** 。
 
-### 使用Finder或资源管理器以及Web界面登记资产 {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
+### 使用Finder或资源管理器以及Web界面签入资产 {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-编辑完资产后，将资产保存到桌面应用程序中。 从上下文菜单中，选择更多资产信息，然后单击／点按签入。
+编辑完资产后，将资产保存到桌面应用程序中。 从上下文菜单中，选择更多资产信息，然后单击／点按登记。
 
 资产会上传到AEM服务器。 或者，您也可以选择从任务栏图标中选择查看资产状态来检查上传状态。
 
 ![AEM桌面应用程序文件传输和上传状态窗口](assets/aem_desktopapp_upload_status.png)
 
-或者，您也可以从AEM web界面签入资产。 单击／点按已签出的资产或选择它。 在工具栏中，单击／点按签入图标签 ![入图标](assets/aemassets_icon_checkin.png)。
+或者，您也可以从AEM web界面签入资产。 单击／点按已签出的资产或选择它。 在工具栏中，单击／点按登记图 ![标登记图标](assets/aemassets_icon_checkin.png)。
 
 ### 将资产和文件夹批量上传到AEM服务器 {#bulkupload}
 
@@ -256,7 +256,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
 
 >[!MORELIKETHIS]
 >
->* [AEM桌面应用程序简介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
+>* [AEM 桌面应用程序简介](https://helpx.adobe.com/experience-manager/kt/eseminars/ccoo-aem-desktop-app.html)
 >* [了解AEM桌面应用程序的登记／注销](https://helpx.adobe.com/experience-manager/kt/assets/using/checkin-checkout-technical-video-understand.html)
 >* [AEM Desktop应用程序疑难解答](troubleshoot-app-v1.md)
 
