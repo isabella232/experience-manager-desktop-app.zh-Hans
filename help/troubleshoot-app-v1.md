@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 ---
 
@@ -24,11 +24,11 @@ Adobe Experience Manager(AEM)桌面应用程序包含实用程序，可帮助您
 
 使用此架构，桌面应用程序会截取对已装载网络共享的文件系统调用（打开、关闭、读取、写入等），并将它们转换为对AEM服务器的本机AEM HTTP调用。 文件在本地缓存。 有关详细信息，请 [参阅使用AEM桌面应用程序v1.x](use-app-v1.md)。
 
-## 桌面应用程序组件概述 {#desktop-nbsp-app-component-overview}
+## AEM desktop app component overview {#desktop-app-component-overview}
 
 桌面应用程序包括以下组件：
 
-* **桌面应用程序**:将DAM作为远程文件系统进行装载／卸载，并在本地装载的网络共享与它所连接的远程AEM实例之间转换文件系统调用。
+* **桌面应用程序**:应用程序将DAM作为远程文件系统进行安装或卸载，并在本地安装的网络共享与它连接到的远程AEM实例之间转换文件系统调用。
 * **操作系统WebDAV/SMB客户端**:处理Windows资源管理器/Finder与桌面应用程序之间的通信。 如果检索、创建、修改、删除、移动或复制文件，则操作系统(OS)WebDAV/SMB客户端会将此操作通知到桌面应用程序。 在收到通信后，桌面应用程序会将其转换为本机AEM远程API调用。 例如，如果用户在安装的目录中创建文件，则WebDAV/SMB客户端会启动一个请求，桌面应用程序会将该请求转换为在DAM中创建文件的HTTP请求。 WebDAV/SMB客户端是操作系统的内置组件。 它不以任何方式与桌面应用程序、AEM或Adobe关联。
 * **Adobe Experience manager实例**:提供对存储在AEM Assets DAM存储库中的资产的访问。 此外，它代表与安装的网络共享交互的本地桌面应用程序执行桌面应用程序请求的操作。 目标AEM实例应运行AEM版本6.1或更高版本。 运行先前AEM版本的AEM实例可能需要安装额外的功能包和修补程序才能使其完全正常工作。
 
@@ -87,7 +87,7 @@ AEM桌面应用程序提供内部缓存和后台上传功能以改进最终用�
 
 ## 单个操作 {#individual-operations}
 
-对个别用户的未优化性能进行故障诊断时，请首先查看限 [制](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations)。 后续部分包括改进单个用户性能的建议。
+对个别用户的次优性能进行故障诊断时，请首先查看限 [制](https://helpx.adobe.com/experience-manager/desktop-app/troubleshooting-desktop-app.html#limitations)。 后续部分包括改进单个用户性能的建议。
 
 ## 带宽建议 {#bandwidth-recommendations}
 
@@ -155,7 +155,7 @@ Adobe建议单个用户的上传速度接近10 Mbps。 对于无线连接，带�
 
 ### 常规 {#general}
 
-写入签出文件时，仅在AEM的WebDAV实施中强制执行锁定。 因此，仅使用WebDAV的客户端（如桌面应用程序）强制执行锁定。 此锁不会通过AEM的Web界面实施。 AEM界面仅会在已签出的资产的卡片视图中显示锁定图标。 该图标为修饰图标，对AEM的行为没有影响。
+写入签出文件时，仅在AEM webDAV实现中强制执行锁定。 因此，仅使用WebDAV的客户端（如桌面应用程序）实施锁定。 此锁不会通过AEM web界面实施。 AEM界面仅会在已签出的资产的卡片视图中显示锁定图标。 该图标为修饰图标，对AEM的行为没有影响。
 
 通常，WebDAV客户端的行为并不总是如预期的那样。 可能还有其他问题。 但是，在AEM中刷新或检查资产是验证资产是否未被修改的一种有效方法。 这是操作系统WebDAV客户端的典型行为，Adobe不控制这些客户端。
 
