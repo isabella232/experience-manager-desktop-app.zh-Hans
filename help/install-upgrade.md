@@ -9,14 +9,24 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # 安装AEM桌面应用程序 {#install-app-v2}
 
-## 系统要求 {#tech-specs-v2}
+使用AEM桌面应用程序，AEM中的资产可在本地桌面上轻松访问，并可用于任何桌面应用程序。 资产可以在Mac finder或Windows资源管理器中轻松显示，在桌面应用程序中打开并在本地更改——上传时更改将保存回AEM，并在存储库中创建新版本。
+
+此类集成允许组织中的不同角色集中管理AEM资产中的资产，并在Creative cloud和其他应用程序中访问这些资产，同时使您能轻松遵守包括品牌在内的各种标准。
+
+要使用AEM桌面应用程序，
+
+* 确保AEM桌面应用程序支持您的AEM服务器版本。 请参阅兼 [容性矩阵](release-notes-of-v1.md#compatibilitymatrix)。
+* 下载并安装应用程序。
+* 使用一些资源测试连接。 请参 [阅在桌面上访问和打开资产](use-app-v1.md#openondesktop)。
+
+## 系统要求先决条件和下载链接 {#tech-specs-v2}
 
 有关详细信息，请参阅 [AEM桌面应用程序发行说明](release-notes.md)。
 
@@ -44,7 +54,7 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明安装它。 如果安装失败，请手动安装。 从此处下载安 [装程序](https://www.microsoft.com/en-us/download/details.aspx?id=52685) ，并安装 `vc_redist.x64.exe` 和文 `vc_redist.x86.exe` 件。 重新运行AEM桌面应用程序安装程序。
 1. 根据提示重新启动计算机。 启动桌面应用程序进行配置。
-1. 要将应用程序与AEM存储库连接，请单击托盘中的应用程序图标以启动应用程序。 提供AEM实例的地址。 单击 **[!UICONTROL Connect]** 并提供凭据。
+1. 要将应用程序与AEM存储库连接，请单击托盘中的应用程序图标以启动应用程序。 提供AEM实例的地址。 单击 **[!UICONTROL Connect]**并提供凭据。
 
    ![桌面应用程序与输入服务器地址的连接屏幕与输](assets/connect_da2.png "入服务器地址的连接屏幕")
 
@@ -62,12 +72,12 @@ source-git-commit: 850d2c21a796599ed40164e7d6f892967563c16b
 
 ## 设置首选项 {#set-preferences}
 
-要更改首选项，请单击“更 ![多选项”图标](assets/do-not-localize/more_options_da2.png) ，然 **[!UICONTROL Preference]** 后单击“首 ![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗 **[!UICONTROL Preferences]** 口中，调整以下各项的值：
+要更改首选项，请单击“更 ![多选项”图标](assets/do-not-localize/more_options_da2.png) ，然 **[!UICONTROL Preference]**后单击“首![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗**[!UICONTROL Preferences]** 口中，调整以下各项的值：
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
 * **[!UICONTROL Cache Directory]**:应用程序的本地缓存位置（它包含本地下载的资源）。
-* **[!UICONTROL Network Drive Letter]**:用于映射到AEM DAM的驱动器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器盘符。 如果两个用户放置不同驱动器盘符的资产，则他们看不到彼此放置的资产。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会被删除。 应用程序会列出所有可用的驱动器盘符，默认情况下会使用通常为最后可用的盘符 `Z`。
+* **[!UICONTROL Network Drive Letter]**:用于映射到AEM DAM的驱动器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器盘符。 如果两个用户放置不同驱动器盘符的资产，则他们看不到彼此放置的资产。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会被删除。 应用程序会列出所有可用的驱动器盘符，默认情况下会使用通常为最后可用的盘符`Z`。
 * **[!UICONTROL Maximum Cache Size]**:允许在硬盘上以GB为单位进行缓存，用于存储本地下载的资源。
 * **[!UICONTROL Current cache size]**:本地下载的资源的存储大小。 仅在使用应用程序下载资产后，才会显示该信息。
 * **[!UICONTROL Automatically download linked assets]**:如果您下载原始文件，则会自动获取放置在受支持的本机Creative cloud应用程序中的资源。
