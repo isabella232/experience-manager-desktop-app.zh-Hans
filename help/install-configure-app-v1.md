@@ -9,14 +9,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ---
 
 
 # 安装和配置AEM桌面应用程序v1.x {#install-and-configure-aem-desktop-app}
 
-安装和配置AEM桌面应用程序以与AEM Assets服务器一起使用，并将资产下载到您的本地文件系统。 要使用AEM桌面应用程序，
+使用AEM桌面应用程序，AEM中的资产可在本地桌面上轻松访问，并可用于任何桌面应用程序。 资产可以在Mac finder或Windows资源管理器中轻松显示，在桌面应用程序中打开并在本地更改——上传时更改将保存回AEM，并在存储库中创建新版本。
+
+此类集成允许组织中的不同角色集中管理AEM资产中的资产，并在Creative cloud和其他应用程序中访问这些资产，同时使您能轻松遵守包括品牌在内的各种标准。
+
+要使用AEM桌面应用程序，
 
 * 确保AEM桌面应用程序支持您的AEM服务器版本。 请参阅兼 [容性矩阵](release-notes-of-v1.md#compatibilitymatrix)。
 * 下载并安装应用程序。
@@ -38,13 +42,13 @@ source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
 
 AEM桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet。 应用程序只能使用不需要额外身份验证的网络代理进行连接。
 
-如果为Windows配置或修改代理服务器设置（“Internet选项”&gt;“LAN设置”），请重新启动AEM桌面应用程序，以使更改生效。
+如果为Windows配置或修改代理服务器设置（“Internet选项”>“LAN设置”），请重新启动AEM桌面应用程序，以使更改生效。
 
 如果您的代理需要身份验证，则IT团队可以在代理服务器设置中将AEM资产URL列入白名单，以允许应用程序通信通过。
 
 ## 文件处理 {#file-handling}
 
-当从桌面应用程序装载的网络共享位置更改文件时，文件将分两个阶段保存到该位置。 在第一阶段，文件保存在本地。 用户可以保存文件并继续处理文件，无需等待传输完成。
+当从桌面应用程序装载的网络共享位置更改文件时，文件会分两个阶段保存到该位置。 在第一阶段，文件保存在本地。 用户可以保存文件并继续处理文件，无需等待传输完成。
 
 在第二个阶段，桌面应用程序在预定义的延迟（例如，30秒）后将更新的文件上传到AEM服务器。 此操作在后台进行。 使用“查看资产状态”选项可以查看上传操作的状态。
 
@@ -86,7 +90,7 @@ AEM desktop使用包含默认端口的URL连接到AEM。 因此，调 `virtualho
 
 ### 用于管理缓存的应用程序内选项 {#in-app-option-to-manage-cache}
 
-您可以控制可用于本地缓存的磁盘空间量。 AEM资产服务器中的对象将在本地缓存，以获得更流畅的体验。 您可以更改默认值以满足您的要求。 此外，您还可以清除缓存以重新获取所有资产。 要设置所需的选项，请单击应用程序的图标，然后单击 **[!UICONTROL Advanced]** &gt; **[!UICONTROL Manage Cache]**。****
+您可以控制可用于本地缓存的磁盘空间量。 AEM资产服务器中的对象将在本地缓存，以获得更流畅的体验。 您可以更改默认值以满足您的要求。 此外，您还可以清除缓存以重新获取所有资产。 要设置所需的选项，请单击应用程序的图标，然后单击 **[!UICONTROL Advanced]**>**[!UICONTROL Manage Cache]**。****
 
 >[!NOTE]
 >
@@ -112,7 +116,7 @@ AEM桌面应用程序缓存的默认位置为：
 
    >[!NOTE]
    >
-   >应用程序会自动创建 *&lt;Encoded AEM Endpoint&gt;子目录* ;此行为不可配置。
+   >应用程序会自动创建 *&lt;Encoded AEM Endpoint>子目录* ;此行为不可配置。
 
 ## 其他资源 {#additional-resources}
 
