@@ -72,7 +72,7 @@ source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ## 设置首选项 {#set-preferences}
 
-要更改首选项，请单击“更 ![多选项”图标](assets/do-not-localize/more_options_da2.png) ，然 **[!UICONTROL Preference]**后单击“首![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗**[!UICONTROL Preferences]** 口中，调整以下各项的值：
+要更改首选项，请单击“更 ![多选项”图标](assets/do-not-localize/more_options_da2.png) ，然 **[!UICONTROL Preference]**&#x200B;后单击“首![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗**[!UICONTROL Preferences]** 口中，调整以下各项的值：
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
