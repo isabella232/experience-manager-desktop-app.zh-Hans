@@ -1,6 +1,6 @@
 ---
-title: AEM桌面应用程序发行说明
-description: AEM桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。
+title: Adobe Experience manager桌面应用程序发行说明
+description: Adobe Experience manager桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,12 +10,12 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# AEM desktop app release notes {#release-notes-v2}
+# Adobe Experience manager桌面应用程序发行说明 {#release-notes-v2}
 
 | 产品 | Adobe Experience Manager (AEM) 桌面应用程序 |
 |---------------|--------------------------------------------------------------------|
@@ -27,56 +27,55 @@ source-git-commit: b2015bd65db70a25e4c52e62a4de45a01a6748d5
 
 ## 系统要求和先决条件 {#system-requirements-and-prerequisites-v2}
 
-AEM 桌面应用程序与以下操作系统兼容：
+Adobe Experience manager桌面应用程序与以下操作系统兼容：
 
 * Mac OS X 10.10 或更高版本（带有最新的错误修复）。
 * Windows 7 和 Windows 10（带有最新的 Service Pack 和错误修复）。
 
-该应用程序可与以下 AEM 版本配合使用，无论 AEM 是部署在本地还是 Adobe Managed Services (AMS) 上：
+该应用程序适用于以下Experience manager版本，无论是内部部署还是在Adobe Managed Services(AMS)上部署：
 
-* [AEM 6.5.0](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) 或更高版本
-* [AEM 6.4.4](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) 或更高版本
-* AEM 6.4.0 - 6.4.3，带有[兼容包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
+* [Experience Manager 6.5.0或更高版本](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) ,
+* [Experience Manager 6.4.4或更高版本](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) ,
+* Experience Manager 6.4.0 - 6.4.3兼容 [包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
 >
->已弃用AEM 6.3桌面应用程序支持。 Adobe建议升级到较新且受支持的AEM版本。
->AEM 6.3.3.1或更高版本在安装兼容性包后可与桌面应用程序 [一起使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 AEM 6.3没有此类包，因为计划不 [提供服务包](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)。
+>已弃用Experience Manager 6.3桌面应用程序支持。 Adobe建议升级到更新且受支持的Adobe Experience manager版本。
+>Experience Manager 6.3.3.1或更高版本可在安装兼容性包后与桌面应用程 [序一起使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager 6.3没有此类包，因为计划中没 [有服务包](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)。
 
-您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。如需帮助，请与 AEM 管理员联系。
+您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。请与Adobe Experience manager管理员联系以获取帮助。
 
 ### Support for different assets and file types {#support-for-file-types}
 
-该应用程序支持 AEM 中存储的资产，这些资产代表用于执行其基本操作的二进制文件。在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
+该应用程序支持存储在Adobe Experience Manager中的资源，这些资源代表用于其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
 
-一些文件类型支持将链接的资产放入二进制文件中。当使用该桌面应用程序打开此类二进制文件时，如果资产存在于 AEM 存储库中，则应用程序会预下载链接的资产。当前支持的文件类型有：
+一些文件类型支持将链接的资产放入二进制文件中。当使用桌面应用程序打开此类二进制文件时，如果资产存在于Experience manager存储库中，则应用程序会预下载链接的资产。 当前支持的文件类型有：
 
 * Adobe InDesign 文件（INDD 格式）
 * Adobe Illustrator 文件（AI 格式）
 * Adobe Photoshop 文件（PS 格式）
 
-上述应用程序的Adobe Creative Cloud 2018和Adobe Creative Cloud 2019版支持此功能。 该应用程序使用启发式的最佳匹配方法，将链接资产的本地桌面路径映射到 AEM 服务器上的 URL。这是基于以下假设：
+上述应用程序的Adobe Creative Cloud 2018和Adobe Creative Cloud 2019版支持此功能。 应用程序使用启发式、最佳匹配方法将链接资产的本地桌面路径映射到Experience Manager服务器上的URL。 这是基于以下假设：
 
 * Paths to placed files in the native application use a global desktop path (placed from the local network share shown with [!UICONTROL Reveal] option).
 * 路径由本机应用程序存储在文件的 XMP 记录中.
-* AEM 已提取 XMP 记录，其中包含资产元数据记录的路径.
-* 路径可以与AEM中的资产匹配，即，置入的文件也位于AEM中的匹配路径下)。
+* Experience Manager已提取XMP记录，其中包含资产的元数据记录路径。
+* 路径可以与Experience Manager中的资产匹配，即，置入的文件也位于Experience Manager中的匹配路径下)。
 
 ## 新增功能和增强功能 {#whats-new-added}
 
-To know the details, see [What's new in v2.0](introduction.md#whats-new-v2).
+To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
 v 2.0.1版本中的错误修复和更新包括：
 
 * 允许选项将目 `%Temp%` 录配置为匹配 `%APPDATA%` 路径。 <!-- CQ-4282665 -->
 * 允许用户通过Okta SAML身份验证登录AEM作者。 <!-- CQ-4278134 -->
 
-
 ## 安装说明 {#installation-instructions-v2}
 
-要了解如何安装和配置应用程序，请参阅[安装 AEM 桌面应用程序](install-upgrade.md)。
+To know how to install and configure the app, see [Install Experience Manager desktop app](install-upgrade.md).
 
-如果您是从以前的 AEM 桌面应用程序升级，则必须按照[从以前的版本升级](install-upgrade.md#upgrade-from-previous-version)中列出的用于实现过渡的最佳实践来操作。
+If you are upgrading from a previous Experience Manager desktop app, you must follow these best practices for transitioning that are listed at [upgrade from previous version](install-upgrade.md#upgrade-from-previous-version).
 
 ## 关于应用程序工作方式的重要说明 {#how-app-works}
 
@@ -120,7 +119,7 @@ v 2.0.1版本中的错误修复和更新包括：
 >
 >* [AEM 6.5 文档](https://helpx.adobe.com/support/experience-manager/6-5.html)
 >* [AEM Assets 6.5 文档](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)
->* [如何使用AEM桌面应用程序](using.md)
+>* [如何使用Experience manager桌面应用程序](using.md)
 >* [安装和升级桌面应用程序](install-upgrade.md)
 >* [最佳实践和故障诊断提示](troubleshoot.md)
 
