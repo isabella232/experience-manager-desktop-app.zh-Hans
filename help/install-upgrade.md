@@ -1,6 +1,6 @@
 ---
-title: 安装和配置AEM桌面应用程序
-description: 安装和配置AEM桌面应用程序以与AEM Assets服务器一起使用，并将资产下载到您的本地文件系统。
+title: 安装和配置Adobe Experience manager桌面应用程序
+description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器一起使用，并将资产下载到您的本地文件系统。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,26 +9,26 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# 安装AEM桌面应用程序 {#install-app-v2}
+# Install Adobe Experience Manager desktop app {#install-app-v2}
 
-使用AEM桌面应用程序，AEM中的资产可在本地桌面上轻松访问，并可用于任何桌面应用程序。 资产可以在Mac finder或Windows资源管理器中轻松显示，在桌面应用程序中打开并在本地更改——上传时更改将保存回AEM，并在存储库中创建新版本。
+使用Adobe Experience manager桌面应用程序，Experience manager中的资产可在您的本地桌面上轻松访问，并可用于任何桌面应用程序。 资产可以在Mac finder或Windows资源管理器中轻松显示，在桌面应用程序中打开并在本地更改——上传时，更改将保存回Experience Manager，并在存储库中创建新版本。
 
-此类集成允许组织中的不同角色集中管理AEM资产中的资产，并在Creative cloud和其他应用程序中访问这些资产，同时使您能轻松遵守包括品牌在内的各种标准。
+此类集成允许组织中的不同角色在Adobe Experience Manager资产中集中管理资产，并在Creative cloud和其他应用程序中访问这些资产，同时使组织内的各种角色能够轻松符合包括品牌在内的各种标准。
 
-要使用AEM桌面应用程序，
+要使用Experience manager桌面应用程序，
 
-* 确保AEM桌面应用程序支持您的AEM服务器版本。 请参阅兼 [容性矩阵](release-notes-of-v1.md#compatibilitymatrix)。
+* 确保Experience manager桌面应用程序支持您的Experience manager服务器版本。 请参阅兼 [容性矩阵](release-notes-of-v1.md#compatibilitymatrix)。
 * 下载并安装应用程序。
 * 使用一些资源测试连接。 请参 [阅在桌面上访问和打开资产](use-app-v1.md#openondesktop)。
 
 ## 系统要求先决条件和下载链接 {#tech-specs-v2}
 
-有关详细信息，请参阅 [AEM桌面应用程序发行说明](release-notes.md)。
+有关详细信息，请参阅 [Experience manager桌面应用程序发行说明](release-notes.md)。
 
 ## 从应用程序v1.x升级到应用程序v2 {#upgrade-from-previous-version}
 
@@ -72,7 +72,7 @@ source-git-commit: fbbb3eaea69c9153a8c36679bf2be3da0577574c
 
 ## 设置首选项 {#set-preferences}
 
-要更改首选项，请单击“更 ![多选项”图标](assets/do-not-localize/more_options_da2.png) ，然 **[!UICONTROL Preference]**&#x200B;后单击“首![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗**[!UICONTROL Preferences]** 口中，调整以下各项的值：
+要更改首选项，请单击“更 ![多选项”图标](assets/do-not-localize/more_options_da2.png) ，然 **[!UICONTROL Preference]**后单击“首![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗**[!UICONTROL Preferences]** 口中，调整以下各项的值：
 
 * [!UICONTROL Launch application on login].
 * [!UICONTROL Show window when application starts].
