@@ -1,5 +1,5 @@
 ---
-title: AEM桌面应用程序的最佳实践和疑难解答
+title: Adobe Experience manager桌面应用程序的最佳实践和疑难解答
 description: 按照最佳实践和疑难解答解决与安装、升级、配置等相关的临时问题。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
@@ -9,14 +9,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ad5337c8e1697d0a37d3020d25802dc1d732f320
+source-git-commit: ac4be2cb69a112f393ec76d5d95987634d0c9c46
 
 ---
 
 
-# Troubleshoot AEM desktop app {#troubleshoot-v2}
+# Troubleshoot Adobe Experience Manager desktop app {#troubleshoot-v2}
 
-Adobe Experience Manager(AEM)桌面应用程序连接到远程AEM部署的数字资产管理(DAM)存储库。 应用程序将在您的计算机上获取存储库信息和搜索结果，下载并上传文件和文件夹，并包含管理与AEM资产用户界面冲突的功能。
+Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager部署的数字资产管理(DAM)存储库。 应用程序将在您的计算机上获取存储库信息和搜索结果，下载并上传文件和文件夹，并包含管理与AEM资产用户界面冲突的功能。
 
 继续阅读以排除应用程序故障，了解最佳实践并找出限制。
 
@@ -26,19 +26,21 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程AEM部署的数字
 
 * **了解桌面应用程序的工作方式**:在开始使用应用程序之前，请花几分钟时间了解应用程序的工作方式。 了解Web UI与桌面之间的链接、存储库映射、资产缓存、本地保存和后台上传。 了 [解工作方式](release-notes.md#how-app-works)。
 
-* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。 请参阅在AEM资产中创建 [文件夹中的字符列表](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 某些AEM用例可能会受文件夹名称中不支持的字符影响。
+* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。 请参阅在Experience Manager资产中创 [建文件夹的字符列表](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 某些Adobe Experience manager用例可能会受到文件夹名称中不支持的字符的影响。
 
 * **避免冲突的最佳实践**:要避免在协作处理多个资产时出现潜在冲突，请参阅 [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **对大型、分层文件夹使用文件夹上传**:使用AEM桌面应用程序上传大型文件夹，而不是使用资产Web界面或其他方法。 应用程序通过记录和监视在后台上传资产。 请参阅 [批量上传资产](using.md#bulk-upload-assets)。
+* **对大型、分层文件夹使用文件夹上传**:使用Experience manager桌面应用程序上传大型文件夹，而不是使用资产Web界面或其他方法。 应用程序通过记录和监视在后台上传资产。 请参阅 [批量上传资产](using.md#bulk-upload-assets)。
 
-* **使用最新版本**:使用最新的应用程序版本，并在安装新应用程序版本或升级到较新的AEM版本之前始终检查兼容性。 请参阅 [发行说明](release-notes.md)。
+* **使用最新版本**:使用最新的应用程序版本，在安装新的应用程序版本或升级到较新的Adobe Experience Manager版本之前，始终检查兼容性。 See [release notes](release-notes.md).
 
-* **使用相同的驱动器号**:使用组织内的同一驱动器号映射到AEM DAM。 要查看其他用户放置的资产，路径必须相同。 使用相同的驱动器盘符可确保DAM资产的路径一致。 即使不同用户使用不同的驱动器号，资源仍会保留在放置位置且不会被删除。
+* **使用相同的驱动器号**:使用组织内的同一驱动器号映射到Adobe Experience Manager DAM。 要查看其他用户放置的资产，路径必须相同。 使用相同的驱动器盘符可确保DAM资产的路径一致。 即使不同用户使用不同的驱动器号，资源仍会保留在放置位置且不会被删除。
 
-* **注意网络**:网络性能对AEM桌面应用程序的性能至关重要。 如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
+* **注意网络**:网络性能对Experience manager桌面应用程序的性能至关重要。 如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
 
 * **桌面应用程序不支持的用例**:请勿将应用程序用于资产迁移（它需要规划和其他工具）;对于执行繁重的DAM操作（如移动大文件夹、大型上传、使用高级元数据搜索查找文件）;作为同步客户端(设计原则和使用模式与同步客户端（如Microsoft oneDrive或Adobe Creative cloud桌面同步）不同)。
+
+* **超时**:目前，桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开Experience manager服务器与桌面应用程序之间的连接。 上传大型资产时，如果连接在一段时间后超时，则应用程序会通过增加上传超时次数来重试上传资产。 不建议使用任何方法来更改默认超时设置。
 
 ## 如何进行疑难解答 {#troubleshooting-prep}
 
@@ -66,7 +68,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程AEM部署的数字
 
 ### 清除缓存 {#clear-cache-v2}
 
-清除AEM桌面应用程序缓存是一项可解决多个问题的初步疑难解答任务。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置是：
+清除AEM桌面应用程序的缓存是一项初步的疑难解答任务，可解决多个问题。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置是：
 
 * 在 Windows 中：`%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
@@ -80,7 +82,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程AEM部署的数字
 
 ### 了解AEM桌面应用程序版本 {#know-app-version-v2}
 
-单击 ![应用程序菜单](assets/do-not-localize/more_options_da2.png) ，打开应用程序菜单，然后单击 **[!UICONTROL Help]** &gt; **[!UICONTROL About]**。
+单击 ![应用程序菜单](assets/do-not-localize/more_options_da2.png) ，打开应用程序菜单，然后单击 **[!UICONTROL Help]**>**[!UICONTROL About]**。
 
 ## 无法查看已放置的资产 {#placed-assets-missing}
 
