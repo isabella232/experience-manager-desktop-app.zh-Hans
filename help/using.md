@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
+source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ---
 
@@ -184,6 +184,8 @@ source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
 
 ![列表特定会话中的已转让资](assets/assets_transfered_da2.png "产特定会话中已转让资产的列表")
 
+您可以在 **[!UICONTROL Preferences]** >设置中控制上载并发(加 **[!UICONTROL Upload acceleration]** 速)。 更多并发通常会提高上传速度，但会占用大量资源，消耗本地机器的更大处理能力。 如果您遇到系统速度较慢的问题，请使用较低的并发值重新尝试上传。
+
 >[!NOTE]
 >
 >传输列表不是永久性的，如果您退出应用程序并重新打开它，则此转换不可用。
@@ -198,7 +200,7 @@ source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
 
 ### 浏览大型文件夹 {#browse-large-folders}
 
-使用包含许多资产的文件夹时，滚动以视图更多资产。 要使用键盘滚动，请按Tab键几次以选择顶部的资产。 请注意高亮显示的资产，以了解其何时被选中。 现在，使用向下箭头键在资产列表中移动。
+使用包含许多资产的文件夹时，滚动以视图更多资产。 要使用键盘滚动，请按Tab键几次以选择顶部的资产。 请注意高亮显示的资产，以了解其何时被选择。 现在，使用向下箭头键在资产列表中移动。
 
 ### 对选定资产执行快速操作 {#quick-actions-for-selected-assets}
 
@@ -212,7 +214,7 @@ source-git-commit: e706fe5fe148deff519cadc72b724572f11ddf3c
 
 ### 查找所有已编辑的图像 {#find-all-edited-images}
 
-该应用程序提供一个称为 **[!UICONTROL Edited locally]**&#x200B;的视图，允许您快速访问您本地下载（通过或操作）然后修改 [!UICONTROL Open] 的所 [!UICONTROL Edit] 有文件。 该应用程序允许您选择所有本地编辑的资产，并单击几下即可上传更改。 此视图还显示存在编辑冲突的本地编辑的资产。
+该应用程序提供一个称为 **[!UICONTROL Edited locally]**&#x200B;的视图，允许您快速访问您本地下载（通过或操作）并 [!UICONTROL Open] 修改 [!UICONTROL Edit] 的所有文件。 该应用程序允许您选择所有本地编辑的资产，并单击几下即可上传更改。 此视图还显示存在编辑冲突的本地编辑的资产。
 
 ![筛选以查看所有本地编辑的资](assets/edited_locally_filter_da2.png "产筛选以查看所有本地编辑的资产，例如批量上传编辑")
 
