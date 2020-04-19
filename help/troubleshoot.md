@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
 
 ---
 
@@ -48,11 +48,25 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 ### 启用调试模式 {#enable-debug-mode}
 
-要进行疑难解答，您可以启用调试模式并在日志中获取更多信息。 要在调试模式下运行应用程序，请在终端中或在命令提示符下使用以下命令行选项。
+要进行疑难解答，您可以启用调试模式并在日志中获取更多信息。 要在Mac上的调试模式下使用应用程序，请在终端中或在命令提示符下使用以下命令行选项： `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
 
-* 在 Windows 中：`SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+要在Windows上启用调试模式，请执行以下步骤：
 
-* 在Mac上： `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`
+1. 在桌 `Adobe Experience Manager Desktop.exe.config` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。 保存并关闭文件。
+
+1. 找 `<level value="INFO"/>` 到文件末尾。 将值更 `DEBUG`改为，即 `<level value="DEBUG"/>`。
+
+1. 在桌 `logging.json` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
+
+1. 在文 `logging.json` 件中，找到该参数的所有实 `level` 例。 将值从更改 `info` 为 `debug`。 保存并关闭文件。
+
+1. 清除在应用程序首选项中设置的位置处缓存的目录。
+
+1. 重新启动桌面应用程序。
+
+<!-- The Windows command doesn't work for now.
+* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
+-->
 
 ### 日志文件的位置 {#check-log-files-v2}
 
