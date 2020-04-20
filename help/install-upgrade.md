@@ -1,6 +1,6 @@
 ---
 title: 安装和配置Adobe Experience Manager桌面应用程序
-description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器一起使用，并将资产下载到您的本地文件系统中。
+description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器一起使用，并将资产下载到您的本地文件系统。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
 ---
 
@@ -33,27 +33,29 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 有关详细信息，请参阅 [Experience Manager桌面应用程序发行说明](release-notes.md)。
 
-## 从应用程序v1.x升级到应用程序v2 {#upgrade-from-previous-version}
+## Upgrade from a previous version {#upgrade-from-previous-version}
 
-如果您是应用程序的现有用户，那么请了解应用程序的先前版本和最新版本之间的差异和相似性。 此外，请遵循以下准则，将v1.x过渡到最新版本。
+如果您是v1.x桌面应用程序的用户，则了解应用程序的先前版本与最新版本之间的差异和相似性。 查看 [桌面应用程序的新增功能](introduction.md#whats-new-v2) ，以 [及应用程序的工作方式](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
->桌面应用程序v1.x和v2不能共存于计算机上。 安装版本之前，请卸载其他版本。
+>一台计算机上不能共存两个版本的桌面应用程序。 安装版本之前，请卸载其他版本。
 
-要从v1.x升级到应用程序的最新版本，请按照以下说明操作：
+要从应用程序的先前版本升级，请按照以下说明操作：
 
-1. 在升级之前，同步所有资产。 使用应用程序v1.x上传所有更改。这样可避免在卸载v1.x应用程序时丢失任何更改。
-1. 卸载v1.x应用程序。卸载v1.x时，请清除缓存。
+1. 在升级之前，同步所有资产并将更改上传到Experience Manager。 这样可避免在卸载应用程序时丢失任何编辑。
+1. 卸载应用程序的先前版本。 卸载时，选择清除缓存的选项。
 1. 重新启动计算机。
-1. 下载并安装最新的应用程序。 按照以下说明操作。
+1. [下载](release-notes.md) ，并安 [装最新](#install-v2) 的应用程序。 按照以下说明操作。
 
 ## 安装 {#install-v2}
 
 要安装桌面应用程序，请按照以下步骤操作。 在安装最新应用程序之前，卸载任何现有的Adobe Experience Manager桌面应用程序v1.x。 有关详细信息，请参阅上文。
 
+1. 从发行说明页面下载最 [新的安装程](release-notes.md) 序。
 1. 让Experience Manager部署的URL和凭据保持便利。
-1. 如果您将Experience Manager用作云服务、Experience Manager 6.4.4或更高版本，或Experience Manager 6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager设置符合发行说明中所述的兼容 [性要求](release-notes.md)。 如有必要，请下载适用 [的兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，并使用Experience Manager包管理器作为Experience Manager管理员安装它。 要安装包，请参阅 [如何使用包](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)。
+1. 如果您是从应用程序的其他版本升级，请参阅升 [级桌面应用程序](#upgrade-from-previous-version)。
+1. 如果您将Experience Manager用作云服务、Experience Manager 6.4.4或更高版本，或Experience Manager 6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager安装符合发行说明中所述的兼容 [性要求](release-notes.md)。 如有必要，请下载适用 [的兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，并使用Experience Manager包管理器作为Experience Manager管理员安装它。 要安装包，请参阅 [如何使用包](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)。
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明安装它。 如果安装失败，请手动安装。 从此处下载安 [装程序](https://www.microsoft.com/en-us/download/details.aspx?id=52685) ，并安装 `vc_redist.x64.exe` 和文 `vc_redist.x86.exe` 件。 重新运行AEM桌面应用程序安装程序。
 1. 根据提示重新启动计算机。 启动和配置桌面应用程序。
