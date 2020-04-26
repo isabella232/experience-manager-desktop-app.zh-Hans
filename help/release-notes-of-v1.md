@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 
 ---
 
@@ -332,7 +332,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
 AEM桌面应用程序可与各种版本的AEM一起使用。 请参阅支持版本的兼容性矩阵。
 
 | 版本 | 修订版 | 发布日期 | 兼容性 |
-|---------|------------------------|--------------|-------------------------------------------------------------|
+|---|---|---|---|
 | 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.5;AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1（Mac和Win） | 2018年6月21日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.8 | 1.8.1.0（Mac和Win） | 2018年3月28日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
