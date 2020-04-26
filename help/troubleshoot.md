@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9ae1580475569538838c58f642a7df43f2526d16
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 * **了解桌面应用程序的工作方式**:在开始使用应用程序之前，请花几分钟时间了解应用程序的工作方式。 了解Web UI与桌面之间的链接、存储库映射、资产缓存、本地保存和后台上传。 了 [解工作方式](release-notes.md#how-app-works)。
 
-* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。 请参阅Experience Manager资产中创 [建文件夹的列表字符](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。 某些Adobe Experience Manager用例可能会受到文件夹名称中不支持的字符的影响。
+* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。 请参阅Experience Manager资产中创 [建文件夹的列表字符](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 某些Adobe Experience Manager用例可能会受到文件夹名称中不支持的字符的影响。
 
 * **避免冲突的最佳实践**:要避免在协作处理多个资产时出现潜在冲突，请参阅 [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
