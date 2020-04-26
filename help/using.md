@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 >[!NOTE]
 >
->下载或上传大文件或多个文件时，应用程序会关闭对资产和文件夹的操作。 下载或上传完成后，这些操作将可用。
+>下载或上传大型文件或多个文件时，应用程序会关闭对资产和文件夹的操作。 下载或上传完成后，这些操作将可用。
 
 如果队列大或您遇到某些网络问题，下载多个资源可能会导致性能降低。 此外，在下载文件夹时，您可能会在不知不觉中将许多资产排队下载。 为避免等待时间过长，应用程序会限制一次下载的资产数量。 要了解如何配置它，请参阅设 [置首选项](install-upgrade.md#set-preferences)。 即使低于此限制，应用程序有时也可能在下载明显较大的文件夹之前寻求确认。
 
@@ -155,7 +155,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 * 您已开始编辑资产，而无需先注销（例如，只打开它）。
 * 您打算尽快开始编辑资产，但不希望他人编辑。
 
-完成编辑后，应用程序将显示已更 **[!UICONTROL Edited Locally]** 改资产的状态。 在将更改上传到AEM之前，保存到资产的所有更改都是仅本地更改。 要逐个上传个人或几个资产，请从资产 **[!UICONTROL Upload Changes]** 的选项中单击。 它会在AEM中创建资产的一个版本。 使用AEM资产的Web界面，您可以在时间轴视图中查看资产 [历史记录](https://helpx.adobe.com/experience-manager/6-5/assets/using/activity-stream.html)。
+完成编辑后，应用程序将显示已更 **[!UICONTROL Edited Locally]** 改资产的状态。 在将更改上传到AEM之前，保存到资产的所有更改都是仅本地更改。 要逐个上传个人或几个资产，请从资产 **[!UICONTROL Upload Changes]** 的选项中单击。 它会在AEM中创建资产的一个版本。 使用AEM资产的Web界面，您可以在时间轴视图中查看资产 [历史记录](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)。
 
 ![应用程序中的“上传更改”选](assets/upload_changes_single1_da2.png "项中的“上传更改”选项")
 
@@ -173,7 +173,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ## 将新资产上传并添加到AEM {#upload-and-add-new-assets-to-aem}
 
-用户可以将新资产添加到DAM存储库。 例如，您可能是要将大量照片从照片拍摄添加到AEM存储库的代理摄影师或承包商。 要向AEM添加新内容，请单 ![击应用程序顶栏中的](assets/do-not-localize/upload_to_cloud_da2.png) “上传到云”图标。 浏览到本地文件系统中的资产文件，然后单击 **[!UICONTROL Select]**。 如果资产上传时间较长，则应用程序会开始上传资产并在底部显示进度栏。 创建或上传文件夹时，请勿使用空格和无效字符。 请参阅在AEM资产中创建 [文件夹中的一列表字符](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#Creatingfolders)。
+用户可以将新资产添加到DAM存储库。 例如，您可能是要将大量照片从照片拍摄添加到AEM存储库的代理摄影师或承包商。 要向AEM添加新内容，请单 ![击应用程序顶栏中的](assets/do-not-localize/upload_to_cloud_da2.png) “上传到云”图标。 浏览到本地文件系统中的资产文件，然后单击 **[!UICONTROL Select]**。 如果资产上传时间较长，则应用程序会开始上传资产并在底部显示进度栏。 创建或上传文件夹时，请勿使用空格和无效字符。 请参阅在AEM资产中创建 [文件夹中的一列表字符](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -208,7 +208,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 ![底部的工具栏显示与选定资产相关的操](assets/actions_bottom_toolbar1_da2.png "作底部的工具栏显示选定资产的常见操作")
 
-![没有选定内容的常用操作时工具栏中没有任](assets/actions_bottom_toolbar2_da2.png "何操作没有选定内容的常用操作时工具栏中没有任何操作")
+![当没有选定内容的常用操作时，工具栏中没有](assets/actions_bottom_toolbar2_da2.png "任何操作当没有选定内容的常用操作时，工具栏中没有任何操作")
 
 底部的工具栏中的可用操作取决于所选文件的状态。 例如，如果仅选择文 **[!UICONTROL Edited Locally]** 件，您会看到图 **[!UICONTROL Upload Changes]** 标。 如果您选择了和的 **[!UICONTROL Edited locally]** 组合 **[!UICONTROL Cloud only]**，则 **[!UICONTROL Upload Changes]** 该操作不可用。
 
@@ -228,7 +228,7 @@ source-git-commit: 49532b1c5eec497df5b29084675c08f25a15819a
 
 >[!NOTE]
 >
->请勿使用上传功能跨两个AEM部署迁移资产。 相反，请参阅迁 [移指南](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-migration-guide.html)。
+>请勿使用上传功能跨两个AEM部署迁移资产。 相反，请参阅迁 [移指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html)。
 
 ### 列表已转让资产 {#list-of-transferred-assets}
 
