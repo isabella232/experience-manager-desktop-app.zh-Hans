@@ -9,12 +9,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f1ea381cc88b5382288b2479d26e976dc7289b88
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
 
-# AEM桌面应用程序v1.x发行说明{#aem-desktop-app-release-notes}
+# AEM桌面应用程序v1.x发行说明 {#aem-desktop-app-release-notes}
 
 对于桌面应用程序v1.x版本，以下是下载链接和AEM兼容性信息。
 
@@ -119,7 +119,7 @@ AEM桌面应用程序1.9侧重于改进大型上传时的用户体验、有关�
 **链接资产的预取**-要在使用包含存储在AEM中的链接资产的InDesign文档时改善用户体验，桌面应用程序将在下载和打开InDesign文档之前尝试将这些链接的文件预取到本地缓存。 这样，用户就可以在本地使用链接的文件，并且在InDesign（在“链接”面板中）中访问这些文件时不必等待更久。
 请注意，只有在AEM识别服务器端的链接时，预取才起作用。 具有已识别链接的资产将具有InDesign资产的“属性”视图中列出的“引用”列表。
 
-### 自AEM桌面应用程序1.8.x起提供的增强功能{#enhancements-available-since-aem-desktop-app-18x}
+### 自AEM桌面应用程序1.8.x起提供的增强功能 {#enhancements-available-since-aem-desktop-app-18x}
 
 AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打开到1.8版本(CQ-4237747、CQ-4238780)时添加了改进。 AEM桌面应用程序1.8中的增强功能包括：
 
@@ -133,11 +133,11 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
    * 当AEM会话过期时，用户现在会收到通知，并可以单击通知以再次登录(CQ-4202028)
    * (Mac)添加使用。pac代理配置连接到AEM的支持(CQ-4233430)
    * (Win)修复了“高级——登录URL”对话框的问题(CQ-4236061)
-* 错误修复：
+* 错误修复:
    * “更多资产信息”对话框：有时操作栏不可见(CQ-4208540)
    * (Win)现在，从AEM资产UI恢复到先前版本后，可以同步文件(CQ-4216411)
 
-### 自AEM桌面应用程序1.7起提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-17}
+### 自AEM桌面应用程序1.7起提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-17}
 
 * 稳定性：
    * 改进了AEM桌面应用程序连接到过载的AEM服务器时的稳定性(CQ-4224803)
@@ -157,7 +157,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
 >
 >在AEM桌面应用程序1.7测试版加载中发现的问题（在1.6版本中不存在的问题不会在发行说明中报告）。
 
-### 自AEM桌面应用程序1.6以来提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-16}
+### 自AEM桌面应用程序1.6以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-16}
 
 * 文档：v1. [x应用程序文档的新最佳实践](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) 。
 * 改进了AEM的登录过程：
@@ -181,7 +181,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
    * 高CPU使用率(CQ-4218070)。
    * 在上传到AEM时，拖放文件会产生错误(CQ-4217006)。
 
-### 自AEM桌面应用程序1.5起提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-15}
+### 自AEM桌面应用程序1.5起提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-15}
 
 **适用于Mac OS X的1.5.1.5版：** 1.5.1.5版提供以下优势：
 
@@ -222,7 +222,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
    * 稳定性的各种改进(CQ-4207539、CQ-4200378)
    * 在首选项中更好地处理AEM资产URL(CQ-97388)
 
-### 自AEM桌面应用程序1.4起提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-14}
+### 自AEM桌面应用程序1.4起提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-14}
 
 * 通过触屏UI中新增的“创建”>“上传文件夹”操作简化了分层文件夹的上传
    * 操作启动桌面应用程序执行的文件夹上传操作
@@ -234,7 +234,7 @@ AEM桌面应用程序1.8.1快速跟随版本在将多个文件从AEM UI一次打
 * 改进了与最新操作系统版本的兼容性
 * 客户报告的修复
 
-### 自AEM桌面应用程序1.3起提供的增强功能{#Enhancements-Available-Since-AEM-Desktop-App-13}
+### 自AEM桌面应用程序1.3起提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-13}
 
 * 提高效率。 用户花费更少的时间等待网络操作完成。
 * 改进了Finder集成，它提供了更高的稳定性和对缩略图等功能的访问权限。
