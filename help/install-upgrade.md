@@ -1,6 +1,6 @@
 ---
 title: 安装和配置Adobe Experience Manager桌面应用程序
-description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器一起使用，并将资产下载到您的本地文件系统。
+description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器一起使用，并将资产下载到您的本地文件系统中。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
+source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 ---
 
@@ -55,7 +55,7 @@ source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 1. 从发行说明页面下载最 [新的安装程](release-notes.md) 序。
 1. 让Experience Manager部署的URL和凭据保持便利。
 1. 如果您是从应用程序的其他版本升级，请参阅升 [级桌面应用程序](#upgrade-from-previous-version)。
-1. 如果您将Experience Manager用作云服务、Experience Manager 6.4.4或更高版本，或Experience Manager 6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager安装符合发行说明中所述的兼容 [性要求](release-notes.md)。 如有必要，请下载适用 [的兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，并使用Experience Manager包管理器作为Experience Manager管理员安装它。 要安装包，请参阅 [如何使用包](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)。
+1. 如果您将Experience Manager用作云服务、Experience Manager 6.4.4或更高版本，或Experience Manager 6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager设置符合发行说明中所述的兼容 [性要求](release-notes.md)。 如有必要，请下载适用 [的兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，并使用Experience Manager包管理器作为Experience Manager管理员安装它。 要安装包，请参阅 [如何使用包](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)。
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明安装它。 如果安装失败，请手动安装。 从此处下载安 [装程序](https://www.microsoft.com/en-us/download/details.aspx?id=52685) ，并安装 `vc_redist.x64.exe` 和文 `vc_redist.x86.exe` 件。 重新运行AEM桌面应用程序安装程序。
 1. 根据提示重新启动计算机。 启动和配置桌面应用程序。
@@ -71,7 +71,7 @@ source-git-commit: 0301538b5cc00a187709b484bed8f0ca7b799f03
 
    ![登录时，应用程序显示DAM](assets/firstview_da2.png "内容登录时，应用程序显示DAM内容")
 
-1. （Experience Manager 6.5.1或更高版本）如果您使用的是带有Experience Manager 6.5.1或更高版本的桌面应用程序，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参 [阅Azure连接器](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AzureDataStore) 或 [S3连接器](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore)。
+1. （Experience Manager 6.5.1或更高版本）如果您使用的是带有Experience Manager 6.5.1或更高版本的桌面应用程序，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参 [阅Azure连接器](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) 或 [S3连接器](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)。
 
    如果您是Adobe Managed Services(AMS)客户，请与Adobe客户关怀联系。
 
