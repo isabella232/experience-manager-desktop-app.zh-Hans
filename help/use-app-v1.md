@@ -1,15 +1,9 @@
 ---
-title: 使用AEM桌面应用程序版本1.x
+title: 使用AEM桌面应用程序版本1.x。
 description: 了解如何使用Adobe Experience Manager桌面应用程序版本1.x并优化您在桌面上使用资产的工作。
-uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -22,19 +16,18 @@ source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
 
 使用AEM桌面应用程序v1所执行的关键任务包括：
 
-* [与AEM服务器连接](#installandconnect)
+1. [与AEM服务器连接](#installandconnect)
+1. [直接在桌面上打开资源](#openondesktop)
+1. [从桌面编辑和签出资源](#workonassets)
+1. [批量上传资产和文件夹](#bulkupload)
 
-* [直接在桌面上打开资源](#openondesktop)
-* [从桌面编辑和签出资源](#workonassets)
-
-* [批量上传资产和文件夹](#bulkupload)
-
-有关各种建议的dos和don&#39;t，请参阅使用 [应用程序的最佳实践](best-practices-for-v1.md)。 如果您使用应用程序时遇到问题，请参阅如何对AEM Desktop [进行疑难解答](troubleshoot-app-v1.md)。
+有关各种建议的dos和don&#39;t，请参阅使用 [应用程序的最佳实践](best-practices-for-v1.md)。 如果您使用应用程序时遇到问题，请参阅如何对AEM [desktop进行疑难解答](troubleshoot-app-v1.md)。
 
 >[!NOTE]
+>
 >AEM桌面应用程序在AEM 6.1版本中引入，称为AEM Assets Companion应用程序。
 
-## 创意工作流程中的AEM Desktop应用程序触点 {#aem-desktop-app-touch-points-in-the-creative-workflow}
+## 创意工作流程中的AEM桌面应用程序触点 {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
 AEM Desktop应用程序与AEM Assets一起集成到您的创意工作流程中，并优惠以下触点。
 
@@ -98,22 +91,39 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
 
 ### 在AEM Web界面中启用桌面操作 {#desktopactions}
 
-从浏览器中的资产UI中，您可以浏览资产位置或注销并打开资产以在桌面应用程序中进行编辑。 这些选项称为“桌面操作”，默认情况下不启用。 请按照以下步骤启用它。
+从“资产”用户界面中，您可以浏览资产位置或注销并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为桌面操作，默认情况下不启用。 请按照以下步骤启用它。
 
-1. 在“资产”控制台中，单击／点按工 **具栏中的** “用户”图标。
-1. 单击／点按 **[!UICONTROL My Preferences]** 以显示对 **[!UICONTROL Preferences]** 话框。
-1. 在“用户首选项”对话框中，选择 **[!UICONTROL Show Desktop Actions For Assets]**。 单击／点按 **[!UICONTROL Accept]**。
+1. 在资产界面中，单击／点按工具栏右上角的用户图标。
+1. 单击 **[!UICONTROL My Preferences]** 以显示对 **[!UICONTROL Preferences]** 话框。
+
+   ![AEM界面及用户首选项](assets/aem_ui_user_preferences.png)
+
+1. 在“用户首选项”对话框中，选择 **[!UICONTROL Show Desktop Actions For Assets]**。 单击 **[!UICONTROL Accept]**.
 
    ![选中显示资产的桌面操作以启用桌面操作](assets/chlimage_1-3.png)
 
-   选中显示资产的桌面操作以启用桌面操作
+   *图：选中显示资产的桌面操作以启用桌面操作。*
 
 ## 在桌面上访问和打开资源 {#openondesktop}
+
+当您单击“打 **开** ”以在本地计算机上打开资产时，应用程序会将该资产下载到其内部缓存。 应用程序启动与下载的资产的文件类型关联的本机桌面应用程序。
+
+在Mac上，从上下文 **菜单中选择** “打开”，以通过AEM桌面应用程序打开资产。 在Windows上，从上下文菜单中选择“在Web上打开”以打开资产。 在资产状态窗口中，单击／点按在桌 ![面上打开图标](assets/aemassets_icon_openondesktop.png) ，以打开资产。
+
+对于Adobe InDesign(INDD)文件，从上下文 **[!UICONTROL Open]** 菜单中选择。 单击此选项后，应用程序会将链接的资源下载到您的本地文件系统，然后在Adobe InDesign中打开INDD文件。 此方法确保在编辑INDD文件时，必要的资源在本地可用。
+
+![使用AEM Desktop应用程序访问和打开资产的上下文菜单选项](assets/aem_desktopapp_mac_context_menu.png)
+
+*图：使用AEM桌面应用程序访问和打开资产的上下文菜单选项。*
 
 >[!NOTE]
 >在Windows上，默 [认的Windows 7设置会阻止](https://support.microsoft.com/en-us/kb/2668751) AEM桌面应用程序处理大于50 MB的资产。
 
-### 从AEM Web界面显示映射资产的位置 {#reveal-the-location-of-mapped-assets-from-aem-web-interface}
+>[!NOTE]
+>
+>Adobe建议您转到Mac上的Finder视图选项，并取消激活已装载的AEM资产文件夹的 **“显示项目信息**”、“显示项目预览”和“ **显示预览”列****** 。 它提高了性能。
+
+### AEM界面中的其他选项 {#additional-options-in-aem-assets}
 
 将AEM资产存储库映射到本地驱动器后，您可以启用其他图标，并为映射的资产和文件夹显示文件夹上传功能。
 
@@ -121,31 +131,17 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
 
    ![在资产UI中，打开快速操作菜单以查看桌面操作](assets/chlimage_1-4.png)
 
-   在资产UI中，打开快速操作菜单以查看桌面操作
+   *图：在资产UI中，打开快速操作菜单以查看桌面操作。*
 
-   在选择资产后或从资产页面的工具栏中单击／点按工具栏中的 **桌面操作** ，也可以执行这些桌面操作。
+   在选择资产后或从资产页面的工具栏中单击工具栏中的 **桌面操作** ，也可以执行这些桌面操作。
 
 1. 要在与特定文件扩展名关联的桌面应用程序中打开资产，请单击／点按在桌面上打开快速操作 **** 在桌面上打开图标 ![](assets/aemassets_icon_openondesktop.png)。
 
    或者，从工 **具栏的** “桌面 **操作** ”菜单中选择“打开”。
 
-1. 单击／点按显 **示** 快速操作 ![显示图标](assets/aemassets_reveal_icon.png) ，以在本地文件系统上查找特定资产。
+要在本地文件系统上查找特定资产，请单击“显 **示** ”快速操 ![作“显示”图标](assets/aemassets_reveal_icon.png)。 或者，从工 **具栏的** “桌面 **操作** ”菜单中选择“显示”。
 
-   或者，从工 **具栏的** “桌面 **操作** ”菜单中选择“显示”。
-
-### 从Finder或资源管理器中打开AEM资产 {#open-aem-assets-from-the-finder-or-the-explorer}
-
-在Mac上，从上下文菜单中选择打开，以通过AEM Desktop打开资产。
-
-对于Adobe InDesign(INDD)文件，从上下文 **[!UICONTROL Open]** 菜单中选择。 单击此选项后，应用程序会将链接的资源下载到您的本地文件系统，然后在Adobe InDesign中打开INDD文件。 此方法确保在编辑INDD文件时，必要的资源在本地可用。
-
-在Windows上，从上下文菜单中选择“在Web上打开”以打开资产。 在资产状态窗口中，单击／点按在桌 ![面上打开图标](assets/aemassets_icon_openondesktop.png) ，以打开资产。
-
-![使用AEM Desktop应用程序访问和打开资产的上下文菜单选项](assets/aem_desktopapp_mac_context_menu.png)
-
-使用AEM Desktop应用程序访问和打开资产的上下文菜单选项
-
-### 了解资产状态 {#understand-the-asset-statuses}
+## 了解资产状态 {#understand-the-asset-statuses}
 
 | ![Windows默认应用程序图标](assets/win_default.png) | 应用程序已连接到服务器，并且所有资产都已同步。 |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -181,7 +177,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
 1. 选择“打开”菜单选项。 此时会以预览模式打开选定的资产。
 1. 要编辑资产，请选择编辑选项。 资产会在编辑模式下打开。
 
-### 在Mac上查看资源 {#check-out-assets-on-mac}
+### 从Mac OS上的Finder中签出资产 {#check-out-assets-on-mac}
 
 该应用程序允许您签出资产文件，以防止其他用户修改您正在处理的文件。
 
@@ -219,19 +215,17 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
 1. 在资源管理器中审核资产。 资产锁定图标上的锁 ![定图标](assets/aemassets_icon_lockcheckout.png) ，表示您已注销资产。
 
    >[!NOTE]
-   >在延迟几分钟后，可能会显示锁图标。 AEM Desktop应用程序缓存资产以便快速访问，因此可能需要片刻时间才能更新锁定状态。
+   >锁图标可能会在延迟一段时间后显示。 AEM桌面应用程序缓存资产以便快速访问，因此更新锁定状态可能需要片刻时间。
 
 1. 要签入资产以便其他用户可以使用它，请单击／点按资产信息对话框中的 **签入图标** 。
 
 ### 使用Finder或资源管理器以及Web界面签入资产 {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-编辑完资产后，将资产保存到桌面应用程序中。 从上下文菜单中，选择更多资产信息，然后单击／点按登记。
+编辑完资产后，将资产保存到桌面应用程序中。 从上下文菜单中，选择 **更多资产信息** ，然后单击登记。
 
-资产会上传到AEM服务器。 （可选）您可以通过从托盘图标中选择视图资产状态来检查上传状态。
+资产会上传到AEM服务器。 或者，您也可以选择从系统任务栏图标中选择 **视图资产状态** ，以检查上传状态。 或者，您也可以从AEM Web界面签入资产。 单击已签出的资产或选择它。 在工具栏中，单击登记图 ![标登记图标](assets/aemassets_icon_checkin.png)。
 
-![AEM桌面应用程序文件传输和上传状态窗口](assets/aem_desktopapp_upload_status.png)
-
-或者，您也可以从AEM Web界面签入资产。 单击／点按已签出的资产或选择它。 在工具栏中，单击／点按登记图 ![标登记图标](assets/aemassets_icon_checkin.png)。
+在将任何更改保存在本地后，资产会自动上传到AEM。 此登记功能可让其他AEM用户编辑资产。
 
 ### 将资产和文件夹批量上传到AEM服务器 {#bulkupload}
 
@@ -250,13 +244,13 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以强健而安全
 
 1. 文件夹上传后，关闭对话框并导航到资产UI。 上传的文件夹显示在Web界面中。
 
-请注意，不建议 *在Finder或资源管理器中复制并粘贴* ，或将更多文件／嵌套文件夹从本地磁盘拖放到AEM桌面应用程序映射的网络共享区域。 与上述“上传文件夹”功能相比，它更不可靠。
+Adobe不建议将更多文件或嵌套文件夹从本地文件系统复制粘贴或拖动到网络共享区域。 由于技术限制，应用程序无法控制上传过程，并且性能很差。
 
-如果您希望在桌面上工作，还可以选择要在Finder或资源管理器中选择要上传到AEM的文件／文件夹，将它们复制到系统剪贴板，然后导航到网络共享区域中的目标文件夹，并从AEM桌面应用程序上下文菜单中选择“粘贴资产”。 这样，AEM桌面应用程序开始会上传粘贴的资产，这与上述上传文件夹类似。
+或者，在Finder或资源管理器中选择要上传到AEM的文件／文件夹，将它们复制到系统剪贴板，导航到网络共享区域中的目标文件夹，然后从AEM桌面应用程序上下文菜单中选择粘贴 **资产**。 这样，AEM桌面应用程序开始上传粘贴的资产，与AEM Web界面中的“上 **传文件夹** ”选项类似。
 
 >[!MORELIKETHIS]
 >
 >* [AEM 桌面应用程序简介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
 >* [了解AEM桌面应用程序的登记／注销](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
->* [AEM Desktop应用程序疑难解答](troubleshoot-app-v1.md)
+>* [AEM桌面应用程序应用程序疑难解答](troubleshoot-app-v1.md)
 
