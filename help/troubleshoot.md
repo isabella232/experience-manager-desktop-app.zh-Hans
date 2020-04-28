@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b92e47456f9e16c24eac43d1c5fef9a582f143b5
+source-git-commit: a18aa9c3dad8802c3de929ba4ebb1a1583b47165
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 遵循以下最佳实践，以防止一些常见问题和疑难解答。
 
-* **了解桌面应用程序的工作方式**:在开始使用应用程序之前，请花几分钟时间了解应用程序的工作方式。 了解Web UI与桌面之间的链接、存储库映射、资产缓存、本地保存和后台上传。 了 [解工作方式](release-notes.md#how-app-works)。
+* **了解桌面应用程序的工作方式**:在开始使用应用程序之前，请花一些时间了解应用程序的工作方式。 了解Experience Manager Web界面与桌面、存储库映射、资产缓存、本地保存和后台上传之间的链接。 了 [解工作方式](release-notes.md#how-app-works)。
 
 * **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。 请参阅Experience Manager资产中创 [建文件夹的列表字符](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 某些Adobe Experience Manager用例可能会受到文件夹名称中不支持的字符的影响。
 
@@ -134,8 +134,8 @@ AEM桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，
 
 应用程序很少会无响应、只显示白屏或在界面底部显示错误，而界面上没有任何选项。 请按顺序尝试以下操作：
 
-1. 右键单击应用程序界面，然后单击 **[!UICONTROL Refresh]**。
-1. 退出应用程序并重新启动它。
+* 右键单击应用程序界面，然后单击 **[!UICONTROL Refresh]**。
+* 退出应用程序，然后再次打开它。
 
 在这两种方法中，应用程序都开始在根DAM文件夹中。
 
