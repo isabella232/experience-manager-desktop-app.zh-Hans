@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
+source-git-commit: 68cc5ee80aa12c08b48098ad666ca694b843405a
 
 ---
 
@@ -38,14 +38,6 @@ source-git-commit: bb71cfdfef674be25d059f104a37a9199681358c
 >
 >一次只能安装AEM桌面应用程序的一个实例并处于活动状态。
 
-## 代理支持 {#proxy-support}
-
-AEM桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet。 应用程序只能使用不需要额外身份验证的网络代理进行连接。
-
-如果为Windows配置或修改代理服务器设置（“Internet选项”>“LAN设置”），请重新启动AEM桌面应用程序，以使更改生效。
-
-如果您的代理需要身份验证，则IT团队可以在代理服务器设置中将AEM资产URL列入白名单，以允许应用程序通信通过。
-
 ## 文件处理 {#file-handling}
 
 当从桌面应用程序装载的网络共享位置更改文件时，文件将分两个阶段保存到该位置。 在第一阶段，文件保存在本地。 用户可以保存文件并继续处理文件，无需等待传输完成。
@@ -69,9 +61,21 @@ AEM桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet�
 * X-Depth
 * X覆盖
 
-AEM Desktop使用包含默认端口的URL连接到AEM。 因此，调 `virtualhosts` 度程序配置中的设置应包括默认端口号。 有关配置的详细 `virtualhosts` 信息，请参 [阅标识虚拟主机](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+AEM桌面使用包含默认端口的URL连接到AEM。 因此，调 `virtualhosts` 度程序配置中的设置应包括默认端口号。 有关配置的详细 `virtualhosts` 信息，请参阅 [标识虚拟主机](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
 有关配置调度程序以传递这些附加标头的其他信息，请参 [阅指定HTTP标头](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
+
+### 代理支持 {#proxy-support}
+
+AEM桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet。 应用程序只能使用不需要额外身份验证的网络代理进行连接。
+
+如果为Windows配置或修改代理服务器设置（“Internet选项”>“LAN设置”），请重新启动AEM桌面应用程序，以使更改生效。
+
+>[!NOTE]
+>
+>仅在开始桌面应用程序时才应用代理配置。 关闭并重新启动应用程序，以使任何更改生效。
+
+如果您的代理需要身份验证，则IT团队可以在代理服务器设置中将AEM资产URL列入白名单，以允许应用程序通信通过。
 
 ## 自定义“资产信息”对话框 {#customize-the-asset-info-dialog}
 
