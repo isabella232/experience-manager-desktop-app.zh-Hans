@@ -10,7 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 63cb82b6bdafeb87d296a895d68cb3912045839a
+source-git-commit: 2e634c13ef1bcb0cd1868100f5a2d7cb20c189be
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 51%
 
 ---
 
@@ -35,8 +38,8 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 该应用程序适用于以下Experience Manager版本，无论是作为云服务部署在Adobe Managed Services(AMS)上还是内部部署：
 
 * [Experience Manager 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/home.html)
-* [Experience Manager 6.5.0+或更](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) 高版本
-* [Experience Manager 6.4.4+或更](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html) 高版本
+* [Experience Manager 6.5.0或更高版本](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html) ,
+* [Experience Manager 6.4.4或更高版本](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/release-notes.html)
 * Experience Manager 6.4.0 - 6.4.3，带兼容 [性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)
 
 >[!NOTE]
