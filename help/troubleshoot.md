@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0049a67503e476ac03f039942c3849509a085c5b
+source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -55,15 +55,15 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 要在Windows上启用调试模式，请执行以下步骤：
 
-1. 在桌 `Adobe Experience Manager Desktop.exe.config` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。 保存并关闭文件。
+1. 在桌 `Adobe Experience Manager Desktop.exe.config` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。
 
-1. 找 `<level value="INFO"/>` 到文件末尾。 将值更 `DEBUG`改为，即 `<level value="DEBUG"/>`。
+1. 找 `<level value="INFO"/>` 到文件末尾。 将值从 `INFO` 更改 `DEBUG`为，即 `<level value="DEBUG"/>`。 保存并关闭文件。
 
 1. 在桌 `logging.json` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
 
-1. 在文 `logging.json` 件中，找到该参数的所有 `level` 实例。 将值从更改 `info` 为 `debug`。 保存并关闭文件。
+1. 在文 `logging.json` 件中，找到的所有实例 `"level": "info"`。 将值从更改 `info` 为 `debug`。 保存并关闭文件。
 
-1. 清除在应用程序首选项中设置的位置处的缓存目录。
+1. 清除位于应用程序首选项中设置的位置的缓存 [目录](/help/install-upgrade.md#set-preferences)。
 
 1. 重新启动桌面应用程序。
 
@@ -73,7 +73,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 ### 日志文件的位置 {#check-log-files-v2}
 
-您可以在以下位置找到AEM桌面应用程序的日志文件。 上传多个资产时，如果某些文件无法上传，请查 `backend.log` 看文件以识别上传失败。
+您可以在以下位置找到AEM桌面应用程序的日志文件。 上传许多资产时，如果某些文件无法上传，请查 `backend.log` 看文件以标识上传失败的内容。
 
 * Windows上的路径： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
