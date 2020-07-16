@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4e2926adfe46265c78f85b63696c98859f895134
+source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 1. 在桌 `logging.json` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
 
-1. 在文 `logging.json` 件中，找到的所有实例 `"level": "info"`。 将值从更改 `info` 为 `debug`。 保存并关闭文件。
+1. 在文 `logging.json` 件中，找到的所有实例 `"level": "info"`。 将值从 `info` 更改 `debug`为，即 `"level": "debug"`。 保存并关闭文件。
 
 1. 清除位于应用程序首选项中设置的位置的缓存 [目录](/help/install-upgrade.md#set-preferences)。
 
