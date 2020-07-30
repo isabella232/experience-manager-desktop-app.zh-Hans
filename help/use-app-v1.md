@@ -3,7 +3,7 @@ title: 使用AEM桌面应用程序版本1.x。
 description: 了解如何使用Adobe Experience Manager桌面应用程序1.x版并优化您在桌面上使用资源的工作。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1bd50a439059ac66e0368eeefc6af67ff160d9b
+source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
 workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 0%
@@ -113,7 +113,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 当您单击“ **打开** ”以在本地计算机上打开资产时，应用程序会将资产下载到其内部缓存。 该应用程序会启动与已下载资产的文件类型关联的本机桌面应用程序。
 
-在Mac上，从上 **下文菜单** 中选择“打开”，通过AEM桌面应用程序打开资产。 在Windows上，从上下文菜单中选择“在Web上打开”以打开资产。 在资产状态窗口中，单击／点按在 ![桌面上打开](assets/aemassets_icon_openondesktop.png) ，以打开资产。
+在Mac上，从上 **下文菜单** 中选择“打开”，通过AEM桌面应用程序打开资产。 在Windows上，从上下文菜单中选择“在Web上打开”以打开资产。 在资产状态窗口中，单击／点按在 ![桌面上打开](assets/do-not-localize/aemassets_icon_openondesktop.png) ，以打开资产。
 
 对于Adobe InDesign(INDD)文件，从上 **[!UICONTROL Open]** 下文菜单中选择。 单击此选项时，应用程序会将链接的资源下载到您的本地文件系统，然后在Adobe InDesign打开INDD文件。 此方法确保在编辑INDD文件时，必要的资源在本地可用。
 
@@ -141,19 +141,19 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
    在选择资产后或从资产页面的工具栏 **中单击工** 具栏中的桌面操作图标时，这些桌面操作也可用。
 
-1. 要在与特定文件扩展名关联的桌面应用程序中打开资产，请单击／点按在桌 **面上打开快速操作** 在桌面 ![上打开图标](assets/aemassets_icon_openondesktop.png)。
+1. 要在与特定文件扩展名关联的桌面应用程序中打开资产，请单击／点按在桌 **面上打开快速操作** 在桌面 ![上打开图标](assets/do-not-localize/aemassets_icon_openondesktop.png)。
 
    或者，从工 **具栏** 的“ **桌面操作** ”菜单中选择“打开”。
 
-要在本地文件系统上查找特定资产，请单击“显 **示** ”快速操 ![作“显示”图标](assets/aemassets_reveal_icon.png)。 或者，从工 **具栏** 的“ **桌面操作** ”菜单中选择“显示”。
+要在本地文件系统上查找特定资产，请单击“显 **示** ”快速操 ![作“显示”图标](assets/do-not-localize/aemassets_reveal_icon.png)。 或者，从工 **具栏** 的“ **桌面操作** ”菜单中选择“显示”。
 
 ## 了解资产状态 {#understand-the-asset-statuses}
 
-| ![Windows默认应用程序图标](assets/win_default.png) | 应用程序已连接到服务器，且所有资产都已同步。 |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![禁用Windows的图标](assets/win_disabled.png) | 应用程序已启动，但未与服务器连接。 某些资产可能处于挂起同步状态。 |
-| ![Windows文件同步图标](assets/win_sync.png) | 资产正在同步。 正在上传或下载文件。 您可以从“资产状态”窗口查看确切状态并暂停转移。 |
-| ![Windows重新连接图标](assets/win_refresh.png) | 应用程序正在尝试重新连接。 可能是网络问题导致其断开连接。 |
+| ![Windows默认应用程序图标](assets/do-not-localize/win_default.png) | 应用程序已连接到服务器，且所有资产都已同步。 |
+--- |--- |
+| ![禁用Windows的图标](assets/do-not-localize/win_disabled.png) | 应用程序已启动，但未与服务器连接。 某些资产可能处于挂起同步状态。 |
+| ![Windows文件同步图标](assets/do-not-localize/win_sync.png) | 资产正在同步。 正在上传或下载文件。 您可以从“资产状态”窗口查看确切状态并暂停转移。 |
+| ![Windows重新连接图标](assets/do-not-localize/win_refresh.png) | 应用程序正在尝试重新连接。 可能是网络问题导致其断开连接。 |
 
 ## 处理您的资源 {#workonassets}
 
@@ -169,7 +169,7 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
 
    在选择资产后或从资产页面的工具栏中单击／点按工具栏中的桌面操作图标时，这些桌面操作也可用。
 
-1. 要打开资产，请单击／点按在桌面上打开快速操作在桌 ![面上打开图标](assets/aemassets_icon_openondesktop.png)。
+1. 要打开资产，请单击／点按在桌面上打开快速操作在桌 ![面上打开图标](assets/do-not-localize/aemassets_icon_openondesktop.png)。
 
    或者，从工具栏的“桌面操作”菜单中选择“打开”。
 
@@ -177,7 +177,7 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
    >
    >当您编辑刚打开但未签出的文件时，其他用户无法知道您正在更新资产。
 
-1. 要打开资产以在Adobe Creative Cloud应用程序中进行编辑，请单击／点按编辑桌面快速操作编辑 ![桌面图标](assets/aemassets_icon_editdesktop.png)。 此外，还会签出资产进行编辑。 完成编辑后，请检入资产以更新AEM Assets中的更改。
+1. 要打开资产以在Adobe Creative Cloud应用程序中进行编辑，请单击／点按编辑桌面快速操作编辑 ![桌面图标](assets/do-not-localize/aemassets_icon_editdesktop.png)。 此外，还会签出资产进行编辑。 完成编辑后，请检入资产以更新AEM Assets中的更改。
 
    或者，也可以从工具栏的“桌面操作”菜单中选择“编辑”。
 
@@ -219,7 +219,7 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
 
    ![签出图标切换](assets/chlimage_1-8.png)
 
-1. 在资源管理器中审核资产。 资产锁定图标上的锁 ![定图标](assets/aemassets_icon_lockcheckout.png) ，表示您已签出资产。
+1. 在资源管理器中审核资产。 资产锁定图标上的锁 ![定图标](assets/do-not-localize/aemassets_icon_lockcheckout.png) ，表示您已签出资产。
 
    >[!NOTE]
    >
@@ -229,9 +229,9 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
 
 ### 使用Finder或资源管理器以及Web界面签入资产 {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-编辑完资产后，请在桌面应用程序中保存资产。 从上下文菜单中，选 **择更多资产信息** ，然后单击登记。
+编辑完资产后，请在桌面应用程序中保存资产。 从上下文菜单中，选择 **更多资产信息** ，然后单击登记。
 
-资产会上传到AEM服务器。 或者，您也可以选择从系统任务栏图标中选择 **视图资产状态** ，以检查上传状态。 或者，您也可以从AEM Web界面签入资产。 单击签出的资产或选择它。 在工具栏中，单击登记图 ![标登记图标](assets/aemassets_icon_checkin.png)。
+资产会上传到AEM服务器。 或者，您也可以选择从系统任务栏图标中选择 **视图资产状态** ，以检查上传状态。 或者，您也可以从AEM Web界面签入资产。 单击签出的资产或选择它。 在工具栏中，单击登记图 ![标登记图标](assets/do-not-localize/aemassets_icon_checkin.png)。
 
 在本地保存任何更改后，资产会自动上传到AEM。 通过登记，其他AEM用户可以使用该资产进行编辑。
 
