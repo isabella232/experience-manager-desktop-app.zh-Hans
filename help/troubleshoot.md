@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9954d0b290c4e1071a6068be4f858b29d26dc712
+source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -41,13 +41,13 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 * **注意网络**: 网络性能对Experience Manager桌面应用程序的性能至关重要。 如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
 
-* **桌面应用程序不支持的用例**: 请勿将应用程序用于资产迁移（它需要规划和其他工具）; 执行繁重的DAM操作（如移动大文件夹、大型上传、使用高级元数据搜索查找文件）; 并作为同步客户端（设计原则和使用模式不同于同步客户端，如Microsoft OneDrive或Adobe Creative Cloud桌面同步）。
+* **桌面应用程序不支持的用例**: 请勿将应用程序用于资产迁移（它需要规划和其他工具）; 执行繁重的DAM操作（如移动大文件夹、大型上传、使用高级元数据搜索查找文件）; 同步客户端(设计原则和使用模式与同步客户端(如Microsoft OneDrive或Adobe Creative Cloud桌面同步)不同。
 
 * **超时**: 当前，桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开Experience Manager服务器与桌面应用程序之间的连接。 上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
 
 ## 如何进行疑难解答 {#troubleshooting-prep}
 
-要解决桌面应用程序问题，请注意以下信息。 此外，如果您选择寻求支持，它还会帮助您更好地向Adobe客户服务部传达问题。
+要解决桌面应用程序问题，请注意以下信息。 此外，如果您选择寻求支持，它还会帮助您更好地向Adobe客户服务部门传达问题。
 
 ### 启用调试模式 {#enable-debug-mode}
 
@@ -73,7 +73,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 ### 日志文件的位置 {#check-log-files-v2}
 
-您可以在以下位置找到AEM桌面应用程序的日志文件。 上传许多资产时，如果某些文件无法上传，请查 `backend.log` 看文件以标识上传失败的内容。
+您可以在以下位置找到AEM桌面应用程序的日志文件。 上传多个资产时，如果某些文件无法上传，请查 `backend.log` 看文件以识别上传失败。
 
 * Windows上的路径： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
@@ -85,13 +85,13 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 ### 清除缓存 {#clear-cache-v2}
 
-清除AEM桌面应用程序缓存是一个初步的疑难解答任务，可解决多个问题。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置为：
+清除AEM桌面应用程序缓存是可解决多个问题的初步故障诊断任务。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置为：
 
 * 在 Windows 中：`%LocalAppData%\Adobe\AssetsCompanion\Cache\`
 
 * 在Mac上： `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/`
 
-但是，位置可能会因AEM桌面配置的AEM端点而异。 该值是目标URL的编码版本。 例如，如果应用程序正在定 `http://localhost:4502`位，则目录名称为 `http%3A%2F%2Flocalhost%3A4502%2F`。 要清除缓存，请删除相应的文件夹。 清除缓存的另一个原因是当磁盘空间不足时释放磁盘空间。
+但是，位置可能会因AEM桌面配置的AEM端点而发生更改。 该值是目标URL的编码版本。 例如，如果应用程序正在定 `http://localhost:4502`位，则目录名称为 `http%3A%2F%2Flocalhost%3A4502%2F`。 要清除缓存，请删除相应的文件夹。 清除缓存的另一个原因是当磁盘空间不足时释放磁盘空间。
 
 >[!CAUTION]
 >
@@ -107,12 +107,12 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 * 与服务器连接。 不稳定的网络连接可能会阻止资源下载。
 * 文件大小。 下载和显示大型资源需要更长的时间。
-* 驱动器盘符一致性。 如果您或其他协作者在将AEM DAM映射到其他驱动器号时放置了资产，则放置的资产不会显示。
-* 权限. 要检查您是否有权获取已放置的资产，请与AEM管理员联系。
+* 驱动器盘符一致性。 如果您或其他协作者在将AEM DAM映射到其他驱动器号时放置了资源，则不会显示放置的资源。
+* 权限. 要检查您是否有权获取置入的资产，请与AEM管理员联系。
 
 ## 在macOS上升级时的问题 {#issues-when-upgrading-on-macos}
 
-在macOS上升级AEM桌面应用程序时，偶尔会发生问题。 这是由于AEM桌面应用程序的旧系统文件夹阻止正确加载新版本的AEM桌面应用程序所致。 要解决此问题，可以手动删除以下文件夹和文件。
+在macOS上升级AEM桌面应用程序时，偶尔会发生问题。 这是由于AEM桌面应用程序的旧系统文件夹阻止新版本的AEM桌面应用程序正确加载而导致的。 要解决此问题，可以手动删除以下文件夹和文件。
 
 在执行以下步骤之前，将应 `Adobe Experience Manager Desktop` 用程序从macOS Applications文件夹拖到垃圾桶。 然后打开终端，执行以下命令，并在出现提示时提供密码。
 
@@ -131,7 +131,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ## SSL配置问题 {#ssl-config-v2}
 
-AEM桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，使用浏览器连接可能成功，但使用AEM桌面应用程序连接可能失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参 [阅如何在Apache中安装Intermediate CA证书](https://access.redhat.com/solutions/43575)。
+AEM桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，连接可能使用浏览器成功，但使用AEM桌面应用程序失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参 [阅如何在Apache中安装Intermediate CA证书](https://access.redhat.com/solutions/43575)。
 
 ## 应用程序无响应 {#unresponsive}
 
@@ -146,3 +146,4 @@ AEM桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，
 >
 >* [已知问题](release-notes.md#known-issues-v2)
 >* [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)
+
