@@ -1,6 +1,6 @@
 ---
 title: AEM桌面应用程序版本1.x最佳实践
-description: Adobe Experience Manager桌面应用程序版本1.x的主要功能和建议使用。
+description: Adobe Experience Manager桌面应用程序1.x版的主要功能和推荐使用。
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-Adobe Experience Manager(AEM)桌面应用程序将您的数字资产管理(DAM)解决方案与桌面链接，这样您就可以直接在桌面上打开AEM Web UI中提供的文件。 如果您从桌面保存资产，则资产会上传到AEM的适当位置。
+Adobe Experience Manager(AEM)桌面应用程序将您的数字资产管理(DAM)解决方案与桌面链接，这样您就可以直接在桌面上打开AEM web UI中提供的文件。 如果您从桌面保存资产，则资产会上传到AEM的适当位置。
 
 AEM桌面应用程序消除了您在AEM中更新错误的本地副本或更新错误资产的可能性。 桌面应用程序易于使用的工作流通过桌面操作系统提供的网络共享技术实现。
 
-桌面应用程序将AEM Assets存储库作为网络共享装载到桌面上。 因此，文件夹和文件看起来就像是本地文件。 但是，不建议在Finder或资源管理器中从安装的网络共享中直接从桌面执行数字资产管理操作。 相反，Adobe建议您使用AEM AssetsWeb UI执行操作，如复制或移动大量资产。
+桌面应用程序将AEM Assets存储库作为网络共享装载到桌面上。 因此，文件夹和文件看起来就像是本地文件。 但是，不建议在Finder或资源管理器中从安装的网络共享中直接从桌面执行数字资产管理操作。 相反，Adobe建议您使用AEM AssetsWeb UI执行操作，如复制或移动大量资源。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ AEM桌面应用程序的主要功能包括：
 
 * **在桌面上从AEM AssetsWeb UI打开文件**。 在Web UI中，您可以在桌面上显示资产（在Finder、资源管理器中），或使用桌面应用程序打开资产。
 
-* **结帐和结帐**。 资产可以签出进行编辑，在AEM Assets中被标记为用户已锁定。 编辑后，可以检入资产以将其解锁。
+* **结帐和结帐**。 资源可以签出进行编辑，在AEM Assets被标记为用户已锁定。 编辑后，可以检入资产以将其解锁。
 
 * **保存对文件所做的更改**。 您保存到网络共享中文件的任何更改都会自动上传到AEM，并创建一个新版本。
 
@@ -63,15 +63,15 @@ AEM桌面应用程序的主要功能包括：
 
 * 请勿使用AEM桌面应用程序从桌面管理资产。 AEM桌面应用程序未构建为网络驱动器的替换。 请改用以下功能：
 
-   * AEM Assets用于数字资产管理（查找或共享资产、元数据以及复制或移动）的Web UI。
+   * AEM Assets数字资产管理（查找或共享资产、元数据以及复制或移动）的Web UI。
 
    * AEM桌面应 [!UICONTROL Folder Upload] 用程序上传大型分层文件夹。
 
 * 请勿将AEM桌面应用程序视为AEM Assets的“桌面同步”客户端。 此处AEM桌面应用程序的主要优点是它提供对整个存储库的“虚拟”访问，桌面同步应用程序通常仅同步属于一个用户的资产。 AEM桌面应用程序提供一定级别的缓存和后台上传； 但是，它的工作方式与典型的“同步”应用程序(如Adobe Creative Cloud桌面应用程序或Microsoft OneDrive)截然不同。
 
-* 请勿频繁使用AEM桌面应用程序网络驱动器来保存资源。 所有保存操作都会传输给AEM Assets。 因此，直接在已装载的AEM Assets存储库中执行密集编辑操作是不现实的。 直接在已装载的存储库中编辑资产会使用不相关的版本来创建资产的时间轴，并在服务器上施加额外的间接费用。
+* 请勿频繁使用AEM桌面应用程序网络驱动器来保存资源。 所有保存操作都传送到AEM Assets。 因此，直接在已装载的AEM Assets存储库中执行密集编辑操作是不现实的。 直接在已装载的存储库中编辑资产会使用不相关的版本来创建资产的时间轴，并在服务器上施加额外的间接费用。
 
-* 请勿使用AEM桌面应用程序将大量数据从一个AEM实例迁移到另一个实例。 请参阅迁移 [指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) ，以规划和执行资产迁移。 相比之下，桌面应 [用程序支持](use-app-v1.md#bulkupload) ，首次批量上传大量资源 [!DNL Adobe Experience Manager]。
+* 请勿使用AEM桌面应用程序将大量数据从一个AEM实例迁移到另一个实例。 请参阅迁 [移指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html) ，以规划和执行资产迁移。 相比之下，桌面应 [用程序支持](use-app-v1.md#bulkupload) ，首次批量上传大量资源 [!DNL Adobe Experience Manager]。
 
 ## Recommendations公司为特定用例 {#recommendations-for-selected-use-cases}
 
@@ -93,7 +93,7 @@ AEM桌面应用程序提供对整个DAM存储库的虚拟访问——桌面上�
 
 要搜索要在桌面上打开的文件：
 
-* 使用AEM AssetsWeb UI查找资产。 搜索AEM Assets不仅功能强大（搜索彩块化、保存的搜索），还提供了额外的功能来查找正确的资产。 这些过滤器包括其他任务，如根据状态（批准、到期）、收藏集、、通知以及与其他用户／组共享文件夹／收藏集的功能。
+* 使用AEM AssetsWeb UI查找资产。 AEM Assets的搜索功能不仅强大（搜索彩块化、保存的搜索），还提供了额外的功能来查找正确的资产。 这些过滤器包括其他任务，如根据状态（批准、到期）、收藏集、、通知以及与其他用户／组共享文件夹／收藏集的功能。
 
 * 找到资产后，在AEM UI中使用桌面操作以访问桌面上的资产。
 
@@ -115,7 +115,7 @@ AEM桌面应用程序提供对整个DAM存储库的虚拟访问——桌面上�
 
    * 使用“显示”选项在桌面上打开相应的文件夹。
 
-   * 将文件复制到映射AEM Assets共享外的WIP文件夹(例如，将文件复制到与Adobe Creative Cloud桌面应用程序同步的文件夹)。
+   * 将文件复制到映射的AEM Assets共享外的WIP文件夹(例如，将文件复制到与Adobe Creative Cloud桌面应用程序同步的文件夹中)。
 
    * 处理文件并间歇性地保存它。 更改不会保存到AEM Assets。
 
@@ -127,9 +127,9 @@ AEM桌面应用程序提供对整个DAM存储库的虚拟访问——桌面上�
 
 ### 网络注意事项 {#network-considerations}
 
-要了解有关AEM Assets网络配置的最佳实践，请参阅AEM Assets [网络注意事项](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) 文档。 帮助用户优化AEM桌面应用程序体验的一些重要方面包括：
+要了解有关AEM Assets网络配置的最佳实践，请参阅AEM Assets [网络考虑事项](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/assets-migration-guide.html) 文档。 帮助用户优化AEM桌面应用程序体验的一些重要方面包括：
 
-* **使用正确配置的Dispatcher**。 使用AEMDispatcher实现更多安全性，并确保将其配置为AEM桌 [面应用程序连接到AEM调度程序后的](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **使用正确配置的Dispatcher**。 使用AEM Dispatcher实现更多安全性，并确保将它配置为 [AEM桌面应用程序连接到调度程序后的AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
 * **节省带宽**。 在使用Finder浏览已装载的存储库时，请考虑在Mac上的Finder中关闭图标预览。 Finder请求每个文件生成预览，并导致桌面应用程序在本地下载和缓存资产。 请注意，在节省带宽的同时，也会降低桌面用户的用户体验，因此在使用具有大资源和／或有限带宽的存储库时应该这样做。
 
@@ -139,7 +139,7 @@ AEM桌面应用程序提供对整个DAM存储库的虚拟访问——桌面上�
 
 ### 优化服务器性能 {#optimizing-server-performance}
 
-要了解如何优化AEM Assets服务器以获得性能，请参阅《AEM Assets [性能调整指南》](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。 AEM桌面应用程序服务器性能的一些重要方面是围绕优化工作流配置，以便它能够很好地用于资产上传：
+要了解如何优化AEM Assets服务器的性能，请参阅《AEM Assets [性能调整指南》](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html)。 AEM桌面应用程序服务器性能的一些重要方面是围绕优化工作流配置，以便它能够很好地用于资产上传：
 
 * **更高效的资产上传**。 将AEM资产 [更新工作流模型配置为临时模型](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/performance-tuning-guidelines.html#Workflows)。
 
