@@ -1,6 +1,6 @@
 ---
 title: 安装和配置Adobe Experience Manager桌面应用程序
-description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器结合使用，并将资产下载到本地文件系统。
+description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器配合使用，并将资产下载到您的本地文件系统中。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1238'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 安装 {#install-v2}
 
-要安装桌面应用程序，请按照以下步骤操作。 在安装最新应用程序之前，请卸载所有现有Adobe Experience Manager桌面应用程序v1.x。 有关详细信息，请参阅上文。
+要安装桌面应用程序，请按照以下步骤操作。 在安装最新应用程序之前，卸载任何现有的Adobe Experience Manager桌面应用程序v1.x。 有关详细信息，请参阅上文。
 
 1. 从发行说明页面下载最 [新的安装](release-notes.md) 程序。
 
@@ -79,9 +79,9 @@ ht-degree: 1%
 
    ![桌面应用程序与输入服务器地址的连接屏幕](assets/connect_da2.png)
 
-   *图： 连接屏幕到输入服务器地址*
+   *图：连接屏幕到输入服务器地址*
 
-   >[!C动作]
+   >[!CAUTION]
    >
    >确保AEM服务器地址前后没有前导或尾部空格。 否则，应用程序无法连接到AEM服务器。
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
    ![在登录时，应用程序显示DAM内容](assets/firstview_da2.png)
 
-   *图： 应用程序在登录后显示DAM内容*
+   *图：应用程序在登录后显示DAM内容*
 
 1. (Experience Manager6.5.1或更高版本)如果您使用带有Experience Manager6.5.1或更高版本的桌面应用程序，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参 [阅Azure连](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AzureDataStore) 接 [器或S3连接器](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/data-store-config.html#AmazonS3DataStore)。
 
@@ -103,25 +103,25 @@ ht-degree: 1%
 
 * [!UICONTROL Show window when application starts]。
 
-* **[!UICONTROL Cache Directory]**: 应用程序的本地缓存位置（它包含本地下载的资源）。
+* **[!UICONTROL Cache Directory]**:应用程序的本地缓存位置（它包含本地下载的资源）。
 
-* **[!UICONTROL Network Drive Letter]**: 用于映射到AEM DAM的驱动器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器号。 如果两个用户放置不同驱动器盘符中的资源，则他们看不到彼此放置的资源。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会删除。 应用程序会列表所有可用的驱动器盘符，默认情况下会使用通常最后可用的盘符 `Z`。
+* **[!UICONTROL Network Drive Letter]**:用于映射到AEM DAM的驱动器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器号。 如果两个用户放置不同驱动器盘符中的资源，则他们看不到彼此放置的资源。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会删除。 应用程序会列表所有可用的驱动器盘符，默认情况下会使用通常最后可用的盘符 `Z`。
 
-* **[!UICONTROL Maximum Cache Size]**: 允许在硬盘上缓存（以GB为单位），用于存储本地下载的资源。
+* **[!UICONTROL Maximum Cache Size]**:允许在硬盘上缓存（以GB为单位），用于存储本地下载的资源。
 
-* **[!UICONTROL Current cache size]**: 存储本地下载的资源的大小。 只有在使用应用程序下载资产后，才会显示该信息。
+* **[!UICONTROL Current cache size]**:存储本地下载的资源的大小。 只有在使用应用程序下载资产后，才会显示该信息。
 
-* **[!UICONTROL Automatically download linked assets]**: 如果您下载原始文件，将自动获取放置在受支持的本机Creative Cloud应用程序中的资产。
+* **[!UICONTROL Automatically download linked assets]**:如果您下载原始文件，将自动获取放置在受支持的本机Creative Cloud应用程序中的资产。
 
-* **[!UICONTROL Maximum number of downloads]**: 首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。 默认值为 50。如果不确定，请勿更改。 增加此值可能导致等待时间延长，而减少此值可能不允许您一次性下载必要的资产或文件夹。
+* **[!UICONTROL Maximum number of downloads]**:首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。 默认值为 50。如果不确定，请勿更改。 增加此值可能导致等待时间延长，而减少此值可能不允许您一次性下载必要的资产或文件夹。
 
-* **[!UICONTROL Upload Acceleration]**: 上传资产时，应用程序可以使用并发上传来提高上传速度。 您可以通过向右移动滑块来增加上传的并发性。 最左侧的滑块表示没有并发（单线程上传），中间位置对应10个并发线程，而最右侧的最大限制对应20个并发线程。 较高的并发限制要求本地计算机处理器的资源消耗更多。
+* **[!UICONTROL Upload Acceleration]**:上传资产时，应用程序可以使用并发上传来提高上传速度。 您可以通过向右移动滑块来增加上传的并发性。 最左侧的滑块表示没有并发（单线程上传），中间位置对应10个并发线程，而最右侧的最大限制对应20个并发线程。 较高的并发限制要求本地计算机处理器的资源消耗更多。
 
 要更新不可用的首选项，请从AEM服务器注销。 更新首选项后，单击“ ![保存首选项](assets/do-not-localize/save_preferences_da2.png) ”以保存更改。
 
 ![桌面应用程序首选项和设置](assets/preferences_da2.png)
 
-*图： 桌面应用程序首选项*
+*图：桌面应用程序首选项*
 
 ## 卸载应用程序 {#uninstall-the-app}
 
