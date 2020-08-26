@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager桌面应用程序发行说明
-description: 发行详细信息、增强功能、新增功能、兼容性和Adobe Experience Manager桌面应用程序下载链接。
+description: Adobe Experience Manager桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 48%
+source-wordcount: '1364'
+ht-degree: 46%
 
 ---
 
@@ -22,21 +22,25 @@ ht-degree: 48%
 
 | 产品 | Adobe Experience Manager 桌面应用程序 |
 |--- |--- |
-| 应用程序版本（修订版） | 2.0 (2.0.2.0) |
-| 支持的 AEM 版本 | AEM作为Cloud Service; AEM 6.5; AEM 6.4; AEM 6.3（带兼容包） |
+| 应用程序版本（修订版） | 2.0 (2.0.3.0) |
+| 支持的 AEM 版本 | AEM作为Cloud Service;AEM 6.5;AEM 6.4;AEM 6.3（带兼容包） |
 | 类型 | 次要版本 |
-| 发布日期 | 2020年4月15日（Mac和Win） |
-| 下载 URL | [macOS 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.2.0.dmg); [Windows 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.2.0.exe); [Windows 32位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.2.0.exe) |
+| 发布日期 | 2020年8月27日（Mac和Win） |
+| 下载 URL | [macOS 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## 系统要求和先决条件 {#system-requirements-and-prerequisites-v2}
 
-Adobe Experience Manager桌面应用程序与以下操作系统兼容：
+Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
-* Mac OS X 10.14或更高版本，并修复了最新错误。
+Mac OS X 10.14或更高版本，并修复了最新错误。
 
-* Windows 7 和 Windows 10（带有最新的 Service Pack 和错误修复）。
+带有最新服务包和错误修复的Windows 10。
 
-该应用程序适用于以下Experience Manager版本，无论是部署为Cloud Service、Adobe Managed Services(AMS)还是内部部署：
+>[!NOTE]
+>
+>供应商不再支持Windows 7(https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020)。
+
+该应用程序适用于以下Experience Manager版本，无论是作为Cloud Service部署在Adobe Managed Services(AMS)上还是内部部署：
 
 * [Experience Manager 云服务](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-service/release-notes/home.html).
 
@@ -51,11 +55,11 @@ Adobe Experience Manager桌面应用程序与以下操作系统兼容：
 >已弃用对Experience Manager6.3的桌面应用程序支持。 Adobe建议升级到较新且受支持的Adobe Experience Manager版本。
 >Experience Manager6.3.3.1或更高版本在安装兼容性包后可与桌面应用程序 [一起使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager6.3没有此类包可用，因为没有计 [划任何服务包](https://helpx.adobe.com/cn/experience-manager/maintenance-releases-roadmap.html)。
 
-您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。请与Adobe Experience Manager管理员联系以获取帮助。
+您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。请联系您的Adobe Experience Manager管理员寻求帮助。
 
 ### Support for different assets and file types {#support-for-file-types}
 
-应用程序支持以Adobe Experience Manager存储的资源，这些资源代表其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
+应用程序支持存储在Adobe Experience Manager的资源，这些资源代表其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
 
 一些文件类型支持将链接的资产放入二进制文件中。当使用桌面应用程序打开此类二进制文件时，如果Experience Manager存储库中存在该资产，则应用程序会预先下载链接的资产。 当前支持的文件类型有：
 
@@ -77,6 +81,12 @@ Adobe Experience Manager桌面应用程序与以下操作系统兼容：
 
 To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
+**应用程序v2.0.3中的更新**
+
+当前版本中修复的错误为：
+
+* 修复了Windows用户尝试使用应用程序访问6.5.5.0实 [!DNL Adobe Experience Manager] 例上的DAM存储库时遇到的登录问题。
+
 **应用程序v2.0.2中的更新**
 
 错误修复和更新包括：
@@ -97,7 +107,7 @@ To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
 * 允许选项将目 `%Temp%` 录配置为匹配 `%APPDATA%` 路径。 <!-- CQ-4282665 -->
 
-* 允许用户通过Okta SAML身份验证登录AEM Author。 <!-- CQ-4278134 -->
+* 允许用户通过Okta SAML身份验证登录AEM作者。 <!-- CQ-4278134 -->
 
 ## 安装说明 {#installation-instructions-v2}
 
