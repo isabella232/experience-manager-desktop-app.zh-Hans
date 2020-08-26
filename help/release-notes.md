@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 519fe85e5642eb88dd45515948e898185e262003
+source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 46%
@@ -32,9 +32,9 @@ ht-degree: 46%
 
 Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
-Mac OS X 10.14或更高版本，并修复了最新错误。
+* Mac OS X 10.14或更高版本，并修复了最新错误。
 
-带有最新服务包和错误修复的Windows 10。
+* 带有最新服务包和错误修复的Windows 10。
 
 >[!NOTE]
 >
