@@ -10,7 +10,7 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6763474c278ab8d8f52a0a466657e66a08b0748b
+source-git-commit: 91de08ba317de97a1d1900dc2351efcb4d6cf95f
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 46%
@@ -22,7 +22,7 @@ ht-degree: 46%
 
 | 产品 | Adobe Experience Manager 桌面应用程序 |
 |--- |--- |
-| 应用程序版本（修订版） | 2.0 (2.0.3.0) |
+| 应用程序版本（修订版） | 2.0 (2.0.3.2) |
 | 支持的 AEM 版本 | AEM作为Cloud Service;AEM 6.5;AEM 6.4;AEM 6.3（带兼容包） |
 | 类型 | 次要版本 |
 | 发布日期 | 2020年8月27日（Mac和Win） |
@@ -52,7 +52,7 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
 >[!NOTE]
 >
->已弃用对Experience Manager6.3的桌面应用程序支持。 Adobe建议升级到较新且受支持的Adobe Experience Manager版本。
+>已弃用对Experience Manager6.3的桌面应用程序支持。 Adobe建议升级到更新且受支持的Adobe Experience Manager版本。
 >Experience Manager6.3.3.1或更高版本在安装兼容性包后可与桌面应用程序 [一起使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager6.3没有此类包可用，因为没有计 [划任何服务包](https://helpx.adobe.com/cn/experience-manager/maintenance-releases-roadmap.html)。
 
 您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。请联系您的Adobe Experience Manager管理员寻求帮助。
