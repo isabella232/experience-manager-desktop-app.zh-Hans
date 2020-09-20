@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a6f33efdd5702cc2f411d0deed8f54e7335c09ed
+source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,9 @@ ht-degree: 1%
 
 1. 根据提示重新启动计算机。 启动和配置桌面应用程序。
 
-1. 要将应用程序与AEM存储库连接，请单击托盘中的应用程序图标以启动应用程序。 提供AEM实例的地址。 单击 **[!UICONTROL Connect]** 并提供凭据。
+1. 要将应用程序与AEM存储库连接，请单击托盘中的应用程序图标，然后启动应用程序。 以格式提供AEM服务器的地址 `https://[aem-server-url]:[port]/`。
+
+   单击 **[!UICONTROL Connect]** 并提供凭据。
 
    ![桌面应用程序与输入服务器地址的连接屏幕](assets/connect_da2.png)
 
