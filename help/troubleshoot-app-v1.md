@@ -3,13 +3,13 @@ title: AEM桌面应用程序版本1.x疑难解答
 description: 对AEM桌面应用程序版本1.x进行疑难解答，以解决与安装、升级、配置等相关的偶发问题。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -31,9 +31,9 @@ Adobe Experience Manager(AEM)桌面应用程序包含实用程序，可帮助您
 
 桌面应用程序包含以下组件：
 
-* **桌面应用程序**: 应用程序将DAM装载或卸载为远程文件系统，并在本地安装的网络共享和它连接到的远程AEM实例之间转换文件系统调用。
-* **操作系统WebDAV/SMB客户端**: 处理Windows Explorer/Finder和桌面应用程序之间的通信。 如果检索、创建、修改、删除、移动或复制文件，则操作系统(OS)WebDAV/SMB客户端会将此操作通知到桌面应用程序。 收到通信后，桌面应用程序将其转换为本机AEM远程API调用。 例如，如果用户在装入的目录中创建文件，WebDAV/SMB客户端将启动一个请求，桌面应用程序将其转换为在DAM中创建文件的HTTP请求。 WebDAV/SMB客户端是操作系统的内置组件。 它不以任何方式与桌面应用程序、AEM或Adobe相关。
-* **Adobe Experience Manager实例**: 提供对存储在AEM AssetsDAM存储库中的资产的访问。 此外，它代表与已装载网络共享交互的本地桌面应用程序执行桌面应用程序请求的操作。 目标AEM实例应运行AEM版本6.1或更高版本。 运行早期AEM版本的AEM实例可能需要安装额外的功能包和热修复才能完全正常工作。
+* **桌面应用程序**:应用程序将DAM装载或卸载为远程文件系统，并在本地安装的网络共享和它连接到的远程AEM实例之间转换文件系统调用。
+* **操作系统WebDAV/SMB客户端**:处理Windows Explorer/Finder和桌面应用程序之间的通信。 如果检索、创建、修改、删除、移动或复制文件，则操作系统(OS)WebDAV/SMB客户端会将此操作通知到桌面应用程序。 收到通信后，桌面应用程序将其转换为本机AEM远程API调用。 例如，如果用户在装入的目录中创建文件，WebDAV/SMB客户端将启动一个请求，桌面应用程序将其转换为在DAM中创建文件的HTTP请求。 WebDAV/SMB客户端是操作系统的内置组件。 它不以任何方式与桌面应用程序、AEM或Adobe相关。
+* **Adobe Experience Manager实例**:提供对存储在AEM AssetsDAM存储库中的资产的访问。 此外，它代表与已装载网络共享交互的本地桌面应用程序执行桌面应用程序请求的操作。 目标AEM实例应运行AEM版本6.1或更高版本。 运行早期AEM版本的AEM实例可能需要安装额外的功能包和热修复才能完全正常工作。
 
 ## AEM桌面应用程序的预期使用案例 {#intended-use-cases-for-aem-desktop-app}
 
@@ -76,7 +76,7 @@ Experience Manager桌面应用程序没有可配置的超时值，该值在固�
 
 AEM桌面应用程序提供内部缓存和后台上传功能，可改善最终用户体验。 保存大文件时，它首先保存在本地以便继续工作。 在某个时候（当前为30秒）后，文件将在后台发送到AEM服务器。
 
-与Creative Cloud桌面或其他文件同步解决方案（如Microsoft One Drive）不同，AEM桌面应用程序不是完全的桌面同步客户端。 其原因是它提供对整个AEM Assets库的访问，该存储库在完全同步时可能非常大（数百GB或TB）。
+与Creative Cloud桌面或其他文件同步解决方案（如Microsoft One Drive）不同，AEM桌面应用程序不是完全的桌面同步客户端。 其原因是它提供对整个AEM Assets存储库的访问，该存储库可能非常大（数百GB或TB），以实现完全同步。
 
 缓存功能可将网络/存储开销限制为仅与用户相关的资产子集。
 
@@ -265,11 +265,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 在这种情况下，关闭并重新打开文件可能会显示内容未更改。 但是，某些应用程序可能会存储文件的备份，以便应用您所做的更改。
 
-无论何种行为，文件在签入时都保持不变。 即使显示文件的不同版本，更改也不会同步到AEM。
+无论执行何种操作，文件都会在签入时保持不变。 即使显示文件的不同版本，更改也不会同步到AEM。
 
 ## 对移动文件相关问题进行疑难解答 {#troubleshooting-problems-around-moving-files}
 
-服务器API需要额外的标头、X-Destination、X-Depth和X-Overwrite，以便移动和复制操作能够正常工作。 默认情况下，调度程序不传递这些标头，这会导致这些操作失败。 有关详细信息，请参 [阅在Dispatcher后连接到AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)。
+服务器API需要额外的标头、X-Destination、X-Depth和X-Overwrite，以便移动和复制操作能够正常工作。 默认情况下，调度程序不传递这些标头，这会导致这些操作失败。 有关详细信息，请参 [阅连接到调度程序后的AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)。
 
 ## AEM桌面连接问题疑难解答 {#troubleshooting-aem-desktop-connection-issues}
 
