@@ -3,11 +3,11 @@ title: 使用Adobe Experience Manager桌面应用程序
 description: 了解如何安装和使用Adobe Experience Manager桌面应用程序，直接从Win或Mac桌面处理Adobe Experience ManagerDAM资产。 了解最佳实践和疑难解答信息。
 uuid: 55057617-89de-43cd-8419-1252a42ab2fb
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '3997'
 ht-degree: 0%
