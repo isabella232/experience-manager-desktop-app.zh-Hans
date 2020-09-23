@@ -3,13 +3,13 @@ title: AEM桌面应用程序版本1.x最佳实践
 description: Adobe Experience Manager桌面应用程序1.x版的主要功能和推荐使用。
 uuid: ba8fbc74-e1ad-4085-a031-ffd317628ba6
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 57d5cd78-abce-4ede-a50e-7c161ddb43ae
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3e10be1fd9dd1ff5293e96b46565825e6be1fc4f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -37,7 +37,7 @@ AEM桌面应用程序使用WebDAV(Windows)或SMB(Mac)网络共享来装载网络
 
 ![AEM桌面应用程序架构](assets/chlimage_1.png)
 
-*图： 桌面应用程序架构*
+*图：桌面应用程序架构*
 
 保存文件时的额外写缓存会导致文件首先保存在本地（这样用户就不会等待网络传输）。 然后，在预定义的延迟（30秒）后，文件在后台上传到AEM，然后资产上传到AEM。 AEM桌面应用程序提供用于监视后台文件上传状态的UI。
 
@@ -67,7 +67,7 @@ AEM桌面应用程序的主要功能包括：
 
    * AEM桌面应 [!UICONTROL Folder Upload] 用程序上传大型分层文件夹。
 
-* 请勿将AEM桌面应用程序视为AEM Assets的“桌面同步”客户端。 此处AEM桌面应用程序的主要优点是它提供对整个存储库的“虚拟”访问，桌面同步应用程序通常仅同步属于一个用户的资产。 AEM桌面应用程序提供一定级别的缓存和后台上传； 但是，它的工作方式与典型的“同步”应用程序(如Adobe Creative Cloud桌面应用程序或Microsoft OneDrive)截然不同。
+* 请勿将AEM桌面应用程序视为AEM Assets的“桌面同步”客户端。 此处AEM桌面应用程序的主要优点是它提供对整个存储库的“虚拟”访问，桌面同步应用程序通常仅同步属于一个用户的资产。 AEM桌面应用程序提供一定级别的缓存和后台上传；但是，它的工作方式与典型的“同步”应用程序(如Adobe Creative Cloud桌面应用程序或Microsoft OneDrive)截然不同。
 
 * 请勿频繁使用AEM桌面应用程序网络驱动器来保存资源。 所有保存操作都传送到AEM Assets。 因此，直接在已装载的AEM Assets存储库中执行密集编辑操作是不现实的。 直接在已装载的存储库中编辑资产会使用不相关的版本来创建资产的时间轴，并在服务器上施加额外的间接费用。
 
