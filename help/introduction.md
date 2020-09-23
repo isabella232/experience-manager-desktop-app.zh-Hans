@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager桌面应用程序简介
-description: 直接从桌面使用Adobe Experience Manager资产时，了解如何使用Adobe Experience Manager桌面应用程序为创意用户优化资产管理工作流。
+description: 了解在直接从桌面使用Adobe Experience Manager资产时，如何使用Adobe Experience Manager桌面应用程序为创意用户优化资产管理工作流。
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 67%
@@ -18,13 +18,13 @@ ht-degree: 67%
 
 Adobe 在其解决方案中提供了相互连通的工作流，助力业务用户和创意专业人士提高工作效率。Adobe Experience Manager 桌面应用程序可连接存储库和桌面应用程序（包括 Adobe 应用程序和第三方应用程序），以便更快速地访问资源并简化工作流。该应用程序省时省力，可以提高那些通过桌面工作流从 Adobe Experience Manager 应用程序处理资产的用户的工作效率。
 
-使用该应用程序，Adobe Experience Manager资产中的资产可在您的本地桌面上轻松访问，并可用于任何桌面应用程序。 您可以在选择的桌面应用程序中打开和编辑资产。只有在您选择上传更改后，本地编辑才能以Adobe Experience Manager形式作为资产的新版本提供，这允许您在桌面上以有效的方式处理资产的进行中编辑。 该应用程序支持将资产和嵌套文件夹上传到Experience Manager，从而简化了向存储库添加新内容的过程。
+使用该应用程序，可在本地桌面上轻松访问Adobe Experience Manager资产中的资源，并可用于任何桌面应用程序。 您可以在选择的桌面应用程序中打开和编辑资产。只有在您选择上传更改后，本地编辑才会在Adobe Experience Manager作为资产的新版本提供，这允许您在桌面上以有效的方式处理资产的进行中编辑。 该应用程序支持将资产和嵌套文件夹上传到Experience Manager，从而简化了向存储库添加新内容的过程。
 
 这种集成允许组织中的各种角色在Experience Manager资产中集中管理资产。 营销人员和企业用户可以确保符合各种标准，包括品牌推广和许可。此外，对于拥有专用 [Adobe Asset Link](https://www.adobe.com/cn/marketing/experience-manager-assets/adobe-asset-link.html) 工具（用于处理 Adobe Photoshop、Illustrator 和 InDesign 中的资产）的创意用户而言，他们还可以在桌面上访问 Creative Cloud 和其他本机应用程序中的资产。
 
 >[!NOTE]
 >
->Adobe Experience Manager桌面应用程序在Adobe Experience Manager6.1版本中引入，以前称为Adobe Experience Manager资产配套应用程序。 有关应用程序版本 1.x 的帮助，请参阅左侧边栏中的目录。Adobe 建议升级到最新版本 2。
+>Adobe Experience Manager桌面应用程序在Adobe Experience Manager6.1版本中引入，之前称为Adobe Experience Manager资产配套应用程序。 有关应用程序版本 1.x 的帮助，请参阅左侧边栏中的目录。Adobe 建议升级到最新版本 2。
 
 该桌面应用程序文档包含以下角色和用例的信息。
 
