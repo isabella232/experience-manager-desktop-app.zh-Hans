@@ -3,14 +3,14 @@ title: Adobe Experience Manager桌面应用程序发行说明
 description: Adobe Experience Manager桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。
 uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
 index: y
 internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91de08ba317de97a1d1900dc2351efcb4d6cf95f
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 46%
@@ -52,7 +52,7 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
 >[!NOTE]
 >
->已弃用对Experience Manager6.3的桌面应用程序支持。 Adobe建议升级到更新且受支持的Adobe Experience Manager版本。
+>已弃用对Experience Manager6.3的桌面应用程序支持。 Adobe建议升级到较新且受支持的Adobe Experience Manager版本。
 >Experience Manager6.3.3.1或更高版本在安装兼容性包后可与桌面应用程序 [一起使用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。 Experience Manager6.3没有此类包可用，因为没有计 [划任何服务包](https://helpx.adobe.com/cn/experience-manager/maintenance-releases-roadmap.html)。
 
 您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。请联系您的Adobe Experience Manager管理员寻求帮助。
