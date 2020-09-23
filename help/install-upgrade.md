@@ -3,13 +3,13 @@ title: 安装和配置Adobe Experience Manager桌面应用程序
 description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器配合使用，并将资产下载到您的本地文件系统中。
 uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f6365302-1690-4719-9b8c-035719422740
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 29bbcc21f01dd0c1338fdbf3e979ef363a93533c
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 1%
