@@ -3,13 +3,13 @@ title: Adobe Experience Manager桌面应用程序的最佳实践和疑难解答
 description: 按照最佳实践和疑难解答解决与安装、升级、配置等相关的偶发问题。
 uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.3/ASSETS
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
 discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3eb9ab89ff6338fb29cfad1a031944119908d0a2
+source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
@@ -27,23 +27,23 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 遵循以下最佳实践，防止一些常见问题和疑难解答。
 
-* **了解桌面应用程序的工作方式**: 开始使用应用程序之前，请花些时间了解应用程序的工作方式。 了解Experience ManagerWeb界面与桌面之间的链接、存储库映射、资产缓存、本地保存以及后台上传。 了 [解工作方式](release-notes.md#how-app-works)。
+* **了解桌面应用程序的工作方式**:开始使用应用程序之前，请花些时间了解应用程序的工作方式。 了解Experience ManagerWeb界面与桌面之间的链接、存储库映射、资产缓存、本地保存以及后台上传。 了 [解工作方式](release-notes.md#how-app-works)。
 
-* **避免文件夹名称中不支持的字符**: 创建或上传文件夹时，请勿使用空格和无效字符。 在列表资产中创建文 [件夹，查看一Experience Manager字符](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 某些Adobe Experience Manager用例可能受文件夹名称中不支持的字符影响。
+* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。 在列表资产中创建文 [件夹，查看一Experience Manager字符](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。 某些Adobe Experience Manager用例可能受文件夹名称中不支持的字符影响。
 
-* **避免冲突的最佳实践**: 要避免在协作处理多个资产时发生潜在冲突，请参阅 [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)。
+* **避免冲突的最佳实践**:要避免在协作处理多个资产时发生潜在冲突，请参阅 [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **将文件夹上传用于大型分层文件夹**: 使用Experience Manager桌面应用程序上传大型文件夹，而不是使用资产Web界面或其他方法。 应用程序通过记录和监视在后台上传资产。 请参阅 [批量上传资产](using.md#bulk-upload-assets)。
+* **将文件夹上传用于大型分层文件夹**:使用Experience Manager桌面应用程序上传大型文件夹，而不是使用资产Web界面或其他方法。 应用程序通过记录和监视在后台上传资产。 请参阅 [批量上传资产](using.md#bulk-upload-assets)。
 
-* **使用最新版本**: 使用最新的应用程序版本，在安装新应用程序版本或升级到较新的Adobe Experience Manager版本之前，始终检查兼容性。 See [release notes](release-notes.md).
+* **使用最新版本**:使用最新的应用程序版本，在安装新的应用程序版本或升级到较新的Adobe Experience Manager版本之前，始终检查兼容性。 See [release notes](release-notes.md).
 
-* **使用相同的驱动器号**: 在组织内使用相同的驱动器号映射到Adobe Experience ManagerDAM。 要查看其他用户放置的资产，路径必须相同。 使用相同的驱动器号可确保DAM资产的路径不变。 即使不同用户使用不同的驱动器盘符，资源仍会保持放置状态并且不会被删除。
+* **使用相同的驱动器号**:在整个组织中使用相同的驱动器号映射到Adobe Experience ManagerDAM。 要查看其他用户放置的资产，路径必须相同。 使用相同的驱动器号可确保DAM资产的路径不变。 即使不同用户使用不同的驱动器盘符，资源仍会保持放置状态并且不会被删除。
 
-* **注意网络**: 网络性能对Experience Manager桌面应用程序的性能至关重要。 如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
+* **注意网络**:网络性能对Experience Manager桌面应用程序的性能至关重要。 如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
 
-* **桌面应用程序不支持的用例**: 请勿将应用程序用于资产迁移（它需要规划和其他工具）; 执行繁重的DAM操作（如移动大文件夹、大型上传、使用高级元数据搜索查找文件）; 同步客户端(设计原则和使用模式与同步客户端(如Microsoft OneDrive或Adobe Creative Cloud桌面同步)不同。
+* **桌面应用程序不支持的用例**:请勿将应用程序用于资产迁移（它需要规划和其他工具）;执行繁重的DAM操作（如移动大文件夹、大型上传、使用高级元数据搜索查找文件）;同步客户端(设计原则和使用模式与同步客户端(如Microsoft OneDrive或Adobe Creative Cloud桌面同步)不同。
 
-* **超时**: 当前，桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开Experience Manager服务器与桌面应用程序之间的连接。 上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
+* **超时**:当前，桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开Experience Manager服务器与桌面应用程序之间的连接。 上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
 
 ## 如何进行疑难解答 {#troubleshooting-prep}
 
@@ -112,7 +112,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 ## 在macOS上升级时的问题 {#issues-when-upgrading-on-macos}
 
-在macOS上升级AEM桌面应用程序时，偶尔会发生问题。 这是由于AEM桌面应用程序的旧系统文件夹阻止新版本的AEM桌面应用程序正确加载而导致的。 要解决此问题，可以手动删除以下文件夹和文件。
+在macOS上升级AEM桌面应用程序时，偶尔会发生问题。 这是由于AEM桌面应用程序的旧系统文件夹阻止新版本的AEM桌面应用程序正确加载导致的。 要解决此问题，可以手动删除以下文件夹和文件。
 
 在执行以下步骤之前，将应 `Adobe Experience Manager Desktop` 用程序从macOS Applications文件夹拖到垃圾桶。 然后打开终端，执行以下命令，并在出现提示时提供密码。
 
