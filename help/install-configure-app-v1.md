@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ AEM桌面应用程序的缓存的默认位置如下：
 
 * 在Mac中 `~/Library/Group/Containers/group.com.adobe.aem.desktop/cache/EncodedAEMEndpoint`。
 
-`EncodedAEMEndpoint` 是AEM桌面应用程序配置的AEM端点URL。 该值是AEM服务器的目标URL的编码版本。 例如，如果应用程序正在定 `http://localhost:4502`位，则目录名称为 `http%3A%2F%2Flocalhost%3A4502`。 此示例中缓存目录的Windows路径为%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502。
+`EncodedAEMEndpoint` 是AEM桌面应用程序配置的AEM端点URL。 该值是AEM服务器的目标URL的编码版本。 例如，如果应用程序正在定 `http://localhost:4502`位，则目录名称为 `http%3A%2F%2Flocalhost%3A4502`。 此示例中缓存目录的Windows路径为 `%LocalAppData%\Adobe\AssetsCompanion\Cache\http%3A%2F%2Flocalhost%3A4502`。
 
 要将应用程序指向其他文件夹或其他驱动器，请编辑应用程序的配置文件。
 
@@ -127,7 +127,7 @@ AEM桌面应用程序的缓存的默认位置如下：
 
    需要管理员权限才能保存对此文件所做的更改。
 
-1. 搜索字符串“ProxyCacheRoot”。 您看到它的值已设置为缓存位置“%LocalAppData%\Adobe\AssetsCompanion\Cache”。 只需将此值更改为任何有效路径。
+1. 搜索字符串“ProxyCacheRoot”。 您将看到其值设置为缓存位置 `%LocalAppData%\Adobe\AssetsCompanion\Cache`。 只需将此值更改为任何有效路径。
 
    >[!NOTE]
    >
