@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
 workflow-type: tm+mt
-source-wordcount: '3997'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 该集成允许组织中的各种角色在Experience Manager资产中集中管理资产，并在Windows或Mac OS上的本机应用程序中访问本地桌面上的资产。
 
-当您在注销后或首次打开应用程序时，请以格式提供Experience Manager服务器的URL `https://[aem-server-url]:[port]/`。 单击“连接”。 提供将应用程序与服务器连接的凭据。
+当您在注销后或首次打开应用程序时，请以格式提供Experience Manager服务器的URL `https://[aem-server-url]:[port]/`。 然后选择 [!UICONTROL Connect] 选项。 提供将应用程序与服务器连接的凭据。
 
 您使用Experience Manager桌面应用程序执行的关键任务包括：
 
