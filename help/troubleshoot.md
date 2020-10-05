@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 381e586077c7db63dd57a468b1c6abc60c63e34e
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1537'
 ht-degree: 0%
 
 ---
@@ -51,37 +51,41 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 ### 启用调试模式 {#enable-debug-mode}
 
-要进行疑难解答，您可以启用调试模式并在日志中获取更多信息。 要在Mac的调试模式下使用应用程序，请在终端或命令提示符下使用以下命令行选项： `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`.
-
-要在Windows上启用调试模式，请执行以下步骤：
-
-1. 在桌 `Adobe Experience Manager Desktop.exe.config` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop`。
-
-1. 找 `<level value="INFO"/>` 到文件末尾。 将值从 `INFO` 更改 `DEBUG`为，即 `<level value="DEBUG"/>`。 保存并关闭文件。
-
-1. 在桌 `logging.json` 面应用程序安装文件夹中找到文件。 默认情况下，文件夹为 `C:\Program Files\Adobe\Adobe Experience Manager Desktop\javascript\`。
-
-1. 在文 `logging.json` 件中，找到的所有实例 `"level": "info"`。 将值从 `info` 更改 `debug`为，即 `"level": "debug"`。 保存并关闭文件。
-
-1. 清除位于应用程序首选项中设置的位置的缓存 [目录](/help/install-upgrade.md#set-preferences)。
-
-1. 重新启动桌面应用程序。
-
-<!-- The Windows command doesn't work for now.
-* On Windows: `SET AEM_DESKTOP_LOG_LEVEL=DEBUG & "C:\Program Files\Adobe\Adobe Experience Manager Desktop\Adobe Experience Manager Desktop.exe"`
--->
-
-### 日志文件的位置 {#check-log-files-v2}
-
-您可以在以下位置找到AEM桌面应用程序的日志文件。 上传多个资产时，如果某些文件无法上传，请查 `backend.log` 看文件以识别上传失败。
-
-* Windows上的路径： `%LocalAppData%\Adobe\AssetsCompanion\Logs`
-
-* Mac上的路径： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+要进行疑难解答，您可以启用调试模式并在日志中获取更多信息。
 
 >[!NOTE]
 >
->在与Adobe客户关怀团队协作处理支持请求／票证时，可能会要求您共享日志文件，以帮助客户关怀团队了解问题。 存档整个文 `Logs` 件夹，并与客户关怀联系人共享它。
+>有效日志级别为DEBUG、INFO、WARN或ERROR。 在DEBUG中日志的详细程度最高，在ERROR中最低。
+
+要在Mac上的调试模式下使用应用程序，请执行以下操作：
+
+1. 打开终端窗口或命令提示符。
+
+1. 通过运行 [!DNL Experience Manager] 以下命令启动桌面应用程序：
+
+   `AEM_DESKTOP_LOG_LEVEL=DEBUG open /Applications/Adobe\ Experience\ Manager\ Desktop.app`。
+
+要在Windows上启用调试模式：
+
+1. 打开命令窗口。
+
+1. 运行 [!DNL Experience Manager] 以下命令启动桌面应用程序：
+
+`AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`。
+
+### 日志文件的位置 {#check-log-files-v2}
+
+[!DNL Experience Manager] 桌面应用程序根据操作系统将其日志文件存储在以下位置：
+
+在 Windows 中：`%LocalAppData%\Adobe\AssetsCompanion\Logs`
+
+在Mac上： `~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+
+上传多个资产时，如果某些文件无法上传，请查 `backend.log` 看文件以识别上传失败。
+
+>[!NOTE]
+>
+>在与Adobe客户关怀团队协作处理支持请求或票证时，可要求您共享日志文件，以帮助客户关怀团队了解问题。 存档整个文 `Logs` 件夹，并与客户关怀联系人共享它。
 
 ### 清除缓存 {#clear-cache-v2}
 
@@ -129,7 +133,60 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 如果您正在将桌面应用程序与AEM 6.5.1或更高版本一起使用，请将S3或Azure连接器升级到版本1.10.4或更高版本。 它解决了与OAK-8599相关的文件 [上传失败问题](https://issues.apache.org/jira/browse/OAK-8599)。 请参 [阅安装说明](install-upgrade.md#install-v2)。
 
-## SSL配置问题 {#ssl-config-v2}
+## [!DNL Experience Manager] 桌面应用程序连接问题 {#connection-issues}
+
+### SAML登录身份验证无效 {#da-connection-issue-with-saml-aem}
+
+如果 [!DNL Experience Manager] 桌面应用程序未连接到启用SSO(SAML)的实例 [!DNL Adobe Experience Manager] ，请阅读本节以进行疑难解答。 SSO过程多种多样，有时也很复杂，应用程序的设计尽其所能来适应这些类型的连接。 但是，某些设置需要额外的疑难解答。
+
+有时SAML进程不会重定向回最初请求的路径，或者最终重定向到的主机与桌面应用程序中配置的主机 [!DNL Adobe Experience Manager] 不同。 要验证情况并非如此：
+
+1. 打开Web浏览器。
+
+1. 在地址 `<AEM host>/content/dam.json` 栏中输入URL。
+
+   例 `<AEM host>` 如，用目标 [!DNL Adobe Experience Manager] 实例替换 `http://localhost:4502/content/dam.json`。
+
+1. 登录到实 [!DNL Adobe Experience Manager] 例。
+
+1. 登录完成后，在地址栏中查看浏览器的当前地址。 它应与最初输入的URL完全匹配。
+
+1. 另外，验证之前的所 `/content/dam.json` 有内容是否 [!DNL Adobe Experience Manager] 与桌面应用 [!DNL Adobe Experience Manager] 程序设置中配置的目标值匹配。
+
+**根据上述步骤，登录SAML进程可以正常工作，但用户仍无法登录**
+
+显示登录 [!DNL Adobe Experience Manager] 过程的桌面应用程序内的窗口只是显示目标实例的Web [!DNL Adobe Experience Manager] 用户界面的Web浏览器：
+
+* Mac版本使用 [WebView](https://developer.apple.com/documentation/webkit/webview)。
+
+* Windows版本使用基于Chromium的 [CefSharp](https://cefsharp.github.io/)。
+
+确保SAML进程支持这些浏览器。
+
+要进一步进行疑难解答，可以视图浏览器正尝试加载的确切URL。 要查看此信息：
+
+1. 按照在调试模式下启动应用程 [序的指示](#enable-debug-mode)。
+
+1. 重现登录尝试。
+
+1. 导航到应 [用程序](#check-log-files-v2) 的日志目录
+
+1. 对于Windows:
+
+   1. 打开“aemcompanionlog.txt”。
+
+   1. 搜索以“登录浏览器地址已更改为”开头的消息。 这些条目还包含应用程序加载的URL。
+
+   对于Mac:
+
+   1. `com.adobe.aem.desktop-nnnnnnnn-nnnnnn.log`，其中 **n** 被最新文件名中的数字替换。
+
+   1. 搜索以“已加载帧”开头的消息。 这些条目还包含应用程序加载的URL。
+
+
+查看正在加载的URL序列有助于在SAML结尾进行疑难解答，以确定错误。
+
+### SSL配置问题 {#ssl-config-v2}
 
 AEM桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，连接可能使用浏览器成功，但使用AEM桌面应用程序失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参 [阅如何在Apache中安装Intermediate CA证书](https://access.redhat.com/solutions/43575)。
 
