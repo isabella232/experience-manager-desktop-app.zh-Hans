@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a7a334df5eaa2b8a8d0412bff1ed2a47d39ca1a2
+source-git-commit: 540821ad10f14ad855c66a2b93d356ba118515c7
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -143,7 +143,7 @@ Adobe Experience Manager(AEM)桌面应用程序连接到远程Experience Manager
 
 要清除缓存，请删除所需的“已编码端点” [!DNL Adobe Experience Manager] 目录。 或者，删除首选项中指定的整个目录将清除应用程序已使用的所有实例的缓存。
 
-清除 [!DNL Adobe Experience Manager]]桌面应用程序的缓存是可解决多个问题的初步疑难解答任务。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置为：
+清除 [!DNL Adobe Experience Manager] 桌面应用程序缓存是可解决多个问题的初步疑难解答任务。 从应用程序首选项中清除缓存。 请参阅 [设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置为：
 
 ### 了解桌面应 [!DNL Adobe Experience Manager] 用程序版本 {#know-app-version-v2}
 
