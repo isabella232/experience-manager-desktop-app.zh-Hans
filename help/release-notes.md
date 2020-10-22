@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 46%
+source-wordcount: '1415'
+ht-degree: 43%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 46%
 | 支持的 AEM 版本 | AEM作为Cloud Service;AEM 6.5;AEM 6.4;AEM 6.3（带兼容包） |
 | 类型 | 次要版本 |
 | 发布日期 | 2020年8月27日（Mac和Win） |
-| 下载 URL | [macOS 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-2.0.3.2.exe) |
+| 下载 URL | [macOS 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
 
 ## 系统要求和先决条件 {#system-requirements-and-prerequisites-v2}
 
