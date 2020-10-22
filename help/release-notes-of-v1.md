@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 2%
+source-wordcount: '3920'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 | 版本 | 1.10（Mac为1.10.0.6,Windows为1.10.0.3） |
 | 类型 | 次要版本 |
 | 日期 | 1.10.0.6(Mac):2020年4月15日；1.10.0.3(Win):2018年8月31日 |
-| 下载 URL | [Mac OS X 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-osx-1.10.0.6.dmg); [Windows 32位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位](https://download.macromedia.com/aem-assets-companion-app/aem-desktop-win64-1.10.0.3.exe) |
+| 下载 URL | [Mac OS X 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
 | 兼容性 | AEM 6.5.x;AEM 6.4.x;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 
 >[!NOTE]
