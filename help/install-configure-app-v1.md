@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ef87dc011297fda181a9a7643a261e8a42e35a8b
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -134,9 +134,7 @@ AEM桌面应用程序的缓存的默认位置如下：
    >应用程序会自动创建 *&lt;已编码的AEM端点>* 子目录。 此行为不可配置。
 
 >[!MORELIKETHIS]
-* [AEM 桌面应用程序简介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
-* [使用 AEM 桌面应用程序](use-app-v1.md)
-* [了解AEM桌面应用程序的登记／注销](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [将桌面应用程序与AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
-* [AEM桌面应用程序疑难解答](troubleshoot-app-v1.md)
+* [AEM 桌面应用程序简介](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [使用 AEM 桌面应用程序](use-app-v1.md).
+* [AEM桌面应用程序疑难解答](troubleshoot-app-v1.md)。
 
