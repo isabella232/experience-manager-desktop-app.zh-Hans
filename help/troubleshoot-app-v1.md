@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
 workflow-type: tm+mt
 source-wordcount: '3374'
 ht-degree: 1%
@@ -144,7 +144,7 @@ Adobe建议单个用户的上传速度接近10 Mbps。 对于无线连接，带�
 
 提高AEM性能的另一种方法是为Granite临时工作流队列作业配置最大并行作业的值。 建议的值大约是服务器可用CPU数的一半。 要调整值，请执行以下步骤：
 
-1. 导航到 *要配置的AEM实例中的* /system/console/configMgr(例如 <http://&lt;Server&gt;:&lt;Port&gt;/system/console/configMgr>)。
+1. 导航到 *要配置的AEM实例中的* /system/console/configMgr(例如 `http://[aem_server]:[port]/system/console/configMgr`)。
 1. 搜索 **QueueConfiguration**，然后单击以打开每个作业，直到找到Granite临时工 **作流队列作业** 。 单击其旁边的编辑。
 1. 更改“ **Maximum Parallel Jobs** ”值，然后单击“ **Save**”。
 
