@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5f65fa8ddceae62f2e046f2d20e853aef572f2c
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '3999'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 单击／点按 **[!UICONTROL My Preferences]** 以显示对 **[!UICONTROL Preferences]** 话框。
 1. 在“用户首选项”对话框中，选择 **[!UICONTROL Show Desktop Actions For Assets]**。 单击／点按 **[!UICONTROL Accept]**。
 
-   ![选中“显示资产的桌面操作”以启用桌面操作](assets/chlimage_1-3.png)
+   ![选中“显示资产的桌面操作”以启用桌面操作](assets/enable_desktop_actions.png)
 
    检查 [!UICONTROL Show Desktop Actions For Assets] 以启用桌面操作
 
