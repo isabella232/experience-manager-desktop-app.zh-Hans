@@ -3,9 +3,9 @@ title: 使用AEM桌面应用程序版本1.x。
 description: 了解如何使用Adobe Experience Manager桌面应用程序1.x版并优化您在桌面上使用资源的作品。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2474'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,5 @@ Adobe不建议将更多文件或嵌套文件夹从本地文件系统复制粘贴
 
 >[!MORELIKETHIS]
 >
->* [AEM 桌面应用程序简介](https://helpx.adobe.com/customer-care-office-hours/aem/desktop-app.html)
->* [了解AEM桌面应用程序的登记／注销](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 >* [AEM桌面应用程序应用程序疑难解答](troubleshoot-app-v1.md)
 
