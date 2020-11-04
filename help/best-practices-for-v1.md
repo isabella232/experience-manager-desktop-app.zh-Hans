@@ -9,7 +9,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -35,7 +35,7 @@ AEM桌面应用程序消除了您在AEM中更新错误的本地副本或更新�
 
 AEM桌面应用程序使用WebDAV(Windows)或SMB(Mac)网络共享来装载网络共享。 挂载的网络共享仅是本地共享。 AEM桌面应用程序会拦截调用（打开、读取、写入）并提供额外的本地缓存。 它将远程调用转换到AEM Assets服务器，以优化AEM HTTP请求。 下图描述了AEM桌面应用程序架构。
 
-![AEM桌面应用程序架构](assets/chlimage_1.png)
+![AEM桌面应用程序架构](assets/arch_v1.png)
 
 *图：桌面应用程序架构*
 
