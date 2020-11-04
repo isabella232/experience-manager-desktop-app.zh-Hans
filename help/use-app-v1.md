@@ -1,11 +1,11 @@
 ---
 title: 使用AEM桌面应用程序版本1.x。
-description: 了解如何使用Adobe Experience Manager桌面应用程序1.x版并优化您在桌面上使用资源的工作。
+description: 了解如何使用Adobe Experience Manager桌面应用程序1.x版并优化您在桌面上使用资源的作品。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 67e117648de8298f78992afea5ae0962fd2c698b
+source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 使用应用程序，AEM中的资源可在您的本地桌面上轻松访问，并可用于任何桌面应用程序。 资产可以轻松地在Mac Finder或Windows资源管理器中显示，在桌面应用程序中打开，并在本地进行更改——这些更改将通过在存储库中创建的新版本保存回AEM。
 
-这种集成允许组织中的不同角色集中管理AEM Assets中的资产，并在Creative Cloud和其他应用程序中访问这些资产，同时使企业能够轻松遵守包括品牌在内的各种标准。
+这种集成允许组织中的不同角色集中管理AEM Assets的资产，并在Creative Cloud和其他应用程序中访问这些资产，同时使企业能够轻松遵守包括品牌在内的各种标准。
 
 您使用AEM桌面应用程序v1所做的主要任务包括：
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## AEM桌面应用程序创意工作流程中的触点 {#aem-desktop-app-touch-points-in-the-creative-workflow}
 
-AEM桌面应用程序与AEM Assets一起集成在您的创意工作流程中，并优惠以下接触点。
+AEM桌面应用程序与AEM Assets一起集成到您的创意工作流程中，并优惠以下接触点。
 
 ![AEM桌面应用程序触点创意工作流程](assets/aem_desktopapp_workflow.png)
 
@@ -40,7 +40,7 @@ AEM桌面应用程序触点创意工作流程
 
 ## 安装AEM桌面应用程序并将其连接到AEM服务器 {#installandconnect}
 
-在开始创建或编辑创意资产之前，请先将桌面应用程序与AEM Assets服务器连接，以下载和上传存储库中的资产。 执行以下任务:
+在开始创建或编辑创意资源之前，请先将桌面应用程序与AEM Assets服务器连接，以下载和上传存储库中的资源。 执行以下任务:
 
 1. [安装应用程序](#installapp)。
 1. [设置您的首选项](#inapppref) 和连接详细信息。
@@ -70,13 +70,13 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 该应用程序允许设置与AEM服务器连接并断开连接、上载的视图状态、管理本地缓存等。 默认设置适用于应用程序的典型用户。 您可以调整设置，从应用程序中获得更多好处，并从与AEM服务器的集成中获得更多好处。 下文详细介绍了各种设置。
 
-**浏览资产** 打开装载AEM Assets存储库的本地驱动器。 换言之，浏览现在在本地机器上可用的资源。
+**浏览资产** 打开装入AEM Assets存储库的本地驱动器。 换言之，浏览现在在本地机器上可用的资源。
 
 **视图资产状态** 当更改的资产上传或新资产添加到AEM Assets存储库时，应用程序会在后台上传资产。 后台上传可实现顺畅的操作，您无需等待上传完成，对于大型资产尤为如此。 您可以在本地保存更改并将其忽略。 根据可用带宽，应用程序需要一些时间将这些资源发送到服务器。 您可以检查上传的状态以及一些更基本的信息。
 
-**选项** 单击／点按AEM桌面应用程序托盘中的选项，以访问设置，在系统开始时启动应用程序； 在应用程序启动时连接到AEM服务器； 并更改安装后可用AEM Assets的本地驱动器号。
+**选项** 单击／点按AEM桌面应用程序托盘中的选项，以访问设置，在系统开始时启动应用程序；在应用程序启动时连接到AEM服务器；并更改安装后AEM Assets可用的本地驱动器号。
 
-**“高级”>“管理缓存** ”您可以控制可用于本地缓存的磁盘空间量。 来自AEM Assets服务器的对象在本地缓存，以获得更流畅的体验。 您可以更改默认值以符合您的要求。 此外，还可以清除缓存以重新提取所有资产。 清除缓存时，它保留未保存的更改。 未签入AEM服务器的所有资产都将保留且不会删除。
+**“高级”>“管理缓存** ”您可以控制可用于本地缓存的磁盘空间量。 来自AEM Assets服务器的工件在本地缓存，以获得更流畅的体验。 您可以更改默认值以符合您的要求。 此外，还可以清除缓存以重新提取所有资产。 清除缓存时，它保留未保存的更改。 未签入AEM服务器的所有资产都将保留且不会删除。
 
 ### 连接到AEM服务器 {#connect}
 
@@ -92,7 +92,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 1. 在登录屏幕中，指定实例的用户名和密码。 要指定替代AEM实例，请选择选 **[!UICONTROL Alternate Login URL]** 项。
 
-   ![在AEM桌面上的登录屏幕上提供AEM服务器凭据](assets/chlimage_1-2.png)
+   ![在AEM桌面应用程序的登录屏幕上提供AEM服务器凭据](assets/login_screen_v1.png)
 
 ### 在AEM Web界面中启用桌面操作 {#desktopactions}
 
@@ -105,9 +105,9 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 1. 在“用户首选项”对话框中，选择 **[!UICONTROL Show Desktop Actions For Assets]**。 单击 **[!UICONTROL Accept]**.
 
-   ![选中“显示资产的桌面操作”以启用桌面操作](assets/chlimage_1-3.png)
+   ![检查 [!UICONTROL Show Desktop Actions For Assets] 以启用桌面操作](assets/enable_desktop_actions.png)
 
-   *图： 选中显示资产的桌面操作以启用桌面操作。*
+   *图：选中显示资产的桌面操作以启用桌面操作。*
 
 ## 在桌面上访问和打开资源 {#openondesktop}
 
@@ -119,7 +119,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 ![使用AEM桌面应用程序访问和打开资产的上下文菜单选项](assets/aem_desktopapp_mac_context_menu.png)
 
-*图： 使用AEM桌面应用程序访问和打开资产的上下文菜单选项。*
+*图：使用AEM桌面应用程序访问和打开资产的上下文菜单选项。*
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 >[!NOTE]
 >
->Adobe建议您转到Mac上的Finder视图选项，并取消激活 **AEM Assets文件夹的**“显示 **项目信息**”、“显示项目预览 **”和“** 显示预览”列。 它提高了性能。
+>Adobe建议您转到Mac上的Finder视图选项，并取消激活已 **装载的AEM Assets文件**&#x200B;夹的“显示 ****&#x200B;物料信息 **”、“显示物** 料预览”和“显示预览”列。 它提高了性能。
 
 ### AEM界面中的其他选项 {#additional-options-in-aem-assets}
 
@@ -135,13 +135,13 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 1. 打开AEM Assets界面，将指针悬停在文件夹或资产上，以在卡视图中将桌面操作显示为快速操作。
 
-   ![在资产UI中，打开快速操作菜单以查看桌面操作](assets/chlimage_1-4.png)
+   ![在资产UI中，打开快速操作菜单以查看桌面操作](assets/desktop_actions_in_card_view.png)
 
-   *图： 在资产UI中，打开快速操作菜单以查看桌面操作。*
+   *图：在资产UI中，打开快速操作菜单以查看桌面操作。*
 
-   在选择资产后或从资产页面的工具栏 **中单击工** 具栏中的桌面操作图标时，这些桌面操作也可用。
+   在选择资产后，或从资产页面的工具栏 **中单击** 工具栏中的桌面操作选项，这些桌面操作也可用。
 
-1. 要在与特定文件扩展名关联的桌面应用程序中打开资产，请单击／点按在桌 **面上打开快速操作** 在桌面 ![上打开图标](assets/do-not-localize/aemassets_icon_openondesktop.png)。
+1. 要在与特定文件扩展名关联的桌面应用程序中打开资产，请单击“在桌面上 **打开”快速操作** “在桌 ![面上打开”图标](assets/do-not-localize/aemassets_icon_openondesktop.png)。
 
    或者，从工 **具栏** 的“ **桌面操作** ”菜单中选择“打开”。
 
@@ -159,13 +159,13 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 ### 从AEM Web界面查看资源 {#check-out-assets-from-the-aem-web-interface}
 
-AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入。 注销资产后，只有您才能编辑、批注、发布、移动或删除资产。 注销资产会锁定资产并阻止其他用户执行其中的任何操作。 要能够签出／登录资产，您需要对资产具有写入权限。
+AEM Assets允许您签出要编辑的资源，并在完成更改后重新将其签回。 注销资产后，只有您才能编辑、批注、发布、移动或删除资产。 注销资产会锁定资产并阻止其他用户执行其中的任何操作。 要能够签出／登录资产，您需要对资产具有写入权限。
 
 有两种方法可从AEM Web界面签出资源。 有关第一种方法的详细信息，请参 [阅从资产UI签入和签出文件](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)。 请按照以下步骤操作，以便在安装AEM Desktop应用程序时通过第二种方法签出并打开资产。
 
 1. 打开AEM Assets界面，将指针悬停在文件夹或资产上，以在卡视图中将桌面操作显示为快速操作。
 
-   ![卡视图中的属性选项](assets/chlimage_1-4.png)
+   ![卡视图中的属性选项](assets/desktop_actions_in_card_view.png)
 
    在选择资产后或从资产页面的工具栏中单击／点按工具栏中的桌面操作图标时，这些桌面操作也可用。
 
@@ -177,7 +177,7 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
    >
    >当您编辑刚打开但未签出的文件时，其他用户无法知道您正在更新资产。
 
-1. 要打开资产以在Adobe Creative Cloud应用程序中进行编辑，请单击／点按编辑桌面快速操作编辑 ![桌面图标](assets/do-not-localize/aemassets_icon_editdesktop.png)。 此外，还会签出资产进行编辑。 完成编辑后，请检入资产以更新AEM Assets中的更改。
+1. 要打开资产以在Adobe Creative Cloud应用程序中进行编辑，请单击／点按编辑桌面快速操作编辑 ![桌面图标](assets/do-not-localize/aemassets_icon_editdesktop.png)。 此外，还会签出资产进行编辑。 编辑完成后，请检入资产以更新AEM Assets的更改。
 
    或者，也可以从工具栏的“桌面操作”菜单中选择“编辑”。
 
@@ -195,13 +195,10 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
    使用AEM桌面应用程序访问和打开资产的上下文菜单选项
 
 1. 导航到要签出的资产。
-
-   ![在Mac上的AEM Assets上下文菜单中打开](assets/chlimage_1-5.png)
-
 1. 右键单击资产，然后从上下文菜单中选择更多资产信息。
 1. 在资产信息对话框中，单击／点按签出图标以签出资产。 单击／点按签入图标后，“签出”图标将切换至该签入图标。
 
-   ![浏览到要签出的资产](assets/chlimage_1-6.png)
+   ![浏览到要签出的资产](assets/browse_assets_to_checkout.png)
 
 1. 要签入资产以便其他用户可以使用，请单击／点按资产信息对话框中的签入图标。
 
@@ -211,13 +208,10 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
 
 1. 从上下文菜单中，选择浏览资产以打开资源管理器。
 1. 在资源管理器中，导航到要签出的资产所在的位置。
-
-   ![签出图标切换](assets/chlimage_1-7.png)
-
 1. 右键单击资产，然后从上下文菜单中选择“在Web上打开”。
 1. 在资产信息对话框中，单击／点按签出图标。 “签出”图标切换为“签入”图标。
 
-   ![签出图标切换](assets/chlimage_1-8.png)
+   ![签出图标切换](assets/checkout_icon_toggles.png)
 
 1. 在资源管理器中审核资产。 资产锁定图标上的锁 ![定图标](assets/do-not-localize/aemassets_icon_lockcheckout.png) ，表示您已签出资产。
 
@@ -229,7 +223,7 @@ AEM Assets允许您签出资产进行编辑，并在完成更改后重新签入�
 
 ### 使用Finder或资源管理器以及Web界面签入资产 {#check-in-an-asset-using-finder-or-explorer-and-using-web-interface}
 
-编辑完资产后，请在桌面应用程序中保存资产。 从上下文菜单中，选择 **更多资产信息** ，然后单击登记。
+编辑完资产后，请在桌面应用程序中保存资产。 从上下文菜单中，选 **择更多资产信息** ，然后单击登记。
 
 资产会上传到AEM服务器。 或者，您也可以选择从系统任务栏图标中选择 **视图资产状态** ，以检查上传状态。 或者，您也可以从AEM Web界面签入资产。 单击签出的资产或选择它。 在工具栏中，单击登记图 ![标登记图标](assets/do-not-localize/aemassets_icon_checkin.png)。
 
