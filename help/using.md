@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_E
 discoiquuid: 39d7bcad-d7b0-4978-a790-4cb68b8a7d6a
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e6e184d36cb7d78177384d919c74d048e46a1c95
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ ht-degree: 0%
 * 您已开始编辑资产，但无需先签出（例如，只打开它）。
 * 您打算尽快开始编辑资产，但不希望其他人进行编辑。
 
-完成编辑后，应用程序将显示已更 **[!UICONTROL Edited Locally]** 改资产的状态。 保存到资产的所有更改均仅在本地，直到您将更改上传到AEM。 要逐个上传单个或几个资产，请从资产 **[!UICONTROL Upload Changes]** 的选项中单击。 它在AEM中创建资产的版本。 使用AEM Assets的Web界面，您可以在时间轴视图中查看资 [产历史记录](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/activity-stream.html)。
+完成编辑后，应用程序将显示已更 **[!UICONTROL Edited Locally]** 改资产的状态。 保存到资产的所有更改均仅在本地，直到您将更改上传到AEM。 要逐个上传单个或几个资产，请从资产 **[!UICONTROL Upload Changes]** 的选项中单击。 它在AEM中创建资产的版本。 使用AEM Assets的Web界面，您可以在时间轴视图中查看资 [产历史记录](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html)。
 
 ![应用程序中的“上传更改”](assets/upload_changes_single1_da2.png "选项中的“上传更改”选项")
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 将新资产上传并添加到AEM {#upload-and-add-new-assets-to-aem}
 
-用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将大量照片从照片拍摄添加到AEM存储库。 要向AEM添加新内容，请单 ![击应用程序顶栏](assets/do-not-localize/upload_to_cloud_da2.png) 中的“上传到云”图标。 浏览到本地文件系统中的资产文件，然后单击 **[!UICONTROL Select]**。 如果上传资产需要较长时间，应用程序会开始上传资产并在底部显示进度栏。 创建或上传文件夹时，请勿使用空格和无效字符。 在AEM Assets创建文件夹中 [查看一列表字符](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#Creatingfolders)。
+用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将大量照片从照片拍摄添加到AEM存储库。 要向AEM添加新内容，请单 ![击应用程序顶栏](assets/do-not-localize/upload_to_cloud_da2.png) 中的“上传到云”图标。 浏览到本地文件系统中的资产文件，然后单击 **[!UICONTROL Select]**。 如果上传资产需要较长时间，应用程序会开始上传资产并在底部显示进度栏。 创建或上传文件夹时，请勿使用空格和无效字符。 在AEM Assets创建文件夹中 [查看一列表字符](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
@@ -231,7 +231,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请勿使用上传功能跨两个AEM部署迁移资产。 相反，请参阅迁 [移指南](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/assets-migration-guide.html)。
+>请勿使用上传功能跨两个AEM部署迁移资产。 相反，请参阅迁 [移指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html)。
 
 ### 列表已转让资产 {#list-of-transferred-assets}
 
