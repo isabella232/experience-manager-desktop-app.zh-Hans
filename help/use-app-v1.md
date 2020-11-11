@@ -3,9 +3,9 @@ title: 使用AEM桌面应用程序版本1.x。
 description: 了解如何使用Adobe Experience Manager桌面应用程序1.x版并优化您在桌面上使用资源的作品。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2472'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ AEM桌面应用程序使用HTTPS连接连接到AEM服务器，以可靠、安全
 
 AEM Assets允许您签出要编辑的资源，并在完成更改后重新将其签回。 注销资产后，只有您才能编辑、批注、发布、移动或删除资产。 注销资产会锁定资产并阻止其他用户执行其中的任何操作。 要能够签出／登录资产，您需要对资产具有写入权限。
 
-有两种方法可从AEM Web界面签出资源。 有关第一种方法的详细信息，请参 [阅从资产UI签入和签出文件](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/check-out-and-submit-assets.html)。 请按照以下步骤操作，以便在安装AEM Desktop应用程序时通过第二种方法签出并打开资产。
+有两种方法可从AEM Web界面签出资源。 有关第一种方法的详细信息，请参 [阅从资产UI签入和签出文件](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/check-out-and-submit-assets.html)。 请按照以下步骤操作，以便在安装AEM Desktop应用程序时通过第二种方法签出并打开资产。
 
 1. 打开AEM Assets界面，将指针悬停在文件夹或资产上，以在卡视图中将桌面操作显示为快速操作。
 
