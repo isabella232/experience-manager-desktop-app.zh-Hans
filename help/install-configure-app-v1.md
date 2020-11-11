@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0820ad90cc89e2d2571c9f6c43c1e60734b7ade0
+source-git-commit: 9c11f0b8ace17e7f596bcfe26e69f4ca649e0126
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ ht-degree: 0%
 * X深度
 * X覆盖
 
-AEM desktop使用包含默认端口的URL连接到AEM。 因此，调 `virtualhosts` 度程序配置中的设置应包括默认端口号。 有关配置的更 `virtualhosts` 多信息，请 [参阅标识虚拟主机](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
+AEM desktop使用包含默认端口的URL连接到AEM。 因此，调 `virtualhosts` 度程序配置中的设置应包括默认端口号。 有关配置的更 `virtualhosts` 多信息，请 [参阅标识虚拟主机](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)。
 
-有关配置调度程序以传递这些附加标头的其他信息，请参 [阅指定HTTP标头](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
+有关配置调度程序以传递这些附加标头的其他信息，请参 [阅指定HTTP标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
 
 ### 代理支持 {#proxy-support}
 
@@ -134,7 +134,7 @@ AEM桌面应用程序的缓存的默认位置如下：
    >应用程序会自动创建 *&lt;已编码的AEM端点>* 子目录。 此行为不可配置。
 
 >[!MORELIKETHIS]
-* [AEM 桌面应用程序简介](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
+* [AEM 桌面应用程序简介](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html).
 * [使用 AEM 桌面应用程序](use-app-v1.md).
 * [AEM桌面应用程序疑难解答](troubleshoot-app-v1.md)。
 
