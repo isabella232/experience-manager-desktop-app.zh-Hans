@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -65,29 +65,29 @@ ht-degree: 1%
 
 1. 请准备好Experience Manager部署的URL和凭据。
 
-1. 如果您是从另一个版本的应用程序升级，请参阅升 [级桌面应用程序](#upgrade-from-previous-version)。
+1. 如果要从其他版本的应用程序升级，请参阅升 [级桌面应用程序](#upgrade-from-previous-version)。
 
 1. 如果您使用Experience Manager作为Cloud Service、Experience Manager6.4.4或更高版本，或Experience Manager6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager设置符合发行说明中所述的兼容 [性要求](release-notes.md)。 如有必要，请下载适用 [的兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，并使用Experience Manager包管理器作为Experience Manager管理员安装它。 要安装包，请参 [阅如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 
-1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明进行安装。 如果安装失败，请手动安装。 从此处下载安 [装程](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 序并安装 `vc_redist.x64.exe` 和文 `vc_redist.x86.exe` 件。 重新运行AEM桌面应用程序安装程序。
+1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明进行安装。 如果安装失败，请手动安装。 从此处下载安 [装程](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 序并安装 `vc_redist.x64.exe` 和文 `vc_redist.x86.exe` 件。 重新运行桌面应 [!DNL Experience Manager] 用程序安装程序。
 
 1. 根据提示重新启动计算机。 启动和配置桌面应用程序。
 
-1. 要将应用程序与AEM存储库连接，请单击托盘中的应用程序图标，然后启动应用程序。 以格式提供AEM服务器的地址 `https://[aem-server-url]:[port]/`。
+1. 要将应用程序与存储库 [!DNL Experience Manager] 连接，请单击托盘中的应用程序图标，然后启动应用程序。 以格式提供服 [!DNL Experience Manager] 务器的地址 `https://[aem_server]:[port]/`。
 
    单击 **[!UICONTROL Connect]** 并提供凭据。
 
    ![桌面应用程序与输入服务器地址的连接屏幕](assets/connect_da2.png)
 
-   *图：连接屏幕到输入服务器地址*
+   *图：连接屏幕到输入服务器地址。*
 
    >[!CAUTION]
    >
-   >确保AEM服务器地址前后没有前导或尾部空格。 否则，应用程序无法连接到AEM服务器。
+   >确保服务器地址前后没有前导或尾部空 [!DNL Experience Manager] 格。 否则，应用程序无法连接到服 [!DNL Experience Manager] 务器。
 
-1. 成功连接后，您可以视图AEM DAM根文件夹中可用的文件夹和资产的列表。 您可以从应用程序中浏览文件夹。
+1. 成功连接后，您可以视图DAM根文件夹中可用的文件夹和资产的 [!DNL Experience Manager] 列表。 您可以从应用程序中浏览文件夹。
 
    ![在登录时，应用程序显示DAM内容](assets/firstview_da2.png)
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Cache Directory]**:应用程序的本地缓存位置（它包含本地下载的资源）。
 
-* **[!UICONTROL Network Drive Letter]**:用于映射到AEM DAM的驱动器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器号。 如果两个用户放置不同驱动器盘符中的资源，则他们看不到彼此放置的资源。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会删除。 应用程序会列表所有可用的驱动器盘符，默认情况下会使用通常最后可用的盘符 `Z`。
+* **[!UICONTROL Network Drive Letter]**:用于映射到DAM的驱动 [!DNL Experience Manager] 器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器号。 如果两个用户放置不同驱动器盘符中的资源，则他们看不到彼此放置的资源。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会删除。 应用程序会列表所有可用的驱动器盘符，默认情况下会使用通常最后可用的盘符 `Z`。
 
 * **[!UICONTROL Maximum Cache Size]**:允许在硬盘上缓存（以GB为单位），用于存储本地下载的资源。
 
@@ -119,17 +119,17 @@ ht-degree: 1%
 
 * **[!UICONTROL Upload Acceleration]**:上传资产时，应用程序可以使用并发上传来提高上传速度。 您可以通过向右移动滑块来增加上传的并发性。 最左侧的滑块表示没有并发（单线程上传），中间位置对应10个并发线程，而最右侧的最大限制对应20个并发线程。 较高的并发限制要求本地计算机处理器的资源消耗更多。
 
-要更新不可用的首选项，请从AEM服务器注销。 更新首选项后，单击“ ![保存首选项](assets/do-not-localize/save_preferences_da2.png) ”以保存更改。
+要更新不可用的首选项，请注销服 [!DNL Experience Manager] 务器。 更新首选项后，单击“ ![保存首选项](assets/do-not-localize/save_preferences_da2.png) ”以保存更改。
 
 ![桌面应用程序首选项和设置](assets/preferences_da2.png)
 
-*图：桌面应用程序首选项*
+*图：桌面应用程序首选项。*
 
 ## 卸载应用程序 {#uninstall-the-app}
 
 要在Windows上卸载应用程序，请执行以下步骤：
 
-1. 将所有更改上传到AEM以避免丢失任何编辑。 请参 [阅编辑资产并将更新的资产上传到AEM](using.md#edit-assets-upload-updated-assets)。 注销并 [!UICONTROL Exit] 使用应用程序。
+1. 上传所有更改以 [!DNL Experience Manager] 避免丢失任何编辑。 请参 [阅编辑资产并将更新的资产上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 注销并 [!UICONTROL Exit] 使用应用程序。
 
 1. 删除应用程序时，请删除任何其他操作系统应用程序。 从“Add”（添加）中卸载它，并在Windows上删除项目。
 
@@ -141,7 +141,7 @@ ht-degree: 1%
 
 要在Mac上卸载应用程序，请执行以下步骤：
 
-1. 将所有更改上传到AEM以避免丢失任何编辑。 请参 [阅编辑资产并将更新的资产上传到AEM](using.md#edit-assets-upload-updated-assets)。 注销并 [!UICONTROL Exit] 使用应用程序。
+1. 上传所有更改以 [!DNL Experience Manager] 避免丢失任何编辑。 请参 [阅编辑资产并将更新的资产上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 注销并 [!UICONTROL Exit] 使用应用程序。
 
 1. 从中 `Adobe Experience Manager Desktop.app` 删除 `/Applications`。
 
