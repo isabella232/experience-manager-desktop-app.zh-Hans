@@ -10,10 +10,10 @@ internal: n
 snippet: y
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 42%
+source-wordcount: '1422'
+ht-degree: 33%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 42%
 | 产品 | Adobe Experience Manager 桌面应用程序 |
 |--- |--- |
 | 应用程序版本（修订版） | 2.0 (2.0.3.2) |
-| 支持的 AEM 版本 | AEM作为Cloud Service;AEM 6.5;AEM 6.4;AEM 6.3（带兼容包） |
+| 支持的Experience Manager版本 | Experience Manager作为Cloud Service;Experience Manager6.5;Experience Manager6.4;Experience Manager6.3（带兼容包） |
 | 类型 | 次要版本 |
 | 发布日期 | 2020年8月27日（Mac和Win） |
 | 下载 URL | [macOS 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.0.3.2.dmg); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.0.3.2.exe); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.0.3.2.exe) |
@@ -107,7 +107,7 @@ To know the details, see [What&#39;s new in v2.0](introduction.md#whats-new-v2).
 
 * 允许选项将目 `%Temp%` 录配置为匹配 `%APPDATA%` 路径。 <!-- CQ-4282665 -->
 
-* 允许用户通过Okta SAML身份验证登录AEM作者。 <!-- CQ-4278134 -->
+* 允许用户通过Okta SAML身份验证登录Experience Manager作者。 <!-- CQ-4278134 -->
 
 ## 安装说明 {#installation-instructions-v2}
 
@@ -119,17 +119,17 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 请务必了解关于应用程序及其工作方式的以下信息。
 
-* 对于需要与 AEM 来回完全传输资产二进制文件的操作（打开、编辑、上传更改和上传资产），该应用程序会提供完全控制权。
+* 该应用程序对需要从资产二进制文件完全传输到Experience Manager（打开、编辑、上传更改和上传资产）的操作提供完全控制。
 
    * 如果想要在桌面上处理资产，您需要明确地在某个文件夹中逐个或通过多选方式打开、编辑资产或将其下载到桌面。
 
-   * 如果想要将对资产所做的本地更改上传到 AEM，您需要逐个或通过多选方式选择 [!UICONTROL Upload Changes]。
+   * If you want to get local changes to assets uploaded to Experience Manager, you need to select [!UICONTROL Upload Changes], either individually or via multi-selection.
 
-   * 该应用程序不是在桌面和 AEM 之间同步资产的“同步客户端”。
+   * 应用程序不是跨桌面和Experience Manager同步资源的“同步客户端”。
 
-   * 该应用程序不提供将 AEM 存储库映射为虚拟文件夹结构的网络共享。
+   * 应用程序不提供将Experience Manager库映射为虚拟文件夹结构的网络共享。
 
-* 该应用程序显示的资产列表基于 AEM Assets 存储库的状态。对于任何下载到本地后在本地文件或缓存文件夹中重命名的文件，该应用程序不会显示或管理这些文件。
+* 该应用程序显示的资产列表基于 Assets 存储库的状态。对于任何下载到本地后在本地文件或缓存文件夹中重命名的文件，该应用程序不会显示或管理这些文件。
 
 * 如果该应用程序不显示预期结果，请单击顶栏中的刷新图标。
 
@@ -139,7 +139,7 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 下图说明了由用户操作启动的资产和文件从云端到本地文件系统（以及从本地文件系统到云端）的流程。
 
-![资产通过桌面应用程序从 AEM 服务器流向本机桌面应用程序](assets/da20_flow_diagram.png)
+![通过桌面应用程序将资源从Experience Manager服务器流动到本机桌面应用程序](assets/da20_flow_diagram.png)
 
 ## 已知问题 {#known-issues-v2}
 
@@ -153,13 +153,13 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 * 在应用筛选器以查找所有本地编辑的资产和删除筛选器后，应用程序不会为用户呈现搜索结果或者用户开始执行筛选时所在的文件夹视图。应用程序会显示 DAM 存储库的根文件夹。
 
-* 有时，在连接到未运行 AEM 服务器的 URL 时，连接屏幕会变得无响应。可退出应用程序后重新启动。
+* 有时，当您连接到未运行Experience Manager服务器的URL时，连接屏幕会变得不响应。 可退出应用程序后重新启动。
 
 **CRUD（创建、读取、更新和删除）问题：**
 
 * 应用程序尝试上传包含无效字符的文件，可能会导致服务器端上传失败。<!-- CQ-4273652 -->
 
-* 将更改上传到包含注释的资产时，注释会与资产一起存储在AEM中，但不会作为版本控制注释显示。 此问题已在AEM 6.4.5和AEM 6.5.1中解决。Adobe强烈建议安装最新的服务包。 <!-- CQ-4268990 -->
+* 在将更改上传到包含注释的资产时，注释会与资产一起以Experience Manager形式存储，但不会以版本化注释的形式显示。 此问题已在Experience Manager6.4.5和Experience Manager6.5.1中解决。Adobe强烈建议安装最新的服务包。 <!-- CQ-4268990 -->
 
 * 用户无法取消资产传输。如果意外触发了大量传输，请退出应用程序后重新启动。<!-- CQ-4278940 -->
 
@@ -169,8 +169,8 @@ If you are upgrading from a previous Experience Manager desktop app, you must fo
 
 >[!MORELIKETHIS]
 >
->* [AEM作为Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
->* [AEM as aCloud Service资产文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [Experience Manager作为Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [Experience Manager为Cloud Service资产文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
 >* [如何使用Experience Manager桌面应用程序](using.md)
 >* [安装和升级桌面应用程序](install-upgrade.md)
 >* [最佳实践和故障诊断提示](troubleshoot.md)
