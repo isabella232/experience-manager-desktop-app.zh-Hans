@@ -1,8 +1,8 @@
 ---
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 ## Adobe开放源代码行为准则
 
-本项目采用了 [Adobe开放源代码行为守则](code-of-conduct.md)。 向AEM提供文档即表明您同意遵守本行为准则。 Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+本项目采用了 [Adobe开放源代码行为守则](code-of-conduct.md)。 提供文 [!DNL Adobe Experience Manager] 档即表示您同意遵守本行为准则。 Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## 贡献指南
 
-虽然我们欢迎为改进AEM文档所做的任何贡献，但我们确实要求尽可能遵守某些准则和标准。 请查阅AEM文 [档贡献指南](guidelines.md) ，以了解更多信息。
+虽然我们欢迎为改进文档 [!DNL Experience Manager] 所做的任何贡献，但我们确实要求尽可能遵守某些准则和标准。 请查阅文 [档提供指 [!DNL Experience Manager] 南](guidelines.md) ，以了解更多信息。
 
 ## 如何提供Contribute
 
@@ -37,11 +37,11 @@ ht-degree: 2%
 
 您是否有建议、对当前文档的观察或对某些内容的描述提出疑问？ 然后请创建期刊。 如果您有一些内容可供参考，但您不喜欢编辑文档或自行提出拉式请求，问题也会很出色。
 
-问题允许您轻松描述对文档进行改进的想法，AEM Docs团队成员可以查看它。 只需单击任何页 **面右侧导** 航面板顶部的“记录问题”链接即可创建问题。
+问题允许您轻松描述对文档进行改进的想法，Docs团队 [!DNL Experience Manager] 成员可以查看它。 只需单击任何页 **面右侧导** 航面板顶部的“记录问题”链接即可创建问题。
 
 ### 创建拉取请求 {#create-a-pull-request}
 
-如果您发现问题并且确切了解如何解决它，请考虑创建拉入请求。 拉取请求允许您对文档进行自己的编辑，然后由AEM Docs团队成员对文档进行审阅以包含文档。 只需单击任何页 **面右侧导航** 面板顶部的“编辑此页面”链接，即可进行建议的更改并创建拉入请求。
+如果您发现问题并且确切了解如何解决它，请考虑创建拉入请求。 拉取请求允许您对文档进行自己的编辑，文档随后将经过文档团队成员的审 [!DNL Experience Manager] 阅以加入。 只需单击任何页 **面右侧导航** 面板顶部的“编辑此页面”链接，即可进行建议的更改并创建拉入请求。
 
 所有拉入请求都必须随附已签名的投 [资者许可协议或CLA。](https://opensource.adobe.com/cla.html)这将允许 Adobe 在项目中再次分发您的贡献。只需提交一次AdobeCLA，如果您之前已提交过CLA，您就可以了！
 
