@@ -11,13 +11,13 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Install Adobe Experience Manager desktop app {#install-app-v2}
+# 安装Adobe Experience Manager桌面应用程序{#install-app-v2}
 
 使用Adobe Experience Manager桌面应用程序，Experience Manager内的资源可轻松在本地桌面上使用，并可用于任何本机桌面应用程序。 资产可以预览、在本机桌面应用程序中打开、在Mac Finder或Windows资源管理器中显示以放置到其他文档中以及在本地进行更改——当您上传时，这些更改将保存回Experience Manager并在存储库中创建新版本。
 
@@ -29,19 +29,19 @@ ht-degree: 1%
 
 要使用Experience Manager桌面应用程序，
 
-* 确保Experience Manager桌面应用程序支持Experience Manager版本。 请参阅 [以下系统](release-notes.md#system-requirements-and-prerequisites-v2) 要求。
+* 确保Experience Manager桌面应用程序支持Experience Manager版本。 请参见下面的[系统要求](release-notes.md#system-requirements-and-prerequisites-v2)。
 
-* 下载并安装应用程序。 请参阅 [下面的安装桌面应](#install-v2) 用程序。
+* 下载并安装应用程序。 请参阅下面的[安装桌面应用程序](#install-v2)。
 
-* 使用一些资源测试连接。 了解 [如何浏览和搜索资产](using.md#browse-search-preview-assets)。
+* 使用一些资源测试连接。 请参阅[如何浏览和搜索资产](using.md#browse-search-preview-assets)。
 
-## 系统要求、先决条件和下载链接 {#tech-specs-v2}
+## 系统要求、先决条件和下载链接{#tech-specs-v2}
 
-有关详细信息，请参阅 [Experience Manager桌面应用程序发行说明](release-notes.md)。
+有关详细信息，请参阅[Experience Manager桌面应用程序发行说明](release-notes.md)。
 
-## Upgrade from a previous version {#upgrade-from-previous-version}
+## 从先前版本{#upgrade-from-previous-version}升级
 
-如果您是桌面应用程序v1.x的用户，请了解该应用程序的先前版本和最新版本之间的差异和相似性。 查看 [桌面应用程序的新增功能](introduction.md#whats-new-v2) ，以 [及应用程序的工作方式](release-notes.md#how-app-works)
+如果您是桌面应用程序v1.x的用户，请了解该应用程序的先前版本和最新版本之间的差异和相似性。 请参阅[桌面应用程序](introduction.md#whats-new-v2)中的新增功能和[应用程序的工作方式](release-notes.md#how-app-works)
 
 >[!NOTE]
 >
@@ -55,29 +55,29 @@ ht-degree: 1%
 
 1. 重新启动计算机。
 
-1. [下载](release-notes.md) 并安 [装最新](#install-v2) 的应用程序。 按照以下说明操作。
+1. [下](release-notes.md) 载并安 [](#install-v2) 装最新的应用程序。按照以下说明操作。
 
 ## 安装 {#install-v2}
 
 要安装桌面应用程序，请按照以下步骤操作。 在安装最新应用程序之前，卸载任何现有的Adobe Experience Manager桌面应用程序v1.x。 有关详细信息，请参阅上文。
 
-1. 从发行说明页面下载最 [新的安装](release-notes.md) 程序。
+1. 从[发行说明](release-notes.md)页面下载最新的安装程序。
 
 1. 请准备好Experience Manager部署的URL和凭据。
 
-1. 如果要从其他版本的应用程序升级，请参阅升 [级桌面应用程序](#upgrade-from-previous-version)。
+1. 如果要从另一个版本的应用程序升级，请参阅[升级桌面应用程序](#upgrade-from-previous-version)。
 
-1. 如果您使用Experience Manager作为Cloud Service、Experience Manager6.4.4或更高版本，或Experience Manager6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager设置符合发行说明中所述的兼容 [性要求](release-notes.md)。 如有必要，请下载适用 [的兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) ，并使用Experience Manager包管理器作为Experience Manager管理员安装它。 要安装包，请参 [阅如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+1. 如果您使用Experience Manager作为Cloud Service、Experience Manager6.4.4或更高版本，或Experience Manager6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager设置符合[发行说明](release-notes.md)中所述的兼容性要求。 如有必要，请下载适用的[兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，并以Experience Manager包管理器身份安装它。 要安装软件包，请参阅[如何使用软件包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 
-1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明进行安装。 如果安装失败，请手动安装。 从此处下载安 [装程](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 序并安装 `vc_redist.x64.exe` 和文 `vc_redist.x86.exe` 件。 重新运行桌面应 [!DNL Experience Manager] 用程序安装程序。
+1. 在Windows上，安装程序可能会提示安装`Visual Studio C++ Redistributable 2015`。 按照屏幕上的说明进行安装。 如果安装失败，请手动安装。 从[此处](https://www.microsoft.com/en-us/download/details.aspx?id=52685)下载安装程序并安装`vc_redist.x64.exe`和`vc_redist.x86.exe`文件。 重新运行[!DNL Experience Manager]桌面应用程序安装程序。
 
 1. 根据提示重新启动计算机。 启动和配置桌面应用程序。
 
-1. 要将应用程序与存储库 [!DNL Experience Manager] 连接，请单击托盘中的应用程序图标，然后启动应用程序。 以格式提供服 [!DNL Experience Manager] 务器的地址 `https://[aem_server]:[port]/`。
+1. 要将应用程序与[!DNL Experience Manager]存储库连接，请单击托盘中的应用程序图标，然后启动应用程序。 以`https://[aem_server]:[port]/`格式提供[!DNL Experience Manager]服务器的地址。
 
-   单击 **[!UICONTROL Connect]** 并提供凭据。
+   单击&#x200B;**[!UICONTROL Connect]**&#x200B;并提供凭据。
 
    ![桌面应用程序与输入服务器地址的连接屏幕](assets/connect_da2.png)
 
@@ -85,21 +85,21 @@ ht-degree: 1%
 
    >[!CAUTION]
    >
-   >确保服务器地址前后没有前导或尾部空 [!DNL Experience Manager] 格。 否则，应用程序无法连接到服 [!DNL Experience Manager] 务器。
+   >确保[!DNL Experience Manager]服务器地址前后没有前导或尾部空格。 否则，应用程序无法连接到[!DNL Experience Manager]服务器。
 
-1. 成功连接后，您可以视图DAM根文件夹中可用的文件夹和资产的 [!DNL Experience Manager] 列表。 您可以从应用程序中浏览文件夹。
+1. 成功连接后，您可以视图[!DNL Experience Manager] DAM根文件夹中可用的文件夹和资产的列表。 您可以从应用程序中浏览文件夹。
 
    ![在登录时，应用程序显示DAM内容](assets/firstview_da2.png)
 
    *图：应用程序在登录后显示DAM内容*
 
-1. (Experience Manager6.5.1或更高版本)如果您使用带有Experience Manager6.5.1或更高版本的桌面应用程序，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参 [阅Azure连](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) 接 [器或S3连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
+1. (Experience Manager6.5.1或更高版本)如果您使用带有Experience Manager6.5.1或更高版本的桌面应用程序，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参阅[Azure连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
 
    如果您是Adobe Managed Services(AMS)客户，请与Adobe客户服务联系。
 
-## 设置首选项 {#set-preferences}
+## 设置首选项{#set-preferences}
 
-要更改首选项，请单 ![击“更多选项”图标](assets/do-not-localize/more_options_da2.png) 和“ **[!UICONTROL Preference]** 首 ![选项”图标](assets/do-not-localize/preferences_icon_da2.png)。 在窗 **[!UICONTROL Preferences]** 口中，调整以下值：
+要更改首选项，请单击![更多选项图标](assets/do-not-localize/more_options_da2.png)和&#x200B;**[!UICONTROL Preference]** ![首选项图标](assets/do-not-localize/preferences_icon_da2.png)。 在&#x200B;**[!UICONTROL Preferences]**&#x200B;窗口中，调整以下各项的值：
 
 * [!UICONTROL Launch application on login]。
 
@@ -107,29 +107,29 @@ ht-degree: 1%
 
 * **[!UICONTROL Cache Directory]**:应用程序的本地缓存位置（它包含本地下载的资源）。
 
-* **[!UICONTROL Network Drive Letter]**:用于映射到DAM的驱动 [!DNL Experience Manager] 器号。 如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器号。 如果两个用户放置不同驱动器盘符中的资源，则他们看不到彼此放置的资源。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会删除。 应用程序会列表所有可用的驱动器盘符，默认情况下会使用通常最后可用的盘符 `Z`。
+* **[!UICONTROL Network Drive Letter]**:用于映射到DAM的驱动 [!DNL Experience Manager] 器号。如果不确定，请勿更改此设置。 该应用程序可映射到Windows上的任何驱动器号。 如果两个用户放置不同驱动器盘符中的资源，则他们看不到彼此放置的资源。 资产的路径会更改。 资源将保留在二进制文件（如INDD）中，并且不会删除。 应用程序会列表所有可用驱动器盘符，默认情况下使用最后可用的盘符，通常为`Z`。
 
 * **[!UICONTROL Maximum Cache Size]**:允许在硬盘上缓存（以GB为单位），用于存储本地下载的资源。
 
-* **[!UICONTROL Current cache size]**:存储本地下载的资源的大小。 只有在使用应用程序下载资产后，才会显示该信息。
+* **[!UICONTROL Current cache size]**:存储本地下载的资源的大小。只有在使用应用程序下载资产后，才会显示该信息。
 
 * **[!UICONTROL Automatically download linked assets]**:如果您下载原始文件，将自动获取放置在受支持的本机Creative Cloud应用程序中的资产。
 
-* **[!UICONTROL Maximum number of downloads]**:首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。 默认值为 50。如果不确定，请勿更改。 增加此值可能导致等待时间延长，而减少此值可能不允许您一次性下载必要的资产或文件夹。
+* **[!UICONTROL Maximum number of downloads]**:首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。默认值为 50。如果不确定，请勿更改。 增加此值可能导致等待时间延长，而减少此值可能不允许您一次性下载必要的资产或文件夹。
 
-* **[!UICONTROL Upload Acceleration]**:上传资产时，应用程序可以使用并发上传来提高上传速度。 您可以通过向右移动滑块来增加上传的并发性。 最左侧的滑块表示没有并发（单线程上传），中间位置对应10个并发线程，而最右侧的最大限制对应20个并发线程。 较高的并发限制要求本地计算机处理器的资源消耗更多。
+* **[!UICONTROL Upload Acceleration]**:上传资产时，应用程序可以使用并发上传来提高上传速度。您可以通过向右移动滑块来增加上传的并发性。 最左侧的滑块表示没有并发（单线程上传），中间位置对应10个并发线程，而最右侧的最大限制对应20个并发线程。 较高的并发限制要求本地计算机处理器的资源消耗更多。
 
-要更新不可用的首选项，请注销服 [!DNL Experience Manager] 务器。 更新首选项后，单击“ ![保存首选项](assets/do-not-localize/save_preferences_da2.png) ”以保存更改。
+要更新不可用的首选项，请注销[!DNL Experience Manager]服务器。 更新首选项后，单击![保存首选项](assets/do-not-localize/save_preferences_da2.png)以保存更改。
 
 ![桌面应用程序首选项和设置](assets/preferences_da2.png)
 
 *图：桌面应用程序首选项。*
 
-## 卸载应用程序 {#uninstall-the-app}
+## 卸载应用程序{#uninstall-the-app}
 
 要在Windows上卸载应用程序，请执行以下步骤：
 
-1. 上传所有更改以 [!DNL Experience Manager] 避免丢失任何编辑。 请参 [阅编辑资产并将更新的资产上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 注销并 [!UICONTROL Exit] 使用应用程序。
+1. 将所有更改上传到[!DNL Experience Manager]以避免丢失任何编辑。 请参阅[编辑资产并将更新的资产上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 注销并[!UICONTROL Exit]应用程序。
 
 1. 删除应用程序时，请删除任何其他操作系统应用程序。 从“Add”（添加）中卸载它，并在Windows上删除项目。
 
@@ -141,9 +141,9 @@ ht-degree: 1%
 
 要在Mac上卸载应用程序，请执行以下步骤：
 
-1. 上传所有更改以 [!DNL Experience Manager] 避免丢失任何编辑。 请参 [阅编辑资产并将更新的资产上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 注销并 [!UICONTROL Exit] 使用应用程序。
+1. 将所有更改上传到[!DNL Experience Manager]以避免丢失任何编辑。 请参阅[编辑资产并将更新的资产上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets)。 注销并[!UICONTROL Exit]应用程序。
 
-1. 从中 `Adobe Experience Manager Desktop.app` 删除 `/Applications`。
+1. 从`/Applications`中删除`Adobe Experience Manager Desktop.app`。
 
 或者，要清理Mac上的内部应用程序缓存并卸载该应用程序，您可以在终端中执行以下命令：
 
