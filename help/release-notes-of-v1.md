@@ -11,13 +11,13 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
 workflow-type: tm+mt
-source-wordcount: '3920'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# AEM桌面应用程序v1.x发行说明 {#aem-desktop-app-release-notes}
+# AEM桌面应用程序v1.x发行说明{#aem-desktop-app-release-notes}
 
 对于桌面应用程序v1.x版本，以下是下载链接和AEM兼容性信息。
 
@@ -49,31 +49,31 @@ Adobe强烈建议使用最新版本的AEM桌面应用程序来使用最新功能
 
 您计划在本地计算机上安装的AEM桌面应用程序的版本需要特定的AEM服务器版本／其他服务器端组件（服务包、热修复或功能包）。 在首次连接到AEM服务器之前，请确保正确配置了服务器。 如果需要帮助，请与AEM管理员联系。
 
-请参 [阅本文档末尾的](#compatibilitymatrix) “详细兼容性矩阵”，以评估设置的先决条件。
+请参阅本文档末尾的[详细兼容性矩阵](#compatibilitymatrix)以评估设置的先决条件。
 
-## What&#39;s New in AEM desktop app 1.10 {#what-s-new-in-aem-desktop-app}
+## AEM桌面应用程序1.10{#what-s-new-in-aem-desktop-app}的新增功能
 
 AEM桌面应用程序1.10侧重于在使用链接文件打开资产时改进大型上传的用户体验、有关后台操作的信息以及优化的体验(如InDesign)。
 
 >[!NOTE]
 >
->如果您使用的是macOS 10.15.4或更高版本，请至少使用应用程序的版本1.10.0.6。 此修补程序版本符 [合Apple公证要求](https://developer.apple.com/news/?id=04102019a)。
+>如果您使用的是macOS 10.15.4或更高版本，请至少使用应用程序的版本1.10.0.6。 此修补程序版本符合[Apple公证要求](https://developer.apple.com/news/?id=04102019a)。
 
-**本地编辑／注销**:可以在状态窗口中禁用自动上传保存到资产的更改。 这样，用户可以继续处理文件并保存更改，然后，当它们准备就绪时，决定上传所有更改。
+**本地编辑／注销**:可以在状态窗口中禁用自动上传保存到资产的更改。这样，用户可以继续处理文件并保存更改，然后，当它们准备就绪时，决定上传所有更改。
 
-**简化的资产状态窗口**。 状态窗口已简化。 该选 [!UICONTROL Uploads] 项卡现在同时显示单个资产以及文件夹或批量上传。 之前的“批量上传”选项卡已被删除。
+**简化的资产状态窗口**。状态窗口已简化。 [!UICONTROL Uploads]选项卡现在既显示单个资产，也显示文件夹或批量上传。 之前的“批量上传”选项卡已被删除。
 
-**指示批量上传的应用程序图标**。 应用程序图标通过显示“转移”叠加来指示正在进行批量上传。
+**指示批量上传的应用程序图标**。应用程序图标通过显示“转移”叠加来指示正在进行批量上传。
 
-**更新冲突通知**。 当应用程序在尝试更新资产时检测到冲突时，它将显示通知，以便用户无需监视状态窗口即可查看。 当应用程序开始时，它将检查所有冲突，以便用户能够解决这些冲突。
+**更新冲突通知**。当应用程序在尝试更新资产时检测到冲突时，它将显示通知，以便用户无需监视状态窗口即可查看。 当应用程序开始时，它将检查所有冲突，以便用户能够解决这些冲突。
 
-**更好地处理连接丢失**。 如果连接丢失，将暂停批量上传，用户稍后将能够恢复。 “重试”按钮可用于重试单个文件的上传失败。
+**更好地处理连接丢失**。如果连接丢失，将暂停批量上传，用户稍后将能够恢复。 “重试”按钮可用于重试单个文件的上传失败。
 
 ## 安装说明 {#installation-instructions}
 
-有关详细说明，请参 [阅安装和配置AEM桌面应用程序](install-configure-app-v1.md)。
+有关详细说明，请参阅[安装和配置AEM桌面应用程序](install-configure-app-v1.md)。
 
-## 先前版本中的增强功能 {#enhancements-in-the-previous-versions}
+## 先前版本{#enhancements-in-the-previous-versions}中的增强功能
 
 此版本扩展并替换Experience Manager桌面应用程序的先前版本，该版本提供了以下主要增强功能：
 
@@ -89,9 +89,9 @@ AEM桌面应用程序1.10侧重于在使用链接文件打开资产时改进大�
 
 * **版本1.4**:能够通过进度监视在后台上传分层文件夹。
 
-* **版本1.3**:访问文件和保存对AEM的更改的性能增强和稳定性，尤其是从Creative Cloud桌面应用程序(如InDesign、Illustrator或Photoshop)中。 它旨在为用户在处理文件时提供更类似于桌面的本地体验，同时在后台处理网络数据传输操作。
+* **版本1.3**:访问文件和保存对AEM的更改的性能增强和稳定性，尤其是从Creative Cloud桌面应用程序(如InDesign、Illustrator或Photoshop)中。它旨在为用户在处理文件时提供更类似于桌面的本地体验，同时在后台处理网络数据传输操作。
 
-### 自AEM桌面应用程序1.9以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-19x}
+### 自AEM桌面应用程序1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}以来提供的增强功能
 
 Adobe Experience Manager(AEM)桌面应用程序1.9.1是一个修补程序版本，可解决与资产签出和将文件从网络共享复制到本地目录相关的几个关键客户问题。
 
@@ -101,9 +101,11 @@ Adobe Experience Manager(AEM)桌面应用程序1.9.1是一个修补程序版本�
 
 AEM桌面应用程序1.9侧重于改进大型上传时的用户体验、有关后台操作的信息以及在使用链接文件打开资产时优化的体验(如InDesign)。
 
-**可恢复上**&#x200B;载对于上传，尤其是围绕大文件的上传，在新的“资产状态”窗口中有暂停／恢复这些文件的选项。
+**可恢**
+复的上传对于上传，特别是围绕大文件的上传，有一个选项可在新的“资产状态”窗口中暂停／恢复它们。
 
-**改进的资产状态**&#x200B;窗口改进的资产状态窗口提供以下资产信息。
+**改进的资产状**
+态窗口改进的资产状态窗口提供以下资产信息。
 
 [!UICONTROL Changes]
 
@@ -135,15 +137,15 @@ AEM桌面应用程序1.9侧重于改进大型上传时的用户体验、有关�
 
 * 如果用户选择从Experience Manager资产Web UI打开或编辑多个文件，则这些文件将分组在一起。 例如，myasset.jpeg和4个更多文件。
 
-* 下载InDesign文档(包括存储在AEM Assets的链接资产)时，桌面应用程序将首先下载所有链接的资产，然后打开文档并指 [!UICONTROL Adobe InDesign] 示下载链接的资产。 例如，24个中的5个。
+* 下载存储在AEM Assets的InDesign文档（包括链接的资产）时，桌面应用程序将首先下载所有链接的资产，然后打开[!UICONTROL Adobe InDesign]文档并指示下载链接的资产。 例如，24个中的5个。
 
 [!UICONTROL Bulk Uploads]
 
-通过>在AEM Web UI中 [!UICONTROL Create] 上 [!UICONTROL Upload Folder] 传大型文件夹层次结构，或者在Finder或桌面应用程序上下文菜单中的资源管理器中复制并选择“粘贴资产”将触发此对话框的使用。
+在AEM Web UI中通过[!UICONTROL Create] > [!UICONTROL Upload Folder]上传大型文件夹层次结构，或在Finder或桌面应用程序上下文菜单中选择“粘贴资产”将触发此对话框的使用。
 
 * 显示正在进行的上载，包括进度栏和当前正在传输的文件的名称。
 
-* 正在进行的上传包含一个图标，单击该图标后将取消上传。 传输将在当前传输文件完成后停止。
+* 正在进行的上传包含一个图标，单击该图标后将取消上传。 当前传输文件完成后，传输将停止。
 
 * 失败的传输进程会显示一条错误消息（仅当整个传输失败时）。
 
@@ -158,7 +160,7 @@ AEM桌面应用程序1.9侧重于改进大型上传时的用户体验、有关�
 要在处理InDesign文档(包括存储在AEM中的链接资源)时改善用户体验，桌面应用程序将尝试在下载和打开InDesign文档之前，将这些链接文件预取到本地缓存。 这样，用户将在本地提供链接的文件，并且在InDesign（在“链接”面板中）访问这些文件时无需等待更久。
 请注意，只有AEM识别服务器端的链接时，预取才有效。 具有已识别链接的资产将具有列表的“引用”，该视图列在资产的“属性”InDesign中。
 
-### 自AEM桌面应用程序1.8.x以来提供的增强功能 {#enhancements-available-since-aem-desktop-app-18x}
+### 自AEM桌面应用程序1.8.x {#enhancements-available-since-aem-desktop-app-18x}以来提供的增强功能
 
 AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文件到1.8发行版(CQ-4237747、CQ-4238780)时增加了改进。 AEM桌面应用程序1.8中的增强功能包括：
 
@@ -188,7 +190,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
    * (Win)现在，在从AEM AssetsUI恢复到先前版本后，可以同步文件(CQ-4216411)。
 
-### 自AEM桌面应用程序1.7以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-17}
+### 自AEM桌面应用程序1.7 {#Enhancements-Available-Since-AEM-Desktop-App-17}以来可用的增强功能
 
 * 稳定性：
 
@@ -212,7 +214,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
    * (Win)更简洁的卸载(CQ-4220906)。
 
-   * [Windows 32位] Installer无法安装Microsoft .NET Framework v. 4.5(CQ-4218084)。
+   * [Windows 32] bitInstaller无法安装Microsoft .NET Framework v. 4.5(CQ-4218084)。
 
    * (Mac)用于完全删除桌面应用程序文件的手动脚本(CQ-4216489)。
 
@@ -220,9 +222,9 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 >
 >AEM桌面应用程序1.7测试版加载中发现的问题（1.6版本中不存在的问题不会在发行说明中报告）。
 
-### 自AEM桌面应用程序1.6以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-16}
+### 自AEM桌面应用程序1.6 {#Enhancements-Available-Since-AEM-Desktop-App-16}以来可用的增强功能
 
-* 文档：v1. [x应用程序文档的新最佳实践](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html) 。
+* 文档：新[v1.x app](https://helpx.adobe.com/experience-manager/6-3/assets/using/aem-desktop-app-best-practices.html)文档的最佳实践。
 
 * 改进了AEM的登录过程：
 
@@ -264,7 +266,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
    * 上传到AEM时，拖放文件产生错误(CQ-4217006)。
 
-### 自AEM桌面应用程序1.5以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-15}
+### 自AEM桌面应用程序1.5 {#Enhancements-Available-Since-AEM-Desktop-App-15}以来可用的增强功能
 
 **适用于Mac OS X的1.5.1.5版：** 1.5.1.5版提供以下优势：
 
@@ -296,7 +298,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
 这两种情况都是AEM Desktop的“延迟同步”体系结构的副作用。
 
-**适用于Mac OS X和Windows的1.5.0.x版：** 此版本的AEM桌面应用程序具有以下优点：
+**适用于Mac OS X和Windows的1.5.0.x版：此版** AEM桌面应用程序具有以下优点：
 
 * 针对网络问题的更好稳定性和恢复力。
 
@@ -325,7 +327,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
    * 在“首选项”中更好地处理AEM AssetsURL(CQ-97388)。
 
-### 自AEM桌面应用程序1.4以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-14}
+### 自AEM桌面应用程序1.4 {#Enhancements-Available-Since-AEM-Desktop-App-14}以来可用的增强功能
 
 * 通过触屏UI中新增的“创建”>“上传文件夹”操作，简化了分层文件夹的上传。
    * 操作启动桌面应用程序执行的文件夹上传操作
@@ -337,7 +339,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 * 改进了与最新操作系统版本的兼容性
 * 客户报告的修复
 
-### 自AEM桌面应用程序1.3以来提供的增强功能 {#Enhancements-Available-Since-AEM-Desktop-App-13}
+### 自AEM桌面应用程序1.3 {#Enhancements-Available-Since-AEM-Desktop-App-13}以来可用的增强功能
 
 * 提高效率。 用户花费更少的时间等待网络操作完成。
 * 改进的Finder集成，可提供更高的稳定性和对缩略图等功能的访问权限。
@@ -351,7 +353,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
 ## 更改列表 {#list-of-changes}
 
-### Mac上的装载点 {#mount-point-on-mac}
+### Mac上的装载点{#mount-point-on-mac}
 
 自MacOS 10.12(Sierra)以来，Apple已将用于装载网络驱动器和设备的/Volumes文件夹的权限更改为限制性更强。 在此处创建新装载点需要管理权限。 此问题已在MacOS 10.12.5中修复。
 
@@ -359,7 +361,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
 由于/Volumes文件夹不再需要管理权限，此更改在1.5.1中还原。这也使得在MacOS用户之间共享已放置AEM资源的InDesign文档成为可能。
 
-### 协议更改（自v1.3起） {#protocol-change-since}
+### 协议更改（自v1.3起）{#protocol-change-since}
 
 * Mac OS X:
    * OS X桌面集成的本地网络驱动器协议从WebDAV更改为SMB1。
@@ -371,23 +373,23 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
 >[!NOTE]
 >
->在Mac OS X上，本地网络驱动器协议从WebDAV更改为SMB1会导致存储库中同一资源的不同本地路径。 这可能会影响通过“置入”命令放置到Adobe Creative Cloud应用程序中的文件的链接。 有关详细 [信息，请参阅使用AEM](use-app-v1.md) Desktop应用程序。
+>在Mac OS X上，本地网络驱动器协议从WebDAV更改为SMB1会导致存储库中同一资源的不同本地路径。 这可能会影响通过“置入”命令放置到Adobe Creative Cloud应用程序中的文件的链接。 有关详细信息，请参阅[使用AEM桌面应用程序](use-app-v1.md)。
 
-### 文件处理（自1.3起） {#file-handling-since}
+### 文件处理（自1.3起）{#file-handling-since}
 
 * 文件夹会在预定义的延迟（当前30秒）后自动更新。
 * 其他用户签出的文件被标记为只读。
 * 文件将分两个阶段保存到通过桌面应用程序装载的网络驱动器位置。
 * 在第一阶段，文件保存在本地。 这样，保存文件的用户无需等到文件完全传输到AEM后再进行保存，保存文件后即可恢复工作。
-* 在第二阶段，桌面应用程序在预定义的延迟后（例如，30秒）将更新的文件上载到AEM服务器。 此操作在后台进行。 使用“ **显示后台文件同步状态** ”选项来视图上传操作的状态。
+* 在第二阶段，桌面应用程序在预定义的延迟后（例如，30秒）将更新的文件上载到AEM服务器。 此操作在后台进行。 使用&#x200B;**显示后台文件同步状态**&#x200B;选项来视图上载操作的状态。
 
-## 重要声明 {#important-notices}
+## 重要声明{#important-notices}
 
-**文件夹上传。** 建议使用新的文件夹上传功能将更大、层次化的文件夹上传到AEM，而不是使用从Finder/资源管理器级别复制／拖放到装载的AEM存储库。 使用文件夹上传功能时，桌面应用程序直接与AEM通信，因此能够更好地控制整个过程。
+**文件夹上传。** 建议使用新的文件夹上传功能将更大、层次化的文件夹上传到AEM，而不是使用从Finder/资源管理器级别复制／拖放到装载的AEM存储库。使用文件夹上传功能时，桌面应用程序直接与AEM通信，因此能够更好地控制整个过程。
 
-**确保AEM会话可用。** AEM桌面应用程序依赖于打开到AEM Assets服务器的会话，以确保正确操作。 对于每天使用桌面应用程序的用户，建议在一天结束时卸载AEM Assets以强制注销，然后在早上“装载AEM Assets”以确保他们登录并且网络共享可以正常运行。
+**确保AEM会话可用。** AEM桌面应用程序依赖于打开到AEM Assets服务器的会话，以确保正确操作。对于每天使用桌面应用程序的用户，建议在一天结束时卸载AEM Assets以强制注销，然后在早上“装载AEM Assets”以确保他们登录并且网络共享可以正常运行。
 
-**在Finder中关闭“图标预览”。** 要通过Finder实现对大型文件夹的高性能浏览，特别是在网络连接性较差的情况下，请确保同时关闭“图标”和“图标预览”。 否则，Finder将开始下载文件夹中的每个资产以生成小预览，这会导致性能较差和带宽利用率较高(CQ-4219779)
+**在Finder中关闭“图标预览”。** 要通过Finder实现对大型文件夹的高性能浏览，特别是在网络连接性较差的情况下，请确保同时关闭“图标”和“图标预览”。否则，Finder将开始下载文件夹中的每个资产以生成小预览，这会导致性能较差和带宽利用率较高(CQ-4219779)
 
 * 在查找器中，转到AEM Assets共享网络文件夹
 * 右键单击DAM安装点
@@ -395,17 +397,17 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 * 取消选择“显示图标预览”
 * 单击“用作默认值”
 
-**连接到新的AEM服务器时清理缓存。** 如果桌面应用程序连接到具有相同URL的另一AEM服务器，则不会自动清除缓存。 手动清除缓存以确保正确操作。 请注意，在测试中，当AEM在同一URL上运行时可替换安装时，通常会发生这种情况(CQ-4216982)
+**连接到新的AEM服务器时清理缓存。** 如果桌面应用程序连接到具有相同URL的另一AEM服务器，则不会自动清除缓存。手动清除缓存以确保正确操作。 请注意，在测试中，当AEM在同一URL上运行时可替换安装时，通常会发生这种情况(CQ-4216982)
 
-**使用CA签名的SSL证书。** 请注意，通过HTTPS安全连接连接到AEM时，AEM桌面应用程序不支持自签名SSL证书。 服务器上需要CA签名的证书才能进行此类连接。 (CQ-87941)
+**使用CA签名的SSL证书。** 请注意，通过HTTPS安全连接连接到AEM时，AEM桌面应用程序不支持自签名SSL证书。服务器上需要CA签名的证书才能进行此类连接。 (CQ-87941)
 
 ## 已知问题 {#known-issues}
 
 * 常规:
-   * 服务器URL需要指向不带路径的服务器(例如， `http://server`、 `https://server`、 `http://server:port`或 `https://server:port`)。 不支持/content/dam以外的上下文路径和子文件夹(CQ-89343、CQ-87272)
+   * 服务器URL需要指向不带路径的服务器(例如，`http://server`、`https://server`、`http://server:port`或`https://server:port`)。 不支持/content/dam以外的上下文路径和子文件夹(CQ-89343、CQ-87272)
 * 文件名/本地化:
    * 未正确处理带有保留字符的文件和文件夹名称。 确保使用符合AEM要求的文件和文件夹名称(CQ-93361、CQ-93308、CQ-89276、CQ-4217183)
-   * 像Adobe Illustrator这样的一些应用程序可能创建的文件名称在AEM中不受支持。 例如，在转 `Converted` 换文件后添加，这会阻止文件上传(CQ-4216985)
+   * 像Adobe Illustrator这样的一些应用程序可能创建的文件名称在AEM中不受支持。 例如，在转换文件后添加`Converted`，这会阻止它上传(CQ-4216985)
    * 具有国际名称的资产可能每隔几秒钟就会出现并消失
 * 登记和注销：
    * 一个用户签出的资产无法通过触屏UI中的打开操作或直接在桌面上为其他用户打开。 一些应用程序可能报告它已锁定，但在尝试打开时也会损坏甚至挂起。 (CQ-4199234)
@@ -413,8 +415,8 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
    * 某些应用程序不正确支持只读标志，该标志允许用户保存其他用户签出的文件。 在其他用户签入文件之前，不会传输修改过的文件。 在AEM中，这两种修改都可作为资产的不同版本(CQ-89551、CQ-87572、CQ-89615)使用
    * 在Finder中独立报告检出和只读状态。 当用户注销资产时，这会生成2个锁图标(CQ-89507)
 * Finder集成：
-   * 在拖放大型文件时，当文件在后台传输时，Finder可能会超时。 这会导致 `Error - 36`。 解决方法是再次拖放或打开资产(CQ-4219628)
-   * 手动重新加载文件夹并不总是有效。 解决方法： 等待30秒，以自动更新文件夹。 (CQ-97389)
+   * 在拖放大型文件时，当文件在后台传输时，Finder可能会超时。 这会生成`Error - 36`。 解决方法是再次拖放或打开资产(CQ-4219628)
+   * 手动重新加载文件夹并不总是有效。 解决方法： 等待   30秒，文件夹将自动更新。 (CQ-97389)
    * 更多资产信息……仅限于单个文件选择(CQ-89542、CQ-87656)
    * 在AEM Assets打开……仅限于单个文件和文件夹选择(CQ-83382)
    * 重命名没有扩展名的资源时出错(CQ-4218971)
@@ -430,7 +432,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 * [使用AEM桌面应用程序v1.x](use-app-v1.md)
 * [AEM桌面应用程序v1.x最佳实践](best-practices-for-v1.md)
 
-## 兼容性矩阵和先决条件 {#compatibilitymatrix}
+## 兼容性矩阵和先决条件{#compatibilitymatrix}
 
 AEM桌面应用程序可与各种版本的AEM一起使用。 请参阅受支持版本的兼容性列表。
 
