@@ -8,13 +8,13 @@ snippet: y
 translation-type: tm+mt
 source-git-commit: 6a8a49865d2707f5d60fbd6d5e99b597c333d3d5
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Adobe Experience Manager desktop app overview {#overview-v2}
+# Adobe Experience Manager桌面应用程序概述{#overview-v2}
 
 Adobe 在其解决方案中提供了相互连通的工作流，助力业务用户和创意专业人士提高工作效率。Adobe Experience Manager 桌面应用程序可连接存储库和桌面应用程序（包括 Adobe 应用程序和第三方应用程序），以便更快速地访问资源并简化工作流。该应用程序省时省力，可以提高那些通过桌面工作流从 Adobe Experience Manager 应用程序处理资产的用户的工作效率。
 
