@@ -3,9 +3,9 @@ title: 使用Adobe Experience Manager桌面应用程序
 description: 了解如何安装和使用Adobe Experience Manager桌面应用程序，直接从Win或Mac桌面处理Adobe Experience ManagerDAM资产。 了解最佳实践和疑难解答信息。
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4028'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 0%
 
 ## 将新资产上传并添加到Experience Manager{#upload-and-add-new-assets-to-aem}
 
-用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将大量照片从照片拍摄添加到Experience Manager库。 要向Experience Manager添加新内容，请单击应用程序顶栏中的![上传到云图标](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 如果上传资产需要较长时间，应用程序会开始上传资产并在底部显示进度栏。 创建或上传文件夹时，请勿使用空格和无效字符。 请参阅[在 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中创建文件夹中的列表字符。
+用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将大量照片从照片拍摄添加到[!DNL Experience Manager]存储库。 要向[!DNL Experience Manager]添加新内容，请在应用程序顶栏中选择![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 或者，在应用程序界面上拖动文件或文件夹。 应用程序开始上传资产。 如果上传时间较长，则应用程序底部将显示一个进度栏。 创建或上传文件夹时，请勿使用空格和无效字符。 在[创建 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中的文件夹时，可以看到允许的字符列表。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
