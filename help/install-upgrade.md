@@ -1,35 +1,28 @@
 ---
-title: 安装和配置Adobe Experience Manager桌面应用程序
-description: 安装和配置Adobe Experience Manager桌面应用程序以与Adobe Experience Manager资产服务器配合使用，并将资产下载到您的本地文件系统中。
-uuid: 79bc9de9-5708-41f9-ac43-68c1fd2a2129
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f6365302-1690-4719-9b8c-035719422740
-index: y
-internal: n
-snippet: y
+title: 安装和配置 [!DNL Adobe Experience Manager] 桌面应用程序
+description: 安装和配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资源。
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1162'
+ht-degree: 1%
 
 ---
 
 
-# 安装Adobe Experience Manager桌面应用程序{#install-app-v2}
+# 安装[!DNL Adobe Experience Manager]桌面应用程序{#install-app-v2}
 
-使用Adobe Experience Manager桌面应用程序，Experience Manager内的资源可轻松在本地桌面上使用，并可用于任何本机桌面应用程序。 资产可以预览、在本机桌面应用程序中打开、在Mac Finder或Windows资源管理器中显示以放置到其他文档中以及在本地进行更改——当您上传时，这些更改将保存回Experience Manager并在存储库中创建新版本。
+使用[!DNL Adobe Experience Manager]桌面应用程序，[!DNL Experience Manager]中的资源可轻松在本地桌面上使用，并可用于任何本机桌面应用程序。 资产可以预览、在本机桌面应用程序中打开、在Mac Finder或Windows资源管理器中显示以放置到其他文档中以及在本地进行更改——当您上传时，这些更改将保存回[!DNL Experience Manager]并在存储库中创建新版本。
 
 这种集成允许组织中的各种角色，
 
-* 在Experience Manager资产中集中管理资产。
+* 在[!DNL Experience Manager Assets]集中管理资产。
 
 * 访问任何本机桌面应用程序（包括第三方应用程序）和Adobe Creative Cloud的资源。 同时，用户可以轻松地遵守包括品牌在内的各种标准。
 
-要使用Experience Manager桌面应用程序，
+要使用[!DNL Experience Manager]桌面应用程序，
 
-* 确保Experience Manager桌面应用程序支持Experience Manager版本。 请参见下面的[系统要求](release-notes.md#system-requirements-and-prerequisites-v2)。
+* 确保[!DNL Experience Manager]桌面应用程序支持您的[!DNL Experience Manager]版本。 请参见下面的[系统要求](release-notes.md#system-requirements-and-prerequisites-v2)。
 
 * 下载并安装应用程序。 请参阅下面的[安装桌面应用程序](#install-v2)。
 
@@ -37,7 +30,7 @@ ht-degree: 0%
 
 ## 系统要求、先决条件和下载链接{#tech-specs-v2}
 
-有关详细信息，请参阅[Experience Manager桌面应用程序发行说明](release-notes.md)。
+有关详细信息，请参阅[[!DNL Experience Manager] 桌面应用程序发行说明](release-notes.md)。
 
 ## 从先前版本{#upgrade-from-previous-version}升级
 
@@ -49,7 +42,7 @@ ht-degree: 0%
 
 要从应用程序的先前版本升级，请按照以下说明操作：
 
-1. 在升级之前，同步所有资产并将更改上传到Experience Manager。 这样可避免在卸载应用程序时丢失任何编辑。
+1. 在升级之前，同步所有资产并将更改上传到[!DNL Experience Manager]。 这样可避免在卸载应用程序时丢失任何编辑。
 
 1. 卸载应用程序的先前版本。 卸载时，选择清除缓存的选项。
 
@@ -59,15 +52,15 @@ ht-degree: 0%
 
 ## 安装 {#install-v2}
 
-要安装桌面应用程序，请按照以下步骤操作。 在安装最新应用程序之前，卸载任何现有的Adobe Experience Manager桌面应用程序v1.x。 有关详细信息，请参阅上文。
+要安装桌面应用程序，请按照以下步骤操作。 在安装最新应用程序之前，卸载所有现有Adobe[!DNL Experience Manager]桌面应用程序v1.x。 有关详细信息，请参阅上文。
 
 1. 从[发行说明](release-notes.md)页面下载最新的安装程序。
 
-1. 请准备好Experience Manager部署的URL和凭据。
+1. 请准备好[!DNL Experience Manager]部署的URL和凭据。
 
 1. 如果要从另一个版本的应用程序升级，请参阅[升级桌面应用程序](#upgrade-from-previous-version)。
 
-1. 如果您使用Experience Manager作为Cloud Service、Experience Manager6.4.4或更高版本，或Experience Manager6.5.0或更高版本，请跳过此步骤。 确保您的Experience Manager设置符合[发行说明](release-notes.md)中所述的兼容性要求。 如有必要，请下载适用的[兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，并以Experience Manager包管理器身份安装它。 要安装软件包，请参阅[如何使用软件包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+1. 如果您使用[!DNL Experience Manager]作为[!DNL Cloud Service]、[!DNL Experience Manager] 6.4.4或更高版本，或[!DNL Experience Manager] 6.5.0或更高版本，请跳过此步骤。 确保您的[!DNL Experience Manager]设置符合[发行说明](release-notes.md)中所述的兼容性要求。 如果需要，请下载适用的[兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)，并使用[!DNL Experience Manager]包管理器作为[!DNL Experience Manager]管理员安装它。 要安装软件包，请参阅[如何使用软件包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 
@@ -93,7 +86,7 @@ ht-degree: 0%
 
    *图：应用程序在登录后显示DAM内容*
 
-1. (Experience Manager6.5.1或更高版本)如果您使用带有Experience Manager6.5.1或更高版本的桌面应用程序，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参阅[Azure连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
+1. （[!DNL Experience Manager] 6.5.1或更高版本）如果您使用的桌面应用程序带有[!DNL Experience Manager] 6.5.1或更高版本，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参阅[Azure连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
 
    如果您是Adobe Managed Services(AMS)客户，请与Adobe客户服务联系。
 
