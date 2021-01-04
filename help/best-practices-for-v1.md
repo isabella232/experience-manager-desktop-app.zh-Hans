@@ -1,10 +1,10 @@
 ---
-title: AEM桌面应用程序版本1.x最佳实践
-description: Adobe Experience Manager桌面应用程序1.x版的主要功能和推荐使用。
+title: '[!DNL Adobe Experience Manager] 桌面应用程序版本1.x最佳实践'
+description: ' [!DNL Adobe Experience Manager] 桌面应用程序版本1.x的主要功能和建议使用。'
 translation-type: tm+mt
-source-git-commit: 200135fb96bbfcf9f72e857514bb9b71a88ed817
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-Adobe Experience Manager(AEM)桌面应用程序将您的数字资产管理(DAM)解决方案与桌面链接，这样您就可以直接在桌面上打开AEM web UI中提供的文件。 如果您从桌面保存资产，则资产会上传到AEM的适当位置。
+[!DNL Adobe Experience Manager] 桌面应用程序将您的数字资产管理(DAM)解决方案与桌面链接，这样您可以直接在桌面上打开AEM web UI中提供的文件。如果您从桌面保存资产，则资产会上传到AEM的适当位置。
 
 AEM桌面应用程序消除了您在AEM中更新错误的本地副本或更新错误资产的可能性。 桌面应用程序易于使用的工作流通过桌面操作系统提供的网络共享技术实现。
 
