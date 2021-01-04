@@ -1,27 +1,20 @@
 ---
 title: AEM桌面应用程序1.x版发行说明
 description: AEM桌面应用程序版本1.x的发行详细信息、增强功能、新增功能、兼容性和下载链接。
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 828de6db376d90f6de8f9682183b4c13ffe08d94
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3906'
+ht-degree: 1%
 
 ---
 
 
-# AEM桌面应用程序v1.x发行说明{#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] 桌面应用程序v1.x发行说明  {#aem-desktop-app-release-notes}
 
 对于桌面应用程序v1.x版本，以下是下载链接和AEM兼容性信息。
 
-| 产品 | Adobe Experience Manager (AEM) 桌面应用程序 |
+| 产品 | [!DNL Adobe Experience Manager] 桌面应用程序 |
 |--- |--- |
 | 版本 | 1.10（Mac为1.10.0.6,Windows为1.10.0.3） |
 | 类型 | 次要版本 |
@@ -75,7 +68,7 @@ AEM桌面应用程序1.10侧重于在使用链接文件打开资产时改进大�
 
 ## 先前版本{#enhancements-in-the-previous-versions}中的增强功能
 
-此版本扩展并替换Experience Manager桌面应用程序的先前版本，该版本提供了以下主要增强功能：
+此版本扩展并替换了[!DNL Experience Manager]桌面应用程序的先前版本，后者提供了以下主要增强功能：
 
 * **版本1.9/1.9.1**:可恢复上传、改进的状态窗口、指示应用程序／连接状态的应用程序图标、预取链接资源以用于InDesign文件。
 
@@ -93,7 +86,7 @@ AEM桌面应用程序1.10侧重于在使用链接文件打开资产时改进大�
 
 ### 自AEM桌面应用程序1.9 {#Enhancements-Available-Since-AEM-Desktop-App-19x}以来提供的增强功能
 
-Adobe Experience Manager(AEM)桌面应用程序1.9.1是一个修补程序版本，可解决与资产签出和将文件从网络共享复制到本地目录相关的几个关键客户问题。
+[!DNL Adobe Experience Manager] 桌面应用程序1.9.1是一个修补程序版本，可解决与资产签出和将文件从网络共享复制到本地目录相关的几个关键客户问题。
 
 * 由一个用户签出的资产不应可供其他用户修改(CQ-4246009)
 
@@ -135,7 +128,7 @@ AEM桌面应用程序1.9侧重于改进大型上传时的用户体验、有关�
 
 * 页脚显示下载的文件总数和平均传输速率。
 
-* 如果用户选择从Experience Manager资产Web UI打开或编辑多个文件，则这些文件将分组在一起。 例如，myasset.jpeg和4个更多文件。
+* 如果用户选择从[!DNL Experience Manager Assets] Web界面打开或编辑多个文件，则它们将分组在一起。 例如，myasset.jpeg和4个更多文件。
 
 * 下载存储在AEM Assets的InDesign文档（包括链接的资产）时，桌面应用程序将首先下载所有链接的资产，然后打开[!UICONTROL Adobe InDesign]文档并指示下载链接的资产。 例如，24个中的5个。
 
