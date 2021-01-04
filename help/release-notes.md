@@ -1,36 +1,29 @@
 ---
-title: Adobe Experience Manager桌面应用程序发行说明
-description: Adobe Experience Manager桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。
-uuid: b783c3f8-aa1e-4c05-b687-5894909769f5
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: 3052549b-fe75-44fb-a55e-5cc612868f54
-index: y
-internal: n
-snippet: y
+title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
+description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 41625c59df00b82ceda8a566b35341bc51c2a30f
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 33%
+source-wordcount: '1346'
+ht-degree: 35%
 
 ---
 
 
-# Adobe Experience Manager桌面应用程序发行说明{#release-notes-v2}
+# [!DNL Adobe Experience Manager] 桌面应用程序发行说明  {#release-notes-v2}
 
-| 产品 | Adobe Experience Manager 桌面应用程序 |
+| 产品 | [!DNL Adobe Experience Manager] 桌面应用程序 |
 |--- |--- |
 | 应用程序版本（修订版） | 2.1(2.1.0.0) |
 | 支持的[!DNL Adobe Experience Manager]版本 | [!DNL Experience Manager] 作为 [!DNL Cloud Service]; [!DNL Experience Manager] 6.5; [!DNL Experience Manager] 6.4; [!DNL Experience Manager] 6.3（带兼容包） |
 | 类型 | 次要版本 |
-| 发布日期 | 2020年8月27日（Mac和Win） |
+| 发布日期 | 2020年12月17日（Mac和Win） |
 | 下载 URL | [macOS 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
 
 ## 系统要求和先决条件 {#system-requirements-and-prerequisites-v2}
 
-Adobe Experience Manager桌面应用程序兼容以下操作系统：
+[!DNL Adobe Experience Manager] 桌面应用程序与以下操作系统兼容：
 
 * Mac OS X 10.14或更高版本，并修复了最新错误。
 
@@ -40,7 +33,7 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 >
 >供应商不再支持Windows 7(https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020)。
 
-该应用程序适用于以下Experience Manager版本，无论是作为Cloud Service部署在Adobe Managed Services(AMS)上还是内部部署：
+该应用程序适用于以下[!DNL Experience Manager]版本，无论是作为[!DNL Cloud Service]部署在Adobe Managed Services(AMS)上还是部署在内部：
 
 * [[!DNL Experience Manager] 作为 [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
 
@@ -53,29 +46,29 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 >[!NOTE]
 >
 >[!DNL Experience Manager] 6.3桌面应用程序支持已弃用。 Adobe建议升级到较新且受支持的[!DNL Adobe Experience Manager]版本。
->[!DNL Experience Manager] 6.3.3.1或更高版本在安装[兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)后可与桌面应用程序一起使用。 Experience Manager6.3中没有此类包，因为没有计划[服务包](https://helpx.adobe.com/cn/experience-manager/maintenance-releases-roadmap.html)。
+>[!DNL Experience Manager] 6.3.3.1或更高版本在安装[兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)后可与桌面应用程序一起使用。 [!DNL Experience Manager] 6.3中没有此类包，因为没有计划[服务包](https://helpx.adobe.com/cn/experience-manager/maintenance-releases-roadmap.html)。
 
-您计划在本地计算机上安装的应用程序版本，需要特定的 Adobe Experience Manager 服务器版本/其他服务器端组件（服务包、修补程序或功能包）。请联系您的Adobe Experience Manager管理员寻求帮助。
+您计划在本地计算机上安装的应用程序的版本需要特定的[!DNL Adobe Experience Manager]服务器版本／其他服务器端组件（服务包、热修复或功能包）。 请与[!DNL Experience Manager]管理员联系以获取帮助。
 
 ### 支持不同的资源和文件类型{#support-for-file-types}
 
-应用程序支持存储在Adobe Experience Manager的资源，这些资源代表其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
+应用程序支持存储在[!DNL Experience Manager]中的资源，这些资源代表其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
 
-一些文件类型支持将链接的资产放入二进制文件中。当使用桌面应用程序打开此类二进制文件时，如果Experience Manager存储库中存在该资产，则应用程序会预先下载链接的资产。 当前支持的文件类型有：
+一些文件类型支持将链接的资产放入二进制文件中。当使用桌面应用程序打开此类二进制文件时，如果[!DNL Experience Manager]存储库中存在资产，则应用程序将预先下载链接的资产。 当前支持的文件类型有：
 
 * [!DNL Adobe InDesign] 文件（INDD格式）
 * [!DNL Adobe Illustrator] 文件（AI格式）
 * [!DNL Adobe Photoshop] 文件（PS格式）
 
-上述应用程序的Adobe Creative Cloud2018和Adobe Creative Cloud2019版支持此功能。 应用程序使用启发式、最佳匹配方法将链接资源的本地桌面路径映射到Experience Manager服务器上的URL。 这是基于以下假设：
+上述应用程序的[!DNL Adobe Creative Cloud] 2018和[!DNL Adobe Creative Cloud] 2019版支持此功能。 应用程序使用启发式、最佳匹配方法将链接资源的本地桌面路径映射到[!DNL Experience Manager]服务器上的URL。 这是基于以下假设：
 
 * 到本机应用程序中所放置文件的路径使用全局桌面路径（从本地网络共享中放置，显示[!UICONTROL Reveal]选项）。
 
 * 路径由本机应用程序存储在文件的 XMP 记录中.
 
-* Experience Manager已提取XMP记录，其中包含资产元数据记录的路径。
+* [!DNL Experience Manager] 已提取 XMP 记录，其中包含资产元数据记录的路径.
 
-* 路径可以与Experience Manager中的资产匹配，即，置入的文件也在Experience Manager中的匹配路径下。
+* 路径可以与[!DNL Experience Manager]中的资产匹配，即，所放置的文件也位于[!DNL Experience Manager]中的匹配路径下。
 
 ## 新增功能和增强功能 {#whats-new-added}
 
@@ -111,27 +104,27 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
 * 允许选项将`%Temp%`目录配置为与`%APPDATA%`路径匹配。<!-- CQ-4282665 -->
 
-* 允许用户通过Okta SAML身份验证登录Experience Manager作者。<!-- CQ-4278134 -->
+* 允许用户通过Okta SAML身份验证登录[!DNL Experience Manager]作者。<!-- CQ-4278134 -->
 
 ## 安装说明 {#installation-instructions-v2}
 
-要了解如何安装和配置应用程序，请参阅[安装Experience Manager桌面应用程序](install-upgrade.md)。
+要了解如何安装和配置应用程序，请参阅[安装 [!DNL Experience Manager] 桌面应用程序](install-upgrade.md)。
 
-如果您是从以前的Experience Manager桌面应用程序升级，则必须遵循以下转换最佳实践，这些最佳实践列在从先前版本](install-upgrade.md#upgrade-from-previous-version)升级时。[
+如果您是从以前的[!DNL Experience Manager]桌面应用程序升级，则必须遵循以下转换最佳实践，这些最佳实践在从先前版本](install-upgrade.md#upgrade-from-previous-version)升级时列出。[
 
 ## 关于应用程序工作方式的重要说明 {#how-app-works}
 
 请务必了解关于应用程序及其工作方式的以下信息。
 
-* 该应用程序对需要从资产二进制文件完全传输到Experience Manager（打开、编辑、上传更改和上传资产）的操作提供完全控制。
+* 该应用程序可全面控制需要从[!DNL Experience Manager]到&lt;a0/>（打开、编辑、上传更改和上传资产）完全传输资产二进制文件的操作。
 
    * 如果想要在桌面上处理资产，您需要明确地在某个文件夹中逐个或通过多选方式打开、编辑资产或将其下载到桌面。
 
-   * 如果要获取对上传到Experience Manager的资产进行的本地更改，您需要单独或通过多选方式选择[!UICONTROL Upload Changes]。
+   * 如果要获取对上传到[!DNL Experience Manager]的资产进行的本地更改，您需要单独或通过多选方式选择[!UICONTROL Upload Changes]。
 
-   * 应用程序不是跨桌面和Experience Manager同步资源的“同步客户端”。
+   * 应用程序不是跨桌面和[!DNL Experience Manager]同步资源的“同步客户端”。
 
-   * 应用程序不提供将Experience Manager库映射为虚拟文件夹结构的网络共享。
+   * 应用程序不提供将[!DNL Experience Manager]存储库映射为虚拟文件夹结构的网络共享。
 
 * 该应用程序显示的资产列表基于 Assets 存储库的状态。对于任何下载到本地后在本地文件或缓存文件夹中重命名的文件，该应用程序不会显示或管理这些文件。
 
@@ -143,7 +136,7 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
 下图说明了由用户操作启动的资产和文件从云端到本地文件系统（以及从本地文件系统到云端）的流程。
 
-![通过桌面应用程序将资源从Experience Manager服务器流动到本机桌面应用程序](assets/da20_flow_diagram.png)
+![[!DNL Experience Manager]资产通过桌面应用程序从 服务器流向本机桌面应用程序](assets/da20_flow_diagram.png)
 
 ## 已知问题 {#known-issues-v2}
 
@@ -157,13 +150,13 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
 * 在应用筛选器以查找所有本地编辑的资产和删除筛选器后，应用程序不会为用户呈现搜索结果或者用户开始执行筛选时所在的文件夹视图。应用程序会显示 DAM 存储库的根文件夹。
 
-* 有时，当您连接到未运行Experience Manager服务器的URL时，连接屏幕会变得不响应。 可退出应用程序后重新启动。
+* 有时，当连接到未运行[!DNL Experience Manager]服务器的URL时，连接屏幕会变得不响应。 可退出应用程序后重新启动。
 
 **CRUD（创建、读取、更新和删除）问题：**
 
 * 应用程序尝试上传包含无效字符的文件，可能会导致服务器端上传失败。<!-- CQ-4273652 -->
 
-* 在将更改上传到包含注释的资产时，注释会与资产一起以Experience Manager形式存储，但不会以版本化注释的形式显示。 此问题已在Experience Manager6.4.5和Experience Manager6.5.1中解决。Adobe强烈建议安装最新的服务包。<!-- CQ-4268990 -->
+* 将更改上传到包含注释的资产时，注释会与资产一起存储在[!DNL Experience Manager]中，但不会作为版本控制注释显示。 此问题已在[!DNL Experience Manager] 6.4.5和[!DNL Experience Manager] 6.5.1中解决。Adobe建议安装最新的服务包。<!-- CQ-4268990 -->
 
 * 用户无法取消资产传输。如果意外触发了大量传输，请退出应用程序后重新启动。<!-- CQ-4278940 -->
 
@@ -173,9 +166,9 @@ Adobe Experience Manager桌面应用程序兼容以下操作系统：
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager作为Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
->* [Experience Manager为Cloud Service资产文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [如何使用Experience Manager桌面应用程序](using.md)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [如何使用桌 [!DNL Experience Manager] 面应用程序](using.md)
 >* [安装和升级桌面应用程序](install-upgrade.md)
 >* [最佳实践和故障诊断提示](troubleshoot.md)
 
