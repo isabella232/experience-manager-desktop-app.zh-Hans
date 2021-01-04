@@ -1,11 +1,10 @@
 ---
 title: 使用 [!DNL Experience Manager] 桌面应用程序版本1.x。
 description: 了解如何使用Adobe Experience Manager桌面应用程序1.x版并优化您在桌面上使用资源的作品。
-contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
