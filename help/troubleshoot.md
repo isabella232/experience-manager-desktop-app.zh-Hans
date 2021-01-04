@@ -1,25 +1,18 @@
 ---
-title: Adobe Experience Manager桌面应用程序的最佳实践和疑难解答
+title: ' [!DNL Adobe Experience Manager] 桌面应用程序的最佳实践和疑难解答'
 description: 按照最佳实践和疑难解答解决与安装、升级、配置等相关的偶发问题。
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
 
 
-# 对Adobe Experience Manager桌面应用程序{#troubleshoot-v2}进行疑难解答
+# [!DNL Adobe Experience Manager]桌面应用程序{#troubleshoot-v2}疑难解答
 
-Adobe Experience Manager桌面应用程序连接到远程Experience Manager部署的数字资产管理(DAM)存储库。 应用程序可在您的计算机上获取存储库信息和搜索结果、下载和上传文件和文件夹，并包含管理与资产用户界面冲突的功能。
+[!DNL Adobe Experience Manager] 桌面应用程序 [!DNL Experience Manager] 连接到部署的数字资产管理(DAM)存储库。应用程序可在您的计算机上获取存储库信息和搜索结果、下载和上传文件和文件夹，并包含管理与资产用户界面冲突的功能。
 
 阅读应用程序疑难解答、了解最佳实践并找出限制。
 
@@ -27,23 +20,23 @@ Adobe Experience Manager桌面应用程序连接到远程Experience Manager部�
 
 遵循以下最佳实践，防止一些常见问题和疑难解答。
 
-* **了解桌面应用程序的工作方式**:开始使用应用程序之前，请花些时间了解应用程序的工作方式。了解Experience ManagerWeb界面与桌面之间的链接、存储库映射、资产缓存、本地保存以及后台上传。 请参见[其工作方式](release-notes.md#how-app-works)。
+* **了解桌面应用程序的工作方式**:开始使用应用程序之前，请花些时间了解应用程序的工作方式。了解[!DNL Experience Manager] Web界面与桌面、存储库映射、资产缓存、本地保存和后台上传之间的链接。 请参见[其工作方式](release-notes.md#how-app-works)。
 
-* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。请参阅[在Experience Manager资产](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中创建文件夹中的列表字符。 某些Adobe Experience Manager用例可能受文件夹名称中不支持的字符影响。
+* **避免文件夹名称中不支持的字符**:创建或上传文件夹时，请勿使用空格和无效字符。请参阅[在 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中创建文件夹中的列表字符。 某些[!DNL Experience Manager]用例可能会受到文件夹名称中不支持的字符的影响。
 
 * **避免冲突的最佳实践**:要避免在协作处理多个资产时发生潜在冲突，请参阅 [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)。
 
-* **将文件夹上传用于大型分层文件夹**:使用Experience Manager桌面应用程序上传大型文件夹，而不是使用资产Web界面或其他方法。应用程序通过记录和监视在后台上传资产。 请参阅[批量上传资产](using.md#bulk-upload-assets)。
+* **将文件夹上传用于大型分层文件夹**:使用桌面应用程序上传大型文件夹，而不 [!DNL Experience Manager] 是使用资产Web界面或其他方法。应用程序通过记录和监视在后台上传资产。 请参阅[批量上传资产](using.md#bulk-upload-assets)。
 
-* **使用最新版本**:使用最新的应用程序版本，在安装新的应用程序版本或升级到较新的Adobe Experience Manager版本之前，始终检查兼容性。请参阅[发行说明](release-notes.md)。
+* **使用最新版本**:使用最新的应用程序版本，在安装新的应用程序版本或升级到新版本之前，请始终检查兼容性 [!DNL Experience Manager] 情况。请参阅[发行说明](release-notes.md)。
 
-* **使用相同的驱动器号**:在整个组织中使用相同的驱动器号映射到Adobe Experience ManagerDAM。要查看其他用户放置的资产，路径必须相同。 使用相同的驱动器号可确保DAM资产的路径不变。 即使不同用户使用不同的驱动器盘符，资源仍会保持放置状态并且不会被删除。
+* **使用相同的驱动器号**:在组织内使用相同的驱动器号映射到 [!DNL Experience Manager] DAM。要查看其他用户放置的资产，路径必须相同。 使用相同的驱动器号可确保DAM资产的路径不变。 即使不同用户使用不同的驱动器盘符，资源仍会保持放置状态并且不会被删除。
 
-* **注意网络**:网络性能对Experience Manager桌面应用程序的性能至关重要。如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
+* **注意网络**:网络性能对桌面应 [!DNL Experience Manager] 用程序的性能至关重要。如果对文件传输或批量操作的响应速度较慢，请关闭可能导致大量网络流量的功能或应用程序。
 
 * **桌面应用程序不支持的用例**:请勿将应用程序用于资产迁移（它需要规划和其他工具）;执行繁重的DAM操作（如移动大文件夹、大型上传、使用高级元数据搜索查找文件）;同步客户端(设计原则和使用模式与同步客户端(如Microsoft OneDrive或Adobe Creative Cloud桌面同步)不同。
 
-* **超时**:当前，桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开Experience Manager服务器与桌面应用程序之间的连接。上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
+* **超时**:当前，桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开 [!DNL Experience Manager] 服务器与桌面应用程序之间的连接。上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
 
 ## 如何对{#troubleshooting-prep}进行疑难解答
 
@@ -119,7 +112,7 @@ Adobe Experience Manager桌面应用程序连接到远程Experience Manager部�
 
 执行以下步骤：
 
-1. 开始应用程序并连接Experience Manager实例。
+1. 开始应用程序并连接[!DNL Experience Manager]实例。
 
 1. 单击右上角的省略号并选择[!UICONTROL Preferences]，打开应用程序的首选项。
 
@@ -163,9 +156,9 @@ Adobe Experience Manager桌面应用程序连接到远程Experience Manager部�
 
 * 文件大小。 下载和显示大型资源需要更长的时间。
 
-* 驱动器盘符一致性。 如果您或其他协作者在将Experience ManagerDAM映射到其他驱动器号时放置了资源，则放置的资源不会显示。
+* 驱动器盘符一致性。 如果您或其他协作者在将[!DNL Experience Manager] DAM映射到其他驱动器号时放置了资源，则放置的资源不会显示。
 
-* 权限. 要检查您是否有权获取已放置的资产，请与Experience Manager管理员联系。
+* 权限. 要检查您是否有权获取已放置的资产，请与[!DNL Experience Manager]管理员联系。
 
 ### 对桌面应用程序用户界面上的文件所做的编辑不会立即反映在[!DNL Adobe Experience Manager]中{#changes-on-da-not-visible-on-aem}
 
@@ -173,7 +166,7 @@ Adobe Experience Manager桌面应用程序连接到远程Experience Manager部�
 
 ### 在macOS上升级时的问题{#issues-when-upgrading-on-macos}
 
-在macOS上升级Experience Manager桌面应用程序时，偶尔会发生问题。 这是由于Experience Manager桌面应用程序的旧系统文件夹阻止正确加载新版本的Experience Manager桌面应用程序而导致的。 要解决此问题，可以手动删除以下文件夹和文件。
+在macOS上升级[!DNL Experience Manager]桌面应用程序时，偶尔会出现问题。 这是由于[!DNL Experience Manager]桌面应用程序的旧系统文件夹阻止正确加载新版本的[!DNL Experience Manager]桌面应用程序导致的。 要解决此问题，可以手动删除以下文件夹和文件。
 
 在执行以下步骤之前，将`Adobe Experience Manager Desktop`应用程序从macOS Applications文件夹拖到垃圾桶。 然后打开终端，执行以下命令，并在出现提示时提供密码。
 
@@ -188,7 +181,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 ### 无法上载文件{#upload-fails}
 
-如果您使用的桌面应用程序具有Experience Manager6.5.1或更高版本，请将S3或Azure连接器升级到版本1.10.4或更高版本。 它解决了与[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相关的文件上传失败问题。 请参阅[安装说明](install-upgrade.md#install-v2)。
+如果您使用的桌面应用程序具有[!DNL Experience Manager] 6.5.1或更高版本，请将S3或Azure连接器升级到版本1.10.4或更高版本。 它解决了与[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相关的文件上传失败问题。 请参阅[安装说明](install-upgrade.md#install-v2)。
 
 ### [!DNL Experience Manager] 桌面应用程序连接问题  {#connection-issues}
 
@@ -256,9 +249,9 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 #### SSL配置问题{#ssl-config-v2}
 
-Experience Manager桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，连接可能使用浏览器成功，但使用Experience Manager桌面应用程序失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参阅[如何在Apache](https://access.redhat.com/solutions/43575)中安装Intermediate CA证书。
+[!DNL Experience Manager]桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，连接可能使用浏览器成功，但使用[!DNL Experience Manager]桌面应用程序失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参阅[如何在Apache](https://access.redhat.com/solutions/43575)中安装Intermediate CA证书。
 
-Experience Manager桌面用于HTTP通信的库采用严格的SSL强制。 因此，在某些情况下，通过浏览器成功的SSL连接在[!DNL Adobe Experience Manager]桌面应用程序中失败。 这很好，因为它鼓励正确配置SSL并提高安全性，但当应用程序无法连接时，这可能会令人沮丧。
+[!DNL Experience Manager]桌面应用程序用于HTTP通信的库采用严格的SSL强制。 因此，在某些情况下，通过浏览器成功的SSL连接在[!DNL Adobe Experience Manager]桌面应用程序中失败。 这很好，因为它鼓励正确配置SSL并提高安全性，但当应用程序无法连接时，这可能会令人沮丧。
 
 在这种情况下，建议使用一种工具来分析服务器的SSL证书并识别问题，以便更正它们。 有一些网站在提供服务器的URL时检查服务器的证书。
 
