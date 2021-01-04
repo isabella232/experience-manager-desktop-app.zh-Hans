@@ -1,27 +1,20 @@
 ---
-title: AEM桌面应用程序版本1.x疑难解答
-description: 对AEM桌面应用程序版本1.x进行疑难解答，以解决与安装、升级、配置等相关的偶发问题。
-uuid: ce98a3e7-5454-41be-aaaa-4252b3e0f8dd
-contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS, SG_EXPERIENCEMANAGER/6.4/ASSETS, SG_EXPERIENCEMANAGER/6.3/ASSETS
-discoiquuid: f5eb222a-6cdf-4ae3-9cf2-755c873f397c
-index: y
-internal: n
-snippet: y
+title: '桌面应用程序版本1.x疑难解答 [!DNL Adobe Experience Manager] '
+description: 对 [!DNL Adobe Experience Manager] 桌面应用程序版本1.x进行疑难解答，以解决与安装、升级和配置相关的偶然问题。
 translation-type: tm+mt
-source-git-commit: 1702ef74ad0497b25c2fc349a2950e4e2b19a90b
+source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3366'
+ht-degree: 1%
 
 ---
 
 
-# AEM桌面应用程序v1.x {#troubleshoot-aem-desktop-app}疑难解答
+# [!DNL Adobe Experience Manager]桌面应用程序v1.x {#troubleshoot-aem-desktop-app}疑难解答
 
 对AEM桌面应用程序进行疑难解答，以解决与安装、升级、配置等相关的偶发问题。
 
-Adobe Experience Manager(AEM)桌面应用程序包含实用程序，可帮助您将AEM Assets存储库映射为桌面上的网络共享（Mac OS上的SMB共享）。 网络共享是一种操作系统技术，它使远程源能够被视为计算机本地文件系统的一部分。 对于桌面应用程序，远程AEM实例的数字资产管理(DAM)存储库结构将作为远程文件源。 下图描述了桌面应用程序拓扑：
+[!DNL Adobe Experience Manager] 桌面应用程序包含实用程序，可帮助您将AEM Assets存储库映射为桌面上的网络共享（Mac OS上的SMB共享）。网络共享是一种操作系统技术，它使远程源能够被视为计算机本地文件系统的一部分。 对于桌面应用程序，远程AEM实例的数字资产管理(DAM)存储库结构将作为远程文件源。 下图描述了桌面应用程序拓扑：
 
 ![桌面应用程序图](assets/aem-desktopapp-architecture.png)
 
@@ -70,7 +63,7 @@ AEM Desktop不适合执行密集的文件系统操作，包括但不限于：
 
 由于操作系统的限制，Windows的文件大小限制为4,294,967,295字节（约4.29 GB）。 这是由于注册表设置，它定义网络共享上的文件可以有多大。 注册表设置的值是一个DWORD，其最大大小等于引用的数。
 
-Experience Manager桌面应用程序没有可配置的超时值，该值在固定时间间隔后会断开Experience Manager服务器与桌面应用程序之间的连接。 上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
+[!DNL Experience Manager] 桌面应用程序没有可配置的超时值，该值在固定时间间隔后 [!DNL Experience Manager] 会断开服务器与桌面应用程序之间的连接。上传大型资产时，如果连接在一段时间后超时，应用程序会重试通过增加上传超时来上传资产几次。 不推荐更改默认超时设置。
 
 ## 缓存并与AEM {#caching-and-communication-with-aem}通信
 
