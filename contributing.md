@@ -1,8 +1,8 @@
 ---
-source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
+source-git-commit: 18cebce065f9b55259bf96d14cb50cf5bc6c8ec6
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 ### 来自Adobe雇员的供款
 
-如果您是Adobe员工并且有缴费，我们请求您使用公司git中的`AdobeDocs`组织。 您可以在GitHub.com上向此公共存储库提供内容，但在公司回购协议上处理这些内容会更容易。 确保只有在公司回购协议中讨论任何专有或未发布的信息。
+如果您是Adobe员工并且有缴费，我们请求您使用公司git中的`AdobeDocs`组织。 您可以在GitHub.com上向此公共存储库提供内容，但在公司回购协议上处理这些内容会更容易。 确保只有在公司回购协议中讨论任何专有或未发布的信息。 Adobe员工无需签署CLA。
 
 ## 关于Adobe的GitHub创作平台和Markdown
 
