@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 桌面应用程序指南
 breadcrumb-title: Desktop App 指南
-user-guide-description: 了解如何使用 Experience Manager 桌面应用程序连接存储库和桌面应用程序，以便更快地访问资源并简化工作流。
+user-guide-description: 了解如何使用 Experience Manager 桌面应用程序连接存储库和桌面程序，以便更快地访问资源并简化工作流。
 solution-title: AEM Assets
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html
@@ -13,8 +13,8 @@ tutorials-url: https://helpx.adobe.com/cn/experience-manager/kt/index/aem-tutori
 translation-type: tm+mt
 source-git-commit: 2893fc1f8aad02e1436a1a281a320e6837487220
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '85'
+ht-degree: 81%
 
 ---
 
