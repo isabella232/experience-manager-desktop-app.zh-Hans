@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 产品 | [!DNL Adobe Experience Manager] 桌面应用程序 |
 |--- |--- |
-| 版本 | 1.10（Mac为1.10.0.6,Windows为1.10.0.3） |
+| 版本号 | 1.10（Mac为1.10.0.6,Windows为1.10.0.3） |
 | 类型 | 次要版本 |
 | 日期 | 1.10.0.6(Mac):2020年4月15日；1.10.0.3(Win):2018年8月31日 |
 | 下载 URL | [Mac OS X 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-1.10.0.6.dmg); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-1.10.0.3.exe); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-1.10.0.3.exe) |
@@ -429,7 +429,7 @@ AEM桌面应用程序1.8.1 fast-follow发行版在同时从AEM UI打开多个文
 
 AEM桌面应用程序可与各种版本的AEM一起使用。 请参阅受支持版本的兼容性列表。
 
-| 版本 | 修订 | 发布日期 | 兼容性 |
+| 版本号 | 修订 | 发布日期 | 兼容性 |
 |--- |--- |--- |--- |
 | 1.10 | 1.10.0.3（Mac和Win） | 2018年8月31日 | AEM 6.5;AEM 6.4 SP1;AEM 6.3 SP2;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
 | 1.9 | 1.9.1.1（Mac和Win） | 2018年6月21日 | AEM 6.4;AEM 6.3 SP1;AEM 6.2 SP1 CFP2+;AEM 6.1 SP2 CFP7+ |
