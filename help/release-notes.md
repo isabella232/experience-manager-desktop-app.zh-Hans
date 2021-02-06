@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: a25c1fa13895ae9eb7268e3e01c83a5f0b9d7d1d
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 35%
 
 该应用程序适用于以下[!DNL Experience Manager]版本，无论是作为[!DNL Cloud Service]部署在Adobe Managed Services(AMS)上还是部署在内部：
 
-* [[!DNL Experience Manager] 作为 [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
+* [[!DNL Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
 
 * [[!DNL Experience Manager] 6.5.0或更](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 高版本。
 
@@ -116,7 +116,7 @@ ht-degree: 35%
 
 请务必了解关于应用程序及其工作方式的以下信息。
 
-* 该应用程序可全面控制需要从[!DNL Experience Manager]到&lt;a0/>（打开、编辑、上传更改和上传资产）完全传输资产二进制文件的操作。
+* 该应用程序可全面控制需要从[!DNL Experience Manager]到（打开、编辑、上传更改和上传资产）完全传输资产二进制文件的操作。
 
    * 如果想要在桌面上处理资产，您需要明确地在某个文件夹中逐个或通过多选方式打开、编辑资产或将其下载到桌面。
 
