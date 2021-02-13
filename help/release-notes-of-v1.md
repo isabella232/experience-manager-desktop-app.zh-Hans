@@ -1,16 +1,16 @@
 ---
-title: AEM桌面应用程序1.x版发行说明
-description: AEM桌面应用程序版本1.x的发行详细信息、增强功能、新增功能、兼容性和下载链接。
+title: 桌面应用程序v1.10的发行说明
+description: AEM桌面应用程序版本1.10的发行详细信息、增强功能、新增功能、兼容性和下载链接。
 translation-type: tm+mt
-source-git-commit: 95e252504a4fbb3b60a2c6bc9b57a8a0d8ecb51c
+source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3901'
 ht-degree: 1%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] 桌面应用程序v1.x发行说明  {#aem-desktop-app-release-notes}
+# [!DNL Adobe Experience Manager] 桌面应用程序v1.10发行说明  {#aem-desktop-app-release-notes}
 
 对于桌面应用程序v1.x版本，以下是下载链接和AEM兼容性信息。
 
@@ -44,7 +44,7 @@ Adobe强烈建议使用最新版AEM桌面应用程序来使用最新功能、最
 
 请参阅本文档末尾的[详细兼容性矩阵](#compatibilitymatrix)，以评估设置的先决条件。
 
-## AEM桌面应用程序1.10 {#what-s-new-in-aem-desktop-app}的新增功能
+## 桌面应用程序v1.10 {#what-s-new-in-aem-desktop-app}中的新增功能
 
 AEM桌面应用程序1.10侧重于改进大型上传的用户体验、有关后台操作的信息以及在打开包含链接文件的资产时优化的体验(如InDesign)。
 
