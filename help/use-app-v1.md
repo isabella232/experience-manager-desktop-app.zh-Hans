@@ -2,9 +2,9 @@
 title: 使用 [!DNL Experience Manager] 桌面应用程序版本1.10。
 description: 了解如何使用Adobe Experience Manager桌面应用程序版本1.10并优化您在桌面上使用资源的工作。
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: 4870615ed40226964d077d6666b83b85b73da180
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2373'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 根据您的网络和系统首选项，可能需要进行详细的配置。 有关详细信息，请参阅[安装和配置 [!DNL Experience Manager] 桌面应用程序](install-configure-app-v1.md)。
 
-1. 转到[[!DNL Experience Manager] 桌面应用程序下载页面](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html)并下载适用于您的操作系统的二进制文件。
+1. 转到[[!DNL Experience Manager] 桌面应用程序v1.10下载页](/help/release-notes-of-v1.md)并下载适用于您的操作系统的适当二进制文件。
 1. 启动下载的安装文件，然后按照屏幕说明安装应用程序。
 
    >[!NOTE]
@@ -123,6 +123,9 @@ ht-degree: 0%
 >[!NOTE]
 >
 >在Windows上， [默认的Windows 7设置](https://support.microsoft.com/en-us/kb/2668751)会阻止[!DNL Experience Manager]桌面应用程序处理大于50 MB的资源。
+
+<!-- TBD: The above note is for Windows 7 which is not supported by the app anymore. Remove it later.
+-->
 
 >[!NOTE]
 >
