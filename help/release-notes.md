@@ -3,10 +3,10 @@ title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b5292d9386432bd7c6ba5d7117dbc9fd9f014941
+source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 35%
+source-wordcount: '1424'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->供应商(https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020)不再支持Windows 7。
+>不再支持Windows 7。 请参阅[有关Windows 7的EOL的文章](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020)。
 
 该应用程序适用于以下[!DNL Experience Manager]版本，无论是作为[!DNL Cloud Service]部署在Adobe Managed Services(AMS)上还是内部部署：
 
@@ -47,7 +47,7 @@ ht-degree: 35%
 >[!NOTE]
 >
 >[!DNL Experience Manager] 6.3的桌面应用程序支持已弃用。 Adobe建议升级到较新且受支持的[!DNL Adobe Experience Manager]版本。
->[!DNL Experience Manager] 6.3.3.1或更高版本在安装[兼容程序包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)后可与桌面应用程序一起使用。 [!DNL Experience Manager] 6.3中不提供此类包，因为未计划[服务包。](https://helpx.adobe.com/cn/experience-manager/maintenance-releases-roadmap.html)
+>[!DNL Experience Manager] 6.3.3.1或更高版本在安装[兼容程序包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)后可与桌面应用程序一起使用。 [!DNL Experience Manager] 6.3中不提供此类包，因为未计划[服务包。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
 
 您计划在本地计算机上安装的应用程序的版本需要特定的[!DNL Adobe Experience Manager]服务器版本/其他服务器端组件（服务包、热修复或功能包）。 请与[!DNL Experience Manager]管理员联系以获取帮助。
 
