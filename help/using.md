@@ -3,7 +3,7 @@ title: 使用 [!DNL Experience Manager] 桌面应用程序
 description: 直接从Win或Mac桌面使用 [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM资源，并用于其他应用程序。
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 18ed934f9acc774f7bc4ef7555aa3f369ca4cf47
+source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -293,7 +293,7 @@ ht-degree: 0%
 >
 >桌面应用程序可映射到Windows上的任何驱动器。 但是，对于平滑操作，不要更改默认驱动器盘符。 如果同一组织的用户使用不同的驱动器号，则他们无法看到其他人放置的资产。 路径更改时不会获取所放置的资产。 放置的资源将继续保留在二进制文件（例如INDD）中，并且不会被删除。
 
-要了解此工作流的限制，请参阅[系统要求和支持的版本](release-notes.md#system-requirements-and-prerequisites-v2)。
+要了解此工作流的限制，请参阅[系统要求和支持的版本](release-notes.md)。
 
 要尝试使用此工作流处理图像资产和InDesign，请执行以下步骤：
 
