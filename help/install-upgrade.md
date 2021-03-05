@@ -2,9 +2,9 @@
 title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资源。
 translation-type: tm+mt
-source-git-commit: cc4ce762ad1d7f4c5a54ab6bac9d1a872e3d18c9
+source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1300'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 要使用[!DNL Experience Manager]桌面应用程序，
 
-* 确保[!DNL Experience Manager]桌面应用程序支持您的[!DNL Experience Manager]版本。 请参见下面的[系统要求](release-notes.md#system-requirements-and-prerequisites-v2)。
+* 确保[!DNL Experience Manager]桌面应用程序支持您的[!DNL Experience Manager]版本。 请参阅[系统要求](release-notes.md)。
 
 * 下载并安装应用程序。 请参阅下面的[安装桌面应用程序](#install-v2)。
 
@@ -108,11 +108,15 @@ ht-degree: 1%
 
 * **[!UICONTROL Automatically download linked assets]**:如果您下载原始文件，将自动获取放置在受支持的本机Creative Cloud应用程序中的资源。
 
-* **[!UICONTROL Maximum number of downloads]**:首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。默认值为 50。如果不确定，请勿更改。 增加此值可能会延长等待时间，而减少此值可能不允许您一次性下载必要的资产或文件夹。
+* **[!UICONTROL Maximum number of downloads]**: ![警告](assets/do-not-localize/caution-icon.png) 图标谨慎更改。首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。 默认值为 50。如果不确定，请勿更改。 增加此值可能会延长等待时间，而减少此值可能不允许您一次性下载必要的资产或文件夹。
 
-* **[!UICONTROL Upload Acceleration]**:上传资产时，应用程序可以使用并发上传来提高上传速度。您可以通过向右移动滑块来增加上载的并发性。 最左侧的滑块表示不并发（单线程上传），中间位置对应10个并发线程，最右侧的最大限制对应20个并发线程。 较高的并发限制要求本地机器处理器的资源消耗更多。
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**: ![警告](assets/do-not-localize/caution-icon.png) 图标谨慎更改。通过此设置，应用程序在上传文件夹时可模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称使用用户提供的文件夹名称的空格和大小写。 但是，在应用程序的v2.1中，文件夹名称中的额外空格将转换为虚线。 例如，如果未选择该选项，并保留v2.1中的默认行为，则上传`New Folder`或`new   folder`将在存储库中创建相同的节点。 如果选择此选项，则在存储库中为上述两个文件夹创建不同的节点，并且它与v1.10应用程序的行为相匹配。
 
-要更新不可用的首选项，请注销[!DNL Experience Manager]服务器。 更新首选项后，单击![保存首选项](assets/do-not-localize/save_preferences_da2.png)以保存更改。
+   v2.1的默认行为仍保持不变，即，将存储库节点名称中文件夹名称中的多个空格替换为虚线，并转换为小写节点名称。
+
+* **[!UICONTROL Upload Acceleration]**: ![警告](assets/do-not-localize/caution-icon.png) 图标谨慎更改。上传资产时，应用程序可以使用并发上传来提高上传速度。 您可以通过向右移动滑块来增加上载的并发性。 最左侧的滑块表示不并发（单线程上传），中间位置对应10个并发线程，最右侧的最大限制对应20个并发线程。 更高的并发限制会占用更多资源。
+
+要更新不可用的首选项，请注销[!DNL Experience Manager]服务器，然后进行更新。 更新首选项后，单击![保存首选项](assets/do-not-localize/save_preferences_da2.png)。
 
 ![桌面应用程序首选项和设置](assets/preferences_da2.png)
 
