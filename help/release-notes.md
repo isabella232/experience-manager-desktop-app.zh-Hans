@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
+source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 28%
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 以下是最新桌面应用程序版本2.1(2.1.1.0)的发行信息。 发布日期为2021年3月5日。 它是一个次要版本，并且具有增强功能。
 
-支持的[!DNL Experience Manager]版本有：
+支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;为：
 
 * [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
 * [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)。
@@ -24,12 +24,12 @@ ht-degree: 28%
 * [!DNL Experience Manager] 6.3（带兼容包）
 * [!DNL Experience Manager] 6.3.3.1或更高版本，并安 [装兼](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容包。[!DNL Experience Manager] 6.3.3.0或早期版本不支持桌面应用程序。
 
-[!DNL Adobe Experience Manager] 桌面应用程序可用于以下操作系统：
+[!DNL Adobe Experience Manager] 桌面应用程序可用于以下 **操作系统**:
 
 * macOS X 10.14或更高版本，并修复了最新错误。
 * 带有最新服务包和错误修复的Windows 10。
 
-支持的操作系统的下载URL为：
+支持的操作系统的&#x200B;**下载URL**&#x200B;为：
 
 | 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
