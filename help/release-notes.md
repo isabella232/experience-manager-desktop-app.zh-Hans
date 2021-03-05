@@ -3,55 +3,50 @@ title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 34%
+source-wordcount: '1468'
+ht-degree: 28%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明  {#release-notes-v2}
 
-| 产品 | [!DNL Adobe Experience Manager] 桌面应用程序 |
-|--- |--- |
-| 应用程序版本（修订版） | 2.1(2.1.0.0) |
-| 支持的[!DNL Adobe Experience Manager]版本 | [!DNL Experience Manager] 作为 [!DNL Cloud Service]; [!DNL Experience Manager] 6.5; [!DNL Experience Manager] 6.4; [!DNL Experience Manager] 6.3（带兼容包） |
-| 类型 | 次要版本 |
-| 发布日期 | 2020年12月17日（Mac和Win） |
-| 下载AEM 6.x的URL | [macOS 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
-| 将AEM的URL下载为[!DNL Cloud Service] | [macOS 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.0.0.dmg); [Windows 64位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.0.0.exe); [Windows 32位](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.0.0.exe) |
+<!-- TBD: Update 6 links and 1 date below. -->
 
-## 系统要求和先决条件 {#system-requirements-and-prerequisites-v2}
+以下是最新桌面应用程序版本2.1(2.1.1.0)的发行信息。 发布日期为2021年3月5日。 它是一个次要版本，并且具有增强功能。
 
-[!DNL Adobe Experience Manager] 桌面应用程序与以下操作系统兼容：
+支持的[!DNL Experience Manager]版本有：
 
-* Mac OS X 10.14或更高版本，并修复了最新错误。
+* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
+* [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)。
+* [!DNL Experience Manager] 6.4.4或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html)。
+* [!DNL Experience Manager] 6.4.0 - 6.4.3，安装了 [兼](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容性包，位于Adobe Managed Services(AMS)或内部部署上。
+* [!DNL Experience Manager] 6.3（带兼容包）
+* [!DNL Experience Manager] 6.3.3.1或更高版本，并安 [装兼](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容包。[!DNL Experience Manager] 6.3.3.0或早期版本不支持桌面应用程序。
 
+[!DNL Adobe Experience Manager] 桌面应用程序可用于以下操作系统：
+
+* macOS X 10.14或更高版本，并修复了最新错误。
 * 带有最新服务包和错误修复的Windows 10。
+
+支持的操作系统的下载URL为：
+
+| 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
+|---|---|---|
+| macOS 64位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.1.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.1.0.dmg) |
+| Windows 64位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.1.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.1.0.exe) |
+| Windows 32位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.1.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.1.0.exe) |
 
 >[!NOTE]
 >
 >不再支持Windows 7。 请参阅[有关Windows 7的EOL的文章](https://support.microsoft.com/en-us/help/4057281/windows-7-support-ended-on-january-14-2020)。
 
-该应用程序适用于以下[!DNL Experience Manager]版本，无论是作为[!DNL Cloud Service]部署在Adobe Managed Services(AMS)上还是内部部署：
+<!-- The version of the app you plan to install on your local machine requires a specific [!DNL Adobe Experience Manager] server version/additional server-side components (service packs, hot fixes, or feature packs). Contact your [!DNL Experience Manager] administrator for help.
+-->
 
-* [[!DNL Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
-
-* [[!DNL Experience Manager] 6.5.0或更](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html) 高版本。
-
-* [[!DNL Experience Manager] 6.4.4或更](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) 高版本。
-
-* [!DNL Experience Manager] 6.4.0 - 6.4.3，兼容 [性包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)。
-
->[!NOTE]
->
->[!DNL Experience Manager] 6.3的桌面应用程序支持已弃用。 Adobe建议升级到较新且受支持的[!DNL Adobe Experience Manager]版本。
->[!DNL Experience Manager] 6.3.3.1或更高版本在安装[兼容程序包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)后可与桌面应用程序一起使用。 [!DNL Experience Manager] 6.3中不提供此类包，因为未计划[服务包。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)
-
-您计划在本地计算机上安装的应用程序的版本需要特定的[!DNL Adobe Experience Manager]服务器版本/其他服务器端组件（服务包、热修复或功能包）。 请与[!DNL Experience Manager]管理员联系以获取帮助。
-
-### 支持不同的资源和文件类型{#support-for-file-types}
+## 支持不同的资源和文件类型{#support-for-file-types}
 
 应用程序支持存储在[!DNL Experience Manager]中的资源，这些资源表示用于其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
 
@@ -71,27 +66,31 @@ ht-degree: 34%
 
 * 路径可以与[!DNL Experience Manager]中的资产匹配，即，所放置的文件也位于[!DNL Experience Manager]中的匹配路径下。
 
-## 新增功能和增强功能 {#whats-new-added}
+## 新增功能、增强和错误修复{#what-is-new}
 
 要了解详细信息，请参阅[v2.0](introduction.md#whats-new-v2)中的新增功能。
 
-**应用程序v2.1.0.0中的更新**
+**在应用程序v2.1.1.0中更新**
 
-* 要上传资产，用户现在可以直接从Windows资源管理器或Mac Finder中拖动应用程序界面上的文件或文件夹。 除了应用程序中以前提供的上载选项外，此功能还有效。
+* 通过高级设置，应用程序可以在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称使用用户提供的文件夹名称的空格和大小写。 v2.1的默认行为仍然保持不变，即，在存储库节点名称中用连字符替换文件夹名称中的多个空格，并转换为小写节点名称。 请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
 
-**应用程序v2.0.3中的更新**
+**在应用程序v2.1.0.0中更新**
+
+* 要上传资产，用户现在可以直接从Windows资源管理器或Mac Finder中拖动应用程序界面上的文件或文件夹。 除了应用程序中以前提供的上载选项外，此功能还有效。<!-- CQ-4309527 -->
+
+**在应用程序v2.0.3中更新**
 
 当前版本中修复的错误是：
 
-* 修复了Windows用户尝试使用应用程序访问[!DNL Adobe Experience Manager] 6.5.5.0实例上的DAM存储库时遇到的登录问题。
+* 修复了Windows上尝试访问[!DNL Adobe Experience Manager] 6.5.5.0上的DAM存储库的应用程序用户的登录问题。
 
 **应用程序v2.0.2中的更新**
 
 错误修复和更新包括：
 
-* 要提高上传性能，请在[!UICONTROL Preferences]中增加上传加速。 打开此设置后，应用程序使用的本地CPU线程更多，资源占用更多。
+* 上载加速设置现已可用于提高上载性能。 打开此设置后，应用程序通过使用更多本地CPU线程以更快的速度上载，并且资源占用更多。
 
-* 修复了文件名或路径包含某些GB18030字符时资源上传的问题。<!-- CQ-4283494 -->
+* 当文件名或包含某些GB18030字符的路径已固定时，资源上传。<!-- CQ-4283494 -->
 
 * 在搜索结果中切换到其他排序类型后，可使用“按相关性排序”选项。<!-- CQ-4286874 -->
 
@@ -119,7 +118,7 @@ ht-degree: 34%
 
 * 应用程序对需要从[!DNL Experience Manager]到（打开、编辑、上传更改和上传资产）的资产二进制文件完全传输的操作提供完全控制。
 
-   * 如果想要在桌面上处理资产，您需要明确地在某个文件夹中逐个或通过多选方式打开、编辑资产或将其下载到桌面。
+   * 如果要在桌面上使用资产，您必须显式地打开、编辑或下载到桌面，无论是单独打开、在文件夹中，还是通过多选方式。
 
    * 如果要获取对上传到[!DNL Experience Manager]的资产的本地更改，您需要单独或通过多选选择选择[!UICONTROL Upload Changes]。
 
@@ -135,7 +134,7 @@ ht-degree: 34%
 
 * 当 Adobe Creative Cloud 应用程序读取链接/放置在 Creative Cloud 应用程序本机文件中的资产文件时，会使用 SMB (Mac)/WebDAV (Win) 本地网络共享。
 
-下图说明了由用户操作启动的资产和文件从云端到本地文件系统（以及从本地文件系统到云端）的流程。
+下图说明了资产和文件从云到本地文件系统的流，以及由用户操作启动的相反方式。
 
 ![[!DNL Experience Manager]资产通过桌面应用程序从 服务器流向本机桌面应用程序](assets/da20_flow_diagram.png)
 
