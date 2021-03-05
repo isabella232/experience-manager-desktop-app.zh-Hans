@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4288c77036ba992c37ceafc158e0503244a1e600
+source-git-commit: 784ffb2468d856589fbf29b10b965b3c3d919a2f
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 28%
@@ -12,8 +12,6 @@ ht-degree: 28%
 
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明  {#release-notes-v2}
-
-<!-- TBD: Update 6 links and 1 date below. -->
 
 以下是最新桌面应用程序版本2.1(2.1.1.0)的发行信息。 发布日期为2021年3月5日。 它是一个次要版本，并且具有增强功能。
 
