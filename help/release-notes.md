@@ -2,10 +2,11 @@
 title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
+feature: Experience Manager桌面应用程序，发行信息
 translation-type: tm+mt
-source-git-commit: 06ce2dc1c47bc1ba71b4fd1d053131d9dbdb08ba
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1474'
 ht-degree: 28%
 
 ---
