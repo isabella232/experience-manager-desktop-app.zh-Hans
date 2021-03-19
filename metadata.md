@@ -1,20 +1,15 @@
 ---
 cloud: experience-cloud
-solution-title: 学习和支持
-solution-hub-url: https://experienceleague.adobe.com/docs/
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: 入门
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
-tutorials-title: 教程
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
+solution: Experience Manager, Experience Manager Assets
+type: 文档
 mini-toc-levels: 1
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-desktop-app.zh-Hans
 index: y
 translation-type: tm+mt
-source-git-commit: 0fc393ac74d114de53f0484f6f5121d56365c1e0
+source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 66%
+source-wordcount: '135'
+ht-degree: 71%
 
 ---
 
