@@ -2,10 +2,11 @@
 title: 使用 [!DNL Experience Manager] 桌面应用程序
 description: 直接从Win或Mac桌面使用 [!DNL Adobe Experience Manager] desktop app, to work with [!DNL Adobe Experience Manager] DAM资源，并用于其他应用程序。
 mini-toc-levels: 1
+feature: Experience Manager桌面应用程序，资产管理
 translation-type: tm+mt
-source-git-commit: caf6faf17157a0e9e3bffd40b4bdd0802a71dad7
+source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3912'
 ht-degree: 0%
 
 ---
