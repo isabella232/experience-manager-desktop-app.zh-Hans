@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: Experience Manager桌面应用程序，发行信息
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 28%
@@ -71,7 +71,7 @@ ht-degree: 28%
 
 **在应用程序v2.1.1.0中更新**
 
-* 通过高级设置，应用程序可以在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称使用用户提供的文件夹名称的空格和大小写。 v2.1的默认行为仍然保持不变，即，在存储库节点名称中用连字符替换文件夹名称中的多个空格，并转换为小写节点名称。 请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
+* 通过高级设置，应用程序可以在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称会保留用户提供的文件夹名称的空格和大小写。 v2.1的默认行为仍然保持不变，即，在存储库节点名称中用连字符替换文件夹名称中的多个空格，并转换为小写节点名称。 请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
 
 **在应用程序v2.1.0.0中更新**
 
