@@ -3,10 +3,10 @@ title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资源。
 feature: Experience Manager桌面应用程序，发行信息
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1405'
+ht-degree: 1%
 
 ---
 
@@ -122,6 +122,14 @@ ht-degree: 0%
 ![桌面应用程序首选项和设置](assets/preferences_da2.png)
 
 *图：桌面应用程序首选项。*
+
+### 代理支持{#proxy-support}
+
+[!DNL Experience Manager] 桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet。应用程序只能使用不需要额外身份验证的网络代理进行连接。
+
+如果配置或修改Windows的代理服务器设置（“Internet选项”>“LAN设置”），请重新启动[!DNL Experience Manager]桌面应用程序，以使更改生效。 开始桌面应用程序时，将应用代理配置。 关闭并重新启动应用程序，以使任何更改生效。
+
+如果您的代理需要身份验证，则IT团队可以允许代理服务器设置中的[!DNL Experience Manager Assets] URL允许应用程序通信通过。
 
 ## 卸载应用程序{#uninstall-the-app}
 
