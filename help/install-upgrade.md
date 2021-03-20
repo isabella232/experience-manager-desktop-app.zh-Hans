@@ -3,7 +3,7 @@ title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资源。
 feature: Experience Manager桌面应用程序，发行信息
 translation-type: tm+mt
-source-git-commit: 3804d684a3a7e78eda7692969f312ef023965ffd
+source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Maximum number of downloads]**: ![警告](assets/do-not-localize/caution-icon.png) 图标谨慎更改。首次下载资产时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批中包含的资产少于此数时，才下载资产。 默认值为 50。如果不确定，请勿更改。 增加此值可能会延长等待时间，而减少此值可能不允许您一次性下载必要的资产或文件夹。
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**: ![警告](assets/do-not-localize/caution-icon.png) 图标谨慎更改。通过此设置，应用程序在上传文件夹时可模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称使用用户提供的文件夹名称的空格和大小写。 但是，在应用程序的v2.1中，文件夹名称中的额外空格将转换为虚线。 例如，如果未选择该选项，并保留v2.1中的默认行为，则上传`New Folder`或`new   folder`将在存储库中创建相同的节点。 如果选择此选项，则在存储库中为上述两个文件夹创建不同的节点，并且它与v1.10应用程序的行为相匹配。
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**: ![警告](assets/do-not-localize/caution-icon.png) 图标谨慎更改。通过此设置，应用程序在上传文件夹时可模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称会保留用户提供的文件夹名称的空格和大小写。 但是，在应用程序的v2.1中，文件夹名称中的额外空格将转换为虚线。 例如，如果未选择该选项，并保留v2.1中的默认行为，则上传`New Folder`或`new   folder`将在存储库中创建相同的节点。 如果选择此选项，则在存储库中为上述两个文件夹创建不同的节点，并且它与v1.10应用程序的行为相匹配。
 
    v2.1的默认行为仍保持不变，即，将存储库节点名称中文件夹名称中的多个空格替换为虚线，并转换为小写节点名称。
 
