@@ -3,7 +3,7 @@ title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资源。
 feature: Experience Manager桌面应用程序，发行信息
 translation-type: tm+mt
-source-git-commit: f9d982d3039d04abf53e10b78e0e7a89e673ca04
+source-git-commit: 3804d684a3a7e78eda7692969f312ef023965ffd
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->计算机上不能共存两个版本的桌面应用程序。 安装版本前，请卸载其他版本。
+>一台计算机上不能共存两个版本的桌面应用程序。 安装版本前，请卸载其他版本。
 
 要从应用程序的先前版本进行升级，请按照以下说明操作：
 
