@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: Experience Manager桌面应用程序，发行信息
 translation-type: tm+mt
-source-git-commit: e8a299c7357faf2c19c11a56f2868f6679c15ac1
+source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1512'
 ht-degree: 27%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 27%
 
 **在应用程序v2.1.2.0中更新**
 
-* 应用程序的主菜单中添加了一个[!UICONTROL Clear Cookies]的新选项。 它有助于解决潜在的登录问题，例如在将连接从服务器更改为其他服务器时。
+* 应用程序的主菜单中添加了一个[!UICONTROL Clear Cookies]的新选项。 它有助于解决潜在的登录问题，例如在将连接从服务器更改为其他服务器时。 请参阅[在连接](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
 
 **在应用程序v2.1.1.0中更新**
 
