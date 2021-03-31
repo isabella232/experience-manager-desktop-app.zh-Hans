@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] 桌面应用程序的最佳实践和疑难解答'
 description: 按照最佳实践和疑难解答解决与安装、升级、配置等相关的偶发问题。
 translation-type: tm+mt
-source-git-commit: 9d90bdcab79604e03d1ad3f30ed2aca2eb03e1c5
+source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2175'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,16 @@ ht-degree: 0%
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`。
 
+### 了解[!DNL Adobe Experience Manager]桌面应用程序版本{#know-app-version-v2}
+
+要查看版本号：
+
+1. 开始应用程序。
+
+1. 单击右上角的省略号，将指针悬停在[!UICONTROL Help]上，然后单击[!UICONTROL About]。
+
+   版本号列在此屏幕上。
+
 ### 清除缓存 {#clear-cache-v2}
 
 执行以下步骤：
@@ -138,17 +148,7 @@ ht-degree: 0%
 
 清除[!DNL Adobe Experience Manager]桌面应用程序缓存是可解决多个问题的初步疑难解答任务。 从应用程序首选项中清除缓存。 请参阅[设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置为：
 
-### 了解[!DNL Adobe Experience Manager]桌面应用程序版本{#know-app-version-v2}
-
-要查看版本号：
-
-1. 开始应用程序。
-
-1. 单击右上角的省略号，将指针悬停在[!UICONTROL Help]上，然后单击[!UICONTROL About]。
-
-   版本号列在此屏幕上。
-
-### 无法查看已放置的资源{#placed-assets-missing}
+## 无法查看已放置的资源{#placed-assets-missing}
 
 如果您或其他创意专业人士无法在支持文件（例如INDD文件）中看到放置的资源，请检查以下内容：
 
@@ -179,11 +179,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-### 无法上载文件{#upload-fails}
+## 无法上载文件{#upload-fails}
 
 如果您使用的桌面应用程序具有[!DNL Experience Manager] 6.5.1或更高版本，请将S3或Azure连接器升级到版本1.10.4或更高版本。 它解决了与[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相关的文件上载失败问题。 请参阅[安装说明](install-upgrade.md#install-v2)。
 
-### [!DNL Experience Manager] 桌面应用程序连接问题  {#connection-issues}
+## [!DNL Experience Manager] 桌面应用程序连接问题  {#connection-issues}
 
 如果您遇到一般连接问题，请通过以下方式获取有关[!DNL Experience Manager]桌面应用程序正在执行的操作的更多信息。
 
@@ -200,7 +200,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 应用程序的大多数请求都位于请求日志中。 但是，如果那里没有有用的信息，那么查看应用程序的嵌入式浏览器发送的请求可能会很有用。
 有关如何视图这些请求的说明，请参阅[ SAML部分](#da-connection-issue-with-saml-aem)。
 
-#### SAML登录身份验证无法运行{#da-connection-issue-with-saml-aem}
+### SAML登录身份验证无法运行{#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] 桌面应用程序无法连接到您的启用SSO(SAML)的 [!DNL Adobe Experience Manager] 部署。应用程序的设计尝试适应SSO连接和进程的不同和复杂性。 但是，安装程序可能需要其他疑难解答。
 
@@ -247,7 +247,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 查看正在加载的URL序列有助于在SAML末尾进行疑难解答，以确定错误内容。
 
-#### SSL配置问题{#ssl-config-v2}
+### SSL配置问题{#ssl-config-v2}
 
 [!DNL Experience Manager]桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，连接可能使用浏览器成功，但使用[!DNL Experience Manager]桌面应用程序失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参阅[如何在Apache](https://access.redhat.com/solutions/43575)中安装Intermediate CA证书。
 
@@ -284,7 +284,13 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 1. 保存文件并重新启动[!DNL Adobe Experience Manager]桌面应用程序。
 
-### 应用程序无响应{#unresponsive}
+### 切换到其他服务器{#cannot-login-cookies-issue}时的登录问题
+
+使用[!DNL Experience Manager]服务器后，当您尝试更改与其他服务器的连接时，可能会遇到登录问题。 这是因为旧cookie干扰了新身份验证。 主菜单中的[!UICONTROL Clear Cookies]选项有帮助。 注销应用程序中的当前会话，然后选择[!UICONTROL Clear Cookies]，然后再继续连接。
+
+![切换服务器时清除Cookie](assets/main_menu_logout_da2.png)
+
+## 应用程序无响应{#unresponsive}
 
 应用程序很少会变得无响应、只显示白屏或在界面底部显示错误，而界面上没有任何选项。 请按顺序尝试以下各项：
 
