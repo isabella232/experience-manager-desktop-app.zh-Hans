@@ -4,9 +4,9 @@ description: 直接从Win或Mac桌面使用 [!DNL Adobe Experience Manager] desk
 mini-toc-levels: 1
 feature: Experience Manager桌面应用程序，资产管理
 translation-type: tm+mt
-source-git-commit: ac80eba42d872f68553a65f6b4820a3b223c7da2
+source-git-commit: d345a0f0ac6826cf623f6e8bbbcc132481ea557c
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3907'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,17 @@ ht-degree: 0%
 
 ## 在[!DNL Experience Manager] Web界面{#desktopactions-v2}中启用桌面操作
 
-从浏览器的“资产”用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为[!UICONTROL Desktop Actions]，默认情况下未启用。 要启用它，请执行以下步骤。
+从浏览器的[!DNL Assets]用户界面中，您可以浏览资产位置或签出并打开资产，以便在桌面应用程序中进行编辑。 这些选项称为[!UICONTROL Desktop Actions]，默认情况下未启用。 要启用它，请执行以下步骤。
 
-1. 在“资产”控制台中，单击/点按工具栏中的&#x200B;**[!UICONTROL User]**&#x200B;图标。
-1. 单击/点按&#x200B;**[!UICONTROL My Preferences]**&#x200B;以显示&#x200B;**[!UICONTROL Preferences]**&#x200B;对话框。
-1. 在“用户首选项”对话框中，选择&#x200B;**[!UICONTROL Show Desktop Actions For Assets]**。 单击/点按&#x200B;**[!UICONTROL Accept]**。
+1. 在[!DNL Assets]控制台中，单击工具栏中的&#x200B;**[!UICONTROL User]**&#x200B;图标。
+1. 单击&#x200B;**[!UICONTROL My Preferences]**&#x200B;以显示&#x200B;**[!UICONTROL Preferences]**&#x200B;对话框。
 
-   ![选中显示资产的桌面操作以启用桌面操作](assets/enable_desktop_actions.png)
+1. 在“用户首选项”对话框中，选择&#x200B;**[!UICONTROL Show Desktop Actions For Assets]**。 单击 **[!UICONTROL Accept]**.
 
-   选中[!UICONTROL Show Desktop Actions For Assets]以启用桌面操作
+
+   ![选择显示资产的桌面操作以启用桌面操作](assets/enable_desktop_actions.png)
+
+   *图：选择 [!UICONTROL Show Desktop Actions For Assets] 以启用桌面操作。*
 
 ## 浏览、搜索和预览资产{#browse-search-preview-assets}
 
