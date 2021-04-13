@@ -1,15 +1,15 @@
 ---
 title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资源。
-feature: Experience Manager桌面应用程序，发行信息
+feature: 桌面应用程序，发行信息
+exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
 translation-type: tm+mt
-source-git-commit: 7204e3afb6d3a0908c076cf042072e3157572797
+source-git-commit: 4616934e8923693106401da008e2510310d0742a
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
-
 
 # 安装[!DNL Adobe Experience Manager]桌面应用程序{#install-app-v2}
 
