@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager] 桌面应用程序的最佳实践和疑难解答'
 description: 按照最佳实践和疑难解答解决与安装、升级、配置等相关的偶发问题。
+exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
 translation-type: tm+mt
-source-git-commit: a766855c0670e9f291b8020ee6ab7addc50689a4
+source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Adobe Experience Manager]桌面应用程序{#troubleshoot-v2}疑难解答
 
@@ -298,6 +298,13 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 * 退出应用程序并再次打开它。
 
 在这两种方法中，应用程序将开始根DAM文件夹。
+
+## 隐藏已过期的资产{#hide-expired-assets}
+
+在[!DNL Experience Manager]用户界面中浏览资产时，不会显示过期的资产。 要防止在从桌面应用程序和资产链接浏览资产时查看、搜索和获取过期的资产，管理员可以执行以下配置。 此配置适用于所有用户，而不考虑管理员权限。
+
+* [配置Experience Manager 6.5以隐藏过期的资产](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api)。
+* [在Experience Manager中配置为隐藏过期资产的Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api)。
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
