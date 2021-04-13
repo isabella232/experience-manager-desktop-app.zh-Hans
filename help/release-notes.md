@@ -2,15 +2,15 @@
 title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
-feature: Experience Manager桌面应用程序，发行信息
+feature: 桌面应用程序，发行信息
+exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 861f2e8994ae7eb9b35c78036479fe47dc793cf3
+source-git-commit: 4616934e8923693106401da008e2510310d0742a
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1510'
 ht-degree: 27%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明  {#release-notes-v2}
 
@@ -18,9 +18,9 @@ ht-degree: 27%
 
 支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;为：
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
-* [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)。
-* [!DNL Experience Manager] 6.4.4或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html)。
+* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=zh-Hans)。
+* [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hans)。
+* [!DNL Experience Manager] 6.4.4或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=zh-Hans)。
 * [!DNL Experience Manager] 6.4.0 - 6.4.3，安装了 [兼](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容性包，位于Adobe Managed Services(AMS)或内部部署上。
 * [!DNL Experience Manager] 6.3（带兼容包）
 * [!DNL Experience Manager] 6.3.3.1或更高版本，并安 [装兼](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容包。[!DNL Experience Manager] 6.3.3.0或早期版本不支持桌面应用程序。
