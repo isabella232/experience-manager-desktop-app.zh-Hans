@@ -5,9 +5,9 @@ mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
 translation-type: tm+mt
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1523'
 ht-degree: 27%
 
 ---
@@ -18,16 +18,16 @@ ht-degree: 27%
 
 支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;为：
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=zh-Hans)。
-* [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hans)。
-* [!DNL Experience Manager] 6.4.4或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=zh-Hans)。
+* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
+* [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)。
+* [!DNL Experience Manager] 6.4.4或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html)。
 * [!DNL Experience Manager] 6.4.0 - 6.4.3，安装了 [兼](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容性包，位于Adobe Managed Services(AMS)或内部部署上。
 * [!DNL Experience Manager] 6.3（带兼容包）
 * [!DNL Experience Manager] 6.3.3.1或更高版本，并安 [装兼](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容包。[!DNL Experience Manager] 6.3.3.0或早期版本不支持桌面应用程序。
 
 [!DNL Adobe Experience Manager] 桌面应用程序可用于以下 **操作系统**:
 
-* macOS X 10.14或更高版本，并修复了最新错误。
+* macOS X 10.14或更高版本，并修复了最新错误。 [尚不支持带有Apple](https://support.apple.com/en-us/HT211814)  Silicon的Mac计算机。
 * 带有最新服务包和错误修复的Windows 10。
 
 支持的操作系统的&#x200B;**下载URL**&#x200B;为：
