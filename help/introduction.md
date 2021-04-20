@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL Experience Manager] 桌面应用程序简介'
 description: 了解如何直接从桌面使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
-role: 业务从业者、管理员、领导者
+role: Business Practitioner, Administrator, Leader
 translation-type: tm+mt
 source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
 workflow-type: tm+mt
