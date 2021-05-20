@@ -2,9 +2,8 @@
 title: '[!DNL Adobe Experience Manager] 桌面应用程序发行说明'
 description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细信息、增强功能、新增功能、兼容性和下载链接。'
 mini-toc-levels: 1
-feature: Desktop App,Release Information
+feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-translation-type: tm+mt
 source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
 workflow-type: tm+mt
 source-wordcount: '1523'
@@ -14,23 +13,23 @@ ht-degree: 27%
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明  {#release-notes-v2}
 
-以下是最新桌面应用程序版本2.1(2.1.2.0)的发行信息。 发布日期为2021年3月26日。 它是一个次要版本，并且具有增强功能。
+以下是最新桌面应用程序版本2.1(2.1.2.0)的发行信息。 发行日期为2021年3月26日。 它是一个次要版本，提供了增强功能。
 
-支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;为：
+支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;包括：
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html)。
-* [!DNL Experience Manager] 6.5.0或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)。
-* [!DNL Experience Manager] 6.4.4或更高版本，在Adobe Managed Services(AMS)或内部部署上提供。请参阅[ Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html)。
-* [!DNL Experience Manager] 6.4.0 - 6.4.3，安装了 [兼](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容性包，位于Adobe Managed Services(AMS)或内部部署上。
-* [!DNL Experience Manager] 6.3（带兼容包）
-* [!DNL Experience Manager] 6.3.3.1或更高版本，并安 [装兼](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 容包。[!DNL Experience Manager] 6.3.3.0或早期版本不支持桌面应用程序。
+* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=zh-Hans)。
+* [!DNL Experience Manager] 6.5.0或更高版本(在Adobe Managed Services(AMS)或内部部署中)。请参阅[Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hans)。
+* [!DNL Experience Manager] 6.4.4或更高版本(在Adobe Managed Services(AMS)或内部部署中)。请参阅[Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=zh-Hans)。
+* [!DNL Experience Manager] 6.4.0 - 6.4.3(安装了兼 [容](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 包)，位于Adobe Managed Services(AMS)或内部部署上。
+* [!DNL Experience Manager] 6.3（带有兼容包）
+* [!DNL Experience Manager] 安装兼容包的6.3.3.1或更高 [版](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 本。[!DNL Experience Manager] 6.3.3.0或更早版本不支持桌面应用程序。
 
-[!DNL Adobe Experience Manager] 桌面应用程序可用于以下 **操作系统**:
+[!DNL Adobe Experience Manager] 桌面应用程序适用于以下 **操作系统**:
 
-* macOS X 10.14或更高版本，并修复了最新错误。 [尚不支持带有Apple](https://support.apple.com/en-us/HT211814)  Silicon的Mac计算机。
-* 带有最新服务包和错误修复的Windows 10。
+* macOS X 10.14或更高版本，以及最新的错误修复。 [尚不支持使用](https://support.apple.com/en-us/HT211814) Apple Silion的Mac计算机。
+* 带有最新Service Pack和错误修复的Windows 10。
 
-支持的操作系统的&#x200B;**下载URL**&#x200B;为：
+受支持操作系统的&#x200B;**下载URL**&#x200B;包括：
 
 | 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
@@ -45,87 +44,87 @@ ht-degree: 27%
 <!-- The version of the app you plan to install on your local machine requires a specific [!DNL Adobe Experience Manager] server version/additional server-side components (service packs, hot fixes, or feature packs). Contact your [!DNL Experience Manager] administrator for help.
 -->
 
-## 支持不同的资源和文件类型{#support-for-file-types}
+## 支持不同的资产和文件类型{#support-for-file-types}
 
-应用程序支持存储在[!DNL Experience Manager]中的资源，这些资源表示用于其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
+应用程序支持存储在[!DNL Experience Manager]中的资产，这些资产表示用于其基本操作的二进制文件。 在本机桌面应用程序中打开文件，取决于特定文件类型（如 PNG 或 JPG）与特定应用程序（如 Mac Preview 或 Adobe Photoshop）的操作系统关联。
 
-一些文件类型支持将链接的资产放入二进制文件中。当使用桌面应用程序打开此类二进制文件时，如果[!DNL Experience Manager]存储库中存在该资源，则应用程序会预下载链接的资源。 当前支持的文件类型有：
+一些文件类型支持将链接的资产放入二进制文件中。当使用桌面应用程序打开此类二进制文件时，如果资产存在于[!DNL Experience Manager]存储库中，则应用程序会预下载链接的资产。 当前支持的文件类型有：
 
 * [!DNL Adobe InDesign] 文件（INDD格式）
 * [!DNL Adobe Illustrator] 文件（AI格式）
 * [!DNL Adobe Photoshop] 文件（PS格式）
 
-上述应用程序的[!DNL Adobe Creative Cloud] 2018和[!DNL Adobe Creative Cloud] 2019版支持此功能。 应用程序使用启发式、最佳匹配方法将链接资源的本地桌面路径映射到[!DNL Experience Manager]服务器上的URL。 这是基于以下假设：
+上述应用程序的[!DNL Adobe Creative Cloud] 2018和[!DNL Adobe Creative Cloud] 2019版本支持该功能。 该应用程序使用启发式的最佳匹配方法将链接资产的本地桌面路径映射到[!DNL Experience Manager]服务器上的URL。 这是基于以下假设：
 
-* 指向本机应用程序中置入文件的路径使用全局桌面路径（通过显示[!UICONTROL Reveal]选项的本地网络共享放置）。
+* 在本机应用程序中放置文件的路径使用全局桌面路径（从带有[!UICONTROL Reveal]选项的本地网络共享中放置）。
 
 * 路径由本机应用程序存储在文件的 XMP 记录中.
 
 * [!DNL Experience Manager] 已提取 XMP 记录，其中包含资产元数据记录的路径.
 
-* 路径可以与[!DNL Experience Manager]中的资产匹配，即，所放置的文件也位于[!DNL Experience Manager]中的匹配路径下。
+* 路径可以匹配到[!DNL Experience Manager]中的资产，即放置的文件也位于[!DNL Experience Manager]中的匹配路径下。
 
-## 新增功能、增强和错误修复{#what-is-new}
+## 新增功能、增强功能和错误修复{#what-is-new}
 
-要了解详细信息，请参阅[v2.0](introduction.md#whats-new-v2)中的新增功能。
+要了解详细信息，请参阅[v2.0](introduction.md#whats-new-v2)的新增功能。
 
-**在应用程序v2.1.2.0中更新**
+**应用程序v2.1.2.0中的更新**
 
-* 应用程序的主菜单中添加了一个[!UICONTROL Clear Cookies]的新选项。 它有助于解决潜在的登录问题，例如在将连接从服务器更改为其他服务器时。 请参阅[在连接](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
+* [!UICONTROL Clear Cookies]的新选项将添加到应用程序的主菜单中。 它有助于解决潜在的登录问题，例如在将连接从服务器更改为其他服务器时。 请参阅[在连接](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
 
-**在应用程序v2.1.1.0中更新**
+**应用程序v2.1.1.0中的更新**
 
-* 通过高级设置，应用程序可以在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称会保留用户提供的文件夹名称的空格和大小写。 v2.1的默认行为仍然保持不变，即，在存储库节点名称中用连字符替换文件夹名称中的多个空格，并转换为小写节点名称。 请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
+* 高级设置允许应用程序在上传文件夹时模拟v1.10应用程序的行为。 在v1.10中，在存储库中创建的节点名称遵循用户提供的文件夹名称的空格和大小写。 v2.1的默认行为仍然相同，即，将文件夹名称中的多个空格替换为存储库节点名称中的连字符，然后转换为小写节点名称。 请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
 
-**在应用程序v2.1.0.0中更新**
+**应用程序v2.1.0.0中的更新**
 
-* 要上传资产，用户现在可以直接从Windows资源管理器或Mac Finder中拖动应用程序界面上的文件或文件夹。 除了应用程序中以前提供的上载选项外，此功能还有效。<!-- CQ-4309527 -->
+* 要上传资产，用户现在可以直接从Windows资源管理器或Mac查找器中，将文件或文件夹拖动到应用程序界面上。 除了应用程序中以前提供的上传选项之外，这项功能还可用。<!-- CQ-4309527 -->
 
-**在应用程序v2.0.3中更新**
+**应用程序v2.0.3中的更新**
 
 当前版本中修复的错误是：
 
-* 修复了Windows上尝试访问[!DNL Adobe Experience Manager] 6.5.5.0上的DAM存储库的应用程序用户的登录问题。
+* 修复了Windows上尝试访问[!DNL Adobe Experience Manager] 6.5.5.0上DAM存储库的应用程序用户的登录问题。
 
 **应用程序v2.0.2中的更新**
 
 错误修复和更新包括：
 
-* 上载加速设置现已可用于提高上载性能。 打开此设置后，应用程序通过使用更多本地CPU线程以更快的速度上载，并且资源占用更多。
+* 上传加速设置现已可用于提高上传性能。 打开此设置后，应用程序会使用更多本地CPU线程来更快地上传，并且会占用更多资源。
 
-* 当文件名或包含某些GB18030字符的路径已固定时，资源上传。<!-- CQ-4283494 -->
+* 固定包含某些GB18030字符的文件名或路径时的资产上传。<!-- CQ-4283494 -->
 
-* 在搜索结果中切换到其他排序类型后，可使用“按相关性排序”选项。<!-- CQ-4286874 -->
+* 在搜索结果中切换到其他排序类型后，可使用按相关性排序选项。<!-- CQ-4286874 -->
 
-* 桌面应用程序现在可列表子文件夹，无需显式刷新。<!-- CQ-4285711 -->
+* 桌面应用程序现在可以列出子文件夹，而无需显式刷新。<!-- CQ-4285711 -->
 
-* (Windows)修复了某些Windows计算机上不可用的应用程序界面的罕见问题。 用户无法单击应用程序界面，因为界面元素的点击区域会侧向扭曲。<!-- CQ-4280785 -->
+* (Windows)修复了某些Windows计算机上不可用的应用程序界面的罕见问题。 用户无法单击应用程序界面，因为界面元素的点击区域会侧移，从而使其显示扭曲。<!-- CQ-4280785 -->
 
 **应用程序v2.0.1中的更新**
 
 错误修复和更新包括：
 
-* 允许选项将`%Temp%`目录配置为与`%APPDATA%`路径匹配。<!-- CQ-4282665 -->
+* 允许选项配置`%Temp%`目录以匹配`%APPDATA%`路径。<!-- CQ-4282665 -->
 
-* 允许用户通过Okta SAML身份验证登录[!DNL Experience Manager]作者。<!-- CQ-4278134 -->
+* 允许用户通过Okta SAML身份验证登录[!DNL Experience Manager]创作。<!-- CQ-4278134 -->
 
 ## 安装说明 {#installation-instructions-v2}
 
-要了解如何安装和配置应用程序，请参阅[安装 [!DNL Experience Manager] 桌面应用程序](install-upgrade.md)。
+要了解如何安装和配置应用程序，请参阅[Install [!DNL Experience Manager] 桌面应用程序](install-upgrade.md)。
 
-如果您是从以前的[!DNL Experience Manager]桌面应用程序升级，则必须遵循以下转换最佳实践，这些最佳实践列在从以前版本](install-upgrade.md#upgrade-from-previous-version)升级时。[
+如果您是从以前的[!DNL Experience Manager]桌面应用程序升级，则必须按照[从以前的版本](install-upgrade.md#upgrade-from-previous-version)升级中列出的用于实现过渡的最佳实践来操作。
 
 ## 关于应用程序工作方式的重要说明 {#how-app-works}
 
 请务必了解关于应用程序及其工作方式的以下信息。
 
-* 应用程序对需要从[!DNL Experience Manager]到（打开、编辑、上传更改和上传资产）的资产二进制文件完全传输的操作提供完全控制。
+* 该应用程序对需要与[!DNL Experience Manager]之间的资产二进制文件进行完全传输（打开、编辑、上传更改和上传资产）的操作提供完全控制。
 
-   * 如果要在桌面上使用资产，您必须显式地打开、编辑或下载到桌面，无论是单独打开、在文件夹中，还是通过多选方式。
+   * 如果要在桌面上处理资产，必须明确地在文件夹中逐个或通过多选方式打开、编辑资产或将资产下载到桌面。
 
-   * 如果要获取对上传到[!DNL Experience Manager]的资产的本地更改，您需要单独或通过多选选择选择[!UICONTROL Upload Changes]。
+   * 如果要将对资产所做的本地更改上传到[!DNL Experience Manager]，您需要逐个或通过多选方式选择[!UICONTROL Upload Changes]。
 
-   * 应用程序不是跨桌面和[!DNL Experience Manager]同步资源的“同步客户端”。
+   * 应用程序不是在桌面和[!DNL Experience Manager]之间同步资产的“同步客户端”。
 
    * 应用程序不提供将[!DNL Experience Manager]存储库映射为虚拟文件夹结构的网络共享。
 
@@ -137,7 +136,7 @@ ht-degree: 27%
 
 * 当 Adobe Creative Cloud 应用程序读取链接/放置在 Creative Cloud 应用程序本机文件中的资产文件时，会使用 SMB (Mac)/WebDAV (Win) 本地网络共享。
 
-下图说明了资产和文件从云到本地文件系统的流，以及由用户操作启动的相反方式。
+下图说明了资产和文件从云到本地文件系统的流程，以及由用户操作启动的相反方式。
 
 ![[!DNL Experience Manager]资产通过桌面应用程序从 服务器流向本机桌面应用程序](assets/da20_flow_diagram.png)
 
@@ -145,21 +144,21 @@ ht-degree: 27%
 
 **用户界面问题：**
 
-* 有时，桌面应用程序的界面可能变为空白。 右键单击并单击[!UICONTROL Refresh]以重新加载应用程序。 刷新后，您将开始到DAM存储库的根。 资产的更新或状态会保留。<!-- CQ-4270267 -->
+* 有时，桌面应用程序的界面可能会变为空白。 右键单击并单击[!UICONTROL Refresh]以重新加载应用程序。 刷新后，您将从DAM存储库的根开始。 资产的更新或状态将会保留。<!-- CQ-4270267 -->
 
-* 在没有跟踪板或鼠标指针的情况下很难导航文件夹/搜索结果。 没有鼠标滚轮，滚动条可能不随鼠标设备一起显示。<!-- CQ-4269947 -->
+* 在没有跟踪板或鼠标指针的情况下，很难导航文件夹/搜索结果。 使用没有鼠标滚轮的鼠标设备时，可能不会显示滚动条。<!-- CQ-4269947 -->
 
 * 在少数情况下，上传资产更改时，无法正确显示进度栏。
 
 * 在应用筛选器以查找所有本地编辑的资产和删除筛选器后，应用程序不会为用户呈现搜索结果或者用户开始执行筛选时所在的文件夹视图。应用程序会显示 DAM 存储库的根文件夹。
 
-* 有时，当连接到未运行[!DNL Experience Manager]服务器的URL时，连接屏幕会变得不响应。 可退出应用程序后重新启动。
+* 有时，当您连接到未运行[!DNL Experience Manager]服务器的URL时，连接屏幕会变得无响应。 可退出应用程序后重新启动。
 
 **CRUD（创建、读取、更新和删除）问题：**
 
 * 应用程序尝试上传包含无效字符的文件，可能会导致服务器端上传失败。<!-- CQ-4273652 -->
 
-* 在将更改上传到包含注释的资产时，这些注释会与资产一起存储在[!DNL Experience Manager]中，但不会显示为版本控制注释。 此问题已在[!DNL Experience Manager] 6.4.5和[!DNL Experience Manager] 6.5.1中解决。Adobe建议安装最新的服务包。<!-- CQ-4268990 -->
+* 在上传包含注释的资产更改时，这些注释会与资产一起存储在[!DNL Experience Manager]中，但不会显示为版本控制注释。 此问题在[!DNL Experience Manager] 6.4.5和[!DNL Experience Manager] 6.5.1中已解决。Adobe建议安装最新的Service Pack。<!-- CQ-4268990 -->
 
 * 用户无法取消资产传输。如果意外触发了大量传输，请退出应用程序后重新启动。<!-- CQ-4278940 -->
 
@@ -171,7 +170,7 @@ ht-degree: 27%
 >
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html)
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
->* [如何使用桌 [!DNL Experience Manager] 面应用程序](using.md)
->* [安装和升级桌面应用程序](install-upgrade.md)
->* [最佳实践和故障诊断提示](troubleshoot.md)
+>* [如何使用 [!DNL Experience Manager] 桌面应用程序](using.md)
+* [安装和升级桌面应用程序](install-upgrade.md)
+* [最佳实践和故障诊断提示](troubleshoot.md)
 
