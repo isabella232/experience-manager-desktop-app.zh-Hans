@@ -1,42 +1,41 @@
 ---
-title: ' [!DNL Experience Manager] 桌面应用程序简介'
-description: 了解如何直接从桌面使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
+title: '桌面应用程序简介 [!DNL Experience Manager] '
+description: 了解如何直接从其桌面使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
 role: Business Practitioner, Administrator, Leader
-translation-type: tm+mt
-source-git-commit: a0a7081b705957ef6d1a72bc3c54603b1cff5897
+exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
+source-git-commit: 78f18e68178f711d925d7e308822c657087d009a
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '619'
 ht-degree: 63%
 
 ---
 
-
 # [!DNL Adobe Experience Manager] 桌面应用程序概述  {#overview-v2}
 
-Adobe 在其解决方案中提供了相互连通的工作流，助力业务用户和创意专业人士提高工作效率。[!DNL Adobe Experience Manager]桌面应用程序连接存储库和桌面应用程序(包括Adobe和第三方应用程序)，以提供对资源的更快访问和简化的工作流。 这样节省时间并减少工作量，可提高用户的效率，这些用户在桌面工作流中使用[!DNL Adobe Experience Manager]中的资源。
+Adobe 在其解决方案中提供了相互连通的工作流，助力业务用户和创意专业人士提高工作效率。[!DNL Adobe Experience Manager]桌面应用程序可连接存储库和桌面应用程序(包括Adobe和第三方应用程序)，以便更快地访问资源并简化工作流。 这样可节省时间并减少工作量，从而提高了在桌面工作流中使用[!DNL Adobe Experience Manager]资产的用户效率。
 
-使用应用程序，可在本地桌面上轻松访问[!DNL Experience Manager Assets]中的资源，并可在任何桌面应用程序中使用。 您可以在选择的桌面应用程序中打开和编辑资产。只有在您选择上传更改后，才能在[!DNL Experience Manager]中将本地编辑作为资产的新版本提供，这样，您就可以在桌面上以高效的方式处理资产的进行中编辑。 该应用程序支持将资产和嵌套文件夹上传到[!DNL Experience Manager]，从而简化了向存储库添加新内容的过程。
+使用该应用程序，可在本地桌面上轻松访问[!DNL Experience Manager Assets]中的资产，并可在任何桌面应用程序中使用。 您可以在选择的桌面应用程序中打开和编辑资产。仅当您选择上传更改时，本地编辑内容才会作为资产的新版本在[!DNL Experience Manager]中提供，这样，您便可以在桌面上高效地处理正在进行的资产编辑工作。 该应用程序支持将资产和嵌套文件夹上传到[!DNL Experience Manager]，从而简化向存储库添加新内容的过程。
 
-这种集成允许组织中的各种角色在[!DNL Experience Manager Assets]中集中管理资产。 营销人员和企业用户可以确保符合各种标准，包括品牌推广和许可。此外，对于拥有专用 [Adobe Asset Link](https://www.adobe.com/cn/marketing/experience-manager-assets/adobe-asset-link.html) 工具（用于处理 Adobe Photoshop、Illustrator 和 InDesign 中的资产）的创意用户而言，他们还可以在桌面上访问 Creative Cloud 和其他本机应用程序中的资产。
+此类集成允许组织中的各种角色在[!DNL Experience Manager Assets]中集中管理资产。 营销人员和企业用户可以确保符合各种标准，包括品牌推广和许可。此外，对于拥有专用 [Adobe Asset Link](https://www.adobe.com/cn/marketing/experience-manager-assets/adobe-asset-link.html) 工具（用于处理 Adobe Photoshop、Illustrator 和 InDesign 中的资产）的创意用户而言，他们还可以在桌面上访问 Creative Cloud 和其他本机应用程序中的资产。
 
 >[!NOTE]
 >
->该应用程序在[!DNL Adobe Experience Manager] 6.1版中引入，之前称为[!DNL Adobe Experience Manager Assets] Companion App。 有关应用程序版本1.x的帮助，请参阅左侧提要栏中的目录。 Adobe 建议升级到最新版本.
+>该应用程序在[!DNL Adobe Experience Manager] 6.1版本中引入，以前称为[!DNL Adobe Experience Manager Assets]配套应用程序。 有关应用程序版本1.x的帮助，请参阅左侧边栏中的目录。 Adobe 建议升级到最新版本.
 
 该桌面应用程序文档包含以下角色和用例的信息。
 
 | 所需信息 | 帮助内容 |
 |--- |--- |
-| 想要快速了解最新版本中的新增功能和增强功能？ | [应用程序中的新增功能](#whats-new-v2) |
+| 想要快速了解最新版本中的新增功能和增强功能？ | [应用程序的新增功能](#whats-new-v2) |
 | 想要了解先决条件和技术规范？想要获取下载链接？ | [发行说明](release-notes.md) |
 | 不是桌面应用程序的新用户？想要升级并希望实现顺利过渡？ | [从以前的版本升级](install-upgrade.md#upgrade-from-previous-version) |
 | 已启动且正在运行。想要调整默认首选项？ | [安装和配置应用程序](install-upgrade.md) |
-| 想要了解如何使用应用程序执行浏览、发现、编辑和上传操作，以及解决冲突和执行批量操作等。 | [使 [!DNL Experience Manager] 用桌面应用程序](using.md) |
+| 想要了解如何使用应用程序执行浏览、发现、编辑和上传操作，以及解决冲突和执行批量操作等。 | [ [!DNL Experience Manager] Usedesktop应用程序](using.md) |
 | 遇到问题？需要帮助进行故障诊断？ | [ [!DNL Experience Manager] 对 桌面应用程序进行故障诊断](troubleshoot.md) |
 
-## 应用程序{#whats-new-v2}中的新增功能
+## 应用程序{#whats-new-v2}的新增功能
 
-AEM 应用程序版本 2.0 是全新设计的，与以前的版本相比提供了多项改进功能。新版应用程序对用户更加友好，并且新的应用程序用户界面提供了专属桌面体验。用户可以通过搜索或浏览、打开、编辑和上传更改来发现资产，还可以上传新资产 — 无需用户使用[!DNL Experience Manager]界面。 此版本还支持从[!DNL Experience Manager]接口打开文件。
+AEM 应用程序版本 2.0 是全新设计的，与以前的版本相比提供了多项改进功能。新版应用程序对用户更加友好，并且新的应用程序用户界面提供了专属桌面体验。用户可以通过搜索或浏览来发现资产、打开资产、编辑资产和上传更改，以及上传新资产，而无需用户使用[!DNL Experience Manager]界面。 此版本还支持从[!DNL Experience Manager]界面打开文件。
 
 新版应用程序不仅显著改善了用户体验，同时还可满足使用与以前相同的用例的需求。一流的改进功能主要体现在以下方面。
 
