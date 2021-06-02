@@ -4,9 +4,9 @@ description: 直接从Win或Mac桌面使用 [!DNL Adobe Experience Manager] desk
 mini-toc-levels: 1
 feature: 桌面应用程序，资产管理
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '3905'
+source-wordcount: '3923'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,9 @@ ht-degree: 0%
 
 ## 将新资产上传并添加到[!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将照片拍摄中的大量照片添加到[!DNL Experience Manager]存储库。 要向[!DNL Experience Manager]添加新内容，请选择应用程序顶栏中的![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 或者，在应用程序界面上拖动文件或文件夹。 应用程序会开始上传资产。 如果上传时间较长，应用程序将在底部显示一个进度栏。 创建或上载文件夹时，请勿使用空格和无效字符。 在 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中创建文件夹的[中，可查看允许使用的字符列表。
+用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将照片拍摄中的大量照片添加到[!DNL Experience Manager]存储库。 要向[!DNL Experience Manager]添加新内容，请选择应用程序顶栏中的![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 或者，要上传资产，请将文件或文件夹拖动到应用程序界面上。 在Windows上，如果您将资产拖动到应用程序内的文件夹中，则资产会上传到该文件夹中。
+
+如果上传时间较长，则应用程序底部会显示一个进度栏。 创建或上载文件夹时，请勿使用空格和无效字符。 在 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中创建文件夹的[中，可查看允许使用的字符列表。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
