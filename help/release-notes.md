@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ac533db59b2a5c64243b762f4b77b3148c4f1867
+source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1525'
 ht-degree: 27%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 27%
 
 **应用程序v2.1.0.0中的更新**
 
-* 要上传资产，用户现在可以直接从Windows资源管理器或Mac查找器中，将文件或文件夹拖动到应用程序界面上。 除了应用程序中以前提供的上传选项之外，这项功能还可用。<!-- CQ-4309527 -->
+* 要上传资产，用户现在可以直接从Windows资源管理器或Mac查找器中，将文件或文件夹拖动到应用程序界面上。 除了应用程序中提供的上传选项之外，这项功能还可用。 请参阅[上传资产](/help/using.md#upload-and-add-new-assets-to-aem) <!-- CQ-4309527 -->
 
 **应用程序v2.0.3中的更新**
 
