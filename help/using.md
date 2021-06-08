@@ -4,9 +4,9 @@ description: 直接从Win或Mac桌面使用 [!DNL Adobe Experience Manager] desk
 mini-toc-levels: 1
 feature: 桌面应用程序，资产管理
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '3923'
+source-wordcount: '3999'
 ht-degree: 0%
 
 ---
@@ -175,9 +175,19 @@ ht-degree: 0%
 
 ## 将新资产上传并添加到[!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将照片拍摄中的大量照片添加到[!DNL Experience Manager]存储库。 要向[!DNL Experience Manager]添加新内容，请选择应用程序顶栏中的![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 或者，要上传资产，请将文件或文件夹拖动到应用程序界面上。 在Windows上，如果您将资产拖动到应用程序内的文件夹中，则资产会上传到该文件夹中。
+用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将照片拍摄中的大量照片添加到[!DNL Experience Manager]存储库。 要向[!DNL Experience Manager]添加新内容，请选择应用程序顶栏中的![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 或者，要上传资产，请将文件或文件夹拖动到应用程序界面上。 在Windows上，如果您将资产拖动到应用程序内的文件夹中，则资产会上传到该文件夹中。 如果上传时间较长，应用程序会显示一个进度栏。
 
-如果上传时间较长，则应用程序底部会显示一个进度栏。 创建或上载文件夹时，请勿使用空格和无效字符。 在 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#creating-folders)中创建文件夹的[中，可查看允许使用的字符列表。
+在命名文件和文件夹时，请勿使用以下（以空格分隔的）字符列表：
+
+* 在文件名`\\`中。
+
+   在[!DNL Adobe Experience Manager]中创建的节点名称中，字符`# % { } ? & . / : [ | ] *`被用短划线替换；但白空和大小写仍保留。
+
+* 在文件夹名称`\\ \t &`中。
+
+   在[!DNL Adobe Experience Manager]中创建的节点名称中，文件夹名称中的空格和字符`% ; # , + ? ^ { } " . / : [ ] | *`将替换为文件夹路径中的短划线。 此外，在文件夹路径中，大写字符会转换为小写字符。
+
+但是，如果在[!UICONTROL Preferences]中启用了[!UICONTROL Use legacy conventions when creating nodes for assets and folders]，则应用程序会在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称遵循用户提供的文件夹名称的空格和大小写。 有关更多信息，请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
