@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: bc938588d0d54a6f3b8b85e0d4097104f9df46c9
+source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 27%
+source-wordcount: '1649'
+ht-degree: 24%
 
 ---
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明  {#release-notes-v2}
 
-以下是最新桌面应用程序版本2.1(2.1.2.0)的发行信息。 发行日期为2021年3月26日。 它是一个次要版本，提供了增强功能。
+以下是最新桌面应用程序版本2.1(2.1.3.1)的发行信息。 发布日期为2021年6月08日。
 
 支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;包括：
 
@@ -33,9 +33,9 @@ ht-degree: 27%
 
 | 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS 64位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.2.0.dmg) |
-| Windows 64位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.2.0.exe) |
-| Windows 32位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.2.0.exe) |
+| macOS 64位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.1.dmg) |
+| Windows 64位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.1.exe) |
+| Windows 32位 | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
 >
@@ -68,6 +68,16 @@ ht-degree: 27%
 
 要了解详细信息，请参阅[v2.0](introduction.md#whats-new-v2)的新增功能。
 
+**应用程序v2.1.3.1中的更新**
+
+* 添加了一个选项，该选项（如果选中）允许应用程序上传文件夹和文件，以便在[!DNL Adobe Experience Manager]中创建的节点名称与本地文件和文件夹名称相同。
+
+   此行为与桌面应用程序版本1中的默认行为类似。 而在当前版本中，如果未启用选项，则文件夹名称中的空格和字符`% ; # , + ? ^ { } "`将在文件夹路径中替换为短划线。 此外，文件夹路径中的大写字符将转换为小写字符。 但是，在文件名中，字符`# % { } ? &`被用短划线替换；但白空和大小写仍保留。 有关更多信息，请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)和[上传和添加新资产](/help/using.md#upload-and-add-new-assets-to-aem)。
+
+当前版本中修复的错误是：
+
+* 资产上传和下载速度已得到提高，即使对于大型资产也是如此。 修复了在上传大文件后，使用[!DNL desktop app]的资产上传失败的问题。
+
 **应用程序v2.1.2.0中的更新**
 
 * [!UICONTROL Clear Cookies]的新选项将添加到应用程序的主菜单中。 它有助于解决潜在的登录问题，例如在将连接从服务器更改为其他服务器时。 请参阅[在连接](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
@@ -82,7 +92,7 @@ ht-degree: 27%
 
 **应用程序v2.0.3中的更新**
 
-当前版本中修复的错误是：
+此版本中修复的错误是：
 
 * 修复了Windows上尝试访问[!DNL Adobe Experience Manager] 6.5.5.0上DAM存储库的应用程序用户的登录问题。
 
@@ -155,8 +165,6 @@ ht-degree: 27%
 * 有时，当您连接到未运行[!DNL Experience Manager]服务器的URL时，连接屏幕会变得无响应。 可退出应用程序后重新启动。
 
 **CRUD（创建、读取、更新和删除）问题：**
-
-* 应用程序尝试上传包含无效字符的文件，可能会导致服务器端上传失败。<!-- CQ-4273652 -->
 
 * 在上传包含注释的资产更改时，这些注释会与资产一起存储在[!DNL Experience Manager]中，但不会显示为版本控制注释。 此问题在[!DNL Experience Manager] 6.4.5和[!DNL Experience Manager] 6.5.1中已解决。Adobe建议安装最新的Service Pack。<!-- CQ-4268990 -->
 
