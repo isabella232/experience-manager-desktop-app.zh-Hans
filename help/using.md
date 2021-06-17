@@ -4,9 +4,9 @@ description: 直接从Win或Mac桌面使用 [!DNL Adobe Experience Manager] desk
 mini-toc-levels: 1
 feature: 桌面应用程序，资产管理
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: 7c413be995ef087fab75114d65e87f6936c8e021
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4054'
 ht-degree: 0%
 
 ---
@@ -177,18 +177,6 @@ ht-degree: 0%
 
 用户可以将新资产添加到DAM存储库。 例如，您可能是代理摄影师或承包商，希望将照片拍摄中的大量照片添加到[!DNL Experience Manager]存储库。 要向[!DNL Experience Manager]添加新内容，请选择应用程序顶栏中的![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png)。 浏览到本地文件系统中的资产文件，然后单击&#x200B;**[!UICONTROL Select]**。 或者，要上传资产，请将文件或文件夹拖动到应用程序界面上。 在Windows上，如果您将资产拖动到应用程序内的文件夹中，则资产会上传到该文件夹中。 如果上传时间较长，应用程序会显示一个进度栏。
 
-在命名文件和文件夹时，请勿使用以下（以空格分隔的）字符列表：
-
-* 在文件名`\\`中。
-
-   在[!DNL Adobe Experience Manager]中创建的节点名称中，字符`# % { } ? & . / : [ | ] *`被用短划线替换；但白空和大小写仍保留。
-
-* 在文件夹名称`\\ \t &`中。
-
-   在[!DNL Adobe Experience Manager]中创建的节点名称中，文件夹名称中的空格和字符`% ; # , + ? ^ { } " . / : [ ] | *`将替换为文件夹路径中的短划线。 此外，在文件夹路径中，大写字符会转换为小写字符。
-
-但是，如果在[!UICONTROL Preferences]中启用了[!UICONTROL Use legacy conventions when creating nodes for assets and folders]，则应用程序会在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称遵循用户提供的文件夹名称的空格和大小写。 有关更多信息，请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。
-
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
@@ -204,9 +192,76 @@ ht-degree: 0%
 >
 >传输列表不是永久性的，如果您退出应用程序并将其重新打开，则该列表将不可用。
 
+### 管理资产名称{#special-characters-in-filename}中的特殊字符
+
+在旧版应用程序中，在存储库中创建的节点名称会保留用户提供的文件夹名称的空格和大小写。 要使当前应用程序模拟v1.10应用程序的节点命名规则，请在[!UICONTROL Preferences]中启用[!UICONTROL Use legacy conventions when creating nodes for assets and folders]。 请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)。 默认情况下，此旧版首选项处于禁用状态。
+
 >[!NOTE]
 >
->如果文件上传失败，并且您连接到[!DNL Experience Manager] 6.5.1或更高版本的部署，请参阅此[疑难解答信息](troubleshoot.md#upload-fails)。
+>应用程序仅使用以下命名约定更改存储库中的节点名称。 应用程序会原样保留资产的`Title`。
+
+<!-- TBD: Do NOT use this table.
+
+| Where do characters occur | Characters | Legacy preference | Renaming convention | Example |
+|---|---|---|---|---|
+| In file name extension | `.` | Enabled or disabled | Retained as is | NA |
+| File or folder name | `. / : [ ] | *` | Enabled or disabled | Replaced with a `-` (hyphen) | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| Folder name | `% ; # , + ? ^ { } "` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | `% # ? { } &` | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Whitespaces | Enabled or disabled | Retained as is | NA |
+| Folder name | Whitespaces | Disabled | Replaced with a `-` (hyphen) | tbd |
+| File name | Uppercase characters | Disabled | Retained as is | tbd |
+| Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
+-->
+
+| 字符数 ‡ | 应用程序中的旧版首选项 | 在文件名中出现时 | 在文件夹名称中出现时 | 示例 |
+|---|---|---|---|---|
+| `. / : [ ] | *` | 启用或禁用 | 替换为`-`（连字符）。 文件扩展名中的`.`（圆点）将保持原样。 | 替换为`-`（连字符）。 | `myimage.jpg` 保持不变，并 `my.image.jpg` 更改 `my-image.jpg`为。 |
+| `% ; # , + ? ^ { } "` 和空格 | ![取消选择](assets/do-not-localize/deselect-icon.png) iconDisabled | 保留空格 | 替换为`-`（连字符）。 | `My Folder.` 更改为 `my-folder-`。 |
+| `# % { } ? & .` | ![取消选择](assets/do-not-localize/deselect-icon.png) iconDisabled | 替换为`-`（连字符）。 | NA. | `#My New File.` 更改为 `-My New File-`。 |
+| 大写字母 | ![取消选择](assets/do-not-localize/deselect-icon.png) iconDisabled | 外壳保持原样。 | 已更改为小写字符。 | `My New Folder` 更改为 `my-new-folder`。 |
+| 大写字母 | ![selection checked ](assets/do-not-localize/selection-checked-icon.png) iconEnabled | 外壳保持原样。 | 外壳保持原样。 | 不。 |
+
+字符列表以空格分隔。
+
+<!-- TBD: Check if the following is to be included in the footnote.
+
+Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names of folders. 
+-->
+
+
+<!-- TBD: Securing the below presentation of the same content in a comment.
+
+**File names**
+
+| Characters | Replaced by |
+|---|---|
+| &#35; &#37; &#123; &#63; &#125; &#38; &#46; &#47; &#58; &#91; &#124; &#93; &#42; | hyphen (-) |
+| whitespaces | whitespaces are retained |
+| capital case | casing is retained |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; in file names.
+
+**Folder names**
+
+| Characters | Replaced by |
+|---|---|
+| Characters | Replaced by |
+| &#37; &#59; &#35; &#44; &#43; &#63; &#94; &#123; &#123; &#34; &#46; &#47; &#59; &#91; &#93; &#124; &#42; | hyphen (-) |
+| whitespaces | hyphen (-) |
+| capital case | lower case |
+
+>[!CAUTION]
+>
+>Avoid using &#92;&#92; &#92;&#116; &#38; in folder names.
+
+>[!NOTE]
+>
+>If you enable [!UICONTROL Use legacy conventions when creating nodes for assets and folders] in app [!UICONTROL Preferences], then the app emulates v1.10 app behavior when uploading folders. In v1.10, the node names created in the repository respect spaces and casing of the folder names provided by the user. For more information, see [app Preferences](/help/install-upgrade.md#set-preferences).
+
+-->
 
 ## 使用多个资产{#work-with-multiple-assets}
 
