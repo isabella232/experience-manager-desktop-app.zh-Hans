@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 5c8d8b4ee62185529985b652585f8067947b5599
+source-git-commit: d642a33c8e8c2f771a6f996a76167b7f6e42c1ce
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 24%
@@ -70,10 +70,6 @@ ht-degree: 24%
 
 **应用程序v2.1.3.1中的更新**
 
-* 添加了一个选项，该选项（如果选中）允许应用程序上传文件夹和文件，以便在[!DNL Adobe Experience Manager]中创建的节点名称与本地文件和文件夹名称相同。
-
-   此行为与桌面应用程序版本1中的默认行为类似。 而在当前版本中，如果未启用选项，则文件夹名称中的空格和字符`% ; # , + ? ^ { } "`将在文件夹路径中替换为短划线。 此外，文件夹路径中的大写字符将转换为小写字符。 但是，在文件名中，字符`# % { } ? &`被用短划线替换；但白空和大小写仍保留。 有关更多信息，请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)和[上传和添加新资产](/help/using.md#upload-and-add-new-assets-to-aem)。
-
 当前版本中修复的错误是：
 
 * 资产上传和下载速度已得到提高，即使对于大型资产也是如此。 修复了在上传大文件后，使用[!DNL desktop app]的资产上传失败的问题。
@@ -81,6 +77,10 @@ ht-degree: 24%
 **应用程序v2.1.2.0中的更新**
 
 * [!UICONTROL Clear Cookies]的新选项将添加到应用程序的主菜单中。 它有助于解决潜在的登录问题，例如在将连接从服务器更改为其他服务器时。 请参阅[在连接](/help/troubleshoot.md#cannot-login-cookies-issue)之前清除Cookie。
+
+* 添加了一个选项，该选项（如果选中）允许应用程序上传文件夹和文件，以便在[!DNL Adobe Experience Manager]中创建的节点名称与本地文件和文件夹名称相同。
+
+   此行为与桌面应用程序版本1中的默认行为类似。 而在当前版本中，如果未启用选项，则文件夹名称中的空格和字符`% ; # , + ? ^ { } "`将在文件夹路径中替换为短划线。 此外，文件夹路径中的大写字符将转换为小写字符。 但是，在文件名中，字符`# % { } ? &`被用短划线替换；但白空和大小写仍保留。 有关更多信息，请参阅[应用程序首选项](/help/install-upgrade.md#set-preferences)和[上传和添加新资产](/help/using.md#upload-and-add-new-assets-to-aem)。
 
 **应用程序v2.1.1.0中的更新**
 
