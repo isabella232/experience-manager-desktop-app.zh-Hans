@@ -2,20 +2,20 @@
 title: ' [!DNL Adobe Experience Manager] 桌面应用程序的最佳实践和疑难解答'
 description: 按照最佳实践和疑难解答，解决与安装、升级、配置等相关的偶发问题。
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: b893ad24d360ed382cab50771413219ea7bda09e
+source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2260'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager]桌面应用程序{#troubleshoot-v2}故障诊断
+# 对[!DNL Adobe Experience Manager]桌面应用程序进行故障诊断 {#troubleshoot-v2}
 
 [!DNL Adobe Experience Manager] 桌面应用程序可连 [!DNL Experience Manager] 接到部署的数字资产管理(DAM)存储库。该应用程序会在您的计算机上获取存储库信息和搜索结果，并下载和上传文件和文件夹，同时还包含用于管理与Assets用户界面冲突的功能。
 
 请阅读并排查应用程序问题，了解最佳实践，并找出限制。
 
-## 最佳实践{#best-practices-to-prevent-troubles}
+## 最佳实践 {#best-practices-to-prevent-troubles}
 
 遵循以下最佳实践，以防止出现一些常见问题和疑难解答。
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 * **超时**:目前，桌面应用程序没有可配置的超时值，该值会在固定时间间隔后断开服 [!DNL Experience Manager] 务器与桌面应用程序之间的连接。在上传大型资产时，如果连接在一段时间后超时，应用程序会重试几次，以增加上传超时时间，从而上传资产。 没有建议的方法来更改默认超时设置。
 
-## 如何对{#troubleshooting-prep}进行故障诊断
+## 如何进行故障诊断 {#troubleshooting-prep}
 
 要解决桌面应用程序问题，请注意以下信息。 此外，如果您选择寻求支持，它还可以让您更好地将问题传达给Adobe客户关怀团队。
 
-### 日志文件{#check-log-files-v2}的位置
+### 日志文件的位置 {#check-log-files-v2}
 
 [!DNL Experience Manager] 桌面应用程序会根据操作系统将其日志文件存储在以下位置：
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >与Adobe客户关怀团队合作处理支持请求或票证时，可能会要求您共享日志文件，以帮助客户关怀团队了解问题。 存档整个`Logs`文件夹，并将其与您的客户关怀联系人共享。
 
-### 更改日志文件{#level-of-details-in-log}中的详细信息级别
+### 更改日志文件中的详细信息级别 {#level-of-details-in-log}
 
 要更改日志文件中的详细信息级别，请执行以下操作：
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 有效的日志级别为“调试”、“信息”、“警告”或“错误”。 日志的详细程度在DEBUG中最高，在ERROR中最低。
 
-### 启用调试模式{#enable-debug-mode}
+### 启用调试模式 {#enable-debug-mode}
 
 要进行故障诊断，您可以启用调试模式并在日志中获取更多信息。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 `AEM_DESKTOP_LOG_LEVEL=DEBUG&"C:\Program Files\Adobe\Adobe Experience Manager Desktop.exe`。
 
-### 了解[!DNL Adobe Experience Manager]桌面应用程序版本{#know-app-version-v2}
+### 了解[!DNL Adobe Experience Manager]桌面应用程序版本 {#know-app-version-v2}
 
 要查看版本号，请执行以下操作：
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 清除[!DNL Adobe Experience Manager]桌面应用程序的缓存是一项初步的故障诊断任务，可以解决若干问题。 从应用程序首选项中清除缓存。 请参阅[设置首选项](install-upgrade.md#set-preferences)。 缓存文件夹的默认位置为：
 
-## 无法查看已放置的资产{#placed-assets-missing}
+## 看不到已放置的资产 {#placed-assets-missing}
 
 如果看不到您或其他创意专业人士放置在支持文件（例如，INDD文件）中的资产，请检查以下内容：
 
@@ -159,11 +159,11 @@ ht-degree: 0%
 
 * 权限. 要检查您是否有权获取已放置的资产，请联系[!DNL Experience Manager]管理员。
 
-### 对桌面应用程序用户界面上文件所做的编辑不会立即反映在[!DNL Adobe Experience Manager] {#changes-on-da-not-visible-on-aem}中
+### 对桌面应用程序用户界面上文件所做的编辑不会立即反映在[!DNL Adobe Experience Manager]中 {#changes-on-da-not-visible-on-aem}
 
 [!DNL Adobe Experience Manager] 桌面应用程序将由用户自行决定何时完成对文件的所有编辑。根据文件的大小和复杂性，将新版本的文件传输回[!DNL Adobe Experience Manager]需要大量时间。 应用程序的设计要求最大限度地减少文件来回传输的次数，而不是猜测文件编辑何时完成并自动上传。 建议用户通过选择上传文件更改来启动将文件传输回[!DNL Adobe Experience Manager]的过程。
 
-### 在macOS {#issues-when-upgrading-on-macos}上升级时出现问题
+### 在macOS上升级时出现问题 {#issues-when-upgrading-on-macos}
 
 在macOS上升级[!DNL Experience Manager]桌面应用程序时，有时可能会出现问题。 这是由于[!DNL Experience Manager]桌面应用程序的旧系统文件夹阻止正确加载新版本的[!DNL Experience Manager]桌面应用程序所致。 要解决此问题，可以手动删除以下文件夹和文件。
 
@@ -178,11 +178,11 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop" | xargs rm -rf
 sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-plugin" | xargs rm -rf
 ```
 
-## 无法上载文件{#upload-fails}
+## 无法上载文件 {#upload-fails}
 
 如果您正在将桌面应用程序与[!DNL Experience Manager] 6.5.1或更高版本一起使用，请将S3或Azure连接器升级到版本1.10.4或更高版本。 它解决了与[OAK-8599](https://issues.apache.org/jira/browse/OAK-8599)相关的文件上传失败问题。 请参阅[安装说明](install-upgrade.md#install-v2)。
 
-## [!DNL Experience Manager] 桌面应用程序连接问题  {#connection-issues}
+## [!DNL Experience Manager] 桌面应用程序连接问题 {#connection-issues}
 
 如果您遇到一般连接问题，请通过以下方式获取有关[!DNL Experience Manager]桌面应用程序正在执行的操作的更多信息。
 
@@ -199,7 +199,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 大多数应用程序请求都位于请求日志中。 但是，如果此处没有有用的信息，则查看应用程序嵌入式浏览器发送的请求将会非常有用。
 有关如何查看这些请求的说明，请参阅[SAML部分](#da-connection-issue-with-saml-aem)。
 
-### SAML登录身份验证无法运行{#da-connection-issue-with-saml-aem}
+### SAML登录身份验证无法正常工作 {#da-connection-issue-with-saml-aem}
 
 [!DNL Experience Manager] 桌面应用程序可能无法连接到启用单点登录(SAML)的部 [!DNL Adobe Experience Manager] 署。该应用程序的设计尝试适应SSO连接和流程的变化和复杂性。 但是，设置可能需要进行其他故障诊断。
 
@@ -246,7 +246,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 查看正在加载的URL序列有助于在SAML的末尾进行故障诊断，以确定错误内容。
 
-### SSL配置问题{#ssl-config-v2}
+### SSL配置问题 {#ssl-config-v2}
 
 [!DNL Experience Manager]桌面应用程序用于HTTP通信的库采用严格的SSL强制。 有时，使用浏览器连接可能会成功，但使用[!DNL Experience Manager]桌面应用程序时连接会失败。 要正确配置SSL，请在Apache中安装缺少的中间证书。 请参阅[如何在Apache](https://access.redhat.com/solutions/43575)中安装中间CA证书。
 
@@ -283,7 +283,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 1. 保存文件并重新启动[!DNL Adobe Experience Manager]桌面应用程序。
 
-### 切换到其他服务器{#cannot-login-cookies-issue}时出现登录问题
+### 切换到其他服务器时出现登录问题 {#cannot-login-cookies-issue}
 
 使用[!DNL Experience Manager]服务器后，当您尝试更改与其他服务器的连接时，可能会遇到登录问题。 这是由于旧Cookie干扰了新身份验证所致。 主菜单中的[!UICONTROL Clear Cookies]选项有帮助。 注销应用程序中的当前会话，然后选择[!UICONTROL Clear Cookies]，然后再继续连接。
 
@@ -298,7 +298,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 在这两种方法中，应用程序都会在根DAM文件夹启动。
 
-## 隐藏已过期的资产{#hide-expired-assets}
+## 隐藏过期的资产 {#hide-expired-assets}
 
 从[!DNL Experience Manager]用户界面中浏览资产时，不会显示已过期的资产。 要防止在从桌面应用程序和资产链接浏览资产时查看、搜索和获取过期的资产，管理员可以执行以下配置。 配置适用于所有用户，而不考虑管理员权限。
 
