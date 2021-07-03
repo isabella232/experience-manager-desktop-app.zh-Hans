@@ -1,16 +1,16 @@
 ---
 title: '桌面应用程序简介 [!DNL Experience Manager] '
 description: 了解如何直接从其桌面使用 [!DNL Adobe Experience Manager] desktop app to optimize the asset management workflows for creative users when using [!DNL Adobe Experience Manager Assets] 。
-role: Business Practitioner, Administrator, Leader
+role: User, Admin, Leader
 exl-id: 5da36ac5-ab5b-4f8d-b446-ebe2360ec464
-source-git-commit: 78f18e68178f711d925d7e308822c657087d009a
+source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 63%
 
 ---
 
-# [!DNL Adobe Experience Manager] 桌面应用程序概述  {#overview-v2}
+# [!DNL Adobe Experience Manager] 桌面应用程序概述 {#overview-v2}
 
 Adobe 在其解决方案中提供了相互连通的工作流，助力业务用户和创意专业人士提高工作效率。[!DNL Adobe Experience Manager]桌面应用程序可连接存储库和桌面应用程序(包括Adobe和第三方应用程序)，以便更快地访问资源并简化工作流。 这样可节省时间并减少工作量，从而提高了在桌面工作流中使用[!DNL Adobe Experience Manager]资产的用户效率。
 
@@ -33,7 +33,7 @@ Adobe 在其解决方案中提供了相互连通的工作流，助力业务用�
 | 想要了解如何使用应用程序执行浏览、发现、编辑和上传操作，以及解决冲突和执行批量操作等。 | [ [!DNL Experience Manager] Usedesktop应用程序](using.md) |
 | 遇到问题？需要帮助进行故障诊断？ | [ [!DNL Experience Manager] 对 桌面应用程序进行故障诊断](troubleshoot.md) |
 
-## 应用程序{#whats-new-v2}的新增功能
+## 应用程序的新增功能 {#whats-new-v2}
 
 AEM 应用程序版本 2.0 是全新设计的，与以前的版本相比提供了多项改进功能。新版应用程序对用户更加友好，并且新的应用程序用户界面提供了专属桌面体验。用户可以通过搜索或浏览来发现资产、打开资产、编辑资产和上传更改，以及上传新资产，而无需用户使用[!DNL Experience Manager]界面。 此版本还支持从[!DNL Experience Manager]界面打开文件。
 
