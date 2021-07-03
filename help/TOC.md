@@ -7,8 +7,8 @@ breadcrumb-title: Desktop App 指南
 user-guide-description: 了解如何使用 Experience Manager 桌面应用程序连接存储库和桌面程序，以便更快地访问资源并简化工作流。
 feature-set: Experience Manager Assets,Experience Manager
 feature: 桌面应用程序
-role: Business Practitioner, Administrator
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+role: User, Admin
+source-git-commit: b661fedb6e33599921d39c0597c7d9f8e576798b
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 90%
