@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 56596ade6e7aca5020af6df485289c5902417594
+source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 24%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 24%
 
 **应用程序v2.1.3.2中的更新**
 
-新版应用程序附带了一些重大修复。
+新版应用程序修复了错误。
 
 **应用程序v2.1.3.1中的更新**
 
