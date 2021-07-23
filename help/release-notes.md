@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: d83f04fb4757bb8025489da7866d36a51ddfe374
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 24%
+source-wordcount: '1675'
+ht-degree: 23%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 24%
 * [!DNL Experience Manager] 6.4.4或更高版本(在Adobe Managed Services(AMS)或内部部署中)。请参阅[Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=zh-Hans)。
 * [!DNL Experience Manager] 6.4.0 - 6.4.3(安装了兼 [容](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 包)，位于Adobe Managed Services(AMS)或内部部署上。
 * [!DNL Experience Manager] 6.3（带有兼容包）
-* [!DNL Experience Manager] 安装兼容包的6.3.3.1或更高 [版](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 本。[!DNL Experience Manager] 6.3.3.0或更早版本不支持桌面应用程序。
+* [!DNL Experience Manager] 安装兼容包的6.3.3.1或更高 [版](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 本。[!DNL Experience Manager] 6.3.3.0或更早版本不支持桌面应用程序。
 
 [!DNL Adobe Experience Manager] 桌面应用程序适用于以下 **操作系统**:
 
