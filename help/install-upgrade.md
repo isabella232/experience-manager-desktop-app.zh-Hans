@@ -3,14 +3,14 @@ title: 安装和配置桌面应用程序
 description: 安装并配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资产。
 feature: 桌面应用程序，发行信息
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 4616934e8923693106401da008e2510310d0742a
+source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 1%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
-# 安装[!DNL Adobe Experience Manager]桌面应用程序{#install-app-v2}
+# 安装[!DNL Adobe Experience Manager]桌面应用程序 {#install-app-v2}
 
 使用[!DNL Adobe Experience Manager]桌面应用程序时，可以在本地桌面上轻松访问[!DNL Experience Manager]中的资产，并且这些资产可用于任何本机桌面应用程序。 资产可以在本机桌面应用程序中预览、打开、在Mac Finder或Windows资源管理器中显示以放置在其他文档中，并在本地进行更改 — 当您上传并在存储库中创建新版本时，这些更改会保存回[!DNL Experience Manager]。
 
@@ -28,11 +28,11 @@ ht-degree: 1%
 
 * 使用一些资产测试连接。 请参阅[如何浏览和搜索资产](using.md#browse-search-preview-assets)。
 
-## 系统要求、先决条件和下载链接{#tech-specs-v2}
+## 系统要求、先决条件和下载链接 {#tech-specs-v2}
 
 有关详细信息，请参阅[[!DNL Experience Manager] 桌面应用程序发行说明](release-notes.md)。
 
-## 从以前的版本{#upgrade-from-previous-version}升级
+## 从以前的版本升级 {#upgrade-from-previous-version}
 
 如果您是桌面应用程序v1.x的用户，请了解应用程序上一个版本和最新版本之间的差异和相似之处。 请参阅[桌面应用程序的新增功能](introduction.md#whats-new-v2)和[应用程序的工作方式](release-notes.md#how-app-works)
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 1. 如果您从其他版本的应用程序进行升级，请参阅[升级桌面应用程序](#upgrade-from-previous-version)。
 
-1. 如果您使用[!DNL Experience Manager]作为[!DNL Cloud Service]、[!DNL Experience Manager] 6.4.4或更高版本，或者[!DNL Experience Manager] 6.5.0或更高版本，请跳过此步骤。 确保您的[!DNL Experience Manager]设置符合[发行说明](release-notes.md)中提到的兼容性要求。 如有必要，请下载适用的[兼容包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)并使用[!DNL Experience Manager]包管理器作为[!DNL Experience Manager]管理员进行安装。 要安装软件包，请参阅[如何使用软件包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+1. 如果您使用[!DNL Experience Manager]作为[!DNL Cloud Service]、[!DNL Experience Manager] 6.4.4或更高版本，或者[!DNL Experience Manager] 6.5.0或更高版本，请跳过此步骤。 确保您的[!DNL Experience Manager]设置符合[发行说明](release-notes.md)中提到的兼容性要求。 如有必要，请下载适用的[兼容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)并使用[!DNL Experience Manager]包管理器作为[!DNL Experience Manager]管理员进行安装。 要安装软件包，请参阅[如何使用软件包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
    如果您是Adobe Managed Services(AMS)客户，请联系Adobe客户关怀团队。
 
-## 设置首选项{#set-preferences}
+## 设置首选项 {#set-preferences}
 
 要更改首选项，请单击![更多选项图标](assets/do-not-localize/more_options_da2.png)和&#x200B;**[!UICONTROL Preference]** ![首选项图标](assets/do-not-localize/preferences_icon_da2.png)。 在&#x200B;**[!UICONTROL Preferences]**&#x200B;窗口中，调整以下值：
 
@@ -122,7 +122,7 @@ ht-degree: 1%
 
 *图：桌面应用程序首选项。*
 
-### 代理支持{#proxy-support}
+### 代理支持 {#proxy-support}
 
 [!DNL Experience Manager] 桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet。应用程序只能使用不需要额外身份验证的网络代理进行连接。
 
@@ -130,7 +130,7 @@ ht-degree: 1%
 
 如果您的代理需要身份验证，则IT团队可以允许代理服务器设置中的[!DNL Experience Manager Assets] URL，以允许应用程序流量通过。
 
-## 卸载应用程序{#uninstall-the-app}
+## 卸载应用程序 {#uninstall-the-app}
 
 要在Windows上卸载应用程序，请执行以下步骤：
 
