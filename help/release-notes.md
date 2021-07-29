@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager] 桌面应用程序的发行详细
 mini-toc-levels: 1
 feature: 桌面应用程序，发行信息
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: a7a504d80891d68a0895dcf12d5b3734d7a584ec
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1681'
 ht-degree: 23%
 
 ---
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明 {#release-notes-v2}
 
-以下是最新桌面应用程序版本2.1(2.1.3.2)的发行信息。 发行日期为2021年7月19日。
+以下是最新桌面应用程序版本2.1(2.1.3.3)的发行信息。 发行日期为2021年7月29日。
 
 支持的&#x200B;**[!DNL Experience Manager]版本**&#x200B;包括：
 
@@ -33,8 +33,8 @@ ht-degree: 23%
 
 | 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
-| macOS(v2.1.3.2) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.3.2.dmg) |
-| Windows 64位(v2.1.3.2) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.3.2.exe) |
+| macOS(v2.1.3.3) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.3.3.dmg) |
+| Windows 64位(v2.1.3.3) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.3.3.exe) |
 | Windows 32位(v2.1.3.1) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.3.1.exe) |
 
 >[!NOTE]
@@ -68,13 +68,17 @@ ht-degree: 23%
 
 要了解详细信息，请参阅[v2.0](introduction.md#whats-new-v2)的新增功能。
 
-**应用程序v2.1.3.2中的更新**
+**应用程序v2.1.3.3中的更新**
 
 新版应用程序修复了错误。
 
+**应用程序v2.1.3.2中的更新**
+
+此版本的应用程序修复了错误。
+
 **应用程序v2.1.3.1中的更新**
 
-当前版本中修复的错误是：
+此版本中修复的错误是：
 
 * 资产上传和下载速度已得到提高，即使对于大型资产也是如此。 此版本修复了在上传超大文件时，使用[!DNL desktop app]上传资产有时失败的问题。
 
