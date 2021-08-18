@@ -2,9 +2,9 @@
 title: 桌面应用程序版本1.10故障诊断。
 description: 对 [!DNL Adobe Experience Manager] 桌面应用程序版本1.10进行故障诊断，以解决与安装、升级和配置相关的偶发问题。
 exl-id: 1e1409c2-bf5e-4e2d-a5aa-3dd74166862c
-source-git-commit: 32aff5d66f2cb67ab4bb440d7ace747a5cf1dd26
+source-git-commit: 2ae49374b362921a5a82fc2e040064b4e573b8c1
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3291'
 ht-degree: 1%
 
 ---
@@ -96,13 +96,13 @@ AEM桌面应用程序提供内部缓存和后台上传功能，以改善最终�
 
 Adobe建议单个用户的上传速度接近10 Mbps。 对于无线连接，带宽通常在多个用户之间共享。 如果多个用户同时执行消耗网络带宽的任务，性能可能会进一步降低。 要避免出现此类问题，请使用有线连接。
 
-## 特定于Windows的配置 {#windows-specific-configurations}
+<!-- AG, 8/18: The Windows KB article is removed by MS now. Giving 404. Also, Win 7 support is gone and the desktop app is also not supported on Win 7. Hiding this content for now.
 
-如果在Windows上使用Experience Manager，则可以配置Windows以增强WebDAV客户端的性能。 有关更多信息，请转到[https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570)。
+## Windows-specific configurations {#windows-specific-configurations}
 
-在Windows 7中，修改IE设置可以提高WebDAV的性能。 有关详细信息，请参阅如何在Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/)中[修复慢速WebDAV性能。
+If you use Experience Manager on Windows, you can configure Windows to enhance the performance of the WebDAV client. For more information, go to [https://support.microsoft.com/en-us/kb/2445570](https://support.microsoft.com/en-us/kb/2445570).
 
-<!-- TBD: The above performance tip is for Windows 7 which is not supported by the app anymore. Remove it later.
+On Windows 7, modifying IE settings can improve the performance of WebDAV. For details, see how to [fix slow WebDAV performance in Windows 7](https://oddballupdate.com/2009/12/fix-slow-webdav-performance-in-windows-7/).
 -->
 
 ## 并发操作 {#concurrent-operations}
