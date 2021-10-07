@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] 桌面应用程序的最佳实践和疑难解答'
 description: 按照最佳实践和疑难解答，解决与安装、升级、配置等相关的偶发问题。
 exl-id: f388e4ac-907d-4093-ba6f-86ecdafeb015
-source-git-commit: db5aaf7127b94879cb24842fb41b55c099d6221d
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
 source-wordcount: '2260'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 如何进行故障诊断 {#troubleshooting-prep}
 
-要解决桌面应用程序问题，请注意以下信息。 此外，如果您选择寻求支持，它还可以让您更好地将问题传达给Adobe客户关怀团队。
+要解决桌面应用程序问题，请注意以下信息。 此外，如果您选择寻求支持，它还可以让您更好地将问题传达给Adobe客户支持。
 
 ### 日志文件的位置 {#check-log-files-v2}
 
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 在 Windows 中：`%LocalAppData%\Adobe\AssetsCompanion\Logs`
 
-在Mac上：`~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
+在Mac:`~/Library/Logs/Adobe\ Experience\ Manager\ Desktop`
 
 在上传多个资产时，如果某些文件无法上传，请参阅`backend.log`文件以识别上传失败的内容。
 
 >[!NOTE]
 >
->与Adobe客户关怀团队合作处理支持请求或票证时，可能会要求您共享日志文件，以帮助客户关怀团队了解问题。 存档整个`Logs`文件夹，并将其与您的客户关怀联系人共享。
+>在与Adobe客户支持部门就支持请求或票证合作时，可能会要求您共享日志文件，以帮助客户支持团队了解问题。 存档整个`Logs`文件夹，并将其与您的客户支持联系人共享。
 
 ### 更改日志文件中的详细信息级别 {#level-of-details-in-log}
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 >
 >有效的日志级别为“调试”、“信息”、“警告”或“错误”。 日志的详细程度在DEBUG中最高，在ERROR中最低。
 
-要在Mac上以调试模式使用应用程序，请执行以下操作：
+要在Mac的调试模式下使用应用程序，请执行以下操作：
 
 1. 打开终端窗口或命令提示符。
 
@@ -163,11 +163,11 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager] 桌面应用程序将由用户自行决定何时完成对文件的所有编辑。根据文件的大小和复杂性，将新版本的文件传输回[!DNL Adobe Experience Manager]需要大量时间。 应用程序的设计要求最大限度地减少文件来回传输的次数，而不是猜测文件编辑何时完成并自动上传。 建议用户通过选择上传文件更改来启动将文件传输回[!DNL Adobe Experience Manager]的过程。
 
-### 在macOS上升级时出现问题 {#issues-when-upgrading-on-macos}
+### 在macOS上升级时的问题 {#issues-when-upgrading-on-macos}
 
 在macOS上升级[!DNL Experience Manager]桌面应用程序时，有时可能会出现问题。 这是由于[!DNL Experience Manager]桌面应用程序的旧系统文件夹阻止正确加载新版本的[!DNL Experience Manager]桌面应用程序所致。 要解决此问题，可以手动删除以下文件夹和文件。
 
-在执行以下步骤之前，将`Adobe Experience Manager Desktop`应用程序从macOS Applications文件夹拖到垃圾桶。 然后，打开终端，执行以下命令，并在出现提示时提供您的密码。
+在执行以下步骤之前，将`Adobe Experience Manager Desktop`应用程序从“macOS应用程序”文件夹拖到垃圾桶。 然后，打开终端，执行以下命令，并在出现提示时提供您的密码。
 
 ```shell
 sudo rm -rf ~/Library/Application\ Support/com.adobe.aem.desktop
@@ -258,7 +258,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 
 1. 使用您选择的编辑器来编辑应用程序的JavaScript配置文件，该文件（默认情况下）位于以下位置（取决于操作系统）：
 
-   在Mac上：`/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
+   在Mac:`/Applications/Adobe Experience Manager Desktop.app/Contents/Resources/javascript/lib-smb/config.json`
 
    在 Windows 中：`C:\Program Files (x86)\Adobe\Adobe Experience Manager Desktop\javascript\config.json`
 
@@ -303,7 +303,7 @@ sudo find /var/folders -type d -name "com.adobe.aem.desktop.finderintegration-pl
 从[!DNL Experience Manager]用户界面中浏览资产时，不会显示已过期的资产。 要防止在从桌面应用程序和资产链接浏览资产时查看、搜索和获取过期的资产，管理员可以执行以下配置。 配置适用于所有用户，而不考虑管理员权限。
 
 * [配置Experience Manager6.5以隐藏过期的资产](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#hide-expired-assets-via-acp-api)。
-* [在Experience Manager中配置为隐藏过期资产的Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api)。
+* [在Experience Manageras a Cloud Service中配置以隐藏已过期的资产](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html#hide-expired-assets-via-acp-api)。
 
 <!--
 ### Need additional help with [!DNL Experience Manager] desktop app {#additional-help}
@@ -326,5 +326,5 @@ Create Jira ticket with the following information:
 >[!MORELIKETHIS]
 >
 >* [已知问题](release-notes.md#known-issues-v2)
-* [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)
+>* [避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts)
 

@@ -1,18 +1,18 @@
 ---
 title: 安装和配置桌面应用程序
 description: 安装并配置 [!DNL Adobe Experience Manager] desktop app to work with [!DNL Adobe Experience Manager Assets] 服务器，并下载本地文件系统上的资产。
-feature: 桌面应用程序，发行信息
+feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: ea7227110aac38115829c93e7339dcdfbd9394a6
+source-git-commit: 2c846fb9cd82691f6439e93429dffcca8127ba68
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
 
 # 安装[!DNL Adobe Experience Manager]桌面应用程序 {#install-app-v2}
 
-使用[!DNL Adobe Experience Manager]桌面应用程序时，可以在本地桌面上轻松访问[!DNL Experience Manager]中的资产，并且这些资产可用于任何本机桌面应用程序。 资产可以在本机桌面应用程序中预览、打开、在Mac Finder或Windows资源管理器中显示以放置在其他文档中，并在本地进行更改 — 当您上传并在存储库中创建新版本时，这些更改会保存回[!DNL Experience Manager]。
+使用[!DNL Adobe Experience Manager]桌面应用程序时，可以在本地桌面上轻松访问[!DNL Experience Manager]中的资产，并且这些资产可用于任何本机桌面应用程序。 资产可以在本机桌面应用程序中预览、打开、在Mac Finder或Windows资源管理器中显示以放置在其他文档中，并在本地进行更改 — 当您上传并在存储库中创建新版本时，这些更改将会保存回[!DNL Experience Manager]。
 
 此类集成允许组织中的各种角色，
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. 重新启动计算机。
 
-1. [](release-notes.md) 下载并安 [](#install-v2) 装最新应用程序。按照以下说明操作。
+1. [](release-notes.md) 下载并安 [](#install-v2) 装最新的应用程序。按照以下说明操作。
 
 ## 安装 {#install-v2}
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
    >[!CAUTION]
    >
-   >确保[!DNL Experience Manager]服务器地址之前或之后没有前导或尾随空格。 否则，应用程序无法连接到[!DNL Experience Manager]服务器。
+   >请确保[!DNL Experience Manager]服务器地址之前或之后没有前导或尾随空格。 否则，应用程序无法连接到[!DNL Experience Manager]服务器。
 
 1. 成功连接后，您可以查看[!DNL Experience Manager] DAM根文件夹中可用的文件夹和资产列表。 您可以从应用程序内浏览文件夹。
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 1. （[!DNL Experience Manager] 6.5.1或更高版本）如果您正在将桌面应用程序与[!DNL Experience Manager] 6.5.1或更高版本一起使用，请将S3或Azure连接器升级到版本1.10.4或更高版本。 请参阅[Azure连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store)或[S3连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store)。
 
-   如果您是Adobe Managed Services(AMS)客户，请联系Adobe客户关怀团队。
+   如果您是Adobe Managed Services(AMS)客户，请联系Adobe客户支持。
 
 ## 设置首选项 {#set-preferences}
 
