@@ -3,9 +3,9 @@ title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] 桌面应用程序 [!DNL Adobe Experience Manager Assets] 服务器并下载本地文件系统上的资产。
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 7b884d89c34a6e45f49d4cacb0f5d537dc769742
+source-git-commit: 5b5970cec02d4a605bd7d826d1daa71fe228b0d9
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,8 @@ ht-degree: 0%
    ![桌面应用程序与输入服务器地址的连接屏幕](assets/connect_da2.png)
 
    *图：连接屏幕到输入服务器地址。*
+
+   选择 **[!UICONTROL Remember Connection]** 以避免在您每次登录到桌面应用程序时输入连接详细信息。
 
    >[!CAUTION]
    >

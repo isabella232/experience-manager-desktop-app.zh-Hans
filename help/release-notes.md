@@ -4,21 +4,27 @@ description: 的发行详细信息、增强功能、新增功能、兼容性和�
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 34803cd261c88f6fbe8aa283c057518217a1785e
+source-git-commit: 1167ca53c603b94b298f702d6cbb3231e318e4cd
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 19%
+source-wordcount: '2201'
+ht-degree: 16%
 
 ---
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明 {#release-notes-v2}
 
-以下是最新桌面应用程序版本2.1(2.1.5.0)的发行信息。 发布日期为2022年6月14日。
+以下是最新桌面应用程序版本2.2.0的发行信息。 发行日期为2022年10月7日。
+
+桌面应用程序的最新版本包括以下增强功能：
+
+* 支持Apple硅(M1)。
+
+* 在登录到桌面应用程序时能够记住连接字符串。
 
 的 **受支持 [!DNL Experience Manager] 版本** 为：
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html?lang=zh-Hans).
-* [!DNL Experience Manager] 6.5.0或更高版本(在Adobe Managed Services(AMS)或内部部署中)。 请参阅 [service pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=zh-Hans).
+* [!DNL Experience Manager] as a [!DNL Cloud Service]. 请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/home.html).
+* [!DNL Experience Manager] 6.5.0或更高版本(在Adobe Managed Services(AMS)或内部部署中)。 请参阅 [service pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html).
 * [!DNL Experience Manager] 6.4.4或更高版本(在Adobe Managed Services(AMS)或内部部署中)。 请参阅 [service pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html).
 * [!DNL Experience Manager] 6.4.0 - 6.4.3，带有 [兼容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 安装在Adobe Managed Services(AMS)或内部部署上。
 * [!DNL Experience Manager] 6.3（带有兼容包）
@@ -33,6 +39,9 @@ ht-degree: 19%
 
 | 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS(v2.2.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.0.dmg) |
+| macOSApple硅(M1)(v2.2.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.0.dmg) |
+| Windows 64位(v2.2.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.0.exe) |
 | macOS(v2.1.5.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-2.1.5.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-2.1.5.0.dmg) |
 | Windows 64位(v2.1.5.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win64-2.1.5.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win64-2.1.5.0.exe) |
 | Windows 32位(v2.1.5.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win32-2.1.5.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win32-2.1.5.0.exe) |
@@ -61,9 +70,9 @@ ht-degree: 19%
 
 * 在本机应用程序中放置文件的路径使用全局桌面路径(从显示为 [!UICONTROL Reveal] 选项)。
 
-* 路径由本机应用程序存储在文件的 XMP 记录中.
+* 路径由本机应用程序存储在文件的XMP记录中。
 
-* [!DNL Experience Manager] 已提取 XMP 记录，其中包含资产元数据记录的路径.
+* [!DNL Experience Manager] 已提取XMP记录，其中包含资产元数据记录的路径。
 
 * 路径可以与中的资产匹配 [!DNL Experience Manager]，即放置的文件也位于 [!DNL Experience Manager] 在匹配路径下。
 
