@@ -4,10 +4,10 @@ description: 的发行详细信息、增强功能、新增功能、兼容性和�
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: 1167ca53c603b94b298f702d6cbb3231e318e4cd
+source-git-commit: 2f49c1e952202e627e60fa9ad7998a4927aa817c
 workflow-type: tm+mt
-source-wordcount: '2201'
-ht-degree: 16%
+source-wordcount: '2188'
+ht-degree: 17%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 16%
 
 [!DNL Adobe Experience Manager] 桌面应用程序适用于以下对象 **操作系统**:
 
-* macOS X 10.14或更高版本，以及最新的错误修复。 [Mac带Apple硅的电脑](https://support.apple.com/en-us/HT211814) 尚不支持。
+* macOS X 10.14或更高版本，以及最新的错误修复。
 * 带有最新Service Pack和错误修复的Windows 10。
 
 的 **下载URL** 对于支持的操作系统，包括：
