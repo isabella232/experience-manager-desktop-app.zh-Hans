@@ -1,6 +1,6 @@
 ---
-title: 使用 [!DNL Experience Manager] 案頭應用程式
-description: 使用 [!DNL Adobe Experience Manager] 案頭應用程式，搭配使用 [!DNL Adobe Experience Manager] DAM資產(從您的Win或Mac案頭)，並用於其他應用程式。
+title: 使用 [!DNL Experience Manager] 桌面应用程序
+description: 使用 [!DNL Adobe Experience Manager] 桌面应用程序，使用 [!DNL Adobe Experience Manager] 直接从Win或Mac桌面创建DAM资产，并在其他应用程序中使用。
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
@@ -11,194 +11,194 @@ ht-degree: 0%
 
 ---
 
-# 使用 [!DNL Adobe Experience Manager] 案頭應用程式 {#use-aem-desktop-app-v2}
+# 使用 [!DNL Adobe Experience Manager] 桌面应用程序 {#use-aem-desktop-app-v2}
 
-使用 [!DNL Adobe Experience Manager] 案頭應用程式，輕鬆存取儲存在 [!DNL Adobe Experience Manager] 本機案頭上的DAM存放庫，並在任何案頭應用程式中使用這些資產。 您可以在案頭應用程式中開啟資產，並在本機編輯資產 — 將變更上傳回 [!DNL Experience Manager] 使用版本控制，與其他使用者共用更新。 您也可以上傳新檔案和資料夾階層至 [!DNL Experience Manager]、建立資料夾，以及從以下位置刪除資產或資料夾： [!DNL Experience Manager] DAM。
+使用 [!DNL Adobe Experience Manager] 桌面应用程序，用于轻松访问存储在中的数字资产 [!DNL Adobe Experience Manager] 本地桌面上的DAM存储库，并在任何桌面应用程序中使用这些资产。 您可以在桌面应用程序中打开资产，并在本地编辑资产 — 将更改上传回 [!DNL Experience Manager] 版本控制，以与其他用户共享更新。 您还可以将新文件和文件夹层次结构上传到 [!DNL Experience Manager]，创建文件夹，然后从删除资源或文件夹 [!DNL Experience Manager] 达姆。
 
-整合可讓組織中的不同角色在中集中管理資產 [!DNL Experience Manager Assets] 以及在Windows或Mac作業系統上的原生應用程式中存取本機案頭上的資產。
+该集成允许组织中的各种角色在中集中管理资产 [!DNL Experience Manager Assets] 以及在Windows或Mac操作系统上的本机应用程序中访问本地桌面上的资源。
 
-當您在登出後開啟應用程式或第一次開啟應用程式時，請提供您的 [!DNL Experience Manager] server的格式 `https://[aem-server-url]:[port]/`. 然後選取 [!UICONTROL Connect] 選項。 提供認證以將應用程式連線至伺服器。
+在注销后或首次打开应用程序时，请提供您的 [!DNL Experience Manager] 服务器格式 `https://[aem-server-url]:[port]/`. 然后选择 [!UICONTROL Connect] 选项。 提供凭据以将应用程序与服务器连接。
 
-您使用執行的主要工作 [!DNL Adobe Experience Manager] 案頭應用程式為：
+您使用执行的主要任务 [!DNL Adobe Experience Manager] 桌面应用程序包括：
 
-![您可以使用完成的工作流程與任務 [!DNL Experience Manager] 案頭應用程式](assets/aem_desktop_app_usecases_v2.png "您可以使用完成的工作流程與任務 [!DNL Adobe Experience Manager] 案頭應用程式")
-下載 [此](assets/aem_desktop_app_usecases_print.pdf) 可列印的PDF檔案。
+![可以使用完成的工作流和任务 [!DNL Experience Manager] 桌面应用程序](assets/aem_desktop_app_usecases_v2.png "可以使用完成的工作流和任务 [!DNL Adobe Experience Manager] 桌面应用程序")
+下载 [此](assets/aem_desktop_app_usecases_print.pdf) 打印就绪的PDF文件。
 
-## 案頭應用程式的運作方式 {#how-app-works2}
+## 桌面应用程序的工作原理 {#how-app-works2}
 
-開始使用應用程式之前，請先瞭解 [應用程式如何運作](release-notes.md#how-app-works). 此外，請熟悉下列詞語：
+在开始使用应用程序之前，了解 [应用程序的工作原理](release-notes.md#how-app-works). 此外，请熟悉以下术语：
 
-* **[!UICONTROL Desktop Actions]**：從Assets網頁介面中，您可以在瀏覽器內探索資產位置或取出資產，然後在原生案頭應用程式中開啟資產進行編輯。 這些動作可從Web介面取得，並使用案頭應用程式功能。 另請參閱 [如何啟用案頭動作](using.md#desktopactions-v2).
+* **[!UICONTROL Desktop Actions]**：从Assets Web界面中，您可以在浏览器中浏览资产位置或签出并打开资产，以在本机桌面应用程序中编辑。 这些操作可从Web界面中获取，并且可使用桌面应用程序功能。 参见 [如何启用桌面操作](using.md#desktopactions-v2).
 
-* 檔案狀態為 **[!UICONTROL Cloud Only]**：這類資產不會在本機電腦上下載，並可在以下位置使用： [!DNL Experience Manager] 僅限伺服器。
+* 文件状态为 **[!UICONTROL Cloud Only]**：此类资产不会下载到本地计算机上，并且可在以下位置使用： [!DNL Experience Manager] 仅限服务器。
 
-* 檔案狀態為 **[!UICONTROL Available locally]**：資產會下載並在本機電腦上依原樣提供。 資產不會變更。
+* 文件状态为 **[!UICONTROL Available locally]**：资源已下载并在本地计算机上可用。 资产不变。
 
-* 檔案狀態為 **[!UICONTROL Edited locally]**：這類資產會在本機修改，而變更會保留至上傳的 [!DNL Experience Manager] 伺服器。 上傳後，狀態會變更為 [!UICONTROL Available locally]. 另請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets).
+* 文件状态为 **[!UICONTROL Edited locally]**：此类资源将在本地修改，所做的更改会保留到上传到的中 [!DNL Experience Manager] 服务器。 上传后，状态将更改为 [!UICONTROL Available locally]. 参见 [编辑资源](using.md#edit-assets-upload-updated-assets).
 
-* 檔案狀態為 **[!UICONTROL Editing conflict]**：如果您與其他使用者同時修改資產，應用程式會指出發生了編輯衝突。 應用程式也提供保留或捨棄變更的選項。 另請參閱 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts).
+* 文件状态为 **[!UICONTROL Editing conflict]**：如果您和其他用户同时修改资产，则应用程序会指示发生了编辑冲突。 该应用程序还提供了保留或放弃更改的选项。 参见 [如何避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* 檔案狀態為 **[!UICONTROL Modified remotely]**：應用程式會指出您已下載的資產是否在 [!DNL Experience Manager] 伺服器。 應用程式也提供下載最新版本和更新本機復本的選項。 另請參閱 [如何避免編輯衝突](using.md#adv-workflow-collaborate-avoid-conflicts).
+* 文件状态为 **[!UICONTROL Modified remotely]**：应用程序会指示您下载的资产是否在 [!DNL Experience Manager] 服务器。 该应用程序还提供了下载最新版本和更新本地副本的选项。 参见 [如何避免编辑冲突](using.md#adv-workflow-collaborate-avoid-conflicts).
 
-* **[!UICONTROL Check-out]**：如果您正在編輯檔案或編輯檔案，您可切換狀態以出庫。 它會在應用程式的資產上新增鎖定圖示，並且 [!DNL Experience Manager] 網頁介面。 鎖定圖示會向其他使用者指示，以避免同時編輯相同的資產，因為這會導致編輯衝突。
+* **[!UICONTROL Check-out]**：如果您正在编辑文件或打算编辑文件，则可以切换状态以签出。 它会在应用程序中的资产上添加一个锁图标，并且 [!DNL Experience Manager] Web界面。 锁定图标会向其他用户指示，以避免同时编辑相同的资产，因为这会导致编辑冲突。
 
-* **[!UICONTROL Check-in]**：將資產標示為安全，以供其他使用者編輯，而不會造成編輯衝突。 上傳變更時，鎖定圖示會自動移除。 切換籤入狀態也會移除鎖定圖示，但建議不要在未上傳變更的情況下手動簽入。 如果您捨棄變更，請手動切換入庫。
+* **[!UICONTROL Check-in]**：将资产标记为安全，以供其他用户编辑，而不会导致编辑冲突。 上传更改时，锁定图标将自动移除。 切换签入状态也会删除锁图标，但建议不要在未上传更改的情况下手动签入。 如果您放弃更改，请手动切换签入。
 
-* **[!UICONTROL Open]** 動作：只需開啟資產，即可在原生應用程式中預覽。 不建議使用此動作編輯資產，因為它不會簽出資產，且其他使用者可以進行編輯會導致編輯衝突。
+* **[!UICONTROL Open]** 操作：只需打开资源即可在本机应用程序中预览它。 不建议使用此操作编辑资源，因为它不会签出资源，并且其他用户可能会进行编辑而导致编辑冲突。
 
-* **[!UICONTROL Edit]** 動作：使用動作來修改影像。 按一下 [!UICONTROL Edit] 動作會自動簽出資產並在資產上新增鎖定圖示。 按一下「編輯」後，如果您不想編輯資產，請按一下 [!UICONTROL Toggle check-in]. 若要刪除、重新命名或移動資產 [!DNL Experience Manager] DAM資料夾階層，使用 [!DNL Experience Manager] 網頁介面動作，而非編輯動作。
+* **[!UICONTROL Edit]** 操作：使用操作修改图像。 点击 [!UICONTROL Edit] 操作会自动签出资源并在资源上添加一个锁定图标。 单击“编辑”后，如果不想编辑资产，请单击 [!UICONTROL Toggle check-in]. 要删除、重命名或移动资产，请执行以下操作 [!DNL Experience Manager] DAM文件夹层次结构，请使用 [!DNL Experience Manager] Web界面操作，而不是编辑操作。
 
-* **[!UICONTROL Download]** 動作：將資產下載至本機電腦。 您可以現在下載資產，稍後再編輯；離線工作稍後再上傳變更。 資產會下載到檔案系統的快取資料夾中。
+* **[!UICONTROL Download]** 操作：将资源下载到本地计算机。 您可以立即下载资产并稍后编辑；脱机工作并稍后上传更改。 资产下载到文件系统的缓存文件夹中。
 
-* **[!UICONTROL Reveal File]** 或 **[!UICONTROL Reveal Folder]** 動作：將資產下載至本機快取資料夾時，應用程式會模擬本機網路磁碟機，並提供每個資產的本機路徑。 若要知道此路徑，請使用應用程式中適當的顯示選項。 需要顯示動作才能在Creative Cloud應用程式中放置資產。 另請參閱 [放置資產](using.md#place-assets-in-native-documents).
+* **[!UICONTROL Reveal File]** 或 **[!UICONTROL Reveal Folder]** 操作：在将资源下载到本地缓存文件夹时，应用程序将模拟一个本地网络驱动器，并为每个资源提供本地路径。 要了解此路径，请使用应用程序中的相应显示选项。 在Creative Cloud应用程序中放置资源时，需要执行展现操作。 参见 [放置资产](using.md#place-assets-in-native-documents).
 
-* **[!UICONTROL Open In Web]** 動作：檢視資產的方式 [!DNL Experience Manager] 網頁介面，在網頁中開啟。 您可以從以下位置啟動更多工作流程： [!DNL Experience Manager] 介面，例如更新中繼資料或資產探索。
+* **[!UICONTROL Open In Web]** 操作：在中查看资产 [!DNL Experience Manager] Web界面，在Web中打开。 您可以从以下位置启动更多工作流 [!DNL Experience Manager] 界面，例如更新元数据或资源发现。
 
-* **[!UICONTROL Delete]** 動作：從刪除資產 [!DNL Experience Manager] DAM存放庫。 該動作會刪除Experience Manager伺服器上的資產原始副本。 如果您只想捨棄對本機資產的修改，請參閱 [捨棄變更](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Delete]** 操作：从删除资产 [!DNL Experience Manager] DAM存储库。 该操作会删除Experience Manager服务器上的资源原始副本。 如果只想放弃对本地资源的修改，请参阅 [放弃更改](using.md#edit-assets-upload-updated-assets).
 
-* **[!UICONTROL Upload Changes]**：案頭應用程式只會在您明確上傳至時上傳更新的資產 [!DNL Experience Manager] 伺服器。 當您儲存編輯內容時，變更只會儲存在本機電腦上。 上傳時，資產會自動入庫，而鎖定圖示會遭到移除。 另請參閱 [編輯資產](using.md#edit-assets-upload-updated-assets).
+* **[!UICONTROL Upload Changes]**：仅当明确上传到时，桌面应用程序才会上传更新的资产 [!DNL Experience Manager] 服务器。 在保存编辑内容时，所做的更改仅保存在本地计算机上。 上传时，资产会自动签入，并且锁图标会被移除。 参见 [编辑资源](using.md#edit-assets-upload-updated-assets).
 
-## 在中啟用案頭動作 [!DNL Experience Manager] 網頁介面 {#desktopactions-v2}
+## 在中启用桌面操作 [!DNL Experience Manager] Web界面 {#desktopactions-v2}
 
-從 [!DNL Assets] 使用者介面在瀏覽器中，您可以瀏覽資產位置或取出資產，然後在您的案頭應用程式中開啟資產進行編輯。 這些選項稱為 [!UICONTROL Desktop Actions] 和預設為未啟用。 若要啟用此功能，請依照下列步驟操作。
+从 [!DNL Assets] 用户界面中，您可以浏览资产位置或签出并打开资产以在桌面应用程序中编辑。 这些选项称为 [!UICONTROL Desktop Actions] 默认情况下不启用和。 要启用该功能，请执行以下步骤。
 
-1. 在 [!DNL Assets] 主控台，按一下 **[!UICONTROL User]** 圖示加以檢視。
-1. 按一下 **[!UICONTROL My Preferences]** 以顯示 **[!UICONTROL Preferences]** 對話方塊。
+1. 在 [!DNL Assets] 控制台中，单击 **[!UICONTROL User]** 图标。
+1. 单击 **[!UICONTROL My Preferences]** 以显示 **[!UICONTROL Preferences]** 对话框。
 
-1. 在 [!UICONTROL User Preferences] 對話方塊，選取 **[!UICONTROL Show Desktop Actions For Assets]**，然後按一下 **[!UICONTROL Accept]**.
+1. 在 [!UICONTROL User Preferences] 对话框，选择 **[!UICONTROL Show Desktop Actions For Assets]**，然后单击 **[!UICONTROL Accept]**.
 
 
-   ![選取顯示資產的案頭動作以啟用案頭動作](assets/enable_desktop_actions.png)
+   ![选择“显示资产的桌面操作”以启用桌面操作](assets/enable_desktop_actions.png)
 
-   *圖：選取 [!UICONTROL Show Desktop Actions For Assets] 以啟用案頭動作。*
+   *图：选择 [!UICONTROL Show Desktop Actions For Assets] 以启用桌面操作。*
 
-## 瀏覽、搜尋和預覽資產 {#browse-search-preview-assets}
+## 浏览、搜索和预览资源 {#browse-search-preview-assets}
 
-您可以瀏覽至、搜尋及預覽 [!DNL Experience Manager] 存放庫，全部來自案頭應用程式。 在應用程式中嘗試下列操作：
+您可以浏览、搜索和预览中可用的资产。 [!DNL Experience Manager] 存储库，全部来自桌面应用程序。 在应用程序中尝试以下操作：
 
-1. 瀏覽至資料夾，並檢視資料夾中可用資產的一些基本資訊，以及所有資產的小縮圖。
+1. 浏览到文件夹并查看文件夹中可用资源的一些基本信息，以及所有资源的小型缩略图。
 
-   ![瀏覽DAM檔案和資料夾](assets/browse_folder_da2.png "瀏覽DAM檔案和資料夾")
+   ![浏览DAM文件和文件夹](assets/browse_folder_da2.png "浏览DAM文件和文件夹")
 
-1. 若要檢視詳細資訊和個別資產的大型縮圖，請按一下檔案名稱。
+1. 要查看更多信息和单个资产的大缩略图，请单击文件名。
 
-   ![檢視資產和動作的大型預覽](assets/large_preview_actions_da2.png "檢視資產和動作的大型預覽")
+   ![查看更大的资产和操作预览](assets/large_preview_actions_da2.png "查看更大的资产和操作预览")
 
-1. 按一下 **[!UICONTROL Open]** 或 **[!UICONTROL Edit]** 若要在本機下載檔案，請分別檢視檔案或在原生應用程式中進行編輯。
-1. 使用關鍵字搜尋，以在 [!DNL Experience Manager] 存放庫。 使用 `?` 和 `*` 作為萬用字元。 這些萬用字元會分別取代單一字元或多個字元。 視需要篩選及排序結果。
+1. 单击 **[!UICONTROL Open]** 或 **[!UICONTROL Edit]** 要本地下载文件，则只需分别查看它或在本地应用程序中编辑它即可。
+1. 使用关键字搜索以在 [!DNL Experience Manager] 存储库。 使用 `?` 和 `*` 作为通配符。 这些通配符分别替换单个字符或多个字符。 根据需要筛选和排序结果。
 
-   ![使用星號萬用字元的範例搜尋](assets/search_wildcard_da2.png "使用星號萬用字元的範例搜尋")
+   ![使用星号通配符的示例搜索](assets/search_wildcard_da2.png "使用星号通配符的示例搜索")
 
-   ![另一個使用星號萬用字元的範例搜尋](assets/search_wildcard2_da2.png "另一個星號萬用字元放置位置不同的範例搜尋")
+   ![另一个使用星号通配符的示例搜索](assets/search_wildcard2_da2.png "另一个星号通配符位置不同的示例搜索")
 
 >[!NOTE]
 >
->應用程式會透過符合多個中繼資料欄位的搜尋條件來顯示資產，而不只是資產的標題或檔案名稱。
+>应用程序通过跨多个元数据字段匹配搜索条件来显示资源，而不只是资源的标题或文件名。
 
 ## 下载资源 {#download-assets}
 
-您可以下載本機檔案系統上的資產。 應用程式會從擷取資產 [!DNL Experience Manager] 並將相同的復本儲存在本機檔案系統上。
+您可以在本地文件系统上下载资产。 应用程序从以下位置获取资产： [!DNL Experience Manager] 并将相同的副本保存在本地文件系统中。
 
-按一下 ![「更多選項」圖示](assets/do-not-localize/more2_da2.png) ，然後按一下 ![下載圖示](assets/do-not-localize/download_cloud_da2.png) 進行下載。
+单击 ![“更多选项”图标](assets/do-not-localize/more2_da2.png) ，然后单击 ![“下载”图标](assets/do-not-localize/download_cloud_da2.png) 下载。
 
-![資產的下載選項](assets/download_option_da2.png "資產的下載選項")
+![资源的下载选项](assets/download_option_da2.png "资源的下载选项")
 
 >[!NOTE]
 >
->下載或上傳大型檔案或多個檔案時，應用程式會關閉對資產和資料夾的動作。 下載或上傳完成時，即可使用這些動作。
+>下载或上传大文件或许多文件时，应用程序会关闭对资源和文件夹的操作。 下载或上传完成后，这些操作将可用。
 
-如果佇列大小很大或您遇到一些網路問題，下載多個資產可能會導致效能不佳。 此外，在下載資料夾時，您可能會不經意地將許多資產排入下載佇列。 為避免長時間等待，應用程式會限制一次下載的資產數量。 若要瞭解如何進行設定，請參閱 [設定偏好設定](install-upgrade.md#set-preferences). 即使低於此限制，應用程式有時也可能會在下載明顯較大的資料夾之前尋求確認。
+如果队列过大，或者遇到一些网络问题，下载多个资源可能会导致性能不佳。 此外，在下载文件夹时，您可能会在不知不觉中将许多资源排入下载队列。 为避免较长的等待时间，应用程序会限制一次性下载的资产数量。 要了解如何对其进行配置，请参阅 [设置首选项](install-upgrade.md#set-preferences). 即使低于此限制，应用程序有时也可能在下载明显较大的文件夹之前寻求确认。
 
-![應用程式會確認下載相對大量的資產](assets/download_confirmation_da2.png "應用程式會確認下載相對大量的資產")
+![应用程序确认下载相对大量的资产](assets/download_confirmation_da2.png "应用程序确认下载相对大量的资产")
 
-如果選取並下載資料夾，應用程式只會下載直接儲存在資料夾中的資產。 [!DNL Experience Manager]. 它不會自動從子資料夾下載資產。
+如果选择并下载文件夹，则应用程序仅下载直接存储在文件夹中的资产。 [!DNL Experience Manager]. 它不会自动从子文件夹下载资产。
 
-## 在案頭上開啟資產 {#openondesktop-v2}
+## 在桌面上打开资产 {#openondesktop-v2}
 
-您可以開啟遠端資產，以便在原生應用程式中檢視。 資產會下載至本機資料夾，並在與檔案格式相關的原生應用程式中啟動。 您可以變更原生應用程式，以在Mac或Windows中開啟特定檔案型別（副檔名）。
+您可以打开远程资产，以便在本机应用程序中查看。 资产将下载到本地文件夹，并在与文件格式关联的本机应用程序中启动。 您可以更改本机应用程序，以在Mac或Windows中打开特定的文件类型（扩展名）。
 
-按一下 **[!UICONTROL Open]** 從資產功能表。 資產會從本機下載，並在原生應用程式中開啟。 檢查狀態列中大型資產的下載進度和傳輸速度。
+单击 **[!UICONTROL Open]** （从资产菜单）。 资源下载到本地，并在本地应用程序中打开。 在状态栏中检查大型资产的下载进度和传输速度。
 
 <!-- ![Download progress bar for large-sized assets](assets/download_status_bar_da2.png "Download progress bar for large-sized assets")
 -->
 
 >[!NOTE]
 >
->如果預期的變更未反映在應用程式中，請按一下重新整理圖示 ![重新整理圖示](assets/do-not-localize/refresh.png) 或在應用程式介面中按一下右鍵，然後按一下 **[!UICONTROL Refresh]**. 進行較大型的下載或上傳時，動作不可用。
+>如果应用程序未反映预期的更改，请单击刷新图标 ![“刷新”图标](assets/do-not-localize/refresh.png) 或者右键单击应用程序界面，然后单击 **[!UICONTROL Refresh]**. 当较大的下载或上传正在进行时，这些操作不可用。
 
-若要開啟資產的本機下載資料夾，請按一下 ![「更多動作」圖示](assets/do-not-localize/more2_da2.png) 並按一下 ![顯示圖示](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]** 動作。
+要打开资源的本地下载文件夹，请单击 ![“更多操作”图标](assets/do-not-localize/more2_da2.png) 并单击 ![“展现”图标](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]** 操作。
 
-## 使用資產或將資產放入原生檔案 {#place-assets-in-native-documents}
+## 使用资产或将资产放入本机文档 {#place-assets-in-native-documents}
 
-在某些情況下，例如將資產放入原生檔案時，您可以在Windows檔案總管或Mac Finder中存取檔案。 若要前往本機下載檔案的檔案系統位置，請使用 ![顯示圖示](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]** 選項。
+在某些情况下，例如将资源放入本机文档时，您可以在Windows资源管理器或Mac Finder中访问文件。 要访问本地下载文件的文件系统位置，请使用 ![“展现”图标](assets/do-not-localize/reveal_action2_da2.png) **[!UICONTROL Reveal File]** 选项。
 
-![顯示資產的檔案動作](assets/revealfile_action_da2.png "顯示資產的檔案動作")
+![显示资源的“文件”操作](assets/revealfile_action_da2.png "显示资源的“文件”操作")
 
-按一下 **[!UICONTROL Reveal File]**，或 **[!UICONTROL Reveal Folder]** 在資料夾上，以使用本機電腦上預先選取的檔案或資料夾來開啟Windows檔案總管或Mac Finder。 此選項非常實用，例如，可將 [!DNL Experience Manager] 原生應用程式中支援放置或連結本機檔案的檔案。 若要瞭解如何在Adobe InDesign中置入檔案，請參閱 [置入圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+单击 **[!UICONTROL Reveal File]**，或 **[!UICONTROL Reveal Folder]** ，以使用本地计算机上预先选定的文件或文件夹打开Windows资源管理器或Mac Finder。 该选项对于以下操作很有用： [!DNL Experience Manager] 本地应用程序中支持放置或链接本地文件的文件。 要了解如何在Adobe InDesign中放置文件，请参阅 [放置图形](https://helpx.adobe.com/indesign/using/placing-graphics.html).
 
-此 **[!UICONTROL Reveal File]** 動作會開啟本機網路共用，只顯示本機可用的資產，也就是顯示使用應用程式顯示、下載或開啟/編輯的資產。 本機網路共用不會上傳任何變更至 [!DNL Experience Manager]. 若要上傳變更，請明確使用 **[!UICONTROL Upload Changes]** 或 **[!UICONTROL Upload]** 動作。
+此 **[!UICONTROL Reveal File]** 操作可打开本地网络共享，其中仅显示本地可用的资产，即显示使用应用程序显示、下载或打开/编辑的资产。 本地网络共享未将任何更改上传到 [!DNL Experience Manager]. 要上传更改，请明确使用 **[!UICONTROL Upload Changes]** 或 **[!UICONTROL Upload]** 操作。
 
 >[!NOTE]
 >
->用於回溯相容於 [!DNL Experience Manager] 案頭應用程式v1.x中，顯示的檔案是從本機網路共用提供服務，僅公開本機可用的檔案。 顯示檔案的案頭路徑與應用程式v1.x建立的路徑相同。
+>用于向后兼容 [!DNL Experience Manager] 桌面应用程序v1.x中，显示的文件是从本地网络共享中提供的，仅公开本地可用文件。 显示文件的桌面路径与应用程序v1.x创建的路径相同。
 
 >[!CAUTION]
 >
->不要使用 **[!UICONTROL Reveal File]** 在原生應用程式中編輯資產的選項。 請改用 **[!UICONTROL Edit]** 動作。 若要瞭解更多，請參閱 [進階工作流程：在相同的檔案上共同作業並避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts).
+>不使用 **[!UICONTROL Reveal File]** 选项，用于编辑本机应用程序中的资源。 请改用 **[!UICONTROL Edit]** 操作。 要了解更多信息，请参阅 [高级工作流程：对相同的文件进行协作并避免编辑冲突](#adv-workflow-collaborate-avoid-conflicts).
 
-## 編輯資產並上傳更新的資產至 [!DNL Experience Manager] {#edit-assets-upload-updated-assets}
+## 编辑资源并将更新的资源上传到 [!DNL Experience Manager] {#edit-assets-upload-updated-assets}
 
-當您想要進行變更並將更新的資產上傳到Experience ManagerEM伺服器時，請開啟資產以供編輯。 為避免與其他使用者的編輯發生衝突，請使用應用程式來起始編輯工作階段。 開始編輯之前，請確定資產上沒有鎖定圖示，亦即，其他使用者未編輯資產。
+当您想要进行更改并将更新的资产上传到Experience Manager EM服务器时，请打开资产进行编辑。 为避免与其他用户的编辑发生冲突，请使用应用程序启动编辑会话。 在开始编辑之前，请确保资产上没有任何锁图标，即，其他用户未编辑该资产。
 
-若要編輯資產，請搜尋資產或瀏覽至資產位置。 按一下 ![「更多」圖示](assets/do-not-localize/more2_da2.png) 並按一下 **[!UICONTROL Edit]**.
+要编辑资源，请搜索资源或浏览到资源的位置。 单击 ![“更多”图标](assets/do-not-localize/more2_da2.png) 并单击 **[!UICONTROL Edit]**.
 
-使用 **[!UICONTROL Toggle Check-out]** 若要鎖定資產，以防止在以下兩種情況下與其他使用者的編輯發生衝突：
+使用 **[!UICONTROL Toggle Check-out]** 锁定资源以防止在以下两种情况下与其他用户的编辑发生冲突：
 
-* 您已開始編輯資產，但未先將資產出庫（例如，直接開啟資產）。
-* 您打算儘快開始編輯資產，不希望其他人編輯。
+* 您已开始编辑资产，但未先签出该资产（例如，只需打开它）。
+* 您打算尽快开始编辑资产，不希望其他人编辑。
 
-完成編輯後，應用程式會顯示 **[!UICONTROL Edited Locally]** 已變更資產的狀態。 儲存至資產的所有變更僅在本機進行，直到您將變更上傳至 [!DNL Experience Manager]. 若要逐一上傳個別或幾個資產，請按一下 **[!UICONTROL Upload Changes]** 從資產的選項中選取。 它會在中建立資產的版本 [!DNL Experience Manager]. 使用網頁介面： [!DNL Assets]，您可在以下位置檢視資產歷史記錄： [時間表檢視](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html).
+完成编辑后，应用程序会显示 **[!UICONTROL Edited Locally]** 已更改资产的状态。 在您将更改上传到之前，保存到资源的所有更改仅供本地使用 [!DNL Experience Manager]. 要逐一上传单个或几个资产，请单击 **[!UICONTROL Upload Changes]** 从资源的选项中进行更改。 它会在中创建资源的版本 [!DNL Experience Manager]. 使用的Web界面 [!DNL Assets]中，您可以查看资源历史记录 [时间线视图](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/activity-stream.html).
 
-![應用程式中的上傳變更選項](assets/upload_changes_single1_da2.png "應用程式中的上傳變更選項")
+![应用程序中的“上传更改”选项](assets/upload_changes_single1_da2.png "应用程序中的“上传更改”选项")
 
-![檢視大型資產預覽時，可上傳變更選項](assets/upload_changes_single2_da2.png "檢視大型資產預覽時，可上傳變更選項")
+![查看大型资源预览时，“上传更改”选项](assets/upload_changes_single2_da2.png "查看大型资源预览时，“上传更改”选项")
 
-如需合作編輯的最佳實務，請參閱 [進階工作流程：在相同的檔案上共同作業並避免編輯衝突](#adv-workflow-collaborate-avoid-conflicts).
+有关协作编辑的最佳实践，请参阅 [高级工作流程：对相同的文件进行协作并避免编辑冲突](#adv-workflow-collaborate-avoid-conflicts).
 
-在下列情況下，您可能會想要捨棄對本機資產所做的變更和編輯。 单击 **[!UICONTROL Discard Changes]**.
+在以下情况下，您可能需要放弃对本地资产所做的更改和编辑。 单击 **[!UICONTROL Discard Changes]**.
 
-* 如果您不想將本機變更儲存在 [!DNL Experience Manager].
-* 儲存某些變更後，開始變更原始資產。
-* 停止編輯不再需要的資產。
+* 如果您不想将本地更改保存在 [!DNL Experience Manager].
+* 保存一些更改后，开始更改原始资源。
+* 停止编辑资源，因为不再需要它。
 
-如有必要，請切換出庫。 更新的資產會從本機快取資料夾中移除，並在您編輯或開啟時再次下載。
+如有必要，请切换签出。 更新的资产将从本地缓存文件夹中删除，并在编辑或打开时再次下载。
 
-## 上傳並新增新資產至 [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
+## 上传新资源并将其添加到 [!DNL Experience Manager] {#upload-and-add-new-assets-to-aem}
 
-使用者可新增資產至DAM存放庫。 例如，您可能是一位機構攝影師或承包商，想要將大量像片從拍照新增至 [!DNL Experience Manager] 存放庫。 若要新增內容至 [!DNL Experience Manager]，選取 ![上傳至雲端選項](assets/do-not-localize/upload_to_cloud_da2.png) 應用程式頂端列中的。 瀏覽至本機檔案系統中的資產檔案，然後按一下 **[!UICONTROL Select]**. 或者，若要上傳資產，請在應用程式介面上拖曳檔案或資料夾。 在Windows上，如果您在應用程式內的資料夾上拖曳資產，資產會上傳至資料夾。 如果上傳時間較長，應用程式會顯示進度列。
+用户可以向DAM存储库添加新资产。 例如，您可能是一位机构摄影师或承包商，想要将照片拍摄中的大量照片添加到 [!DNL Experience Manager] 存储库。 要将新内容添加到 [!DNL Experience Manager]，选择 ![上传到云选项](assets/do-not-localize/upload_to_cloud_da2.png) 应用程序顶栏中的。 浏览到本地文件系统中的资源文件，然后单击 **[!UICONTROL Select]**. 或者，要上传资产，请将文件或文件夹拖动到应用程序界面上。 在Windows上，如果将资源拖动到应用程序内的某个文件夹中，则会将资源上传到该文件夹中。 如果上传时间较长，应用程序会显示一个进度条。
 
 <!-- ![Download progress bar for large-sized assets](assets/upload_status_da2.png "Download progress bar for large-sized assets")
 -->
 
-您可以從本機檔案系統上傳資料夾或個別檔案。 資料夾的階層會在上傳時保留。 大量上傳資產之前，請參閱 [大量上傳](#bulk-upload-assets).
+您可以从本地文件系统上传文件夹或单个文件。 上传文件夹时，将保留该文件夹的层次结构。 在批量上传资产之前，请参阅 [批量上传](#bulk-upload-assets).
 
-若要檢視指定工作階段中轉移的資產清單，請按一下 **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. 清單可讓您檢視並快速驗證目前工作階段的檔案傳輸。
+要查看给定会话中转移的资产列表，请单击 **[!UICONTROL View]** > **[!UICONTROL Assets transfers]**. 列表允许您查看和快速验证当前会话的文件传输。
 
-![特定工作階段中已轉移的資產清單](assets/assets_transfered_da2.png "特定工作階段中已轉移的資產清單")
+![特定会话中已转移的资产列表](assets/assets_transfered_da2.png "特定会话中已转移的资产列表")
 
-您可以在中控制上傳並行（加速） **[!UICONTROL Preferences]** > **[!UICONTROL Upload acceleration]** 設定。 較多的並行處理通常可讓上傳速度更快，但可能耗用大量資源，耗用本機電腦的更多處理能力。 如果您遇到系統速度緩慢的情況，請使用較低的concurrency值重新嘗試上傳。
-
->[!NOTE]
->
->傳輸清單不是永久性的，而且如果您退出應用程式並重新開啟，將無法使用。
-
-### 管理資產名稱中的特殊字元 {#special-characters-in-filename}
-
-在舊版應用程式中，在存放庫中建立的節點名稱會保留使用者提供的資料夾名稱空格和大小寫。 若要讓目前應用程式模擬v1.10應用程式的節點命名規則，請啟用 [!UICONTROL Use legacy conventions when creating nodes for assets and folders] 在 [!UICONTROL Preferences]. 另請參閱 [應用程式偏好設定](/help/install-upgrade.md#set-preferences). 此舊版偏好設定預設為停用。
+您可以在中控制上传并发（加速） **[!UICONTROL Preferences]** > **[!UICONTROL Upload acceleration]** 设置。 并发性越强，上传速度通常越快，但可能需要占用大量资源，从而消耗本地计算机的处理能力。 如果遇到系统速度较慢的情况，请使用较低的并发值重新尝试上传。
 
 >[!NOTE]
 >
->應用程式只會使用下列命名慣例變更存放庫中的節點名稱。 應用程式會保留 `Title` 資產的狀態。
+>传输列表不是永久性的，如果您退出应用程序并重新打开它，则传输列表将不可用。
+
+### 管理资源名称中的特殊字符 {#special-characters-in-filename}
+
+在旧版应用程序中，在存储库中创建的节点名称会保留用户提供的文件夹名称的空格和大小写。 要使当前应用程序模拟v1.10应用程序的节点命名规则，请启用 [!UICONTROL Use legacy conventions when creating nodes for assets and folders] 在 [!UICONTROL Preferences]. 参见 [应用程序首选项](/help/install-upgrade.md#set-preferences). 默认情况下，此旧版首选项处于禁用状态。
+
+>[!NOTE]
+>
+>应用程序使用以下命名约定仅更改存储库中的节点名称。 应用程序会保留 `Title` 资产的状态。
 
 <!-- TBD: Do NOT use this table.
 
@@ -214,15 +214,15 @@ ht-degree: 0%
 | Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
 -->
 
-| 字符数 ‡ | 應用程式中的舊版偏好設定 | 當出現在檔案名稱中時 | 當出現在資料夾名稱中時 | 示例 |
+| 字符数 ‡ | 应用程序中的旧版首选项 | 当出现在文件名中时 | 当出现在文件夹名称中时 | 示例 |
 |---|---|---|---|---|
-| `. / : [ ] | *` | 啟用或停用 | 取代為 `-` （連字型大小）。 A `.` 副檔名中的（點）會維持原狀。 | 取代為 `-` （連字型大小）。 | `myimage.jpg` 維持原狀，並且 `my.image.jpg` 變更為 `my-image.jpg`. |
-| `% ; # , + ? ^ { } "` 和空格 | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 保留空格 | 取代為 `-` （連字型大小）。 | `My Folder.` 變更為 `my-folder-`. |
-| `# % { } ? & .` | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 取代為 `-` （連字型大小）。 | NA. | `#My New File.` 變更為 `-My New File-`. |
-| 大寫字 | ![取消選取圖示](assets/do-not-localize/deselect-icon.png) 已停用 | 大小寫保持原樣。 | 變更為小寫字元。 | `My New Folder` 變更為 `my-new-folder`. |
-| 大寫字 | ![選取範圍核取圖示](assets/do-not-localize/selection-checked-icon.png) 已啟用 | 大小寫保持原樣。 | 大小寫保持原樣。 | NA. |
+| `. / : [ ] | *` | 启用或禁用 | 替换为 `-` （连字符）。 A `.` 文件扩展名中的（点）将按原样保留。 | 替换为 `-` （连字符）。 | `myimage.jpg` 保持不变，并且 `my.image.jpg` 更改 `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` 和空格 | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 保留空格 | 替换为 `-` （连字符）。 | `My Folder.` 更改 `my-folder-`. |
+| `# % { } ? & .` | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 替换为 `-` （连字符）。 | NA. | `#My New File.` 更改 `-My New File-`. |
+| 大写字符 | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 壳体保持原样。 | 已更改为小写字符。 | `My New Folder` 更改 `my-new-folder`. |
+| 大写字符 | ![“选择已选中”图标](assets/do-not-localize/selection-checked-icon.png) 已启用 | 壳体保持原样。 | 壳体保持原样。 | NA. |
 
-‡字元清單是以空格分隔的清單。
+‡字符列表是以空格分隔的列表。
 
 <!-- TBD: Check if the following is to be included in the footnote.
 
@@ -263,126 +263,126 @@ Do not use &#92;&#92; in the names of files and &#92;&#116; &#38; in the names o
 
 -->
 
-## 使用多個資產 {#work-with-multiple-assets}
+## 使用多个资产 {#work-with-multiple-assets}
 
-使用者可以使用動作（例如一次上傳所有編輯內容，或按幾下上傳巢狀資料夾）輕鬆處理和管理多個資產。
+用户可以使用各种操作轻松处理和管理多个资产，例如一次性上传所有编辑内容或单击几下上传嵌套文件夹。
 
-### 瀏覽大型資料夾 {#browse-large-folders}
+### 浏览大型文件夹 {#browse-large-folders}
 
-使用包含許多資產的資料夾時，請捲動以檢視更多資產。 若要使用鍵盤捲動，請按幾次Tab鍵以選取頂端的資產。 請注意醒目提示的資產，以瞭解何時選取它。 現在使用向下鍵在資產清單中移動。
+使用包含许多资源的文件夹时，请滚动查看更多资源。 要使用键盘滚动，请多次按Tab键以选择顶部的资产。 请注意高亮显示的资产，以了解何时选择该资产。 现在，使用向下箭头键在资源列表中移动。
 
-### 所選資產的快速動作 {#quick-actions-for-selected-assets}
+### 所选资产的快速操作 {#quick-actions-for-selected-assets}
 
-按一下一些資產的縮圖以選取資產。 若要選取所有資產，請按一下應用程式頂端列中的核取方塊。 一組適用於所有選定資產的動作會一起顯示在應用程式底部的工具列中。
+单击几个资源的缩略图以选择资源。 要选择所有资源，请单击应用程序顶栏中的复选框。 一组适用于所有选定资产的操作会一起显示在应用程序底部的工具栏中。
 
-![底部的工具列會顯示與所選資產相關的動作](assets/actions_bottom_toolbar1_da2.png "底部的工具列會顯示所選資產的常見動作")
+![底部的工具栏显示与所选资源相关的操作](assets/actions_bottom_toolbar1_da2.png "底部的工具栏显示选定资源的常用操作")
 
-![選取範圍沒有常見動作時，工具列中沒有任何動作](assets/actions_bottom_toolbar2_da2.png "選取範圍沒有常見動作時，工具列中沒有任何動作")
+![没有针对所选内容的常用操作时，工具栏中没有操作](assets/actions_bottom_toolbar2_da2.png "没有针对所选内容的常用操作时，工具栏中没有操作")
 
-底部工具列中的可用動作取決於所選檔案的狀態。 例如，如果您只選取 **[!UICONTROL Edited Locally]** 檔案，您會看到 **[!UICONTROL Upload Changes]** 圖示。 如果您選取 **[!UICONTROL Edited locally]** 和 **[!UICONTROL Cloud only]**，則 **[!UICONTROL Upload Changes]** 動作無法使用。
+底部工具栏中的可用操作取决于所选文件的状态。 例如，如果仅选择 **[!UICONTROL Edited Locally]** 文件，您会看到 **[!UICONTROL Upload Changes]** 图标。 如果您选择 **[!UICONTROL Edited locally]** 和 **[!UICONTROL Cloud only]**，则 **[!UICONTROL Upload Changes]** 操作不可用。
 
-### 尋找所有已編輯的影像 {#find-all-edited-images}
+### 查找所有已编辑的图像 {#find-all-edited-images}
 
-應用程式會提供一個檢視，稱為 **[!UICONTROL Edited locally]**，讓您快速存取本機下載的所有檔案(透過 [!UICONTROL Open] 或 [!UICONTROL Edit] 動作)，然後修改。 應用程式可讓您選取所有本機編輯的資產，並按幾下即可上傳變更。 此檢視也會顯示有編輯衝突的本機編輯資產。
+应用程序提供了一个视图，名为 **[!UICONTROL Edited locally]**，以允许您快速访问本地下载的所有文件(通过 [!UICONTROL Open] 或 [!UICONTROL Edit] 操作)，然后进行修改。 该应用程序允许您选择所有本地编辑的资产并只需单击几下即可上传更改。 此视图还会显示存在编辑冲突的本地编辑的资源。
 
-![篩選以檢視所有本機編輯的資產](assets/edited_locally_filter_da2.png "篩選以檢視所有在本機編輯的資產，例如大量上傳的編輯專案")
+![筛选以查看所有本地编辑的资源](assets/edited_locally_filter_da2.png "筛选以查看所有本地编辑的资源，例如批量上传编辑内容")
 
-### 大量上傳資產 {#bulk-upload-assets}
+### 批量上传资产 {#bulk-upload-assets}
 
-使用者或組織（例如攝影師或創意代理商）可以在場景中建立許多本地資產，例如拍攝、潤飾或從外部完成的大型場景中進行選擇 [!DNL Experience Manager]. 他們可以上傳這些大型本機資料夾到 [!DNL Assets] 直接從案頭應用程式。 會保留資料夾階層，並上傳所有巢狀子資料夾和包含的資產。 相同伺服器的其他使用者也可以立即使用上傳的資產。 資產會於背景上傳，因此操作不會繫結至網頁瀏覽器工作階段。
+用户或组织（例如摄影师或创意公司）可以在场景中创建大量本地资产，例如照片拍摄、润饰或从外部完成的大型场景中进行选择 [!DNL Experience Manager]. 他们可以将这些大型本地文件夹上传到 [!DNL Assets] 直接从桌面应用程序。 将保留文件夹层次结构，并上传所有嵌套的子文件夹和包含的资产。 上传的资产也可立即供同一服务器的其他用户使用。 资产在后台上传，因此该操作不绑定到Web浏览器会话。
 
-![從您的案頭大量上傳多個本機資料夾到 [!DNL Experience Manager]](assets/upload_local_folders_da2.png "從您的案頭大量上傳多個本機資料夾至Experience Manager")
+![将多个本地文件夹从桌面批量上传到 [!DNL Experience Manager]](assets/upload_local_folders_da2.png "将多个本地文件夹从桌面批量上传到Experience Manager")
 
-上傳後，如果預期變更未反映在應用程式中，請按一下重新整理圖示 ![重新整理圖示](assets/do-not-localize/refresh.png).
+上传后，如果应用程序未反映预期的更改，请单击刷新图标 ![“刷新”图标](assets/do-not-localize/refresh.png).
 
 >[!NOTE]
 >
->請勿使用上傳功能跨兩個移轉資產 [!DNL Experience Manager] 部署。 請改為參閱 [移轉指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html).
+>请勿使用上传功能跨两个迁移资产 [!DNL Experience Manager] 部署。 相反，请查看 [迁移指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html).
 
-### 已轉移資產的清單 {#list-of-transferred-assets}
+### 已转移的资产列表 {#list-of-transferred-assets}
 
-若要檢視指定工作階段中轉移的資產清單，請參閱 [上傳資產至 [!DNL Experience Manager]](#upload-and-add-new-assets-to-aem).
+要查看给定会话中转移的资产列表，请参阅 [将资产上传到 [!DNL Experience Manager]](#upload-and-add-new-assets-to-aem).
 
-## 進階工作流程：從 [!DNL Assets] 網頁介面 {#adv-workflow-start-from-aem-ui}
+## 高级工作流：从 [!DNL Assets] Web界面 {#adv-workflow-start-from-aem-ui}
 
-如有需要，請從Assets網頁介面啟動工作流程。 案頭應用程式會整合 [!DNL Experience Manager] ，以便在使用「案頭動作」提出要求時接管。
+如有必要，请从Assets Web界面启动工作流。 桌面应用程序与 [!DNL Experience Manager] ，以便在收到使用桌面操作的请求时接管。
 
-從Web介面開始工作流程的一個特殊情況是資產探索。 Assets使用者介面中的Omnisearch列提供豐富而進階的搜尋體驗。 您可能想要先在網頁上找到想要的資產，然後在應用程式中起始工作流程，使用 [!UICONTROL Desktop Actions]. 某些範例案例包括使用Facet篩選搜尋結果、尋找從Adobe Stock授權的特定資產，或您的組織實作的自訂，以便您更妥善地從網頁介面探索。
+从Web界面启动工作流的一个特殊情况是资产发现。 Assets用户界面中的Omnisearch栏提供了丰富而高级的搜索体验。 您可能希望首先在Web上找到所需的资产，然后使用在应用程序中启动工作流 [!UICONTROL Desktop Actions]. 一些示例案例包括使用Facet筛选搜索结果，查找从Adobe Stock许可的特定资源，或由您的组织实施的自定义设置，以便您更好地从Web界面中发现。
 
-當您嘗試在Assets網頁介面上執行下列動作時，系統會使用案頭應用程式功能：
+当您尝试在Assets Web界面上执行以下操作，可使用桌面应用程序功能：
 
-* 此 [!UICONTROL Desktop Actions] 可讓 [!UICONTROL Open]， [!UICONTROL Edit]、和 [!UICONTROL Reveal]
+* 此 [!UICONTROL Desktop Actions] 允许 [!UICONTROL Open]， [!UICONTROL Edit]、和 [!UICONTROL Reveal]
 * [!UICONTROL Upload folder]
 * [!UICONTROL Check-out] 或 [!UICONTROL check-in]
 
-例如，Web介面上可供應用程式中出庫之資產使用的動作 [!UICONTROL Open]， [!UICONTROL Reveal]、和 [!UICONTROL Check-in].
+例如，对于应用程序中签出的资产，Web界面上可用的操作包括 [!UICONTROL Open]， [!UICONTROL Reveal]、和 [!UICONTROL Check-in].
 
-![中的案頭動作 [!DNL Experience Manager] 網頁介面](assets/assets_web_actions_da2.png "Experience Manager網頁介面中的案頭動作")
-
->[!NOTE]
->
->瀏覽器可能會提示您允許啟動 [!DNL Adobe Experience Manager] 案頭。 若要享受從瀏覽器到應用程式的不中斷傳輸，請選取適當的核取方塊，一律允許應用程式接管。
-
-您無法使用網頁介面找到下列資訊或工作流程。 使用案頭應用程式，因為Web介面不會追蹤本機變更，且不會出現下列情況：
-
-* 在本機編輯的檔案。
-* 具有編輯衝突的檔案及其解決方式。
-* 上傳本機變更至 [!DNL Experience Manager].
-* 本機可用檔案的各種狀態。
-
-相反地，您可以從案頭應用程式開始，透過網頁介面開啟資產。 **[!UICONTROL Open In Web]** 動作。
-
-## 進階工作流程：在相同的檔案上共同作業並避免編輯衝突 {#adv-workflow-collaborate-avoid-conflicts}
-
-在合作環境中，多位使用者可能會使用同一組資產，這可能會導致版本設定衝突。 若要避免衝突，請遵循下列最佳實務：
-
-* 不要按一下以編輯任何資產 [!UICONTROL Open]. 請勿從您的檔案系統資料夾開啟，以編輯本機下載的資產。 其他使用者不知道資產正在編輯中。
-* 若要編輯資產，請一律按一下 [!UICONTROL Edit]. 它會在原生應用程式中開啟資產，並在資產上新增鎖定圖示，讓其他使用者知道資產正在編輯中。
-* 按一下 [!UICONTROL Toggle Check-in] 如果您不小心沒有按一下就開始編輯 [!UICONTROL Edit]. 這會將鎖定圖示新增至資產。 即使您打算稍後編輯資產，但想避免他人編輯資產，請按一下 [!UICONTROL Toggle Check-in] 以鎖定資產。
-* 編輯資產之前，請確定其他使用者並未編輯該資產。 尋找資產上的鎖定圖示。
-* 完成編輯後，請上傳所有變更，然後入庫資產。
-
-![編輯衝突狀態](assets/edits_conflicts_status_da2.png "編輯衝突狀態")
-
-如果本機下載的資產更新於 [!DNL Experience Manager] 伺服器，應用程式會顯示 **[!UICONTROL Modified remotely]** 狀態。 您可以按一下「 」，移除本機復本或重新整理本機復本 [!UICONTROL Remove] 或 [!UICONTROL Update] （分別）。 對話方塊上的連結可讓您檢視資產的兩個版本。
-
-![在遠端修改資產時解決衝突的選項](assets/modified_remotely_dialog_da2.png "在遠端修改資產時解決衝突的選項")
-
-如果您在本機編輯的資產也在您不知情的情況下在伺服器上更新，應用程式會顯示 **[!UICONTROL Editing Conflict]** 狀態。 您可以保留一組變更 — 保留您的更新(按一下 **[!UICONTROL Keep Mine]**)並刪除其他使用者的編輯或遵循其他使用者的更新，然後刪除您的更新(**[!UICONTROL Overwrite Mine]**)。
-
-![解決編輯衝突的選項](assets/editing_conflict_dialog_da2.png "解決編輯衝突的選項")
-
-## 進階工作流程：在InDesign檔案中放置和連結資產 {#adv-workflow-place-assets-indesign}
-
-當您使用 [!DNL Experience Manager] 案頭應用程式若要開啟含有連結資產的檔案，資產會預先下載並顯示在原生應用程式中。 為了讓此工作流程正常運作，您的原生應用程式必須支援將連結放置到本機資產，並 [!DNL Experience Manager] 必須支援將二進位檔案中的這些連結解析為伺服器端參考。
-
-[!DNL Experience Manager] 案頭應用程式可支援此工作流程，並提供數種精選Adobe Creative Cloud案頭應用程式和檔案格式 — Adobe InDesign、Adobe Illustrator和Adobe Photoshop。 工作流程可讓您有效率地使用支援的Creative Cloud檔案。 因此，如果使用者A在InDesign檔案中放置一些資產並將其簽入 [!DNL Experience Manager]，即使資產不屬於檔案的一部分，使用者B仍會看到InDesign檔案中的資產。 資產會從使用者B的電腦本機下載。
+![中的桌面操作 [!DNL Experience Manager] Web界面](assets/assets_web_actions_da2.png "Experience ManagerWeb界面中的桌面操作")
 
 >[!NOTE]
 >
->案頭應用程式可對應至Windows上的任何磁碟機。 不過，若要順利作業，請勿變更預設磁碟機代號。 如果同一組織的使用者使用不同的磁碟機代號，則他們看不到其他人放置的資產。 路徑變更時不會擷取已放置的資產。 置入的資產會繼續置於二進位檔案中（例如INDD），且不會移除。
+>浏览器可能会提示您允许启动 [!DNL Adobe Experience Manager] 桌面。 要享受从浏览器到应用程序的不中断传输，请选中相应的复选框以始终允许应用程序接管任务。
 
-若要瞭解此工作流程的限制，請參閱 [系統需求和支援的版本](release-notes.md).
+使用Web界面无法找到以下信息或工作流。 使用桌面应用程序，因为Web界面不跟踪本地更改，并且不知道以下内容：
 
-若要使用影像資產和InDesign來嘗試此工作流程，請遵循下列步驟：
+* 文件已在本地编辑。
+* 存在编辑冲突的文件和解决冲突的方法。
+* 将本地更改上传到 [!DNL Experience Manager].
+* 本地可用文件的各种状态。
 
-1. 使用置入資產的INDD檔案 [!DNL Experience Manager]. 若要瞭解如何建立此類INDD檔案，請參閱 [置入圖形](https://helpx.adobe.com/indesign/using/placing-graphics.html).
-1. 從案頭應用程式內， **[!UICONTROL Edit]** 置入資產的INDD檔案 [!DNL Experience Manager].
-1. 應用程式會下載InDesign檔案和連結的資產。 當InDesign開啟檔案時，會解析連結、下載資產，且資產會顯示在InDesign檔案中。
-1. 若要在InDesign檔案中放置新圖形，請使用 **[!UICONTROL Reveal File]** 動作。 此動作會在本機下載資產，並在Windows檔案總管或Mac Finder中開啟本機網路共用位置。
-1. 將顯示的資產放入InDesign檔案中。 這會在檔案中建立連結。
-1. 在InDesign檔案中完成編輯後，請儲存並上傳至 [!DNL Experience Manager] 使用案頭應用程式。
+相反，您可以从桌面应用程序开始，在Web界面中使用以下方法打开资产： **[!UICONTROL Open In Web]** 操作。
 
-## 進階工作流程：從本機下載資產 {#adv-workflow-download-assets-locally}
+## 高级工作流程：对相同的文件进行协作并避免编辑冲突 {#adv-workflow-collaborate-avoid-conflicts}
 
-應用程式會從下載資產 [!DNL Experience Manager] 在許多情況下，會在您的檔案系統上本機伺服器。 下載耗用頻寬和磁碟空間。 瞭解情況有助於您最佳化下載完成的等待時間。
+在协作环境中，多个用户可能使用同一组资产，这可能会导致版本控制冲突。 要防止冲突，请遵循以下最佳实践：
 
-您可以隨選從應用程式內下載資產。 另請參閱 [下載資產](#download-assets).
+* 不要通过单击来编辑任何资源 [!UICONTROL Open]. 不要通过从文件系统文件夹打开来编辑本地下载的资产。 其他用户不知道资产正在编辑中。
+* 要编辑资源，请始终单击 [!UICONTROL Edit]. 它会在本机应用程序中打开资产，并在资产上添加一个锁图标，以便其他用户知道资产正在编辑中。
+* 单击 [!UICONTROL Toggle Check-in] 如果您意外地开始编辑而未单击 [!UICONTROL Edit]. 这会将锁图标添加到资源。 即使您计划稍后编辑资产，但希望避免其他人编辑它，请单击 [!UICONTROL Toggle Check-in] 以锁定资产。
+* 在编辑资源之前，请确保其他用户未编辑该资源。 在资源上查找锁图标。
+* 完成编辑后，上传所有更改，然后签入资产。
 
-當您使用 [!UICONTROL Open] 動作若要在原生案頭應用程式中開啟資產，如果資產尚未在本機提供，則會下載到本機。 另請參閱 [開啟資產](#openondesktop-v2).
+![编辑冲突状态](assets/edits_conflicts_status_da2.png "编辑冲突状态")
 
-當您從應用程式內顯示資產或資料夾的位置時，資產或資料夾會先在本機下載，然後在您電腦上的本機網路共用中開啟。 另請參閱 [開啟資產](#openondesktop-v2).
+如果本地下载的资产在 [!DNL Experience Manager] 服务器，则应用程序会显示 **[!UICONTROL Modified remotely]** 状态。 通过单击，可以删除本地副本或刷新本地副本 [!UICONTROL Remove] 或 [!UICONTROL Update] 的量度。 利用对话框上的链接，可查看资源的两个版本。
 
-當您使用 [!UICONTROL Edit] 動作若要編輯原生案頭應用程式中的資產，如果資產尚未在本機提供，則會下載到本機。 另請參閱 [編輯資產並上傳更新的資產至 [!DNL Experience Manager]](#edit-assets-upload-updated-assets).
+![远程修改资产时解决冲突的选项](assets/modified_remotely_dialog_da2.png "远程修改资产时解决冲突的选项")
 
-如果應用程式已安裝並獲准使用，它會在您使用時完成動作 [!UICONTROL Desktop Actions] 從 [!DNL Experience Manager] 網頁介面。 應用程式會先下載資產，然後完成動作。
+如果您正在本地编辑的资产也在您不知情的情况下在服务器上更新，则应用程序将显示 **[!UICONTROL Editing Conflict]** 状态。 您可以保留一组更改 — 保留您的更新(单击 **[!UICONTROL Keep Mine]**)，并删除其他用户的编辑或遵循其他用户的更新，然后删除您的更新(**[!UICONTROL Overwrite Mine]**)。
+
+![用于解决编辑冲突的选项](assets/editing_conflict_dialog_da2.png "用于解决编辑冲突的选项")
+
+## 高级工作流：在InDesign文件中放置和链接资源 {#adv-workflow-place-assets-indesign}
+
+当您使用 [!DNL Experience Manager] 桌面应用程序打开包含链接资产的文件，资产会预先下载并显示在本机应用程序中。 要使此工作流正常工作，您的本机应用程序必须支持将链接放置到本地资产和 [!DNL Experience Manager] 必须支持将二进制文件中的这些链接解析为服务器端引用。
+
+[!DNL Experience Manager] 桌面应用程序通过一些精选Adobe Creative Cloud桌面应用程序和文件格式(Adobe InDesign、Adobe Illustrator和Adobe Photoshop)支持此工作流。 利用工作流，可高效地使用支持的Creative Cloud文件。 因此，如果用户A在InDesign文件中放置一些资源并将其签入 [!DNL Experience Manager]，用户B会看到InDesign文件中的资源，即使这些资源不是文件的一部分。 这些资产将在用户B的计算机上本地下载。
+
+>[!NOTE]
+>
+>该桌面应用程序可以映射到Windows上的任何驱动器。 但是，为了顺利操作，请勿更改默认驱动器号。 如果同一组织的用户使用不同的驱动器号，则他们看不到其他人放置的资产。 路径更改时，不会获取放置的资产。 置入的资产将继续置于二进制文件（例如INDD）中，并且不会被移除。
+
+要了解此工作流的限制，请参阅 [系统要求和支持的版本](release-notes.md).
+
+要使用图像资源和InDesign尝试此工作流，请执行以下步骤：
+
+1. 将放置了资产的INDD文件放在中方便使用 [!DNL Experience Manager]. 要了解如何创建此类INDD文件，请参阅 [放置图形](https://helpx.adobe.com/indesign/using/placing-graphics.html).
+1. 从桌面应用程序中， **[!UICONTROL Edit]** 放置了资产的INDD文件 [!DNL Experience Manager].
+1. 应用程序会下载InDesign文件和链接的资源。 当InDesign打开文档时，将解析链接，下载资源，并在InDesign文档中显示资源。
+1. 要在InDesign文件中放置新图形，请使用 **[!UICONTROL Reveal File]** 对资源执行操作。 该操作将在本地下载资产，并在Windows资源管理器或Mac Finder中打开本地网络共享位置。
+1. 将显示的资源放入InDesign文档中。 这会在文档中创建链接。
+1. 在InDesign文档中完成编辑后，请保存该文档并将其上传到 [!DNL Experience Manager] 使用桌面应用程序。
+
+## 高级工作流：从本地下载资产 {#adv-workflow-download-assets-locally}
+
+应用程序从以下位置下载资产 [!DNL Experience Manager] 在许多情况下，会在您的文件系统上本地服务器。 下载占用带宽和磁盘空间。 了解这些情况有助于优化下载的等待时间。
+
+您可以按需从应用程序中下载资产。 参见 [下载资产](#download-assets).
+
+当您使用 [!UICONTROL Open] 操作在本机桌面应用程序中打开资产，如果该资产在本地尚不可用，则会本地下载该资产。 参见 [打开资产](#openondesktop-v2).
+
+当您从应用程序中揭示资产或文件夹的位置时，资产或文件夹会先在本地下载，然后在本地网络共享中的计算机上打开。 参见 [打开资产](#openondesktop-v2).
+
+当您使用 [!UICONTROL Edit] 操作在本机桌面应用程序中编辑资产，如果该资产在本地尚不可用，则会本地下载该资产。 参见 [编辑资源并将更新的资源上传到 [!DNL Experience Manager]](#edit-assets-upload-updated-assets).
+
+如果已安装应用程序并允许，则它会在您使用时完成操作 [!UICONTROL Desktop Actions] 起始日期 [!DNL Experience Manager] Web界面。 应用程序先下载资产，然后完成操作。

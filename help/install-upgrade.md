@@ -1,6 +1,6 @@
 ---
-title: 安裝及設定案頭應用程式
-description: 安裝及設定 [!DNL Adobe Experience Manager] 可搭配使用的案頭應用程式 [!DNL Adobe Experience Manager Assets] 並下載本機檔案系統上的資產。
+title: 安装和配置桌面应用程序
+description: 安装和配置 [!DNL Adobe Experience Manager] 要使用的桌面应用程序 [!DNL Adobe Experience Manager Assets] 并将资源下载到本地文件系统中。
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
 source-git-commit: 5b5970cec02d4a605bd7d826d1daa71fe228b0d9
@@ -10,149 +10,149 @@ ht-degree: 0%
 
 ---
 
-# 安裝 [!DNL Adobe Experience Manager] 案頭應用程式 {#install-app-v2}
+# 安装 [!DNL Adobe Experience Manager] 桌面应用程序 {#install-app-v2}
 
-使用 [!DNL Adobe Experience Manager] 案頭應用程式，資產在 [!DNL Experience Manager] 可輕鬆在本機案頭上使用，並可用於任何原生案頭應用程式。 資產可以預覽、在原生案頭應用程式中開啟、顯示在Mac Finder或Windows檔案總管中以便放置在其他檔案中，以及在本機變更 — 變更會儲存回 [!DNL Experience Manager] 當您上傳並在存放庫中建立新版本時。
+使用 [!DNL Adobe Experience Manager] 桌面应用程序，中的资产 [!DNL Experience Manager] 可在本地桌面上轻松使用，并可用于任何本地桌面应用程序。 可以预览资产、在本机桌面应用程序中打开资产、在Mac Finder或Windows资源管理器中显示资产以放置在其他文档中，以及在本地更改资产 — 更改将保存回 [!DNL Experience Manager] 上传并在存储库中创建新版本时。
 
-此整合可讓組織中的各種角色執行以下操作：
+通过此类集成，组织中的各种角色可以：
 
-* 在中集中管理資產 [!DNL Experience Manager Assets].
+* 在中集中管理资产 [!DNL Experience Manager Assets].
 
-* 存取任何原生案頭應用程式中的資產，包括第三方應用程式和Adobe Creative Cloud中的資產。 同時，使用者可輕鬆遵守各種標準，包括品牌推廣。
+* 访问任何本机桌面应用程序(包括第三方应用程序和Adobe Creative Cloud中的资源)中的资源。 同时，用户可以轻松遵守包括品牌推广在内的各种标准。
 
-使用 [!DNL Experience Manager] 案頭應用程式：
+使用 [!DNL Experience Manager] 桌面应用程序：
 
-* 確保您的 [!DNL Experience Manager] 版本受到支援 [!DNL Experience Manager] 案頭應用程式。 請參閱 [系統需求](release-notes.md).
+* 确保您的 [!DNL Experience Manager] 版本受支持 [!DNL Experience Manager] 桌面应用程序。 请参阅 [系统要求](release-notes.md).
 
-* 下載並安裝應用程式。 另請參閱 [安裝案頭應用程式](#install-v2) 下方的。
+* 下载并安装应用程序。 参见 [安装桌面应用程序](#install-v2) 下面的。
 
-* 使用幾個資產測試連線。 另請參閱 [如何瀏覽和搜尋資產](using.md#browse-search-preview-assets).
+* 使用一些资源测试连接。 参见 [如何浏览和搜索资源](using.md#browse-search-preview-assets).
 
-## 系統需求、必要條件和下載連結 {#tech-specs-v2}
+## 系统要求、先决条件和下载链接 {#tech-specs-v2}
 
-如需詳細資訊，請參閱 [[!DNL Experience Manager] 案頭應用程式發行說明](release-notes.md).
+欲了解详细信息，请参见 [[!DNL Experience Manager] 桌面应用程序发行说明](release-notes.md).
 
-## 從舊版升級 {#upgrade-from-previous-version}
+## 从以前的版本升级 {#upgrade-from-previous-version}
 
-如果您是案頭應用程式v1.x的使用者，請瞭解舊版和最新版應用程式之間的差異和相似之處。 另請參閱 [案頭應用程式的新功能](introduction.md#whats-new-v2) 和 [應用程式如何運作](release-notes.md#how-app-works).
+如果您是桌面应用程序v1.x的用户，请了解该应用程序之前版本与最新版本之间的区别和相似之处。 参见 [桌面应用程序的新增功能](introduction.md#whats-new-v2) 和 [应用程序的工作原理](release-notes.md#how-app-works).
 
 >[!NOTE]
 >
->兩個版本的案頭應用程式無法並存於電腦上。 安裝版本之前，請先解除安裝其他版本。
+>两个版本的桌面应用程序不能共存于计算机上。 在安装版本之前，请卸载其他版本。
 
-若要從舊版應用程式升級，請遵循下列指示：
+要从应用程序的早期版本升级，请按照以下说明操作：
 
-1. 升級之前，請先同步所有資產並將變更上傳至 [!DNL Experience Manager]. 這是為了避免在解除安裝應用程式時遺失任何編輯。
+1. 升级之前，请同步所有资产并将更改上传到 [!DNL Experience Manager]. 这是为了避免在卸载应用程序时丢失任何编辑。
 
-1. 解除安裝應用程式的舊版。 解除安裝時，選取清除快取的選項。
+1. 卸载应用程序的早期版本。 卸载时，选择选项以清除缓存。
 
-1. 重新啟動您的電腦。
+1. 重新启动计算机。
 
-1. [下載](release-notes.md) 和 [安裝](#install-v2) 最新的應用程式。 請依照下列指示操作。
+1. [下载](release-notes.md) 和 [安装](#install-v2) 最新的应用程序。 按照下面的说明操作。
 
 ## 安装 {#install-v2}
 
-若要安裝案頭應用程式，請依照下列步驟操作。 解除安裝任何現有的Adobe [!DNL Experience Manager] 安裝最新版應用程式之前的案頭應用程式v1.x。 如需詳細資訊，請參閱上文。
+要安装桌面应用程序，请执行以下步骤。 卸载任何现有Adobe [!DNL Experience Manager] 桌面应用程序v1.x。 有关更多信息，请参阅上文。
 
-1. 從下載最新的安裝程式 [發行說明](release-notes.md) 頁面。
+1. 从下载最新的安装程序 [发行说明](release-notes.md) 页面。
 
-1. 保留的URL和認證 [!DNL Experience Manager] 部署方便。
+1. 保留的URL和凭据 [!DNL Experience Manager] 部署方便。
 
-1. 如果您從另一個應用程式版本升級，請參閱 [升級案頭應用程式](#upgrade-from-previous-version).
+1. 如果您从其他版本的应用程序升级，请参阅 [升级桌面应用程序](#upgrade-from-previous-version).
 
-1. 如果您使用，請略過此步驟 [!DNL Experience Manager] as a [!DNL Cloud Service]， [!DNL Experience Manager] 6.4.4或更新版本，或 [!DNL Experience Manager] 6.5.0或更新版本。 確保您的 [!DNL Experience Manager] 設定符合「 」中所述的相容性要求 [發行說明](release-notes.md). 如有必要，請下載適用的 [相容性套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 並使用進行安裝 [!DNL Experience Manager] 封裝管理員作為 [!DNL Experience Manager] 管理員。 若要安裝套件，請參閱 [如何使用套件](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. 如果您使用的是，请跳过此步骤 [!DNL Experience Manager] as a [!DNL Cloud Service]， [!DNL Experience Manager] 6.4.4或更高版本，或者 [!DNL Experience Manager] 6.5.0或更高版本。 确保您的 [!DNL Experience Manager] 设置符合 [发行说明](release-notes.md). 如有必要，请下载适用的 [兼容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 并使用安装 [!DNL Experience Manager] 包管理器作为 [!DNL Experience Manager] 管理员。 要安装包，请参阅 [如何使用包](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
-1. 執行安裝程式二進位檔，並依照熒幕上的指示進行安裝。
+1. 执行安装程序二进制文件，并按照屏幕上的说明进行安装。
 
-1. 在Windows上，安裝程式可能會提示安裝 `Visual Studio C++ Redistributable 2015`. 請依照熒幕上的指示進行安裝。 如果安裝失敗，請手動安裝。 從下載安裝程式 [此處](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 並安裝兩者 `vc_redist.x64.exe` 和 `vc_redist.x86.exe` 檔案。 重新執行 [!DNL Experience Manager] 案頭應用程式安裝程式。
+1. 在Windows上，安装程序可能会提示安装 `Visual Studio C++ Redistributable 2015`. 按照屏幕上的说明进行安装。 如果安装失败，则手动安装。 安装程序下载来源 [此处](https://www.microsoft.com/en-us/download/details.aspx?id=52685) 并安装两者 `vc_redist.x64.exe` 和 `vc_redist.x86.exe` 文件。 重新运行 [!DNL Experience Manager] 桌面应用程序安装程序。
 
-1. 依照提示重新啟動電腦。 啟動並設定案頭應用程式。
+1. 根据提示重新启动计算机。 启动并配置桌面应用程序。
 
-1. 若要使用以下專案連線應用程式： [!DNL Experience Manager] 存放庫中，按一下匣中的應用程式圖示並啟動應用程式。 提供 [!DNL Experience Manager] server的格式 `https://[aem_server]:[port]/`.
+1. 要连接应用程序与 [!DNL Experience Manager] 存储库中，单击任务栏中的应用程序图标并启动应用程序。 提供 [!DNL Experience Manager] 服务器格式 `https://[aem_server]:[port]/`.
 
-   按一下 **[!UICONTROL Connect]** 並提供認證。
+   单击 **[!UICONTROL Connect]** 并提供凭据。
 
-   ![案頭應用程式與輸入伺服器位址的連線畫面](assets/connect_da2.png)
+   ![桌面应用程序与输入服务器地址的连接屏幕](assets/connect_da2.png)
 
-   *圖：輸入伺服器位址的連線畫面。*
+   *图：输入服务器地址的连接屏幕。*
 
-   選取 **[!UICONTROL Remember Connection]** 以避免在每次登入案頭應用程式時都輸入連線詳細資料。
+   选择 **[!UICONTROL Remember Connection]** 以避免在每次登录桌面应用程序时都输入连接详细信息。
 
    >[!CAUTION]
    >
-   >請確定在的位址之前或之後，沒有開頭和結尾的空格 [!DNL Experience Manager] 伺服器。 否則應用程式無法連線至 [!DNL Experience Manager] 伺服器。
+   >确保的地址之前或之后没有前导或尾随空格 [!DNL Experience Manager] 服务器。 否则，应用程序无法连接到 [!DNL Experience Manager] 服务器。
 
-1. 成功連線後，您可以檢視的根資料夾中可用的資料夾和資產清單 [!DNL Experience Manager] DAM。 您可以從應用程式內瀏覽資料夾。
+1. 成功连接后，您可以查看的根文件夹中可用的文件夹和资产列表 [!DNL Experience Manager] 达姆。 您可以在应用程序中浏览文件夹。
 
-   ![登入後，應用程式會顯示DAM內容](assets/firstview_da2.png)
+   ![登录后，应用程序会显示DAM内容](assets/firstview_da2.png)
 
-   *圖：應用程式在登入後顯示DAM內容*
+   *图：应用程序在登录后显示DAM内容*
 
-1. ([!DNL Experience Manager] 6.5.1或更新版本)如果您使用案頭應用程式搭配 [!DNL Experience Manager] 6.5.1或更新版本，請將S3或Azure聯結器升級至1.10.4或更新版本。 另請參閱 [Azure聯結器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) 或 [S3聯結器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
+1. ([!DNL Experience Manager] 6.5.1或更高版本)如果您要将桌面应用程序与 [!DNL Experience Manager] 6.5.1或更高版本，请将S3或Azure连接器升级到版本1.10.4或更高版本。 参见 [Azure连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#azure-data-store) 或 [S3连接器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#amazon-s-data-store).
 
-   如果您是Adobe Managed Services (AMS)客戶，請聯絡Adobe客戶支援。
+   如果您是Adobe Managed Services (AMS)客户，请联系Adobe客户支持。
 
-## 設定偏好設定 {#set-preferences}
+## 设置首选项 {#set-preferences}
 
-若要變更偏好設定，請按一下 ![「更多選項」圖示](assets/do-not-localize/more_options_da2.png) 和 **[!UICONTROL Preference]** ![偏好設定圖示](assets/do-not-localize/preferences_icon_da2.png). 在 **[!UICONTROL Preferences]** 視窗，調整下列值：
+要更改首选项，请单击 ![“更多选项”图标](assets/do-not-localize/more_options_da2.png) 和 **[!UICONTROL Preference]** ![“首选项”图标](assets/do-not-localize/preferences_icon_da2.png). 在 **[!UICONTROL Preferences]** 窗口中，调整以下各项的值：
 
 * [!UICONTROL Launch application on login]。
 
 * [!UICONTROL Show window when application starts]。
 
-* **[!UICONTROL Cache Directory]**：應用程式的本機快取位置（包含本機下載的資產）。
+* **[!UICONTROL Cache Directory]**：应用程序的本地缓存位置（包含本地下载的资产）。
 
-* **[!UICONTROL Network Drive Letter]**：用來對應至的磁碟機代號 [!DNL Experience Manager] DAM。 如果您不確定，請勿變更此專案。 應用程式可對應至Windows上的任何磁碟機代號。 如果兩個使用者放置來自不同磁碟機代號的資產，則他們看不到彼此放置的資產。 資產的路徑會變更。 資產仍會放在二進位檔案（例如INDD）中，且不會被移除。 應用程式會列出所有可用的磁碟機代號，預設會使用最後可用的代號，通常是 `Z`.
+* **[!UICONTROL Network Drive Letter]**：用于映射到 [!DNL Experience Manager] 达姆。 如果您不确定，请勿更改此设置。 该应用程序可以映射到Windows上的任何驱动器号。 如果两个用户从不同的驱动器号放置资产，则他们看不到彼此放置的资产。 资源的路径会发生变化。 资产仍放置在二进制文件（例如INDD）中，并且不会被删除。 应用程序会列出所有可用的驱动器盘符，默认使用最后一个可用的盘符，通常 `Z`.
 
-* **[!UICONTROL Maximum Cache Size]**：硬碟上允許的快取（以GB為單位），用於儲存本機下載的資產。
+* **[!UICONTROL Maximum Cache Size]**：硬盘上允许的缓存（以GB为单位），用于存储本地下载的资产。
 
-* **[!UICONTROL Current cache size]**：本機下載資產的儲存大小。 資訊只會在使用應用程式下載資產後顯示。
+* **[!UICONTROL Current cache size]**：本地下载的资产的存储大小。 仅当使用应用程序下载资产后，才会显示信息。
 
-* **[!UICONTROL Automatically download linked assets]**：如果您下載原始檔案，系統會自動擷取置於支援原生Creative Cloud應用程式中的資產。
+* **[!UICONTROL Automatically download linked assets]**：如果您下载原始文件，则将自动获取放置在支持的本机Creative Cloud应用程序中的资源。
 
-* **[!UICONTROL Maximum number of downloads]**： ![警告圖示](assets/do-not-localize/caution-icon.png) 請謹慎變更。 首次下載資產時（透過「顯示」、「開啟」、「編輯」、「下載」或類似選項），只有當批次包含小於此數字時，才會下載資產。 默认值为 50。如果您不確定，請勿變更。 增加值可能會導致等待時間變長，而減少值可能不會允許您一次下載必要的資產或資料夾。
+* **[!UICONTROL Maximum number of downloads]**： ![“警告”图标](assets/do-not-localize/caution-icon.png) 改变时请小心。 首次下载资源时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批次包含的内容少于此数字时才会下载资源。 默认值为 50。如果您不确定，请勿更改。 增加值可能导致等待时间较长而减少值可能不允许您一次性下载必要的资源或文件夹。
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**： ![警告圖示](assets/do-not-localize/caution-icon.png) 請謹慎變更。 此設定可讓應用程式在上傳資料夾時模擬v1.10應用程式行為。 在v1.10中，在存放庫中建立的節點名稱會遵循使用者提供的資料夾名稱空格和大小寫。 不過，在應用程式v2.1中，資料夾名稱中的額外空格會轉換為破折號。 例如，上傳 `New Folder` 或 `new   folder` 如果未選取選項，且保留v2.1中的預設行為，會在存放庫中建立相同的節點。 如果選取此選項，則會在存放庫中為上述兩個資料夾建立不同的節點，且與v1.10應用程式的行為相符。
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**： ![“警告”图标](assets/do-not-localize/caution-icon.png) 改变时请小心。 此设置允许应用程序在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称会遵循用户提供的文件夹名称的空格和大小写。 但是，在应用程序的v2.1中，文件夹名称中的额外空格将转换为破折号。 例如，上传 `New Folder` 或 `new   folder` 如果未选择该选项并保留v2.1中的默认行为，则在存储库中创建相同的节点。 如果选择此选项，则会在存储库中为上述两个文件夹创建不同的节点，并且与v1.10应用程序的行为相匹配。
 
-   v2.1的預設行為會維持不變，也就是說，將資料夾名稱中的多個空格取代為存放庫節點名稱中的破折號，然後轉換為小寫節點名稱。
+   v2.1的默认行为将保持不变，即，将文件夹名称中的多个空格替换为存储库节点名称中的破折号，并转换为小写节点名称。
 
-* **[!UICONTROL Upload Acceleration]**： ![警告圖示](assets/do-not-localize/caution-icon.png) 請謹慎變更。 上傳資產時，應用程式可使用同時上傳來改善上傳速度。 您可以將滑桿向右移動，增加上傳的並行度。 最左側的滑桿表示沒有並行（單一執行緒上傳），中間位置對應於10個並行執行緒，而最右側的限制上限對應於20個並行執行緒。 較高的並行限制會比較耗用資源。
+* **[!UICONTROL Upload Acceleration]**： ![“警告”图标](assets/do-not-localize/caution-icon.png) 改变时请小心。 上传资产时，应用程序可以使用并发上传来提高上传速度。 您可以通过向右移动滑块来提高上传的并发性。 最左侧的滑块表示无并发（单线程上传），中间位置对应于10个并发线程，最右侧的限制最大对应于20个并发线程。 并发限制越高则资源密集程度越高。
 
-若要更新無法使用的偏好設定，請登出 [!DNL Experience Manager] 然後更新。 更新偏好設定後，按一下 ![儲存偏好設定](assets/do-not-localize/save_preferences_da2.png).
+要更新不可用的首选项，请注销 [!DNL Experience Manager] 然后更新。 更新首选项后，单击 ![保存首选项](assets/do-not-localize/save_preferences_da2.png).
 
-![案頭應用程式偏好設定和設定](assets/preferences_da2.png)
+![桌面应用程序首选项和设置](assets/preferences_da2.png)
 
-*圖：案頭應用程式偏好設定。*
+*图：桌面应用程序首选项。*
 
-### Proxy支援 {#proxy-support}
+### 代理支持 {#proxy-support}
 
-[!DNL Experience Manager] 案頭應用程式會使用系統預先定義的Proxy，透過HTTPS連線至網際網路。 應用程式只能使用不需要額外驗證的網路Proxy連線。
+[!DNL Experience Manager] 桌面应用程序使用系统的预定义代理通过HTTPS连接到Internet。 应用程序只能使用不需要额外身份验证的网络代理进行连接。
 
-如果您設定或修改Windows的Proxy伺服器設定（[網際網路選項] > [區域網路設定]），請重新啟動 [!DNL Experience Manager] 案頭應用程式讓變更生效。 當您啟動案頭應用程式時，會套用Proxy設定。 關閉並重新啟動應用程式，任何變更才會生效。
+如果配置或修改Windows代理服务器设置（“Internet选项”>“局域网设置”），请重新启动 [!DNL Experience Manager] 桌面应用程序，以使更改生效。 代理配置将在您启动桌面应用程序时应用。 关闭并重新启动应用程序，以使任何更改生效。
 
-如果您的Proxy需要驗證，IT團隊可以允許 [!DNL Experience Manager Assets] Proxy伺服器設定中的URL，允許應用程式流量通過。
+如果您的代理需要身份验证，IT团队可以允许 [!DNL Experience Manager Assets] 代理服务器设置中的URL，以允许应用程序流量通过。
 
-## 解除安裝應用程式 {#uninstall-the-app}
+## 卸载应用程序 {#uninstall-the-app}
 
-若要在Windows上解除安裝應用程式，請遵循下列步驟：
+要在Windows上卸载应用程序，请执行以下步骤：
 
-1. 上傳您的所有變更至 [!DNL Experience Manager] 以避免遺失任何編輯。 另請參閱 [編輯資產並上傳更新的資產至 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). 登出和 [!UICONTROL Exit] 應用程式。
+1. 将所有更改上传到 [!DNL Experience Manager] 以免丢失任何编辑。 参见 [编辑资源并将更新的资源上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). 注销和 [!UICONTROL Exit] 应用程序。
 
-1. 移除應用程式，因為您已移除任何其他作業系統應用程式。 從Windows上的[新增和移除程式]解除安裝。
+1. 删除应用程序，因为您删除了任何其他操作系统应用程序。 从Windows上的“Add and remove programs（添加和删除程序）”中卸载它。
 
-1. 若要移除快取和記錄，請選取必要的核取方塊。
+1. 要删除缓存和日志，请选中必要的复选框。
 
-   ![解除安裝對話方塊以移除記錄檔和快取](assets/uninstall_da2.png)
+   ![卸载对话框以删除日志和缓存](assets/uninstall_da2.png)
 
-1. 請依照熒幕上的指示操作。 完成後，請重新啟動電腦。
+1. 按照屏幕上的说明操作。 完成后，重新启动计算机。
 
-若要在Mac上解除安裝應用程式，請遵循下列步驟：
+要在Mac上卸载应用程序，请执行以下步骤：
 
-1. 上傳您的所有變更至 [!DNL Experience Manager] 以避免遺失任何編輯。 另請參閱 [編輯資產並上傳更新的資產至 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). 登出和 [!UICONTROL Exit] 應用程式。
+1. 将所有更改上传到 [!DNL Experience Manager] 以免丢失任何编辑。 参见 [编辑资源并将更新的资源上传到 [!DNL Experience Manager]](using.md#edit-assets-upload-updated-assets). 注销和 [!UICONTROL Exit] 应用程序。
 
-1. 移除 `Adobe Experience Manager Desktop.app` 從 `/Applications`.
+1. 删除 `Adobe Experience Manager Desktop.app` 起始日期 `/Applications`.
 
-或者，若要清除Mac上的內部應用程式快取並解除安裝應用程式，您可以在終端機中執行以下命令：
+或者，要清理Mac上的内部应用程序缓存并卸载应用程序，您可以在终端中执行以下命令：
 
 ```shell
 /Applications/Adobe Experience Manager Desktop/Contents/Resources/uninstall-osx/uninstall.sh

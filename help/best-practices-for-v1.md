@@ -1,6 +1,6 @@
 ---
-title: 案頭應用程式v1.10最佳作法
-description: 重要功能及建議使用 [!DNL Adobe Experience Manager] 案頭應用程式1.10版。
+title: 桌面应用程序v1.10最佳实践
+description: 主要功能和建议使用 [!DNL Adobe Experience Manager] 桌面应用程序版本1.10。
 exl-id: 5de06b33-c05c-47eb-b884-408b6f9afc94
 source-git-commit: 7a7236c36f615e97e9d040e6139368a931eb579e
 workflow-type: tm+mt
@@ -9,130 +9,130 @@ ht-degree: 0%
 
 ---
 
-# AEM案頭應用程式v1.10最佳作法 {#aem-desktop-app-best-practices}
+# AEM桌面应用程序v1.10最佳实践 {#aem-desktop-app-best-practices}
 
 ## 概述 {#overview}
 
-[!DNL Adobe Experience Manager] 案頭應用程式會將您的數位資產管理(DAM)解決方案連結至案頭，讓您直接在案頭上開啟AEM Web UI中可用的檔案。 如果您從案頭儲存資產，資產會上傳至適當位置的AEM。
+[!DNL Adobe Experience Manager] 桌面应用程序将您的数字资产管理(DAM)解决方案链接到桌面，以便您可以直接在桌面上打开AEM Web UI中可用的文件。 如果从桌面保存资产，则会将该资产上传到相应位置的AEM。
 
-AEM案頭應用程式可讓您避免在AEM中更新不正確的本機復本或更新錯誤資產。 透過案頭作業系統提供的網路共用技術，可啟用案頭應用程式易於使用的工作流程。
+AEM桌面应用程序消除了您在AEM中更新不正确的本地副本或更新错误资源的可能性。 通过使用桌面操作系统提供的网络共享技术，可以启用桌面应用程序易于使用的工作流。
 
-案頭應用程式會將AEM Assets存放庫掛接為案頭上的網路共用。 因此，資料夾和檔案看起來就好像是本機資料夾和檔案。 不過，不建議直接從Finder或Explorer中掛載網路共用內的案頭執行數位資產管理作業。 Adobe建議您改用AEM Assets Web UI來執行操作，例如複製或移動大量資產。
+桌面应用程序在桌面上将AEM Assets存储库作为网络共享挂载。 因此，文件夹和文件看起来就好像是本地文件夹和文件。 但是，不建议直接从桌面在Finder或Explorer中已装载的网络共享中执行数字资产管理操作。 Adobe建议您改用AEM Assets Web UI来执行操作，例如复制或移动大量资源。
 
 >[!NOTE]
 >
->閱讀本檔案前，您可以檢閱整體的 [AEM與Creative Cloud整合最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) 以取得本主題的較高層級概觀。
+>在阅读本文档之前，您可以查看整个 [AEM和Creative Cloud集成最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/aem-cc-integration-best-practices.html) 以获取该主题的更高级别概述。
 
-## AEM案頭應用程式架構 {#aem-desktop-app-architecture}
+## AEM桌面应用程序架构 {#aem-desktop-app-architecture}
 
-AEM案頭應用程式使用WebDAV (Windows)或SMB (Mac)網路共用來掛載網路共用。 掛載的網路共用僅在本機。 AEM案頭應用程式會攔截呼叫（開啟、讀取、寫入）並提供額外的本機快取。 它會將AEM Assets伺服器的遠端呼叫轉譯為最佳化的AEM HTTP請求。 下圖說明AEM案頭應用程式架構。
+AEM桌面应用程序使用WebDAV (Windows)或SMB (Mac)网络共享来装载网络共享。 装载的网络共享仅供本地使用。 AEM桌面应用程序会截获调用（打开、读取、写入）并提供其他本地缓存。 它将对AEM Assets服务器的远程调用转换为优化的AEM HTTP请求。 下图描述了AEM桌面应用程序架构。
 
-![AEM案頭應用程式架構](assets/arch_v1.png)
+![AEM桌面应用程序架构](assets/arch_v1.png)
 
-*圖：案頭應用程式架構*
+*图：桌面应用程序架构*
 
-儲存檔案時寫入時產生的額外快取會導致檔案先儲存在本機（因此使用者不會等待網路傳輸）。 然後，在預先定義的延遲（30秒）後，檔案會在背景上傳至AEM，然後資產會上傳至AEM。 AEM案頭應用程式提供可監控背景檔案上傳狀態的UI。
+在保存文件时附加的写缓存会导致文件先在本地保存（这样用户就不会等待网络传输）。 然后，在预定义的延迟（30秒）后，将文件上传到后台的AEM，然后将资产上传到AEM。 AEM桌面应用程序提供了一个用于监控后台文件上传状态的UI。
 
-## AEM案頭應用程式的建議使用 {#recommended-use-of-aem-desktop-app}
+## 推荐使用AEM桌面应用程序 {#recommended-use-of-aem-desktop-app}
 
-AEM案頭應用程式的主要功能包括：
+AEM桌面应用程序的主要功能包括：
 
-* **在案頭上從AEM Assets Web UI開啟檔案**. 在Web UI中，您可以顯示案頭上的資產（在Finder、Explorer中），或使用案頭應用程式開啟資產。
+* **在桌面上从AEM Assets Web UI打开文件**. 从Web UI中，您可以显示桌面上的资产（在Finder、资源管理器中），或使用桌面应用程序打开资产。
 
-* **出庫和入庫**. 資產可以出庫進行編輯，但在AEM Assets中會針對使用者標籤為已鎖定。 編輯後，可以簽入資產以將其解鎖。
+* **签出和签入**. 可以将资源签出以进行编辑，在AEM Assets中，这些资源将标记为为用户锁定。 编辑后，可以签入资源以将其解锁。
 
-* **儲存對檔案的變更**. 您在網路共用中儲存至檔案的任何變更都會自動上傳至AEM，並建立一個新版本。
+* **将更改保存到文件**. 您保存到网络共享中文件的任何更改都会自动上传到AEM，并创建一个新版本。
 
-* **將連結的資產放入其他檔案**. 在應用程式中，例如Creative Cloud([!DNL Adobe Photoshop]， [!DNL Adobe InDesign]、和 [!DNL Adobe Illustrator])，則可將外部檔案設為連結。 例如，您可以將影像放入InDesign檔案中。 在此情況下，網路共用掛載可讓您瀏覽並從AEM中選取要放置的資產。 在某些非Adobe應用程式（例如MS Office）中，也可以放置連結的檔案。
+* **将链接的资产放置在其他文档中**. 在应用程序中，例如Creative Cloud([!DNL Adobe Photoshop]， [!DNL Adobe InDesign]、和 [!DNL Adobe Illustrator])，您可以将外部文件作为链接放置。 例如，您可以将图像放入InDesign文档中。 在这种情况下，网络共享装载允许您浏览并从AEM中选择要放置的资源。 在某些非Adobe应用程序（如MS Office）中，放置链接文件也很有用。
 
-* **AEM中的參考解析度**. 如果置入的檔案和具有連結的主要檔案都儲存在AEM中，它可以自動提供有關資產參考的伺服器端資訊。
+* **AEM中的引用分辨率**. 如果置入的文件和带有链接的主文件都存储在AEM中，则可以自动提供有关资源引用的服务器端信息。
 
-* **從案頭存取資產**. 在掛載的網路共用中，內容功能表會提供 [!UICONTROL More Info] 對話方塊（更大的預覽、關鍵中繼資料）以及在AEM UI中開啟資產的能力。
+* **从桌面访问资产**. 在挂载的网络共享中，上下文菜单提供 [!UICONTROL More Info] 对话框（更大的预览、关键元数据）以及在AEM UI中打开资源的功能。
 
-* **大量上傳大型階層資料夾**. 如果您使用AEM UI中的「建立>資料夾上傳」選項來上傳資產，AEM案頭應用程式會在背景將選取的資料夾階層上傳至AEM。 您可使用案頭應用程式中的專用UI監控上傳進度。
+* **批量上传大型分层文件夹**. 如果您使用AEM UI中的创建>文件夹上传选项来上传资产，AEM桌面应用程序会在后台将选定的文件夹层次结构上传到AEM。 可以在桌面应用程序中使用专用UI监控上传进度。
 
-## 不恰當使用AEM案頭應用程式 {#inappropriate-use-of-aem-desktop-app}
+## 不适当使用AEM桌面应用程序 {#inappropriate-use-of-aem-desktop-app}
 
-* 請勿使用AEM案頭應用程式從案頭管理資產。 AEM案頭應用程式並未建置為網路磁碟機的替代品。 請改用下列功能：
+* 请勿使用AEM桌面应用程序从桌面管理资产。 AEM桌面应用程序未构建为网络驱动器的替代应用程序。 请改用以下功能：
 
-   * 適用於數位資產管理（尋找或共用資產、中繼資料、複製或移動）的AEM Assets Web UI。
+   * 用于数字资源管理（查找或共享资源、元数据以及复制或移动）的AEM Assets Web UI。
 
-   * AEM案頭應用程式 [!UICONTROL Folder Upload] 上傳大型階層式資料夾。
+   * AEM桌面应用程序 [!UICONTROL Folder Upload] 上传大型分层文件夹。
 
-* 請勿將AEM案頭應用程式視為AEM Assets的「案頭同步」使用者端。 在此，AEM案頭應用程式的主要優點在於它提供「虛擬」存取整個存放庫，而案頭同步應用程式通常只同步屬於一個使用者的資產。 AEM案頭應用程式提供某種程度的快取和背景上傳；然而，它與典型的「同步」應用程式運作方式非常不同，例如Adobe Creative Cloud案頭應用程式或Microsoft OneDrive。
+* 不要将AEM桌面应用程序视为AEM Assets的“桌面同步”客户端。 在此，AEM桌面应用程序的主要优势在于，它提供对整个存储库的“虚拟”访问，并且桌面同步应用程序通常只同步属于一个用户的资产。 AEM桌面应用程序提供了一定程度的缓存和后台上传；但是，它与典型的“同步”应用程序的工作方式非常不同，例如Adobe Creative Cloud桌面应用程序或Microsoft OneDrive。
 
-* 請勿經常使用AEM案頭應用程式網路磁碟機來儲存資產。 所有儲存操作都會傳輸至AEM Assets。 因此，直接在掛接的AEM Assets存放庫中執行大量編輯操作是不切實際的。 直接在掛載的存放庫中編輯資產時，會使用不相關的版本來填滿資產的時間軸，並在伺服器上施加額外的經常性費用。
+* 不要经常使用AEM桌面应用程序网络驱动器来保存资产。 所有保存操作都将传输到AEM Assets。 因此，直接在已装载的AEM Assets存储库中执行大量编辑操作是不切实际的。 直接在已挂载的存储库中编辑资产时，会用不相关的版本占用资产的时间线，并向服务器施加额外的开销。
 
-* 請勿使用AEM案頭應用程式將大量資料從一個AEM執行個體移轉至另一個執行個體。 請參閱 [移轉指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) 以規劃及執行資產移轉。 相較之下，案頭應用程式 [支援大量上傳](use-app-v1.md#bulkupload) 中第一次出現大量資產 [!DNL Adobe Experience Manager].
+* 请勿使用AEM桌面应用程序将大量数据从一个AEM实例迁移到另一个实例。 请参阅 [迁移指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) 规划和执行资产迁移。 相比之下，桌面应用程序 [支持批量上传](use-app-v1.md#bulkupload) 中首次出现大量资源 [!DNL Adobe Experience Manager].
 
-## 適用於選定使用案例的Recommendations {#recommendations-for-selected-use-cases}
+## 适用于选定用例的Recommendations {#recommendations-for-selected-use-cases}
 
-### 創意使用者的資產存取權 {#access-to-assets-for-creative-users}
+### 创意用户对资源的访问权限 {#access-to-assets-for-creative-users}
 
-AEM案頭應用程式可提供整個DAM存放庫的虛擬存取，而案頭上的創意使用者若要在案頭上尋找並存取正確的資產，可能會相當複雜。 使用這些最佳實務來簡化操作。
+AEM桌面应用程序提供对整个DAM存储库的虚拟访问，对于桌面上的创意用户而言，在其桌面上查找并访问正确的资产可能会很复杂。 使用这些最佳实践简化操作。
 
-* 使用AEM Assets Web UI中的共同作業功能，讓創意使用者更直接地存取正確的資產。 共用資料夾或收藏集、提供智慧型收藏集（已儲存的搜尋）或傳送包含正確資產指標的通知，都是其中的一些功能。 創意使用者可在網頁UI中使用案頭動作，快速存取其案頭上的這些資產。
+* 使用AEM Assets Web UI中的协作功能，创意用户能够更直接地访问正确的资源。 其中一些功能包括共享文件夹或收藏集、提供智能收藏集（保存的搜索）或发送包含指向正确资产的指针的通知。 然后，创意用户可以使用Web UI中的桌面操作快速访问其桌面上的这些资产。
 
-* 考慮資產（存取控制）的正確許可權，為創意使用者簡化DAM存放庫的檢視，基本上是限制他們僅存取他們需要的或感興趣的資產：
+* 考虑对资产（访问控制）的正确权限，为创意用户简化DAM存储库的视图，基本上限制他们仅访问所需或感兴趣的资产：
 
-   * 某些與創意使用者無關的區域可能會拒絕其使用者群組，以從他們的檢視中移除他們，也在案頭上。
+   * 某些与创意用户无关的区域可能会被拒绝用于其用户组，以将其从视图中（也在桌面上）删除。
 
-   * DAM中的大部分資產都是最終資產，並非意圖要變更，這些應該是創意使用者的唯讀資產。
+   * DAM中的大多数资产都是最终资产，不打算进行更改 — 这些资产对于创意用户应该是只读的。
 
-   * 只有需要變更或修飾的資產才應為創意使用者啟用寫入功能。 有些組織會使用AEM Projects及其建立的資料夾來託管仍會遭到變更的資產。
+   * 只有需要更改或修饰的资产才应为创意用户启用写功能。 某些组织使用AEM Projects及其创建的文件夹来托管仍受更改影响的资产。
 
 ### 搜索资源 {#searching-assets}
 
-若要搜尋您要在案頭上開啟的檔案：
+搜索要在桌面上打开的文件：
 
-* 使用AEM Assets網頁UI來找出資產。 AEM Assets中的搜尋不僅功能強大（搜尋Facet、儲存的搜尋），還提供尋找合適資產的額外功能。 其中包括其他篩選器，例如根據狀態（核准、到期）、集合、任務、通知搜尋資產的能力，以及與其他使用者/群組共用資料夾/集合的能力。
+* 使用AEM Assets Web UI查找资源。 AEM Assets中的搜索不仅功能强大（搜索Facet、保存的搜索），它还提供了其他功能来查找合适的资源。 其中包括其他筛选器，如根据状态（批准、到期）、收藏集、任务、通知搜索资产的功能，以及与其他用户/组共享文件夹/收藏集。
 
-* 找到資產後，請使用AEM UI中的「案頭動作」來存取案頭上的資產。
+* 找到资产后，使用AEM UI中的桌面操作在桌面上访问该资产。
 
-### 更新使用AEM案頭應用程式開啟的資產 {#updating-assets-opened-using-aem-desktop-app}
+### 更新使用AEM桌面应用程序打开的资源 {#updating-assets-opened-using-aem-desktop-app}
 
-如果您在從AEM Assets對應至本機網路共用的位置直接編輯資產，每次將資產儲存在案頭上時，都會將其上傳至AEM。 此外，AEM會建立版本並產生轉譯。
+如果您在从AEM Assets映射到本地网络共享的位置直接编辑资源，则每次将资源保存到桌面上时，都会将该资源上传到AEM。 此外，AEM会创建一个版本并生成演绎版。
 
-如果儲存在AEM中的資產需要更新：
+如果存储在AEM中的资源需要更新，请执行以下操作：
 
-* 對象 **小幅更新**，例如核准流程中的次要潤飾請求：
+* 对象 **次要更新**，如批准流程中的次要修饰请求：
 
-   * 取出檔案，然後在案頭上開啟。
+   * 签出文件并在桌面上将其打开。
 
-   * 更新檔案。
+   * 更新文件。
 
-   * 儲存更新版本。 資產會更新，而時間軸會顯示原始版本以進行比較。
+   * 保存更新的版本。 资产将更新，时间线将显示原始版本以进行比较。
 
-* 對象 **重大更新**，例如需要小型創意WIP週期的變更請求：
+* 对象 **主要更新**，例如需要很短的创意WIP周期的更改请求：
 
-   * 使用「顯示」選項，在案頭上開啟適當的資料夾。
+   * 使用“显示”选项在桌面上打开相应的文件夹。
 
-   * 將檔案複製到對應AEM Assets共用外部的WIP資料夾(例如，將檔案複製到與Adobe Creative Cloud案頭應用程式同步的資料夾)。
+   * 将文件复制到映射的AEM Assets共享以外的WIP文件夹中(例如，将文件复制到与Adobe Creative Cloud桌面应用程序同步的文件夹中)。
 
-   * 處理檔案並間歇儲存。 變更不會儲存至AEM Assets。
+   * 处理文件并间歇性保存。 更改不会保存到AEM Assets。
 
-   * 編輯完成後，移動、複製或儲存從AEM對應的檔案，以將其上傳為新版本。
+   * 编辑完成后，移动、复制或保存从AEM映射的文件，以将其上传为新版本。
 
-## 網路效能 {#network-performance}
+## 网络性能 {#network-performance}
 
-使用者是否可以使用AEM案頭應用程式，很大程度上取決於其案頭與AEM伺服器之間是否具備良好、穩定的網路連線，以及是否要將伺服器調校為具備良好效能，尤其是在上傳和更新資產方面。 這些建議適用於組織中的網路/IT團隊。
+用户能否获得良好的AEM桌面应用程序体验，很大程度上取决于其桌面应用程序与AEM服务器之间是否拥有良好、稳定的网络连接，以及服务器是否经过调优以获得良好性能，特别是在上传和更新资产方面。 这些建议适用于组织中的网络/IT团队。
 
-### 網路考量事項 {#network-considerations}
+### 网络注意事项 {#network-considerations}
 
-若要瞭解AEM Assets網路設定相關最佳實務，請參閱 [如何大量移轉資產](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) 檔案。 協助使用者最佳化AEM案頭應用程式體驗的一些重要方面包括：
+要了解有关AEM Assets网络配置的最佳实践，请参阅 [如何批量迁移资产](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/assets-migration-guide.html) 文档。 有助于为用户优化AEM桌面应用程序体验的一些重要方面包括：
 
-* **使用正確設定的Dispatcher**. 使用AEM Dispatcher以獲得額外安全性，並確保它已針對 [AEM案頭應用程式連線到Dispatcher後面的AEM](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
+* **使用正确配置的Dispatcher**. 使用AEM Dispatcher可提高安全性，并确保已针对以下内容对其进行配置： [与Dispatcher后的AEM的AEM桌面应用程序连接](install-configure-app-v1.md#connect-to-an-aem-instance-behind-a-dispatcher)
 
-* **節省頻寬**. 請考慮關閉Mac上Finder中的圖示預覽 — 使用Finder瀏覽已掛載的存放庫時。 Finder會要求每個檔案產生預覽，並讓案頭應用程式從本機下載並快取資產。 請注意，在節省頻寬的同時，這麼做也會減少桌上型電腦使用者的使用者體驗，因此在使用大型資產和/或頻寬受限的存放庫時應該這麼做。
+* **节省带宽**. 考虑关闭Mac上的Finder中的图标预览 — 在使用Finder浏览已装载的存储库时。 Finder会请求每个文件生成预览，并让桌面应用程序在本地下载和缓存资产。 请注意，在节省带宽的同时还会降低桌面版用户的用户体验，因此在使用大型资产和/或带宽受限的存储库时应该这样做。
 
 >[!NOTE]
 >
->若要關閉圖示預覽，請在Finder中前往 [!UICONTROL View]，選取 [!UICONTROL View Options]，然後取消勾選 [!UICONTROL Show icon preview] 選項。 這僅適用於目前的資料夾 — 若要使其成為預設資料夾，請按一下 [!UICONTROL Use as default] 選項。
+>要关闭图标预览，请在Finder中转到 [!UICONTROL View]，选择 [!UICONTROL View Options]，然后取消选中 [!UICONTROL Show icon preview] 选项。 这仅适用于当前文件夹 — 要将它设为默认值，请单击 [!UICONTROL Use as default] 选项。
 
-### 最佳化伺服器效能 {#optimizing-server-performance}
+### 优化服务器性能 {#optimizing-server-performance}
 
-若要瞭解應如何最佳化AEM Assets伺服器的效能，請參閱 [AEM Assets效能調整指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html). AEM案頭應用程式伺服器效能的一些重要方面與最佳化工作流程設定有關，以便資產上傳時執行良好：
+要了解应如何优化AEM Assets服务器的性能，请参阅 [AEM Assets Performance Tuning指南](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html). AEM桌面应用程序服务器性能的一些重要方面与优化工作流配置有关，以便它在资源上传时性能良好：
 
-* **效能更高的資產上傳**. 設定 [AEM資產更新工作流程模型為暫時性](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
+* **性能更高的资产上传**. 配置 [AEM资产更新工作流模型为瞬态模型](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html).
 
-* **限制用於上傳的伺服器CPU**. 請確定最大平行工作流程作業引數已正確設定，以便上傳不會耗盡所有CPU。
+* **限制用于上载的服务器CPU**. 确保正确设置了最大并行工作流作业参数，以便上传不会耗尽所有CPU。
