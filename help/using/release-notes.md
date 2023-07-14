@@ -4,20 +4,23 @@ description: 的发行详细信息、增强功能、新增功能、兼容性和�
 mini-toc-levels: 1
 feature: Desktop App,Release Information
 exl-id: e058e7a2-fcc8-4ad1-899e-20695db6bc72
-source-git-commit: df5283f6bef6adbb007bf93c6dabb3b12e430f58
+source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
 workflow-type: tm+mt
-source-wordcount: '2437'
-ht-degree: 15%
+source-wordcount: '2624'
+ht-degree: 14%
 
 ---
 
 # [!DNL Adobe Experience Manager] 桌面应用程序发行说明 {#release-notes-v2}
 
-下面是最新桌面应用程序版本2.2.2的发行信息。 发行日期为2023年3月9日。
+下面是最新桌面应用程序版本2.3.0的发行信息。 发行日期为2023年7月14日。
 
-最新版本的桌面应用程序包含以下错误修复：
+最新版本的桌面应用程序包括以下错误修复和增强功能：
 
-* [仅Windows] 安装2.2.0和2.2.1版本后，桌面应用程序显示一个空白屏幕。
+* 添加了对IMS登录的支持。 IMS集成允许桌面应用程序自动执行访问令牌刷新，从而允许用户保持登录状态长达14天。
+
+* 改进了对企业代理和Web过滤的支持。
+
 
 此 **支持 [!DNL Experience Manager] 版本** 为：
 
@@ -33,6 +36,9 @@ ht-degree: 15%
 
 | 操作系统 | [!DNL Experience Manager] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.x |
 |---|---|---|
+| macOS (v2.3.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.3.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.3.0.dmg) |
+| macOS Apple Silicon (M1) (v2.3.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.3.0.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.3.0.dmg) |
+| Windows 64位(v2.3.0) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.3.0.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.3.0.exe) |
 | macOS (v2.2.2) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-x64-2.2.2.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-x64-2.2.2.dmg) |
 | macOS Apple Silicon (M1) (v2.2.2) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-osx-arm64-2.2.2.dmg) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-osx-arm64-2.2.2.dmg) |
 | Windows 64位(v2.2.2) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-desktop-app/aem-desktop-win-x64-2.2.2.exe) | [下载链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/adobe/aem-desktop-app/aem-desktop-win-x64-2.2.2.exe) |
@@ -79,6 +85,10 @@ ht-degree: 15%
 ## 新增功能、增强功能和错误修复 {#what-is-new}
 
 要了解详细信息，请参阅 [v2.0的新增功能](introduction.md#whats-new-v2).
+
+**应用程序v2.2.2中的更新**
+
+* [仅Windows] 安装2.2.0和2.2.1版本后，桌面应用程序显示一个空白屏幕。
 
 **应用程序v2.2.1中的更新**
 
@@ -225,7 +235,7 @@ ht-degree: 15%
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] as a [!DNL Cloud Service] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=zh-Hans)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=zh-Hans)
 >* [使用方法 [!DNL Experience Manager] 桌面应用程序](using.md)
 >* [安装和升级桌面应用程序](install-upgrade.md)
 >* [最佳实践和故障诊断提示](troubleshoot.md)
