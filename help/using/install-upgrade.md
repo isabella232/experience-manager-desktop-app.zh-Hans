@@ -3,9 +3,9 @@ title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] 要使用的桌面应用程序 [!DNL Adobe Experience Manager Assets] 并将资源下载到本地文件系统中。
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: 0f366e07b9d220cf04286b24e4bb45ce0b385e5c
+source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 0%
    >
    >确保的地址之前或之后没有前导或尾随空格 [!DNL Experience Manager] 服务器。 否则，应用程序无法连接到 [!DNL Experience Manager] 服务器。
 
-1. 单击 **[!UICONTROL I want to connect a different way]** 并单击 **[!UICONTROL Adobe login]** 以使用AdobeExperience Manager Assets服务(IMS)登录Identity Management服务器。 IMS登录允许桌面应用程序自动执行访问令牌刷新，从而允许用户保持登录状态长达14天。 单击 **[!UICONTROL Direct login]** 登录 [!DNL Experience Manager] 使用凭据的服务器。
+1. [可选] 单击 **[!UICONTROL I want to connect a different way]** 并单击 **[!UICONTROL Adobe login]** 以使用AdobeExperience Manager Assets服务(IMS)登录Identity Management服务器。 IMS登录允许桌面应用程序自动执行访问令牌刷新，从而允许用户保持登录状态长达14天。 单击 **[!UICONTROL Direct login]** 执行标准登录 [!DNL Experience Manager] 使用用户凭据的服务器。
 
    ![Adobe登录](assets/adobe-login.png)
 
