@@ -3,9 +3,9 @@ title: 安装和配置桌面应用程序
 description: 安装和配置 [!DNL Adobe Experience Manager] 要使用的桌面应用程序 [!DNL Adobe Experience Manager Assets] 并将资源下载到本地文件系统中。
 feature: Desktop App,Release Information
 exl-id: 422e51c1-c456-4151-bb43-4b3d29a58187
-source-git-commit: e51547496b03ac42d13e7bee5e2e3d20e520d0ad
+source-git-commit: 2382f615ae3a8b9c076d4037e1644233a2363677
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 0%
    >
    >确保的地址之前或之后没有前导或尾随空格 [!DNL Experience Manager] 服务器。 否则，应用程序无法连接到 [!DNL Experience Manager] 服务器。
 
-1. [可选] 单击 **[!UICONTROL I want to connect a different way]** 并单击 **[!UICONTROL Adobe login]** 以使用AdobeExperience Manager Assets服务(IMS)登录Identity Management服务器。 IMS登录允许桌面应用程序自动执行访问令牌刷新，从而允许用户保持登录状态长达14天。 单击 **[!UICONTROL Direct login]** 执行标准登录 [!DNL Experience Manager] 使用用户凭据的服务器。
+1. [可选] 单击 **[!UICONTROL I want to connect a different way]** 并单击 **[!UICONTROL Adobe login]** 以使用AdobeExperience Manager Assets服务(IMS)登录到Identity Management服务器。 IMS登录允许桌面应用程序自动执行访问令牌刷新，从而允许用户保持登录状态长达14天。 单击 **[!UICONTROL Direct login]** 执行标准登录 [!DNL Experience Manager] 使用用户凭据的服务器。
 
    ![Adobe登录](assets/adobe-login.png)
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 * **[!UICONTROL Maximum number of downloads]**： ![“警告”图标](assets/do-not-localize/caution-icon.png) 改变时请小心。 首次下载资源时（通过“显示”、“打开”、“编辑”、“下载”或类似选项），仅当批次包含的内容少于此数字时才会下载资源。 默认值为 50。如果您不确定，请勿更改。 增加值可能导致等待时间较长而减少值可能不允许您一次性下载必要的资源或文件夹。
 
-* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**： ![“警告”图标](assets/do-not-localize/caution-icon.png) 改变时请小心。 此设置允许应用程序在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称会遵循用户提供的文件夹名称的空格和大小写。 但是，在应用程序的v2.1中，文件夹名称中的额外空格将转换为破折号。 例如，上传 `New Folder` 或 `new   folder` 如果未选择选项并保留v2.1中的默认行为，则在存储库中创建相同的节点。 如果选择此选项，则会在存储库中为上述两个文件夹创建不同的节点，并且与v1.10应用程序的行为相匹配。
+* **[!UICONTROL Use legacy conventions when creating nodes for assets and folders]**： ![“警告”图标](assets/do-not-localize/caution-icon.png) 改变时请小心。 此设置允许应用程序在上传文件夹时模拟v1.10应用程序行为。 在v1.10中，在存储库中创建的节点名称会遵循用户提供的文件夹名称的空格和大小写。 但是，在应用程序的v2.1中，文件夹名称中的额外空格将转换为破折号。 例如，上传 `New Folder` 或 `new   folder` 如果未选择该选项并保留v2.1中的默认行为，则在存储库中创建相同的节点。 如果选择此选项，则会在存储库中为上述两个文件夹创建不同的节点，并且与v1.10应用程序的行为相匹配。
 
   v2.1的默认行为将保持不变，即，将文件夹名称中的多个空格替换为存储库节点名称中的破折号，并转换为小写节点名称。
 
