@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Experience Manager] 桌面应用程序，使用 
 mini-toc-levels: 1
 feature: Desktop App,Asset Management
 exl-id: fa19d819-231a-4a01-bfd2-6bba6fec2f18
-source-git-commit: 98e99ee48d835cea0098c4acfe49f6b247ccf658
+source-git-commit: 1139b3359042a134d86900e3b7b7f03d8d920cdc
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 有关协作编辑的最佳实践，请参阅 [高级工作流程：对相同文件进行协作并避免编辑冲突](#adv-workflow-collaborate-avoid-conflicts).
 
-在以下情况下，您可能需要放弃对本地资产的更改和编辑。 单击 **[!UICONTROL Discard Changes]**.
+在以下情况下，您可能需要放弃对本地资产的更改和编辑。 单击 **[!UICONTROL Discard Changes]**。
 
 * 如果您不想将本地更改保存在 [!DNL Experience Manager].
 * 保存一些更改后，开始更改原始资源。
@@ -215,13 +215,13 @@ ht-degree: 0%
 | Folder name | Uppercase characters | Disabled | Replaced with a `-` (hyphen) | tbd |
 -->
 
-| 字符数 ‡ | 应用程序中的旧版偏好设置 | 当出现在文件名中时 | 当出现在文件夹名称中时 | 示例 |
+| 字符‡ | 应用程序中的旧版偏好设置 | 当出现在文件名中时 | 当出现在文件夹名称中时 | 示例 |
 |---|---|---|---|---|
-| `. / : [ ] | *` | 启用或禁用 | 已替换为 `-` （连字符）。 A `.` 文件扩展名中的（点）将按原样保留。 | 已替换为 `-` （连字符）。 | `myimage.jpg` 保持不变，并且 `my.image.jpg` 更改为 `my-image.jpg`. |
+| `. / : [ ] \| *` | 启用或禁用 | 已替换为 `-` （连字符）。 A `.` 文件扩展名中的（点）将按原样保留。 | 已替换为 `-` （连字符）。 | `myimage.jpg` 保持不变，并且 `my.image.jpg` 更改为 `my-image.jpg`. |
 | `% ; # , + ? ^ { } "` 和空格 | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 保留空格 | 已替换为 `-` （连字符）。 | `My Folder.` 更改为 `my-folder-`. |
-| `# % { } ? & .` | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 已替换为 `-` （连字符）。 | NA. | `#My New File.` 更改为 `-My New File-`. |
+| `# % { } ? & .` | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 已替换为 `-` （连字符）。 | 不用。 | `#My New File.` 更改为 `-My New File-`. |
 | 大写字符 | ![取消选择图标](assets/do-not-localize/deselect-icon.png) 已禁用 | 外壳保持原样。 | 更改为小写字符。 | `My New Folder` 更改为 `my-new-folder`. |
-| 大写字符 | ![“选中选项”图标](assets/do-not-localize/selection-checked-icon.png) 已启用 | 外壳保持原样。 | 外壳保持原样。 | NA. |
+| 大写字符 | ![“选中选项”图标](assets/do-not-localize/selection-checked-icon.png) 已启用 | 外壳保持原样。 | 外壳保持原样。 | 不用。 |
 
 ‡字符列表是以空格分隔的列表。
 
